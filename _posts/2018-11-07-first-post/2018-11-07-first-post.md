@@ -7,11 +7,11 @@ tags : [Topology,]
 
 # Majorana Fermion
 
-<img src="script1.png" style="zoom:100%">
+<img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-07-first-post/assets/script1.png" style="zoom:100%">
 
-<img src="script2.png" style="zoom:100%">
+<img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-07-first-post/assets/script2.png" style="zoom:100%">
 
-<img src="script3.png" style="zoom:100%">
+<img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-07-first-post/assets/script3.png" style="zoom:100%">
 
 
 
