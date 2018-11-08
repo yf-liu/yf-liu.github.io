@@ -1,11 +1,22 @@
 ---
 layout: post
-title: Demo Post
+title: Test
 category : Intro
-tags : [intro, tag1, tag2]
+tags : [Topology,]
 ---
 
-## Demo Post
+# Majorana Fermion
 
-This is my first post. Hello world!
+<img src="script1.png" style="zoom:100%">
 
+<img src="script2.png" style="zoom:100%">
+
+<img src="script3.png" style="zoom:100%">
+
+
+
+[1] Alicea J, Oreg Y, Refael G, et al. Non-Abelian statistics and topological quantum information processing in 1D wire networks[J]. Nature Physics, 2011, 7(5): 412.
+
+[2] Bravyi S. Universal quantum computation with the ν= 5∕ 2 fractional quantum Hall state[J]. Physical Review A, 2006, 73(4): 042313.
+
+[3] Iyer P. Topological quantum computation using Majorana Fermions[J].
