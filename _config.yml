@@ -41,4 +41,5 @@ defaults:
       mathjax: "true"
       commentable: "true"
       toc: "true"
+      layout : "post"
 
