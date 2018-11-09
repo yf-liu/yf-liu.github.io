@@ -30,3 +30,15 @@ gems: [jekyll-paginate]
 
 markdown: kramdown
 # toc_levels: 1..2
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      mathjax: "true"
+      commentable: "true"
+      toc: "true"
+
