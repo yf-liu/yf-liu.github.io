@@ -1,8 +1,18 @@
 ---
 layout: post
 title: Test
-category : Intro
-tags : [Topology,]
+category: Intro
+tags:
+  - Topology
+comments:
+  - author:
+      type: full
+      displayName: yf-liu
+      url: 'https://github.com/yf-liu'
+      picture: 'https://avatars2.githubusercontent.com/u/44823256?v=4&s=73'
+    content: test
+    date: 2018-11-09T12:39:06.315Z
+
 ---
 
 # Majorana Fermion
