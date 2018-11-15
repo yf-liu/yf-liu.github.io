@@ -6,6 +6,13 @@ div#reading-progress {
   height: 3px
 }
 
+.col-md-12 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 @media(min-width:1024px) {
     div#post-content{
         width: 70vw

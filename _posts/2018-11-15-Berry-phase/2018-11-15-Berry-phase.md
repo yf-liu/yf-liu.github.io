@@ -73,7 +73,7 @@ $$
 \end{matrix}\right) =  \sin \theta \vec{e} _ {12} (t) + \cos \theta \vec{e} _ {3}
 $$
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/space_of_parameter.png" width="30%">
+<img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/space_of_parameter.png" width="60%">
 
 where $ \vec{e} _ {12} (t)=\vec{e} _ 1 \cos 2 \omega t + \vec{e} _ 2 \sin 2 \omega t$. The Hamiltonian is
 
