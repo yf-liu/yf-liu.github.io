@@ -73,7 +73,7 @@ $$
 \end{matrix}\right) =  \sin \theta \vec{e} _ {12} (t) + \cos \theta \vec{e} _ {3}
 $$
 
-<img src = "assets/space_of_parameter.png" width="30%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/space_of_parameter.png" width="30%">
 
 where $ \vec{e} _ {12} (t)=\vec{e} _ 1 \cos 2 \omega t + \vec{e} _ 2 \sin 2 \omega t$. The Hamiltonian is
 
@@ -117,15 +117,17 @@ with the initial Hamiltonian $h _ 0 = b \sin \theta J _ 1 + b \cos \theta J _ 3$
 >& = J _ 3
 >\end{align*}
 >$$
->
+
 
 The eigenvectors are (can't be proved?)
+
 $$
 h(R) \ket{k , R} = b \vec{R} (t) \cdot \op{\vec{J}} \ket{k , R} = b k \ket{k , R}
 $$
+
 where $k$ is the quantum number for the component of angular momentum along the changing direction of the external magnetic field, and $R$  refers to $\theta, \ \varphi$ . The eigenvalues $E _ k (R (t)) = b k$ are time-independent, while the eigenvectors and eigen projectors $ \Lambda _ k (R (t)) = \ket{k , R} \bra{k , R}$ are not.
 
-<img src = "assets/time_dependence.png" width="80%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/time_dependence.png" width="80%">
 
 
 
