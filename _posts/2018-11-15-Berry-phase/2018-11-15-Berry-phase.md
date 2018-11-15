@@ -55,6 +55,7 @@ $$
 with parameter $\vec{R} (t)$ and angular momentum operator $\op{\vec{J}}$. The parameter space is a unit sphere.
 
 $$
+\notag
 \vec{R} = \left(\begin{matrix}
 \sin \theta \cos \varphi\\
 \sin \theta \sin \varphi\\
@@ -63,6 +64,7 @@ $$
 $$
 
 The path we adapt is to process around $z$ axis, that is, $\varphi = 2 \omega t$.
+
 $$
 \vec{R} (t) = \left(\begin{matrix}
 \sin \theta \cos 2 \omega t\\
@@ -74,6 +76,7 @@ $$
 <img src = "assets/space_of_parameter.png" width="30%">
 
 where $ \vec{e} _ {12} (t)=\vec{e} _ 1 \cos 2 \omega t + \vec{e} _ 2 \sin 2 \omega t$. The Hamiltonian is
+
 $$
 \begin{align*}
 h(t) & = b \vec{R} (t) \cdot \op{\vec{J}} \\
