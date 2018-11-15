@@ -9,6 +9,7 @@ title: Berry phase
 Key words: periodical rotation, exact solution, Aharonov-Anandan phase. 
 
 Hamiltonian: 
+
 $$
 \newcommand{\Hilbert}[1]{\mathscr{#1}}
 \newcommand{\dd}{\operatorname{d}}
