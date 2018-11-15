@@ -1,6 +1,6 @@
 ---
 title: Berry phase
-categary: Physics
+category: Physics
 tags:
   - Topology
   - Berry phase
@@ -121,6 +121,7 @@ with the initial Hamiltonian $h _ 0 = b \sin \theta J _ 1 + b \cos \theta J _ 3$
 >& = J _ 3
 >\end{align*}
 >$$
+>
 
 
 The eigenvectors are (can't be proved?)
