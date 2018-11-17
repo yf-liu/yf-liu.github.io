@@ -296,10 +296,12 @@ $$
 >
 
 For diagonal matrix elements, we have
+
 $$
 A _ \theta ^ k (\theta , \varphi) = 0 \\
 A _ \varphi ^ k (\theta , \varphi) = k (\cos \theta -1)
 $$
+
 On the patch $O _ 2(\theta \ne 0)$, we repeat the calculation
 
 $$
@@ -322,11 +324,14 @@ $$
 >
 
 For diagonal matrix elements, we have
+
 $$
 A ' ^ {k} _ \theta  (\theta , \varphi) = 0 \\
 A ' ^ {k} _ \varphi (\theta , \varphi) = k (\cos \theta +1)
 $$
+
 Thus, the difference of two patches is
+
 $$
 A ' ^ {k} _ \varphi (\theta , \varphi) - A ^ {k} _ \varphi (\theta , \varphi) = 2 k
 $$
@@ -334,6 +339,7 @@ $$
 #### Mead-Berry curvature two-form
 
 The Mead-Berry curvature two-form is defined as
+
 $$
 \begin{align*}
 F ^ k & = \dd A ^ k \\
