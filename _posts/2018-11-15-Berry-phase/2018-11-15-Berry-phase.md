@@ -126,7 +126,7 @@ There are 2 conditions:
 
 - $H^{total}=H_0+h(t)$, where $H_0$ is the rotationally invariant part.
   - Hamiltonian commutes with $\op{\vec{J}} ^2$, so the state vectors $\ket{k, R}$ are also eigenvectors of $\op{\vec{J}} ^2$.
-  - But Hamiltonian doesn't commute with $\op{J}_z$. So (why) the possible values of $k​$ are
+  - But Hamiltonian doesn't commute with $\op{J}_z$. So (why) the possible values of $k$ are
 
 $$
 k=-j,-j+1,...,j-1,j,\quad \text{where}\ j \in \frac{\Z}{2}
@@ -161,8 +161,8 @@ $$
 >& \quad \ [h(t),\op{\vec{X}} \cdot \op{\vec{J}}] \\
 >& = [ b \vec{R} (t) \cdot \op{\vec{J}},\op{\vec{X}} \cdot \op{\vec{J}}] \\
 >& = b [R _ 1 \op{J} _ 1 + R _ 2 \op{J} _ 2 + R _ 3 \op{J} _ 3 , \op{X} _ 1 \op{J} _ 1 + \op{X} _ 2 \op{J} _ 2 + \op{X} _ 3 \op{J} _ 3] \\
->& = b(R _ 1 \op{X} _ 2 - R _ 2 \op{X} _ 1)[\op{J} _ 1, \op{J} _ 2] +  b(R _ 2 \op{X} _ 3 - R _ 3 \op{X} _ 2)[\op{J} _ 2, \op{J} _ 3] + b(R _ 3 \op{X} _ 1 - R _ 1 \op{X} _ 3)[\op{J} _ 3, \op{J} _ 1] \\
->& \quad \ + b R _ 1 [\op{J} _ 1 , \op{X} _ 2] \op{J} _ 2 + b R _ 1 [\op{J} _ 1 , \op{X} _ 3] \op{J} _ 3 + b R _ 2 [\op{J} _ 2 , \op{X} _ 1] \op{J} _ 1 + b R _ 2 [\op{J} _ 2 , \op{X} _ 3] \op{J} _ 3 + b R _ 3 [\op{J} _ 3 , \op{X} _ 1] \op{J} _ 1 + b R _ 3 [\op{J} _ 3 , \op{X} _ 2] \op{J} _ 2\\
+>& = b(R _ 1 \op{X} _ 2 - R _ 2 \op{X} _ 1)[\op{J} _ 1, \op{J} _ 2] +  b(R _ 2 \op{X} _ 3 - R _ 3 \op{X} _ 2)[\op{J} _ 2, \op{J} _ 3] + b(R _ 3 \op{X} _ 1 - R _ 1 \op{X} _ 3)[\op{J} _ 3, \op{J} _ 1]  + b R _ 1 [\op{J} _ 1 , \op{X} _ 2] \op{J} _ 2 \\
+>& \quad \ + b R _ 1 [\op{J} _ 1 , \op{X} _ 3] \op{J} _ 3 + b R _ 2 [\op{J} _ 2 , \op{X} _ 1] \op{J} _ 1 + b R _ 2 [\op{J} _ 2 , \op{X} _ 3] \op{J} _ 3 + b R _ 3 [\op{J} _ 3 , \op{X} _ 1] \op{J} _ 1 + b R _ 3 [\op{J} _ 3 , \op{X} _ 2] \op{J} _ 2\\
 >& = \ii b (R _ 1 \op{X} _ 2 - R _ 2 \op{X} _ 1) \op{J} _ 3 + \ii b (R _ 2 \op{X} _ 3 - R _ 3 \op{X} _ 2) \op{J} _ 1 + \ii b (R _ 3 \op{X} _ 1 - R _ 1 \op{X} _ 3) \op{J} _ 2 \\
 >& \quad \ + \ii b R _ 1 \op{X} _ 3 \op{J} _ 2 - \ii b R _ 1 \op{X} _ 2 \op{J} _ 3 - \ii b R _ 2 \op{X} _ 3 \op{J} _ 1 + \ii b R _ 2 \op{X} _ 1 \op{J} _ 3 + \ii b R _ 3 \op{X} _ 2 \op{J} _ 1 - \ii b R _ 3 \op{X} _ 1 \op{J} _ 2 \\
 >& = 0\\
