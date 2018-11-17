@@ -100,7 +100,7 @@ with the initial Hamiltonian $h _ 0 = b \sin \theta \op{J} _ 1 + b \cos \theta \
 >
 >$$
 >\begin{align*}
->& \because \e ^A B \e ^{-A}=B+\sum _ {n=1} ^\infin \frac{B _ n}{n!}, \text{where } B _ 0 \dfdas B,\ B _ n \dfdas [A, B _ {n-1}] ;\ [J _ i, \op{J} _ j] = \ii \varepsilon _ {ijk} \op{J} _ k\\
+>& \because \e ^A B \e ^{-A}=B+\sum _ {n=1} ^\infty \frac{B _ n}{n!}, \text{where } B _ 0 \dfdas B,\ B _ n \dfdas [A, B _ {n-1}] ;\ [J _ i, \op{J} _ j] = \ii \varepsilon _ {ijk} \op{J} _ k\\
 >& \therefore \e ^{-\ii \omega t \op{J} _ 3} \op{J} _ 1 \e ^{\ii \omega t \op{J} _ 3} \\
 >& = \op{J} _ 1 + \omega t \op{J} _ 2 - \frac{1}{2!} (\omega t)^2 \op{J} _ 1  + \frac{1}{3!}  (\omega t)^3 \op{J} _ 2 + \cdots \\ 
 >& = \op{J} _ 1 (1 - \frac{1}{2!} (\omega t)^2 + \cdots) + \op{J} _ 2 (\omega t  + \frac{1}{3!}  (\omega t)^3 + \cdots) \\ 
@@ -126,10 +126,10 @@ There are 2 conditions:
 
 - $H^{total}=H_0+h(t)$, where $H_0$ is the rotationally invariant part.
   - Hamiltonian commutes with $\op{\vec{J}} ^2$, so the state vectors $\ket{k, R}$ are also eigenvectors of $\op{\vec{J}} ^2$.
-  - But Hamiltonian doesn't commute with $\op{J}_z$. So (why) the possible values of $k$ are
+  - But Hamiltonian doesn't commute with $\op{J}_z​$. So (why) the possible values of $k​$ are
 
 $$
-k=-j,-j+1,...,j-1,j,\quad \text{where}\ j \in \frac{\Z}{2}
+k=-j,-j+1,...,j-1,j,\quad \text{where}\ j \in \frac{\intset}{2}
 $$
 
 
