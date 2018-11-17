@@ -126,7 +126,7 @@ There are 2 conditions:
 
 - $H^{total}=H_0+h(t)$, where $H_0$ is the rotationally invariant part.
   - Hamiltonian commutes with $\op{\vec{J}} ^2$, so the state vectors $\ket{k, R}$ are also eigenvectors of $\op{\vec{J}} ^2$.
-  - But Hamiltonian doesn't commute with $\op{J}_z​$. So (why) the possible values of $k​$ are
+  - But Hamiltonian doesn't commute with $\op{J}_z$. So (why) the possible values of $k$ are
 
 $$
 k=-j,-j+1,...,j-1,j,\quad \text{where}\ j \in \frac{\intset}{2}
