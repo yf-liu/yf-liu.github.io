@@ -12,6 +12,8 @@ tags:
 
 Key words: periodic rotation, exact solution, Aharonov-Anandan phase. 
 
+## The parameterization of the Basis Vector
+
 Hamiltonian: 
 
 $$
