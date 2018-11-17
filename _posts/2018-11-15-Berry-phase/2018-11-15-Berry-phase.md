@@ -77,7 +77,7 @@ $$
 \end{matrix}\right) =  \sin \theta \vec{e} _ {12} (t) + \cos \theta \vec{e} _ {3}
 $$
 
-<img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/space_of_parameter.png" width="60%">
+<img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/space_of_parameter.png" width="40%">
 
 where $ \vec{e} _ {12} (t)=\vec{e} _ 1 \cos 2 \omega t + \vec{e} _ 2 \sin 2 \omega t$. The Hamiltonian is
 
@@ -92,7 +92,7 @@ h(t) & = b \vec{R} (t) \cdot \op{\vec{J}} \\
 \end{align*}
 $$
 
-with the initial Hamiltonian h _ 0 = b \sin \theta \op{J} p{J} _ 1 + b \cos \theta<span class="md-search-hit"> \op{J} </span>_ 3. The Hamiltonian is periodic, $h (\frac{2\pi}{\omega})=h_0​$.
+with the initial Hamiltonian $h _ 0 = b \sin \theta \op{J} _ 1 + b \cos \theta \op{J} _ 3$. The Hamiltonian is periodic, $h (\frac{2\pi}{\omega})=h_0$.
 
 >Using the properties of  angular momentum operator, we prove the above transformation.
 >
