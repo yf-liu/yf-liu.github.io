@@ -126,6 +126,12 @@ There are 2 conditions:
 
 - $H^{total}=H_0+h(t)$, where $H_0$ is the rotationally invariant part.
   - Hamiltonian commutes with $\op{\vec{J}} ^2$, so the state vectors $\ket{k, R}$ are also eigenvectors of $\op{\vec{J}} ^2$.
+  - But Hamiltonian doesn't commute with $\op{J}_z$. So (why) the possible values of $k​$ are
+
+$$
+k=-j,-j+1,...,j-1,j,\quad \text{where}\ j \in \frac{\Z}{2}
+$$
+
 
 >$$
 >\begin{align*}
@@ -143,13 +149,6 @@ There are 2 conditions:
 >$$
 >
 
-
-  - 
-      - But Hamiltonian doesn't commute with $\op{J}_z$. So (why) the possible values of $k$ are
-
-$$
-k=-j,-j+1,...,j-1,j,\quad \text{where}\ j \in \frac{\Z}{2}
-$$
 
 - $H^{total} = \op{\vec{X}} \cdot \op{\vec{J}}+h(t)$, where $\op{\vec{X}} \cdot \op{\vec{J}}$ describes the slowly changing quantum environment for the electron, and $\op{\vec{X}}$ is the position operator of the internuclear axis of the molecule,  rotating in space.
   - Hamiltonian commutes with $\op{\vec{X}} \cdot \op{\vec{J}}$, instead of $\op{\vec{J}} ^2$.
@@ -185,6 +184,7 @@ Applying ($\theta,\varphi$)-dependent rotations to an eigenvector $\ket{k , \vec
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/rotation_of_e3.png" width="80%">
 
 The representations of rotation operation are 
+
 $$
 \begin{align*}
 U _ 3 (\varphi) & = \e ^ {-\ii \varphi \op{J} _ 3} \dfdas \id + \frac{\varphi}{ \ii} \op{J} _ 3 + \frac{1}{2!} \left( \frac{\varphi}{ \ii} \op{J} _ 3 \right)^2 + \cdots \\
@@ -192,6 +192,7 @@ U _ 2 (\theta) & = \e ^ {-\ii \theta \op{J} _ 2} \dfdas \id + \frac{\theta}{\ii}
 U ( \theta , \varphi) & = U _ 3 (\varphi) U _ 2 (\theta) U _ 3 (-\varphi)= \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3}\\
 \end{align*}
 $$
+
 $$
 \begin{align*}
 & \text{Hermition conjugate: }U ^\dagger (\theta , \varphi) = \e ^ {- \ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3}=U(- \theta , \varphi)\\
@@ -234,14 +235,17 @@ For south pole $-\vec{e} _ 3$, the eigenvector $\ket{k,\pi, \varphi } = \e ^{-\i
 >
 
 Using a gauge transformation, the smooth single-valued vector function also can defined on $S^2$ except at the north pole. The gauge transformation is
+
 $$
 \ket{k,\theta, \varphi }' = \e ^ {- \ii 2 k \varphi} \ket{k,\theta, \varphi }\\
 \text{North pole: }\ket{k,0, \varphi }' = \e ^ {- \ii 2 k \varphi} \ket{k, \vec{e} _ 3}\\
 \text{South pole: }\ket{k,\pi, \varphi }' = \e ^ {- \ii 2 k \varphi} \ket{k,\pi, \varphi } = \e ^ {- \ii 2 k \varphi} \e ^{-\ii \pi  \op{J}  _ 2} \e ^ {2 \ii \varphi k}  \ket{k,\vec{e} _ 3} = \e ^{-\ii \pi  \op{J}  _ 2} \ket{k,\vec{e} _ 3}
 $$
+
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/smooth_subspace.png" width="80%">
 
 The projector operators and the corresponding subspaces of these two parameterization in the Hilbert space coincide:
+
 $$
 \ket{k,\theta, \varphi } \bra{k,\theta, \varphi } =\ket{k,\theta, \varphi } ' \bra{k,\theta, \varphi } '
 $$
