@@ -41,7 +41,7 @@ $$
 \newcommand{\Partial}[2]{\frac{\partial {#1} }{\partial {#2} }}
 \newcommand{\op}{\hat}
 \newcommand{\uvec}{\hat}
-\newcommand{\dfdas}{: =}
+\newcommand{\defas}{: =}
 \newcommand{\Eqn}[1]{\text{(Eqn. }\ref{#1}\text{)}}
 \newcommand{\dual}{\tilde}
 \newcommand{\vard}{\mathfrak{d}}
@@ -102,7 +102,7 @@ with the initial Hamiltonian $h _ 0 = b \sin \theta \op{J} _ 1 + b \cos \theta \
 >
 >$$
 >\begin{align*}
->& \because \e ^A B \e ^{-A}=B+\sum _ {n=1} ^\infty \frac{B _ n}{n!}, \text{where } B _ 0 \dfdas B,\ B _ n \dfdas [A, B _ {n-1}] ;\ [J _ i, \op{J} _ j] = \ii \varepsilon _ {ijk} \op{J} _ k\\
+>& \because \e ^A B \e ^{-A}=B+\sum _ {n=1} ^\infty \frac{B _ n}{n!}, \text{where } B _ 0 \defas B,\ B _ n \defas [A, B _ {n-1}] ;\ [J _ i, \op{J} _ j] = \ii \varepsilon _ {ijk} \op{J} _ k\\
 >& \therefore \e ^{-\ii \omega t \op{J} _ 3} \op{J} _ 1 \e ^{\ii \omega t \op{J} _ 3} \\
 >& = \op{J} _ 1 + \omega t \op{J} _ 2 - \frac{1}{2!} (\omega t)^2 \op{J} _ 1  + \frac{1}{3!}  (\omega t)^3 \op{J} _ 2 + \cdots \\ 
 >& = \op{J} _ 1 (1 - \frac{1}{2!} (\omega t)^2 + \cdots) + \op{J} _ 2 (\omega t  + \frac{1}{3!}  (\omega t)^3 + \cdots) \\ 
@@ -189,8 +189,8 @@ The representations of rotation operation are
 
 $$
 \begin{align*}
-U _ 3 (\varphi) & = \e ^ {-\ii \varphi \op{J} _ 3} \dfdas \id + \frac{\varphi}{ \ii} \op{J} _ 3 + \frac{1}{2!} \left( \frac{\varphi}{ \ii} \op{J} _ 3 \right)^2 + \cdots \\
-U _ 2 (\theta) & = \e ^ {-\ii \theta \op{J} _ 2} \dfdas \id + \frac{\theta}{\ii} \op{J} _ 2 + \frac{1}{2!} \left( \frac{\theta}{\ii} \op{J} _ 2 \right)^2 + \cdots\\
+U _ 3 (\varphi) & = \e ^ {-\ii \varphi \op{J} _ 3} \defas \id + \frac{\varphi}{ \ii} \op{J} _ 3 + \frac{1}{2!} \left( \frac{\varphi}{ \ii} \op{J} _ 3 \right)^2 + \cdots \\
+U _ 2 (\theta) & = \e ^ {-\ii \theta \op{J} _ 2} \defas \id + \frac{\theta}{\ii} \op{J} _ 2 + \frac{1}{2!} \left( \frac{\theta}{\ii} \op{J} _ 2 \right)^2 + \cdots\\
 U ( \theta , \varphi) & = U _ 3 (\varphi) U _ 2 (\theta) U _ 3 (-\varphi)= \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3}\\
 \end{align*}
 $$
@@ -205,7 +205,7 @@ $$
 The normalized eigenvector $\ket{k,\vec{e} _ 3}$ of $\op{J} _ 3 = \vec{R} (0, 0) \cdot \vec{J}$ are transformed using the unitary operator $U (\theta, \varphi)$. The resulting vector is an eigenvector of the operator $\vec{R} (\theta , \varphi) \cdot \vec{J}$ with eigenvalue $k$.
 
 $$
-\ket{k,\theta, \varphi } \dfdas U ( \theta , \varphi) \ket{k,\vec{e} _ 3} = U _ 3 (\varphi) U _ 2 (\theta) U _ 3 (-\varphi) \ket{k,\vec{e} _ 3}\\
+\ket{k,\theta, \varphi } \defas U ( \theta , \varphi) \ket{k,\vec{e} _ 3} = U _ 3 (\varphi) U _ 2 (\theta) U _ 3 (-\varphi) \ket{k,\vec{e} _ 3}\\
 \vec{R} ( \theta , \varphi )\cdot \op{\vec{J}} \ket{k,\theta, \varphi } = k \ket{k,\theta, \varphi }
 $$
 
@@ -223,7 +223,7 @@ For south pole $-\vec{e} _ 3$, the eigenvector $\ket{k,\pi, \varphi } = \e ^{-\i
 >\end{align*}
 >$$
 >
->- When $\theta=\pi$, the equation $\ket{k,\theta, \varphi } \dfdas U ( \theta , \varphi) \ket{k,\vec{e} _ 3} = U _ 3 (\varphi) U _ 2 (\theta) U _ 3 (-\varphi) \ket{k,\vec{e} _ 3}$ becomes
+>- When $\theta=\pi$, the equation $\ket{k,\theta, \varphi } \defas U ( \theta , \varphi) \ket{k,\vec{e} _ 3} = U _ 3 (\varphi) U _ 2 (\theta) U _ 3 (-\varphi) \ket{k,\vec{e} _ 3}$ becomes
 >
 >$$
 >\begin{align*}
@@ -254,17 +254,94 @@ $$
 
 ### Mead-Berry connection and Berry phase for adiabatic evolutions - magnetic monopole potentials
 
+#### Mead-Berry connection one-form
+
 Mead-Berry connection one-form $A^k$ for the adabatic evolution of the Hamiltonian ($\ref{Hamiltonian}$) is
+
 $$
 A ^ k (R) = A _ i ^ k \dd R ^ i = \ii \bra{k,R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i\\
 $$
+
 where $R^i$ corresponding to $\theta$ and $\varphi$. The matrix of one-forms is
+
 $$
 A ^ {k ' k} (R ^ i) = A ^ {k ' k} _ i d R ^ i = \ii \bra{k ',R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i\\
 $$
 
+On the patch $O _ 1$, we define $\op{A} _ \theta$ and $\op{A} _ \varphi$ for future use. __Notice! $\theta \ne \pi$!__
 
+$$
+r \op{A} _ \theta \defas A ^ {k'k} _ \theta = \ii \bra{k',\theta,\varphi} \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi}\\
+r \sin \theta \op{A} _ \varphi \defas A ^ {k'k} _ \varphi = \ii \bra{k',\theta,\varphi} \frac{\partial}{\partial \varphi} \ket{k,\theta,\varphi}
+$$
 
+>$$
+>\begin{align*}
+>A ^ {k'k} _ \theta & = \ii \bra{k',\theta,\varphi} \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi} \\
+>& = \bra{k',\vec{e} _ 3} \ii U ^ \dagger ( \theta , \varphi) \frac{\partial}{\partial \theta} U ( \theta , \varphi) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k',\vec{e} _ 3} \ii \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \frac{\partial}{\partial \theta} (\e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k',\vec{e} _ 3} \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \op{J} _ 2 \e ^ {\ii \varphi \op{J} _ 3}  \ket{k,\vec{e} _ 3} \\
+>& = \bra{k',\vec{e} _ 3} \e ^ {-\ii \varphi \op{J} _ 3}  \op{J} _ 2 \e ^ {\ii \varphi \op{J} _ 3}  \ket{k,\vec{e} _ 3} \\
+>& = \bra{k',\vec{e} _ 3} ( \op{J} _ 2 \cos \varphi -\op{J} _ 1 \sin \varphi ) \ket{k,\vec{e} _ 3} \\
+>A ^ {k'k} _ \varphi & = \ii \bra{k',\theta,\varphi} \frac{\partial}{\partial \varphi} \ket{k,\theta,\varphi} \\
+>& = \bra{k',\vec{e} _ 3} \ii U ^ \dagger ( \theta , \varphi) \frac{\partial}{\partial \varphi} U ( \theta , \varphi) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k',\vec{e} _ 3} \ii \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \frac{\partial}{\partial \varphi} (\e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k',\vec{e} _ 3} ( \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \e ^ {-\ii \varphi \op{J} _ 3}  \op{J} _ 3 \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} - \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \e ^ {-\ii \varphi \op{J} _ 3} \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \op{J} _ 3 ) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k',\vec{e} _ 3} ( \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \op{J} _ 3 \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} - \op{J} _ 3 ) \ket{k,\vec{e} _ 3}  \\
+>& = \bra{k',\vec{e} _ 3} ( \e ^ {-\ii \varphi \op{J} _ 3}  (\op{J} _ 3\cos \theta - \op{J} _ 1 \sin \theta) \e ^ {\ii \varphi \op{J} _ 3} - \op{J} _ 3 ) \ket{k,\vec{e} _ 3}  \\
+>& = \bra{k',\vec{e} _ 3} (\op{J} _ 3 \cos \theta -  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta  - \op{J} _ 3 ) \ket{k,\vec{e} _ 3}  \\
+>& = \bra{k',\vec{e} _ 3} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 )) \ket{k,\vec{e} _ 3}  \\
+>\end {align*}
+>$$
+>
+
+For diagonal matrix elements, we have
+$$
+A _ \theta ^ k (\theta , \varphi) = 0 \\
+A _ \varphi ^ k (\theta , \varphi) = k (\cos \theta -1)
+$$
+On the patch $O _ 2(\theta \ne 0)$, we repeat the calculation
+
+$$
+r \op{A}' _ \theta \defas A' ^ {k'k} _ \theta = \ii \bra{k',\theta,\varphi} ' \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi} ' \\
+r \sin \theta \op{A}' _ \varphi \defas A' ^ {k'k} _ \varphi = \ii \bra{k',\theta,\varphi} ' \frac{\partial}{\partial \varphi} \ket{k,\theta,\varphi} ' 
+$$
+
+>$$
+>\begin{align*}
+>A' ^ {k'k} _ \theta & = \ii \bra{k',\theta,\varphi}' \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi}' \\
+>& = \bra{k',\vec{e} _ 3} \ii U ^ \dagger ( \theta , \varphi) \e ^ { \ii 2 k \varphi} \frac{\partial}{\partial \theta} \e ^ {- \ii 2 k \varphi} U ( \theta , \varphi) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k',\vec{e} _ 3} \ii \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \e ^ { \ii 2 k \varphi} \frac{\partial}{\partial \theta} (\e ^ {- \ii 2 k \varphi} \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k',\vec{e} _ 3} ( \op{J} _ 2 \cos \varphi -\op{J} _ 1 \sin \varphi ) \ket{k,\vec{e} _ 3} \\
+>A' ^ {k'k} _ \varphi & = \ii \bra{k',\theta,\varphi}' \frac{\partial}{\partial \varphi} \ket{k,\theta,\varphi}' \\
+>& = \bra{k',\vec{e} _ 3} \ii U ^ \dagger ( \theta , \varphi) \e ^ { \ii 2 k \varphi} \frac{\partial}{\partial \varphi} \e ^ {- \ii 2 k \varphi} U ( \theta , \varphi) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k',\vec{e} _ 3} \ii \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \e ^ {- \ii 2 k \varphi} \frac{\partial}{\partial \varphi} (\e ^ {- \ii 2 k \varphi} \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k',\vec{e} _ 3} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 ) + 2 k)\ket{k,\vec{e} _ 3}  \\
+>\end {align*}
+>$$
+>
+
+For diagonal matrix elements, we have
+$$
+A ' ^ {k} _ \theta  (\theta , \varphi) = 0 \\
+A ' ^ {k} _ \varphi (\theta , \varphi) = k (\cos \theta +1)
+$$
+Thus, the difference of two patches is
+$$
+A ' ^ {k} _ \varphi (\theta , \varphi) - A ^ {k} _ \varphi (\theta , \varphi) = 2 k
+$$
+
+#### Mead-Berry curvature two-form
+
+The Mead-Berry curvature two-form is defined as
+$$
+\begin{align*}
+F ^ k & = \dd A ^ k \\
+& = \frac{\partial A ^ k _ \theta}{\partial \varphi} \dd \varphi \times \dd \theta +  \frac{\partial A ^ k _ \varphi}{\partial \theta} \dd \theta \times \dd \varphi\\
+& = F ^ k _ {\theta \varphi} \dd \theta \times \dd \varphi \\
+& = - k \sin \theta \dd \theta \times \dd \varphi
+\end{align*}
+$$
 
 
 
