@@ -256,7 +256,11 @@ $$
 
 Mead-Berry connection one-form $A^k$ for the adabatic evolution of the Hamiltonian ($\ref{Hamiltonian}$) is
 $$
-A ^ k (R) = A _ i ^ k \dd R ^ i = \ii \bra{k,R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i\\ 
+A ^ k (R) = A _ i ^ k \dd R ^ i = \ii \bra{k,R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i\\
+$$
+where $R^i$ corresponding to $\theta$ and $\varphi$. The matrix of one-forms is
+$$
+A ^ {k ' k} (R ^ i) = A ^ {k ' k} _ i d R ^ i = \ii \bra{k ',R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i\\
 $$
 
 
