@@ -155,7 +155,7 @@ $$
   - Hamiltonian commutes with $\op{\vec{X}} \cdot \op{\vec{J}}$, instead of $\op{\vec{J}} ^2$.
   - The electronic angular momentum is not a good quantum number, because one does not have spherical symmetry but only axial symmetry about the internuclear axis $\op{\vec{X}}$.
 
-<img src = "assets/position_operator.png" width="80%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/position_operator.png" width="80%">
 
 >$$
 >\begin{align*}
@@ -182,7 +182,7 @@ $$
 
 Applying ($\theta,\varphi$)-dependent rotations to an eigenvector $\ket{k , \vec{e}_3}$ gives unit vector along arbitrary direction.
 
-<img src = "assets/rotation_of_e3.png" width="80%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/rotation_of_e3.png" width="80%">
 
 The representations of rotation operation are 
 $$
@@ -239,7 +239,7 @@ $$
 \text{North pole: }\ket{k,0, \varphi }' = \e ^ {- \ii 2 k \varphi} \ket{k, \vec{e} _ 3}\\
 \text{South pole: }\ket{k,\pi, \varphi }' = \e ^ {- \ii 2 k \varphi} \ket{k,\pi, \varphi } = \e ^ {- \ii 2 k \varphi} \e ^{-\ii \pi  \op{J}  _ 2} \e ^ {2 \ii \varphi k}  \ket{k,\vec{e} _ 3} = \e ^{-\ii \pi  \op{J}  _ 2} \ket{k,\vec{e} _ 3}
 $$
-<img src = "assets/smooth_subspace.png" width="80%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/smooth_subspace.png" width="80%">
 
 The projector operators and the corresponding subspaces of these two parameterization in the Hilbert space coincide:
 $$
