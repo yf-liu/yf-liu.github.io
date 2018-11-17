@@ -8,11 +8,11 @@ tags:
 
 
 
-# Spinning quantum system in an external magnetic field
+## Spinning quantum system in an external magnetic field
 
 Key words: periodic rotation, exact solution, Aharonov-Anandan phase. 
 
-## The parameterization of the Basis Vector
+### The parameterization of the Basis Vector
 
 Hamiltonian: 
 
@@ -53,9 +53,9 @@ $$
 \newcommand{\norm}[1]{\left\|{#1}\right\|}
 \newcommand{\set}[1]{\left\lbrace{#1}\right\rbrace}
 \newcommand{\sgn}{\operatorname{sgn}}
-\notag
 
 h(\vec{R} (t)) = - \frac{B g e}{2 m c} \vec{R} (t) \cdot \op{\vec{J}} = b \vec{R} (t) \cdot \op{\vec{J}}
+\label{Hamiltonian}
 $$
 
 with parameter $\vec{R} (t)$ and angular momentum operator $\op{\vec{J}}$. The parameter space is a unit sphere.
@@ -251,6 +251,24 @@ The projector operators and the corresponding subspaces of these two parameteriz
 $$
 \ket{k,\theta, \varphi } \bra{k,\theta, \varphi } =\ket{k,\theta, \varphi } ' \bra{k,\theta, \varphi } '
 $$
+
+### Mead-Berry connection and Berry phase for adiabatic evolutions - magnetic monopole potentials
+
+Mead-Berry connection one-form $A^k$ for the adabatic evolution of the Hamiltonian ($\ref{Hamiltonian}$) is
+$$
+A ^ k (R) = A _ i ^ k \dd R ^ i = \ii \bra{k,R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i\\ 
+$$
+
+
+
+
+
+
+
+
+
+
+
 
 
 
