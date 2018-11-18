@@ -16,6 +16,8 @@ Key words: periodic rotation, exact solution, Aharonov-Anandan phase.
 
 #### Hamiltonian and parameter space
 
+---
+
 Hamiltonian: 
 
 $$
@@ -118,6 +120,8 @@ with the initial Hamiltonian $h _ 0 = b \sin \theta \op{J} _ 1 + b \cos \theta \
 
 #### Eigenvectors and eigenvalues
 
+---
+
 The eigenvectors are (can't be proved?)
 
 $$
@@ -187,6 +191,8 @@ $$
 
 #### Rotation operator
 
+---
+
 Applying ($\theta,\varphi$)-dependent rotations to an eigenvector $\ket{k , \vec{e}_3}$ gives unit vector along arbitrary direction.
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/rotation_of_e3.png" width="80%">
@@ -209,6 +215,8 @@ $$
 $$
 
 #### Different parameterizations
+
+---
 
 The normalized eigenvector $\ket{k,\vec{e} _ 3}$ of $\op{J} _ 3 = \vec{R} (0, 0) \cdot \vec{J}$ are transformed using the unitary operator $U (\theta, \varphi)$. The resulting vector is an eigenvector of the operator $\vec{R} (\theta , \varphi) \cdot \vec{J}$ with eigenvalue $k$.
 $$
@@ -262,6 +270,8 @@ $$
 ### Mead-Berry connection and Berry phase for adiabatic evolutions - magnetic monopole potentials
 
 #### Mead-Berry connection one-form
+
+---
 
 Mead-Berry connection one-form $A^k$ for the adabatic evolution of the Hamiltonian ($\ref{Hamiltonian_of_system}$) is
 
@@ -359,6 +369,8 @@ $$
 
 #### Mead-Berry curvature two-form
 
+---
+
 The Mead-Berry curvature two-form is defined as
 
 $$
@@ -409,6 +421,8 @@ F ^ k & = \dd A' ^ k \\
 $$
 
 #### Berry phase
+
+---
 
 Berry phase for a closed path $\mathbf{C}$ is
 
