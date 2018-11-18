@@ -456,11 +456,14 @@ If the state vectors $\ket{k,R}$ are the eigenvectors of $\op{\vec{J}}^2$, then 
 ---
 
 We write the connection one-form $A^k$ as a one-form in $\realset ^3$ in the Cartesian basis ($\dd r, r \dd \theta, r \sin \theta \dd \varphi$).
+
 $$
 A ^ k = A ^ k _ r \dd r + A ^ k _ \theta \dd \theta + A ^ k _ \varphi \dd \varphi \\
 A ^ k = \op{A} ^ k _ r \dd r + \op{A} ^ k _ \theta r \dd \theta + \op{A} ^ k _ \varphi r \sin \theta \dd \varphi
 $$
+
 where the spherical components are defined as
+
 $$
 \op{A} ^ k _ r \defas A ^ k _ r = \ii \bra{k,r,\theta,\varphi} \frac{\partial}{\partial r} \ket{k,r,\theta,\varphi}\\
 r \op{A} ^ k _ \theta \defas A ^ k _ \theta = \ii \bra{k,r,\theta,\varphi} \frac{\partial}{\partial \theta} \ket{k,r,\theta,\varphi}\\
