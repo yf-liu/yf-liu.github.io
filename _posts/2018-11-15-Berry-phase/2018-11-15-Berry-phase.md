@@ -14,6 +14,8 @@ Key words: periodic rotation, exact solution, Aharonov-Anandan phase.
 
 ### The parameterization of the Basis Vector
 
+#### Hamiltonian and parameter space
+
 Hamiltonian: 
 
 $$
@@ -55,7 +57,7 @@ $$
 \newcommand{\sgn}{\operatorname{sgn}}
 
 h(\vec{R} (t)) = - \frac{B g e}{2 m c} \vec{R} (t) \cdot \op{\vec{J}} = b \vec{R} (t) \cdot \op{\vec{J}}
-\label{Hamiltonian}
+\label{Hamiltonian_of_system}
 $$
 
 with parameter $\vec{R} (t)$ and angular momentum operator $\op{\vec{J}}$. The parameter space is a unit sphere.
@@ -114,8 +116,9 @@ with the initial Hamiltonian $h _ 0 = b \sin \theta \op{J} _ 1 + b \cos \theta \
 >- Generally, $\e ^{-\ii a  \op{J} _ i}  \op{J}  _ j \e ^{\ii a  \op{J}  _ i} =   \op{J}  _ j (\delta _ {ij} + (1-\delta _ {ij}) \cos a) +  \op{J}  _ k \varepsilon _ {ijk} \sin a$.
 >
 
-The eigenvectors are (can't be proved?)
+#### Eigenvectors and eigenvalues
 
+The eigenvectors are (can't be proved?)
 $$
 h(R) \ket{k , R} = b \vec{R} (t) \cdot \op{\vec{J}} \ket{k , R} = b k \ket{k , R}
 $$
@@ -181,6 +184,8 @@ $$
 >$$
 >
 
+#### rotation operator
+
 Applying ($\theta,\varphi$)-dependent rotations to an eigenvector $\ket{k , \vec{e}_3}$ gives unit vector along arbitrary direction.
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/rotation_of_e3.png" width="80%">
@@ -202,8 +207,9 @@ $$
 \end{align*}
 $$
 
-The normalized eigenvector $\ket{k,\vec{e} _ 3}$ of $\op{J} _ 3 = \vec{R} (0, 0) \cdot \vec{J}$ are transformed using the unitary operator $U (\theta, \varphi)$. The resulting vector is an eigenvector of the operator $\vec{R} (\theta , \varphi) \cdot \vec{J}$ with eigenvalue $k$.
+#### Different parameterizations
 
+The normalized eigenvector $\ket{k,\vec{e} _ 3}$ of $\op{J} _ 3 = \vec{R} (0, 0) \cdot \vec{J}$ are transformed using the unitary operator $U (\theta, \varphi)$. The resulting vector is an eigenvector of the operator $\vec{R} (\theta , \varphi) \cdot \vec{J}$ with eigenvalue $k​$.
 $$
 \ket{k,\theta, \varphi } \defas U ( \theta , \varphi) \ket{k,\vec{e} _ 3} = U _ 3 (\varphi) U _ 2 (\theta) U _ 3 (-\varphi) \ket{k,\vec{e} _ 3}\\
 \vec{R} ( \theta , \varphi )\cdot \op{\vec{J}} \ket{k,\theta, \varphi } = k \ket{k,\theta, \varphi }
@@ -256,7 +262,7 @@ $$
 
 #### Mead-Berry connection one-form
 
-Mead-Berry connection one-form $A^k$ for the adabatic evolution of the Hamiltonian ($\ref{Hamiltonian}$) is
+Mead-Berry connection one-form $A^k$ for the adabatic evolution of the Hamiltonian ($\ref{Hamiltonian_of_system}$) is
 
 $$
 A ^ k (R) = A _ i ^ k \dd R ^ i = \ii \bra{k,R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i\\
