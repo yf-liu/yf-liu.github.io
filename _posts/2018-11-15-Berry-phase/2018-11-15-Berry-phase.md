@@ -268,7 +268,20 @@ $$
 A ^ {k ' k} (R ^ i) = A ^ {k ' k} _ i d R ^ i = \ii \bra{k ',R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i\\
 $$
 
-On the patch $O _ 1$, we define $\op{A} _ \theta$ and $\op{A} _ \varphi$ for future use. __Notice! $\theta \ne \pi$!__
+On the patch $O _ 1$ ($\theta \ne \pi$), we define $\op{A} _ \theta$ and $\op{A} _ \varphi$ for future use. 
+
+>The line element for an infinitesimal displacement from $(r,\theta,\varphi)$ to $(r + \dd r,\theta + \dd \theta,\varphi + \dd \varphi)$ is
+>
+>$$
+>\dd \vec{r} = \dd r \vec{e} _ r +r \dd \theta \vec{e} _ \theta + r \sin \theta \dd \varphi \vec{e} _ \varphi
+>$$
+>
+>namely,
+>$$
+>\frac{\partial \vec{r}}{\partial \theta} = r \vec{e} _ \theta\\
+>\frac{\partial \vec{r}}{\partial \varphi} = r \sin \theta \vec{e} _ \varphi\\
+>$$
+>
 
 $$
 r \op{A} _ \theta \defas A ^ {k'k} _ \theta = \ii \bra{k',\theta,\varphi} \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi}\\
@@ -343,17 +356,83 @@ The Mead-Berry curvature two-form is defined as
 $$
 \begin{align*}
 F ^ k & = \dd A ^ k \\
-& = \frac{\partial A ^ k _ \theta}{\partial \varphi} \dd \varphi \times \dd \theta +  \frac{\partial A ^ k _ \varphi}{\partial \theta} \dd \theta \times \dd \varphi\\
-& = F ^ k _ {\theta \varphi} \dd \theta \times \dd \varphi \\
-& = - k \sin \theta \dd \theta \times \dd \varphi
+& = \frac{\partial A ^ k _ \theta}{\partial \varphi} \dd \varphi \wedge \dd \theta +  \frac{\partial A ^ k _ \varphi}{\partial \theta} \dd \theta \wedge \dd \varphi\\
+& = F ^ k _ {\theta \varphi} \dd \theta \wedge \dd \varphi \\
+& = - k \sin \theta \dd \theta \wedge \dd \varphi
 \end{align*}
 $$
 
+>Wedge product (from [Wikipedia](https://en.wikipedia.org/wiki/Exterior_algebra))
+>
+>The exterior product of two vectors $\vec{u}$ and $\vec{v}$, denoted by $\vec{u} \wedge \vec{v}$, is called a bivector and lives in a space called the exterior square, a vector space that is distinct from the original space of vectors. The magnitude of $\vec{u} \wedge \vec{v}$ can be interpreted as the area of the parallelogram with sides $\vec{u}$ and $\vec{v}$, which in three dimensions can also be computed using the cross product of the two vectors. 
+>
+>Anticommutative:
+>
+>$$
+>\vec{u} \wedge \vec{v} = - \vec{v} \wedge \vec{u}
+>$$
+>
+>Example:
+>
+>$$
+>\vec{u} = \begin{bmatrix} a \\ b \end{bmatrix} = a \vec{e} _ 1 + b \vec{e} _ 2,\ \vec{v} = \begin{bmatrix} c \\ d \end{bmatrix} = c \vec{e} _ 1 + d \vec{e} _ 2\\
+>\text{Area} = \abs{\det \begin{bmatrix} \vec{u} & \vec{v}  \end{bmatrix}} = \abs{\det \begin{bmatrix} a & c \\ b & d \end{bmatrix}} = \abs{ad-bc}\\
+>\vec{u} \wedge \vec{v} = ( a \vec{e} _ 1 + b \vec{e} _ 2) ( c \vec{e} _ 1 + d \vec{e} _ 2) = (ad-bc) \vec{e} _ 1 \wedge \vec{e} _ 2
+>$$
+>
+><img src = "assets/wedge_product.png" width="50%">
+>
+>$\dd \theta \wedge \dd \varphi$ :
+>$$
+>\dd \theta \wedge \dd \varphi = \dd \theta \otimes \dd \varphi -\dd \varphi \otimes \dd \theta = - \dd \varphi \wedge \dd \theta
+>$$
+>
+>where $\otimes$ is tensor product.
 
+The curvature two-form $F^k$ is independent of the choice of local coordinates. Using $A'^k$ in $O _ 2$, the curvature is
+$$
+\begin{align*}
+F ^ k & = \dd A' ^ k \\
+& = \frac{\partial A' ^ k _ \theta}{\partial \varphi} \dd \varphi \wedge \dd \theta +  \frac{\partial A' ^ k _ \varphi}{\partial \theta} \dd \theta \wedge \dd \varphi\\
+& = - k \sin \theta \dd \theta \wedge \dd \varphi
+\end{align*}
+$$
 
+#### Berry phase
 
+Berry phase for a closed path $\mathbf{C}$ is
 
+$$
+\gamma _ k (\mathbf{C}) = \int _ S F ^ k = - k \int _ S \sin \theta \dd \theta \wedge \dd \varphi = -k \int _ S \dd \Omega = - k \Omega (\mathbf{C})  \mod 2\pi
+$$
 
+>Solid angle:
+>$$
+>\Omega(\mathbf{C}) \defas \int _ S \sin \theta \dd \theta \wedge \dd \varphi
+>$$
+>
+
+Using $S'$, Berry phase is
+$$
+\begin{align*}
+\gamma _ k (\mathbf{C}) & = \int _ {S'} F ^ k \\
+& = - k \int _ {S'} \sin \theta \dd \theta \wedge \dd \varphi \\
+& = k \int _ {S^2 \backslash S} \sin \theta \dd \theta \wedge \dd \varphi \\
+& = k \int _ {S^2} \sin \theta \dd \theta \wedge \dd \varphi - k \int _ {S} \sin \theta \dd \theta \wedge \dd \varphi \\
+& = k (4 \pi - \Omega (\mathbf{C})) \quad \mod 2\pi\\
+& = 4 \pi k - k \Omega (\mathbf{C}) \quad \mod 2\pi\\
+\end{align*}
+$$
+<img src = "assets/normal_sphere.png" width="50%">
+
+where $S^2 \backslash S$ denotes the surface with the same area as $S'$ but whose normal points out of the sphere $S^2$. $k$ is the eigenvalues of $\op{J} _ 3$.
+$$
+k = 0,\pm \frac{1}{2},\pm 1,\pm \frac{3}{2},\pm 2,\cdots\\
+(4 \pi k ) \mod 2\pi  = 0\\
+(4 \pi k - k \Omega (\mathbf{C}) ) \mod 2\pi = (- k \Omega (\mathbf{C}) ) \mod 2\pi 
+$$
+
+The Berry phase of a loop is unique even using the different coordinates.
 
 
 
@@ -370,3 +449,5 @@ to-do list:
 References
 
 [1] Pascazio, S. "The geometric phase in quantum systems." (2003): 12345.
+
+[2] 
