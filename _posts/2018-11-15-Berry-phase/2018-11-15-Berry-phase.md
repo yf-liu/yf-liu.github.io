@@ -184,7 +184,7 @@ $$
 >$$
 >
 
-#### rotation operator
+#### Rotation operator
 
 Applying ($\theta,\varphi$)-dependent rotations to an eigenvector $\ket{k , \vec{e}_3}$ gives unit vector along arbitrary direction.
 
