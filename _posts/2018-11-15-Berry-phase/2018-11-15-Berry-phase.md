@@ -400,7 +400,7 @@ $$
 >\vec{u} \wedge \vec{v} = ( a \vec{e} _ 1 + b \vec{e} _ 2) ( c \vec{e} _ 1 + d \vec{e} _ 2) = (ad-bc) \vec{e} _ 1 \wedge \vec{e} _ 2
 >$$
 >
-><img src = "assets/wedge_product.png" width="50%">
+><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/wedge_product.png" width="50%">
 >
 >$\dd \theta \wedge \dd \varphi$ :
 >
@@ -450,7 +450,7 @@ $$
 \end{align*}
 $$
 
-<img src = "assets/normal_sphere.png" width="50%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/normal_sphere.png" width="50%">
 
 where $S^2 \backslash S$ denotes the surface with the same area as $S'$ but whose normal points out of the sphere $S^2$. $k$ is the eigenvalues of $\op{J} _ 3$.
 
