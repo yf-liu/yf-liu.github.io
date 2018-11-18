@@ -26,6 +26,7 @@ $$
 \newcommand{\op}{\hat}
 \newcommand{\id}{\mathbf{I}}
 \newcommand{\Tr}[1]{\operatorname{Tr}\left\lbrace#1\right\rbrace}
+\newcommand{\realset}{\mathbb{R}}
 \newcommand{\intset}{\mathbb Z }
 \newcommand{\comset }{\mathbb C }
 \newcommand{\innerproduct}[1]{\left\langle #1 \right\rangle}
@@ -40,7 +41,6 @@ $$
 \newcommand{\mani}{\mathcal}
 \newcommand{\field}{\mathscr}
 \newcommand{\Tspace}[1]{T\! {#1}}
-\newcommand{\R}{\mathbb{R}}
 \newcommand{\D}[2]{\frac{\d {#1}}{\d {#2} }}
 \newcommand{\Partial}[2]{\frac{\partial {#1} }{\partial {#2} }}
 \newcommand{\op}{\hat}
@@ -267,13 +267,16 @@ $$
 \ket{k,\theta, \varphi } \bra{k,\theta, \varphi } =\ket{k,\theta, \varphi } ' \bra{k,\theta, \varphi } '
 $$
 
+
 ### Mead-Berry connection and Berry phase for adiabatic evolutions - magnetic monopole potentials
+
+
 
 #### Mead-Berry connection one-form
 
 ---
 
-Mead-Berry connection one-form $A^k$ for the adabatic evolution of the Hamiltonian ($\ref{Hamiltonian_of_system}$) is
+Mead-Berry connection one-form $A^k$ for the adiabatic evolution of the Hamiltonian ($\ref{Hamiltonian_of_system}$) is
 
 $$
 A ^ k (R) = A _ i ^ k \dd R ^ i = \ii \bra{k,R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i\\
@@ -285,25 +288,11 @@ $$
 A ^ {k ' k} (R ^ i) = A ^ {k ' k} _ i d R ^ i = \ii \bra{k ',R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i\\
 $$
 
-On the patch $O _ 1$ ($\theta \ne \pi$), we define $\op{A} _ \theta$ and $\op{A} _ \varphi$ for future use. 
-
->The line element for an infinitesimal displacement from $(r,\theta,\varphi)$ to $(r + \dd r,\theta + \dd \theta,\varphi + \dd \varphi)$ is
->
->$$
->\dd \vec{r} = \dd r \vec{e} _ r +r \dd \theta \vec{e} _ \theta + r \sin \theta \dd \varphi \vec{e} _ \varphi
->$$
->
->namely,
->
->$$
->\frac{\partial \vec{r}}{\partial \theta} = r \vec{e} _ \theta\\
->\frac{\partial \vec{r}}{\partial \varphi} = r \sin \theta \vec{e} _ \varphi\\
->$$
->
+On the patch $O _ 1$ ($\theta \ne \pi$), we have
 
 $$
-r \op{A} _ \theta \defas A ^ {k'k} _ \theta = \ii \bra{k',\theta,\varphi} \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi}\\
-r \sin \theta \op{A} _ \varphi \defas A ^ {k'k} _ \varphi = \ii \bra{k',\theta,\varphi} \frac{\partial}{\partial \varphi} \ket{k,\theta,\varphi}
+A ^ {k'k} _ \theta = \ii \bra{k',\theta,\varphi} \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi}\\
+A ^ {k'k} _ \varphi = \ii \bra{k',\theta,\varphi} \frac{\partial}{\partial \varphi} \ket{k,\theta,\varphi}
 $$
 
 >$$
@@ -336,8 +325,8 @@ $$
 On the patch $O _ 2(\theta \ne 0)$, we repeat the calculation
 
 $$
-r \op{A}' _ \theta \defas A' ^ {k'k} _ \theta = \ii \bra{k',\theta,\varphi} ' \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi} ' \\
-r \sin \theta \op{A}' _ \varphi \defas A' ^ {k'k} _ \varphi = \ii \bra{k',\theta,\varphi} ' \frac{\partial}{\partial \varphi} \ket{k,\theta,\varphi} ' 
+A' ^ {k'k} _ \theta = \ii \bra{k',\theta,\varphi} ' \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi} ' \\
+A' ^ {k'k} _ \varphi = \ii \bra{k',\theta,\varphi} ' \frac{\partial}{\partial \varphi} \ket{k,\theta,\varphi} '
 $$
 
 >$$
@@ -452,16 +441,108 @@ $$
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/normal_sphere.png" width="50%">
 
-where $S^2 \backslash S$ denotes the surface with the same area as $S'$ but whose normal points out of the sphere $S^2$. $k$ is the eigenvalues of $\op{J} _ 3$.
+where $S^2 \backslash S$ denotes the surface with the same area as $S'$ but whose normal points out of the sphere $S^2$. The Berry phase of a loop is unique even using the different coordinates. 
 
 $$
-k = 0,\pm \frac{1}{2},\pm 1,\pm \frac{3}{2},\pm 2,\cdots\\
-(4 \pi k ) \mod 2\pi  = 0\\
-(4 \pi k - k \Omega (\mathbf{C}) ) \mod 2\pi = (- k \Omega (\mathbf{C}) ) \mod 2\pi 
+(4 \pi k - k \Omega (\mathbf{C}) ) \mod 2\pi = (- k \Omega (\mathbf{C}) ) \mod 2\pi \\
+(4 \pi k ) \mod 2\pi  = 0 \\
+k = 0,\pm \frac{1}{2},\pm 1,\pm \frac{3}{2},\pm 2,\cdots
 $$
 
-The Berry phase of a loop is unique even using the different coordinates.
+If the state vectors $\ket{k,R}$ are the eigenvectors of $\op{\vec{J}}^2$, then the possible values of $k$ are from $\ref{value_of_k}$. But if not, then is a new result. (See Chapter 6)
 
+#### Mead-Berry (three-)vector potential
+
+---
+
+We write the connection one-form $A^k$ as a one-form in $\realset ^3$ in the Cartesian basis ($\dd r, r \dd \theta, r \sin \theta \dd \varphi$).
+$$
+A ^ k = A ^ k _ r \dd r + A ^ k _ \theta \dd \theta + A ^ k _ \varphi \dd \varphi \\
+A ^ k = \op{A} ^ k _ r \dd r + \op{A} ^ k _ \theta r \dd \theta + \op{A} ^ k _ \varphi r \sin \theta \dd \varphi
+$$
+where the spherical components are defined as
+$$
+\op{A} ^ k _ r \defas A ^ k _ r = \ii \bra{k,r,\theta,\varphi} \frac{\partial}{\partial r} \ket{k,r,\theta,\varphi}\\
+r \op{A} ^ k _ \theta \defas A ^ k _ \theta = \ii \bra{k,r,\theta,\varphi} \frac{\partial}{\partial \theta} \ket{k,r,\theta,\varphi}\\
+r \sin \theta \op{A} ^ k _ \varphi \defas A ^ k _ \varphi = \ii \bra{k,r,\theta,\varphi} \frac{\partial}{\partial \varphi} \ket{k,r,\theta,\varphi}
+$$
+
+>The line element for an infinitesimal displacement from $(r,\theta,\varphi)$ to $(r + \dd r,\theta + \dd \theta,\varphi + \dd \varphi)$ is
+>
+>$$
+>\dd \vec{r} = \vec{e} _ r \dd r + \vec{e} _ \theta r \dd \theta + \vec{e} _ \varphi r \sin \theta \dd \varphi
+>$$
+>
+>namely,
+>
+>$$
+>\frac{\partial \vec{r}}{\partial \theta} = \vec{e} _ \theta r \\
+>\frac{\partial \vec{r}}{\partial \varphi} = \vec{e} _ \varphi r \sin \theta\\
+>$$
+>
+>The gradient is
+>
+>$$
+>\nabla = \frac {\partial}{\partial r} \vec{e} _ r + \frac{1}{r} \frac{\partial}{\partial \theta} \vec{e} _ \theta + \frac{1}{r \sin \theta} \frac{\partial}{\partial \varphi} \vec{e} _ \varphi
+>$$
+>
+>The curl is
+>
+>$$
+>\begin{align*}
+>\nabla \times \vec{A} & = \frac{1}{r \sin \theta} \left( \frac{\partial}{\partial \theta} ( A _ \varphi \sin \theta ) - \frac{\partial A _ \theta}{\partial \varphi}  \right) \vec{e} _ r\\
+>& \quad + \frac{1}{r} \left( \frac{1}{\sin \theta} \frac{\partial A _ r}{\partial \varphi} - \frac{\partial}{\partial r} (r A _ \varphi) \right) \vec{e} _ \theta\\
+>& \quad + \frac{1}{r} \left( \frac{\partial}{\partial r} (r A _ \theta) - \frac{\partial A _ r}{\partial \theta} \right) \vec{e} _ \varphi\\
+>\end{align*}
+>$$
+>
+
+They yields the components of the Mead-Berry vector potential ($r=\text{const.}$) in the spherical coordinates,
+
+$$
+\begin{align*}
+\op{\vec{A}} ^ k & = \op{A} ^ k _ r \vec{e} _ r + \op{A} ^ k _ \theta \vec{e} _ \theta + \op{A} ^ k _ \varphi \vec{e} _ \varphi = \frac{k ( \cos \theta  - 1 )}{r \sin \theta} \vec{e} _ \varphi \ ,\ \theta \ne \pi \\
+\op{\vec{A}}' ^ k & = \op{A} ' ^ k _ r \vec{e} _ r + \op{A} ' ^ k _ \theta \vec{e} _ \theta + \op{A} ' ^ k _ \varphi \vec{e} _ \varphi = \frac{k ( \cos \theta  + 1 )}{r \sin \theta} \vec{e} _ \varphi \ ,\ \theta \ne 0 \\
+ \end{align*}
+$$
+
+>$$
+>\begin{align*}
+>\op{\vec{A}} ^ k & = \op{A} ^ k _ r \vec{e} _ r + \op{A} ^ k _ \theta \vec{e} _ \theta + \op{A} ^ k _ \varphi \vec{e} _ \varphi\\
+>& = \ii \bra{k,r,\theta,\varphi} ( \vec{e} _ r \frac{\partial}{\partial r} + \vec{e} _ \theta  \frac{1}{r} \frac{\partial}{\partial \theta} +  \vec{e} _ \varphi \frac{1}{r \sin \theta} \frac{\partial}{\partial \varphi} )  \ket{k,r,\theta,\varphi} \\
+>& = \ii \bra{k,\vec{e} _ 3} \e ^ {- \ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ( \vec{e} _ r \frac{\partial}{\partial r} + \vec{e} _ \theta  \frac{1}{r} \frac{\partial}{\partial \theta} +  \vec{e} _ \varphi \frac{1}{r \sin \theta} \frac{\partial}{\partial \varphi} ) \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \ket{k,\vec{e} _ 3} \\
+>& = \bra{k,\vec{e} _ 3} ( \vec{e} _ \theta  \frac{1}{r} ( \op{J} _ 2 \cos \varphi -\op{J} _ 1 \sin \varphi ) + \vec{e} _ \varphi \frac{1}{r \sin \theta} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 )) ) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k,\vec{e} _ 3} \vec{e} _ \varphi \frac{1}{r \sin \theta} \op{J} _ 3 ( \cos \theta  - 1 ) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k,\vec{e} _ 3} \vec{e} _ \varphi \frac{1}{r \sin \theta} k ( \cos \theta  - 1 ) \ket{k,\vec{e} _ 3} \\
+>& = \frac{k ( \cos \theta  - 1 )}{r \sin \theta} \vec{e} _ \varphi \\
+>\op{\vec{A}} ' ^ k & = \op{A} ' ^ k _ r \vec{e} _ r + \op{A} ' ^ k _ \theta \vec{e} _ \theta + \op{A} ' ^ k _ \varphi \vec{e} _ \varphi\\
+>& = \ii \bra{k,r,\theta,\varphi} ' ( \vec{e} _ r \frac{\partial}{\partial r} + \vec{e} _ \theta  \frac{1}{r} \frac{\partial}{\partial \theta} +  \vec{e} _ \varphi \frac{1}{r \sin \theta} \frac{\partial}{\partial \varphi} )  \ket{k,r,\theta,\varphi} ' \\
+>& = \ii \bra{k,\vec{e} _ 3} \e ^ {- \ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ( \vec{e} _ r \frac{\partial}{\partial r} + \vec{e} _ \theta  \frac{1}{r} \frac{\partial}{\partial \theta} +  \vec{e} _ \varphi \frac{1}{r \sin \theta} \frac{\partial}{\partial \varphi} ) \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \ket{k,\vec{e} _ 3} \\
+>& = \bra{k,\vec{e} _ 3} ( \vec{e} _ \theta  \frac{1}{r} ( \op{J} _ 2 \cos \varphi -\op{J} _ 1 \sin \varphi ) + \vec{e} _ \varphi \frac{1}{r \sin \theta} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 ) + 2 k ) ) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k,\vec{e} _ 3} \vec{e} _ \varphi \frac{1}{r \sin \theta} (\op{J} _ 3 ( \cos \theta  - 1 ) + 2 k ) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k,\vec{e} _ 3} \vec{e} _ \varphi \frac{1}{r \sin \theta} k ( \cos \theta  + 1 ) \ket{k,\vec{e} _ 3} \\
+>& = \frac{k ( \cos \theta + 1 )}{r \sin \theta} \vec{e} _ \varphi \\
+> \end{align*}
+>$$
+>
+
+They are related by the gauge transformation.
+
+$$
+\op{\vec{A}} ' ^ k - \op{\vec{A}} ^ k = \frac{2 k}{r \sin \theta} \vec{e} _ \varphi
+$$
+
+The corresponding curvature three-vector is
+
+$$
+\begin{align*}
+\vec{F} ^ k & = \nabla \times \op{\vec{A}} ^ k \\
+& = \frac{1}{r \sin \theta} \left( \frac{\partial}{\partial \theta} \frac{k ( \cos \theta  - 1 )}{r } \right) \vec{e} _ r + \frac{1}{r} \left(- \frac{\partial}{\partial r}  \frac{k ( \cos \theta  - 1 )}{ \sin \theta}  \right) \vec{e} _ \theta\\
+& = - \frac{k}{r ^ 2} \vec{e} _ r 
+\end{align*}
+$$
+
+<img src = "assets/three_vector.png" width="80%">
 
 
 
