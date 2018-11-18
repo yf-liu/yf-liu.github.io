@@ -383,6 +383,7 @@ $$
 ><img src = "assets/wedge_product.png" width="50%">
 >
 >$\dd \theta \wedge \dd \varphi$ :
+>
 >$$
 >\dd \theta \wedge \dd \varphi = \dd \theta \otimes \dd \varphi -\dd \varphi \otimes \dd \theta = - \dd \varphi \wedge \dd \theta
 >$$
@@ -390,6 +391,7 @@ $$
 >where $\otimes$ is tensor product.
 
 The curvature two-form $F^k$ is independent of the choice of local coordinates. Using $A'^k$ in $O _ 2$, the curvature is
+
 $$
 \begin{align*}
 F ^ k & = \dd A' ^ k \\
@@ -407,12 +409,14 @@ $$
 $$
 
 >Solid angle:
+>
 >$$
 >\Omega(\mathbf{C}) \defas \int _ S \sin \theta \dd \theta \wedge \dd \varphi
 >$$
 >
 
 Using $S'$, Berry phase is
+
 $$
 \begin{align*}
 \gamma _ k (\mathbf{C}) & = \int _ {S'} F ^ k \\
@@ -423,9 +427,11 @@ $$
 & = 4 \pi k - k \Omega (\mathbf{C}) \quad \mod 2\pi\\
 \end{align*}
 $$
+
 <img src = "assets/normal_sphere.png" width="50%">
 
 where $S^2 \backslash S$ denotes the surface with the same area as $S'$ but whose normal points out of the sphere $S^2$. $k$ is the eigenvalues of $\op{J} _ 3$.
+
 $$
 k = 0,\pm \frac{1}{2},\pm 1,\pm \frac{3}{2},\pm 2,\cdots\\
 (4 \pi k ) \mod 2\pi  = 0\\
