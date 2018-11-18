@@ -277,6 +277,7 @@ On the patch $O _ 1$ ($\theta \ne \pi$), we define $\op{A} _ \theta$ and $\op{A}
 >$$
 >
 >namely,
+>
 >$$
 >\frac{\partial \vec{r}}{\partial \theta} = r \vec{e} _ \theta\\
 >\frac{\partial \vec{r}}{\partial \varphi} = r \sin \theta \vec{e} _ \varphi\\
