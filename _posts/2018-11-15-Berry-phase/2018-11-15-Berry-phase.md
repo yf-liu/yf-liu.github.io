@@ -542,7 +542,7 @@ $$
 \end{align*}
 $$
 
-<img src = "assets/three_vector.png" width="80%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/three_vector.png" width="70%">
 
 
 
