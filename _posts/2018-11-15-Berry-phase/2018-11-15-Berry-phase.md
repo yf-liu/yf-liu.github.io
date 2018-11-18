@@ -451,7 +451,7 @@ $$
 
 If the state vectors $\ket{k,R}$ are the eigenvectors of $\op{\vec{J}}^2$, then the possible values of $k$ are from $\ref{value_of_k}$. But if not, then is a new result. (See Chapter 6)
 
-#### Mead-Berry (three-)vector potential
+#### Mead-Berry (three-)vector potential and curvature three-vector
 
 ---
 
