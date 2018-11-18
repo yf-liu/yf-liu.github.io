@@ -119,6 +119,7 @@ with the initial Hamiltonian $h _ 0 = b \sin \theta \op{J} _ 1 + b \cos \theta \
 #### Eigenvectors and eigenvalues
 
 The eigenvectors are (can't be proved?)
+
 $$
 h(R) \ket{k , R} = b \vec{R} (t) \cdot \op{\vec{J}} \ket{k , R} = b k \ket{k , R}
 $$
