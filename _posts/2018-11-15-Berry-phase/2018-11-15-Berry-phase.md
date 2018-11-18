@@ -209,7 +209,7 @@ $$
 
 #### Different parameterizations
 
-The normalized eigenvector $\ket{k,\vec{e} _ 3}$ of $\op{J} _ 3 = \vec{R} (0, 0) \cdot \vec{J}$ are transformed using the unitary operator $U (\theta, \varphi)$. The resulting vector is an eigenvector of the operator $\vec{R} (\theta , \varphi) \cdot \vec{J}$ with eigenvalue $k​$.
+The normalized eigenvector $\ket{k,\vec{e} _ 3}$ of $\op{J} _ 3 = \vec{R} (0, 0) \cdot \vec{J}$ are transformed using the unitary operator $U (\theta, \varphi)$. The resulting vector is an eigenvector of the operator $\vec{R} (\theta , \varphi) \cdot \vec{J}$ with eigenvalue $k$.
 $$
 \ket{k,\theta, \varphi } \defas U ( \theta , \varphi) \ket{k,\vec{e} _ 3} = U _ 3 (\varphi) U _ 2 (\theta) U _ 3 (-\varphi) \ket{k,\vec{e} _ 3}\\
 \vec{R} ( \theta , \varphi )\cdot \op{\vec{J}} \ket{k,\theta, \varphi } = k \ket{k,\theta, \varphi }
@@ -350,7 +350,7 @@ A ' ^ {k} _ \theta  (\theta , \varphi) = 0 \\
 A ' ^ {k} _ \varphi (\theta , \varphi) = k (\cos \theta +1)
 $$
 
-Thus, the difference of two patches is
+Thus, the difference of Mead-Berry connection one-form on two patches is
 
 $$
 A ' ^ {k} _ \varphi (\theta , \varphi) - A ^ {k} _ \varphi (\theta , \varphi) = 2 k
@@ -462,5 +462,3 @@ to-do list:
 References
 
 [1] Pascazio, S. "The geometric phase in quantum systems." (2003): 12345.
-
-[2] 
