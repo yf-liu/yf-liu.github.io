@@ -6,8 +6,6 @@ tags:
   - Berry phase
 ---
 
-[TOC]
-
 
 
 ## Spinning quantum system in an external magnetic field
