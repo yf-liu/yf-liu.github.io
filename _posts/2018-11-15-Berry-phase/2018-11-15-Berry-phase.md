@@ -551,8 +551,8 @@ $$
 >
 >|                                                              |          spin in rotating magnetic field          | a monopole's magnetic field |
 >| :----------------------------------------------------------: | :-----------------------------------------------: | :-------------------------: |
->| $\frac{k (\cos \theta - 1)}{r \sin \theta} \vec{e} _ \varphi$ | Mead-Berry (three-)vector potential $\vec{A} ^ k$ | vector potential $\vec{A}$  |
->|                $-\frac{k }{r^2} \vec{e} _ r$                 |       curvature three-vector $\vec{F} ^ k$        |  magnetic field $\vec{B}$   |
+>| $\frac{k (\cos \theta - 1)}{r \sin \theta} \vec{e} _ \varphi\quad$ | Mead-Berry (three-)vector potential $\vec{A} ^ k$ | vector potential $\vec{A}$  |
+>|             $-\frac{k }{r^2} \vec{e} _ r \quad$              |       curvature three-vector $\vec{F} ^ k$        |  magnetic field $\vec{B}$   |
 >|                           integer                            |                       $2 k$                       |     $\frac{e g}{2 \pi}$     |
 
 
