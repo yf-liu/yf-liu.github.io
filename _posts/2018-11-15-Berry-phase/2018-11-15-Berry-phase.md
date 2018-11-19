@@ -547,7 +547,13 @@ $$
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/three_vector.png" width="70%">
 
-
+>The analogy between spin in rotating magnetic field and a monopole's magnetic field implies that the existence of monopole can explain why electric charge is always a multiple of elementary charge.
+>
+>|                                                              |          spin in rotating magnetic field          | a monopole's magnetic field |
+>| :----------------------------------------------------------: | :-----------------------------------------------: | :-------------------------: |
+>| $\frac{k (\cos \theta - 1)}{r \sin \theta} \vec{e} _ \varphi$ | Mead-Berry (three-)vector potential $\vec{A} ^ k$ | vector potential $\vec{A}$  |
+>|                $-\frac{k }{r^2} \vec{e} _ r$                 |       curvature three-vector $\vec{F} ^ k$        |  magnetic field $\vec{B}$   |
+>|                           integer                            |                       $2 k$                       |     $\frac{e g}{2 \pi}$     |
 
 
 
