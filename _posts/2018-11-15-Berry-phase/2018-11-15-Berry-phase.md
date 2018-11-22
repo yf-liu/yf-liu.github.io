@@ -57,6 +57,7 @@ $$
 \newcommand{\norm}[1]{\left\|{#1}\right\|}
 \newcommand{\set}[1]{\left\lbrace{#1}\right\rbrace}
 \newcommand{\sgn}{\operatorname{sgn}}
+\newcommand\myeq{\stackrel{\mbox{adiabatic}}{=}}
 
 h(\vec{R} (t)) = - \frac{B g e}{2 m c} \vec{R} (t) \cdot \op{\vec{J}} = b \vec{R} (t) \cdot \op{\vec{J}}
 \label{Hamiltonian_of_system}
@@ -556,6 +557,199 @@ $$
 >|             $-\frac{k }{r^2} \vec{e} _ r \quad$              |       curvature three-vector $\vec{F} ^ k$        |  magnetic field $\vec{B}$   |
 >|                           integer                            |                       $2 k$                       |     $\frac{e g}{2 \pi}$     |
 
+### The exact solution of the Schrödinger equation
+
+Schrödinger equation:
+
+$$
+\ii \frac{\partial}{\partial t} \psi (t) = h (t) \psi (t),\text{ with } h(t) = b \vec{R} (\theta , \omega t) \cdot \vec{J}
+$$
+
+The cyclic evolution is
+
+$$
+\ket{\psi (\tau)} \bra{\psi (\tau)} = \ket{\psi (0)} \bra{\psi (0)}
+$$
+
+#### Adiabatic approximation has a problem
+
+We shall first consider the case where the adiabatic approximation is valid.
+
+$$
+\begin{align*}
+& \because h (\vec{R}) \ket{k,R} = b \vec{R} \cdot \op{\vec{J}} \ket{k,R} = b k \ket{k,R},\
+\gamma _ k (\mathbf{C} _ 1) = - 2 \pi k (1 - \cos \theta)\\
+& \therefore \psi (t) \myeq \e ^ {- \ii \int ^ t _ 0 E _ n (t') \dd t'} \e ^ {\ii \gamma _ k (t)} \ket{k , R (t)}
+= \e ^ {- \ii  b k t } \e ^ {\ii \gamma _ k (t)} \ket{k , \theta , \omega t},\ \text{where } \gamma _ k (t) = \frac{t}{T} \gamma _ k (\mathbf{C} _ 1) 
+\end{align*}
+$$
+
+In particular for $t=T$, 
+
+$$
+\psi (T) \myeq \e ^ {- \ii  b k \frac{2 \pi}{\omega}} \e ^ {\ii \gamma _ k (\mathbf{C} _ 1) } \ket{k , \theta , 0} = \e ^ {- \ii  b k \frac{2 \pi}{\omega}} \e ^ {\ii \gamma _ k (\mathbf{C} _ 1) } \psi (0)
+\label{adiabatic_psi}
+$$
+
+But the results of adiabatic approxmation aren't compatible with the Schrödinger equation.
+
+>We substitute (\ref{adiabatic_psi}) in Schrödinger equation,
+>
+>$$
+>\begin{align*}
+>\ii \frac{\partial}{\partial t} \psi (t) & = b \vec{R} (\theta , \omega t) \cdot \vec{J} \psi (t) \\
+>\ii \frac{\partial}{\partial t} \e ^ {- \ii  b k t } \e ^ {\ii \gamma _ k (t)} \ket{k , \theta , \omega t} & = b \e ^ {- \ii  b k t } \e ^ {\ii \gamma _ k (t)} \vec{R} (\theta , \omega t) \cdot \vec{J} \ket{k , \theta , \omega t} \\
+>(bk - \frac{\partial \gamma _ k (t)}{\partial t}) \e ^ {- \ii  b k t } \e ^ {\ii \gamma _ k (t)} \ket{k , \theta , \omega t} & = b k \e ^ {- \ii  b k t } \e ^ {\ii \gamma _ k (t)}  \ket{k , \theta , \omega t} \\
+>\end{align*}
+>$$
+>
+>The equation has an extra $\frac{\partial \gamma _ k (t)}{\partial t}$, which is omitted in the adiabatic approximation.
+
+#### Transformation of coordinate
+
+The unitary transformation of the state vector $\psi (t)$ is
+
+$$
+\tilde{U} (t) \defas U _ 3 ^ \dagger (\omega t) = \e ^ {\ii \omega t \op{J} _ 3}\\
+\begin{cases}\psi ' (t) = \tilde{U} (t) \psi (t) = \e ^ {\ii \omega t \op{J} _ 3} \psi (t) \\
+\psi (t) = \tilde{U} ^ \dagger (t) \psi ' (t) = \e ^ {- \ii \omega t \op{J} _ 3} \psi ' (t) \end{cases}
+$$
+
+> With the transformation, the Schrödinger equation becomes
+>
+> $$
+> \ii \frac{\partial}{\partial t} (\e ^ {- \ii \omega t \op{J} _ 3} \psi ' (t))  = h (t) \e ^ {- \ii \omega t \op{J} _ 3} \psi ' (t)\\
+> \omega \e ^ {- \ii \omega t \op{J} _ 3} \op{J} _ 3 \psi ' (t) + \ii \e ^ {- \ii \omega t \op{J} _ 3} \frac{\partial}{\partial t} \psi ' (t) = h (t) \e ^ {- \ii \omega t \op{J} _ 3} \psi ' (t)\\
+> \omega \op{J} _ 3 \psi ' (t) + \ii \frac{\partial}{\partial t} \psi ' (t) = \e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} \psi ' (t)\\
+> \ii \frac{\partial}{\partial t} \psi ' (t) = (\e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} - \omega \op{J} _ 3) \psi ' (t)\\
+> $$
+>
+
+The Hamiltonian doesn't change with time, and can also be related to the angular momentum. 
+
+$$
+h ' (t) = \e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} - \omega \op{J} _ 3 = b (\cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 - \frac{\omega}{b} \op{J} _ 3) \defas H
+$$
+
+>$$
+>\begin {align*}
+>H & = \Omega \vec{e} \cdot \vec{J}\\
+>& = \Omega \frac{b}{\Omega}  \left( \left( \cos \theta - \frac{\omega}{b} \right) \vec {e} _ 3 + \sin \theta \vec{e} _ 1 \right) \cdot (\op{J} _ 1 \vec {e} _ 1 + \op{J} _ 2 \vec {e} _ 2 + \op{J} _ 3 \vec {e} _ 3) \\
+>& = b \left( \left( \cos \theta - \frac{\omega}{b} \right) \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)
+>\end {align*}
+>$$
+>
+>where $\Omega =  b \sqrt{1 + \frac{\omega}{b} (-2 \cos \theta + \frac{\omega}{b})}, \ \vec{e} = \frac{b}{\Omega}  \left( \left( \cos \theta - \frac{\omega}{b} \right) \vec {e} _ 3 + \sin \theta \vec{e} _ 1 \right)$. 
+>
+>$$
+>\begin {align*}
+>& \vec{e} = \cos \tilde{\theta} \vec{e} _ 3 + \sin \tilde{\theta} \vec{e} _ 1 = \vec{R} (\tilde{\theta} , 0) \\
+>& \begin{cases} \cos \tilde{\theta} = \frac{b}{\Omega} (\cos \theta - \frac{\omega}{b}) \\ 
+>\sin \tilde{\theta} = \frac{b}{\Omega} \sin \theta \end{cases}
+>\end {align*}
+>$$
+>
+><img src = "assets/tilde_theta.png" width="25%">
+>
+>Imbedded into the $\realset ^ 3$, the transformation of $\theta$ to $\tilde{\theta}$ is easier to understand.
+>
+>$$
+>\begin {align*}
+>& F _ \nu (\vec{R} (\theta , 0)) = \vec{R} (\cos ^ {-1} \frac{\cos \theta - \nu}{\sqrt{\nu ^ 2 -2 \cos \theta \nu + 1}}, 0) = \vec{R} (\tilde{\theta}, 0) \\
+>& F _ \nu (x ^ 1, 0, x ^ 3) = \frac{(x ^ 1, 0, x ^ 3 - \nu)}{\sqrt{(x ^ 1) ^ 2  + (x ^ 3 - \nu) ^ 2}} = (\tilde {x} ^ 1, 0, \tilde {x} ^ 3) 
+>\end {align*}
+>$$
+>
+>where $\nu=\frac{\omega}{b}$ is a constant.
+>
+><img src = "assets/transformation_theta.png" width="90%">
+
+
+|                      |                           Old way                            |                           New way                            |
+| -------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| State vector         |                          $\psi (t)$                          |    $\psi '(t) = \e ^ {\ii \omega t \op{J} _ 3} \psi (t)$     |
+| Hamiltonian          | $h (t) = \e ^ {- \ii \omega t \op{J} _ 3} h _ 0 \e ^ {\ii \omega t \op{J} _ 3}$ | $h ' (t) = \e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} - \omega \op{J} _ 3$ |
+| Observable           | $\bra{\psi (t)} h (t) \ket{\psi (t)} \\ = \bra{\psi (t)} \e ^ {- \ii \omega t \op{J} _ 3} h _ 0 \e ^ {\ii \omega t \op{J} _ 3} \ket{\psi (t)}$ | $\bra{\psi ' (t)} h _ 0 \ket{\psi ' (t)} \\ = \bra{\e ^ {\ii \omega t \op{J} _ 3} \psi (t)} h _ 0 \ket{\e ^ {\ii \omega t \op{J} _ 3} \psi (t)}$ |
+| Schrödinger equation | $\ii \frac{\partial}{\partial t} \psi (t) = h (t) \psi (t)$  | $\ii \frac{\partial}{\partial t} \psi ' (t) = h ' (t) \psi ' (t)$ |
+
+#### General Solution
+
+The new Schrödinger equation can be integrated immediately.
+$$
+\begin{align*}
+\psi ' (t) & = \e ^ {- \ii H t} \psi ' (0)\\
+& = \e ^ {- \ii \Omega \vec{e} \cdot \vec{J} t} \psi ' (0)\\
+\end{align*}
+$$
+
+which represents a 'rotation' of the state vector $\psi ' _ 0$ by an angle $\Omega t$ about the $\vec{e}$-axis. 
+
+>When $\vec{e} = \vec{e} _ 3$, assume that the magnetic field is kept constant $\omega = 0$ and $\psi (t)$ represents a pure state and $\psi (0) =\ket{k , \frac{\pi}{2} , 0}$, where all the the magnetic moments aligned along the $\vec{e} _ 1$. 
+>
+>$$
+>P ^ {\vec{e} _ 1} _ k (t = 0) = \abs{\braket {\psi(0)}{k , \frac{\pi}{2} , 0}} ^2 = 1\\
+>$$
+>
+>At time $t$, the probability of $\psi (t)$ aligning on $\vec{R} (\frac{\pi}{2} , b t)$ is
+>
+>$$
+>\begin{align*}
+>P ^ {\vec{R} (\frac{\pi}{2} , b t)} _ k (t) & = \abs{\braket {\psi(t)}{k , \frac{\pi}{2} , b t}} ^2 \\
+>& = \abs{\bra {\psi(0)} \e ^ {\ii t b \op{J} _ 3} \e ^ {- \ii t b \op{J} _ 3} \ket{k , \frac{\pi}{2} , 0}} ^ 2 \\
+>& = \abs{\braket {\psi(0)}{k , \frac{\pi}{2} , 0}} ^ 2 \\
+>& = 1 \\
+>\end{align*}
+>$$
+>
+><img src = "assets/momentum_rotation.png" width="30%">
+
+Then transform back to the laboratory frame.
+
+$$
+\psi (t) = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega \vec{e} \cdot \op{\vec{J}} t} \psi (0) = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega t \vec{R}  (\tilde{\theta} , 0) \cdot \op{\vec{J}}} \psi (0)
+$$
+
+>When $\omega \rightarrow 0(\nu \rightarrow 0)$, the adiabatic approximation is valid.
+>
+>$$
+>\begin{align*}
+>& \because \Omega \vec{R}  (\tilde{\theta} , 0) = b \vec{R} (\theta , 0)\\
+>& \therefore \psi (t) = \e ^ {- \ii t b \vec{R} (\theta , 0) \cdot \op{\vec{J}}}
+>\end{align*}
+>$$
+>
+>The corresponding Hamiltonian is time-independent.
+>
+>$$
+>h = b \vec{R} (\theta , 0) \cdot \op{\vec{J}}
+>$$
+>
+><img src = "assets/adiabatic_approxmation.png" width="40%">
+
+#### Cyclic solution
+
+By definition the cyclic solutions with period $\tau$ are obtained by choosing the initial state vector $\psi (0)$ to be an non-stationary eigenvector of the evolution operator 
+
+$$
+U ^ \dagger (\tau) = \e ^ {-\ii \tau \omega \op{J} _ 3} \e ^ {-\ii \tau \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}}
+$$
+
+The corresponding eigenvalue $\e ^ {- \ii \alpha _ \psi}$ is the total phase factor, for
+
+$$
+\psi (\tau) = U ^ \dagger (\tau) \psi (0) = \e ^ {- \ii \alpha _ \psi} \psi (0)
+$$
+
+This is quite easy if $\tau$ is chosen in a way that the initial state is eigenstate of both of the operators appearing in the evolution operator.
+
+$$
+\begin{align*}
+& [ \e ^ {-\ii \tau \omega \op{J} _ 3} , \e ^ {-\ii \tau \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} ] \ket{\psi (0)} = 0 \\
+& \begin{cases}\text{CLASS A: } \tau = \frac{2\pi}{\omega} = T\\
+\text{CLASS B: } \tau = \frac{2\pi}{\omega}  \end{cases}
+\end{align*}
+$$
+
 
 
 
@@ -563,7 +757,7 @@ $$
 to-do list:
 
 - [ ] prove $\vec{R} ( \theta , \varphi )\cdot \op{\vec{J}} \ket{k,\theta, \varphi } = k \ket{k,\theta, \varphi }$
-- [ ] 
+- [ ] plot $\psi (t) = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega \vec{e} \cdot \op{\vec{J}} t} \psi (0) = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega t \vec{R}  (\tilde{\theta} , 0) \cdot \op{\vec{J}}} \psi (0)$
 
 References
 
