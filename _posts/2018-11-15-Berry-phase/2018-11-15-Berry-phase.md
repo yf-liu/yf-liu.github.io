@@ -611,8 +611,8 @@ The unitary transformation of the state vector $\psi (t)$ is
 
 $$
 \tilde{U} (t) \defas U _ 3 ^ \dagger (\omega t) = \e ^ {\ii \omega t \op{J} _ 3}\\
-\begin{cases}\psi ' (t) = \tilde{U} (t) \psi (t) = \e ^ {\ii \omega t \op{J} _ 3} \psi (t) \\
-\psi (t) = \tilde{U} ^ \dagger (t) \psi ' (t) = \e ^ {- \ii \omega t \op{J} _ 3} \psi ' (t) \end{cases}
+\begin{cases}\psi ^ \prime (t) = \tilde{U} (t) \psi (t) = \e ^ {\ii \omega t \op{J} _ 3} \psi (t) \\
+\psi (t) = \tilde{U} ^ \dagger (t) \psi ^ \prime (t) = \e ^ {- \ii \omega t \op{J} _ 3} \psi ^ \prime (t) \end{cases}
 $$
 
 > With the transformation, the Schrödinger equation becomes
@@ -628,7 +628,7 @@ $$
 The Hamiltonian doesn't change with time, and can also be related to the angular momentum. 
 
 $$
-h ' (t) = \e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} - \omega \op{J} _ 3 = b (\cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 - \frac{\omega}{b} \op{J} _ 3) \defas H
+h ^ \prime (t) = \e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} - \omega \op{J} _ 3 = b (\cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 - \frac{\omega}{b} \op{J} _ 3) \defas H
 $$
 
 >$$
@@ -665,24 +665,24 @@ $$
 ><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/transformation_theta.png" width="90%">
 
 
-|                      |                           Old way                            |                           New way                            |
-| -------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| State vector         |                          $\psi (t)$                          |    $\psi '(t) = \e ^ {\ii \omega t \op{J} _ 3} \psi (t)$     |
-| Hamiltonian          | $h (t) = \e ^ {- \ii \omega t \op{J} _ 3} h _ 0 \e ^ {\ii \omega t \op{J} _ 3}$ | $h ' (t) = \e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} - \omega \op{J} _ 3$ |
-| Observable           | $\bra{\psi (t)} h (t) \ket{\psi (t)} \\ = \bra{\psi (t)} \e ^ {- \ii \omega t \op{J} _ 3} h _ 0 \e ^ {\ii \omega t \op{J} _ 3} \ket{\psi (t)}$ | $\bra{\psi ' (t)} h _ 0 \ket{\psi ' (t)} \\ = \bra{\e ^ {\ii \omega t \op{J} _ 3} \psi (t)} h _ 0 \ket{\e ^ {\ii \omega t \op{J} _ 3} \psi (t)}$ |
-| Schrödinger equation | $\ii \frac{\partial}{\partial t} \psi (t) = h (t) \psi (t)$  | $\ii \frac{\partial}{\partial t} \psi ' (t) = h ' (t) \psi ' (t)$ |
+|                  |                           Old way                            |                           New way                            |
+| ---------------- | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| State vector     |                          $\psi (t)$                          | $\psi ^ \prime (t) = \e ^ {\ii \omega t \op{J} _ 3} \psi (t)$ |
+| Hamiltonian      | $h (t) = \e ^ {- \ii \omega t \op{J} _ 3} h _ 0 \e ^ {\ii \omega t \op{J} _ 3}$ | $h ^ \prime (t) = \e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} - \omega \op{J} _ 3$ |
+| Observable       | $\bra{\psi (t)} h (t) \ket{\psi (t)} \\ = \bra{\psi (t)} \e ^ {- \ii \omega t \op{J} _ 3} h _ 0 \e ^ {\ii \omega t \op{J} _ 3} \ket{\psi (t)}$ | $\bra{\psi ^ \prime (t)} h _ 0 \ket{\psi ^ \prime (t)} \\ = \bra{\e ^ {\ii \omega t \op{J} _ 3} \psi (t)} h _ 0 \ket{\e ^ {\ii \omega t \op{J} _ 3} \psi (t)}$ |
+| Schrödinger eqn. | $\ii \frac{\partial}{\partial t} \psi (t) = h (t) \psi (t)$  | $\ii \frac{\partial}{\partial t} \psi ^ \prime (t) = h ^ \prime (t) \psi ^ \prime (t)$ |
 
 #### General Solution
 
 The new Schrödinger equation can be integrated immediately.
 $$
 \begin{align*}
-\psi ' (t) & = \e ^ {- \ii H t} \psi ' (0)\\
-& = \e ^ {- \ii \Omega \vec{e} \cdot \vec{J} t} \psi ' (0)
+\psi ^ \prime (t) & = \e ^ {- \ii H t} \psi ^ \prime (0)\\
+& = \e ^ {- \ii \Omega \vec{e} \cdot \vec{J} t} \psi ^ \prime (0)
 \end{align*}
 $$
 
-which represents a 'rotation' of the state vector $\psi ' _ 0$ by an angle $\Omega t$ about the $\vec{e}$-axis. 
+which represents a 'rotation' of the state vector $\psi ^ \prime _ 0$ by an angle $\Omega t$ about the $\vec{e}$-axis. 
 
 >When $\vec{e} = \vec{e} _ 3$, assume that the magnetic field is kept constant $\omega = 0$ and $\psi (t)$ represents a pure state and $\psi (0) =\ket{k , \frac{\pi}{2} , 0}$, where all the the magnetic moments aligned along the $\vec{e} _ 1$. 
 >
