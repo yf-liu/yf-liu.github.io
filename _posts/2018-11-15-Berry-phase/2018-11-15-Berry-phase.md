@@ -256,9 +256,10 @@ For south pole $-\vec{e} _ 3$, the eigenvector $\ket{k,\pi, \varphi } = \e ^{-\i
 Using a gauge transformation, the smooth single-valued vector function also can defined on $S^2$ except at the north pole. The gauge transformation is
 
 $$
-\ket{k,\theta, \varphi }' = \e ^ {- \ii 2 k \varphi} \ket{k,\theta, \varphi }\\
-\text{North pole: }\ket{k,0, \varphi }' = \e ^ {- \ii 2 k \varphi} \ket{k, \vec{e} _ 3}\\
-\text{South pole: }\ket{k,\pi, \varphi }' = \e ^ {- \ii 2 k \varphi} \ket{k,\pi, \varphi } = \e ^ {- \ii 2 k \varphi} \e ^{-\ii \pi  \op{J}  _ 2} \e ^ {2 \ii \varphi k}  \ket{k,\vec{e} _ 3} = \e ^{-\ii \pi  \op{J}  _ 2} \ket{k,\vec{e} _ 3}
+\ket{k,\theta, \varphi } ^ \prime = \e ^ {- \ii 2 k \varphi} \ket{k,\theta, \varphi }\\
+\begin {cases} \text{North pole: }\ket{k,0, \varphi } ^ \prime = \e ^ {- \ii 2 k \varphi} \ket{k, \vec{e} _ 3}\\
+\text{South pole: }\ket{k,\pi, \varphi } ^ \prime = \e ^ {- \ii 2 k \varphi} \ket{k,\pi, \varphi } = \e ^ {- \ii 2 k \varphi} \e ^{-\ii \pi  \op{J}  _ 2} \e ^ {2 \ii \varphi k}  \ket{k,\vec{e} _ 3} = \e ^{-\ii \pi  \op{J}  _ 2} \ket{k,\vec{e} _ 3} 
+\end {cases}
 $$
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/smooth_subspace.png" width="80%">
@@ -266,7 +267,7 @@ $$
 The projector operators and the corresponding subspaces of these two parameterization in the Hilbert space coincide:
 
 $$
-\ket{k,\theta, \varphi } \bra{k,\theta, \varphi } =\ket{k,\theta, \varphi } ' \bra{k,\theta, \varphi } '
+\ket{k,\theta, \varphi } \bra{k,\theta, \varphi } =\ket{k,\theta, \varphi } ^ \prime \bra{k,\theta, \varphi } ^ \prime
 $$
 
 
@@ -287,7 +288,7 @@ $$
 where $R^i$ corresponding to $\theta$ and $\varphi$. The matrix of one-forms is
 
 $$
-A ^ {k ' k} (R ^ i) = A ^ {k ' k} _ i d R ^ i = \ii \bra{k ',R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i
+A ^ {k ^ \prime k} (R ^ i) = A ^ {k ^ \prime k} _ i d R ^ i = \ii \bra{k ^ \prime,R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i
 $$
 
 On the patch $O _ 1$ ($\theta \ne \pi$), we have
@@ -299,20 +300,20 @@ $$
 
 >$$
 >\begin{align*}
->A ^ {k'k} _ \theta & = \ii \bra{k',\theta,\varphi} \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi} \\
->& = \bra{k',\vec{e} _ 3} \ii U ^ \dagger ( \theta , \varphi) \frac{\partial}{\partial \theta} U ( \theta , \varphi) \ket{k,\vec{e} _ 3} \\
->& = \bra{k',\vec{e} _ 3} \ii \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \frac{\partial}{\partial \theta} (\e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ) \ket{k,\vec{e} _ 3} \\
->& = \bra{k',\vec{e} _ 3} \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \op{J} _ 2 \e ^ {\ii \varphi \op{J} _ 3}  \ket{k,\vec{e} _ 3} \\
->& = \bra{k',\vec{e} _ 3} \e ^ {-\ii \varphi \op{J} _ 3}  \op{J} _ 2 \e ^ {\ii \varphi \op{J} _ 3}  \ket{k,\vec{e} _ 3} \\
->& = \bra{k',\vec{e} _ 3} ( \op{J} _ 2 \cos \varphi -\op{J} _ 1 \sin \varphi ) \ket{k,\vec{e} _ 3} \\
->A ^ {k'k} _ \varphi & = \ii \bra{k',\theta,\varphi} \frac{\partial}{\partial \varphi} \ket{k,\theta,\varphi} \\
->& = \bra{k',\vec{e} _ 3} \ii U ^ \dagger ( \theta , \varphi) \frac{\partial}{\partial \varphi} U ( \theta , \varphi) \ket{k,\vec{e} _ 3} \\
->& = \bra{k',\vec{e} _ 3} \ii \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \frac{\partial}{\partial \varphi} (\e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ) \ket{k,\vec{e} _ 3} \\
->& = \bra{k',\vec{e} _ 3} ( \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \e ^ {-\ii \varphi \op{J} _ 3}  \op{J} _ 3 \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} - \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \e ^ {-\ii \varphi \op{J} _ 3} \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \op{J} _ 3 ) \ket{k,\vec{e} _ 3} \\
->& = \bra{k',\vec{e} _ 3} ( \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \op{J} _ 3 \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} - \op{J} _ 3 ) \ket{k,\vec{e} _ 3}  \\
->& = \bra{k',\vec{e} _ 3} ( \e ^ {-\ii \varphi \op{J} _ 3}  (\op{J} _ 3\cos \theta - \op{J} _ 1 \sin \theta) \e ^ {\ii \varphi \op{J} _ 3} - \op{J} _ 3 ) \ket{k,\vec{e} _ 3}  \\
->& = \bra{k',\vec{e} _ 3} (\op{J} _ 3 \cos \theta -  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta  - \op{J} _ 3 ) \ket{k,\vec{e} _ 3}  \\
->& = \bra{k',\vec{e} _ 3} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 )) \ket{k,\vec{e} _ 3}  
+>A ^ {k ^ \prime k} _ \theta & = \ii \bra{k ^ \prime ,\theta,\varphi} \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi} \\
+>& = \bra{k ^ \prime ,\vec{e} _ 3} \ii U ^ \dagger ( \theta , \varphi) \frac{\partial}{\partial \theta} U ( \theta , \varphi) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k ^ \prime ,\vec{e} _ 3} \ii \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \frac{\partial}{\partial \theta} (\e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k ^ \prime ,\vec{e} _ 3} \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \op{J} _ 2 \e ^ {\ii \varphi \op{J} _ 3}  \ket{k,\vec{e} _ 3} \\
+>& = \bra{k ^ \prime ,\vec{e} _ 3} \e ^ {-\ii \varphi \op{J} _ 3}  \op{J} _ 2 \e ^ {\ii \varphi \op{J} _ 3}  \ket{k,\vec{e} _ 3} \\
+>& = \bra{k ^ \prime ,\vec{e} _ 3} ( \op{J} _ 2 \cos \varphi -\op{J} _ 1 \sin \varphi ) \ket{k,\vec{e} _ 3} \\
+>A ^ {k ^ \prime k} _ \varphi & = \ii \bra{k ^ \prime ,\theta,\varphi} \frac{\partial}{\partial \varphi} \ket{k,\theta,\varphi} \\
+>& = \bra{k ^ \prime ,\vec{e} _ 3} \ii U ^ \dagger ( \theta , \varphi) \frac{\partial}{\partial \varphi} U ( \theta , \varphi) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k ^ \prime ,\vec{e} _ 3} \ii \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \frac{\partial}{\partial \varphi} (\e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k ^ \prime ,\vec{e} _ 3} ( \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \e ^ {-\ii \varphi \op{J} _ 3}  \op{J} _ 3 \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} - \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \e ^ {-\ii \varphi \op{J} _ 3} \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \op{J} _ 3 ) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k ^ \prime ,\vec{e} _ 3} ( \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \op{J} _ 3 \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} - \op{J} _ 3 ) \ket{k,\vec{e} _ 3}  \\
+>& = \bra{k ^ \prime ,\vec{e} _ 3} ( \e ^ {-\ii \varphi \op{J} _ 3}  (\op{J} _ 3\cos \theta - \op{J} _ 1 \sin \theta) \e ^ {\ii \varphi \op{J} _ 3} - \op{J} _ 3 ) \ket{k,\vec{e} _ 3}  \\
+>& = \bra{k ^ \prime ,\vec{e} _ 3} (\op{J} _ 3 \cos \theta -  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta  - \op{J} _ 3 ) \ket{k,\vec{e} _ 3}  \\
+>& = \bra{k ^ \prime ,\vec{e} _ 3} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 )) \ket{k,\vec{e} _ 3}  
 >\end {align*}
 >$$
 >
@@ -327,8 +328,8 @@ $$
 On the patch $O _ 2(\theta \ne 0)$, we repeat the calculation
 
 $$
-A' ^ {k'k} _ \theta = \ii \bra{k',\theta,\varphi} ' \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi} ' \\
-A' ^ {k'k} _ \varphi = \ii \bra{k',\theta,\varphi} ' \frac{\partial}{\partial \varphi} \ket{k,\theta,\varphi} '
+A ^ {\prime k^ \prime k} _ \theta = \ii \bra{k ^ \prime,\theta,\varphi} ^ \prime \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi} ^ \prime \\
+A ^ {\prime k^ \prime k} _ \varphi = \ii \bra{k^ \prime,\theta,\varphi} ^ \prime \frac{\partial}{\partial \varphi} \ket{k,\theta,\varphi} ^ \prime
 $$
 
 >$$
@@ -348,14 +349,14 @@ $$
 For diagonal matrix elements, we have
 
 $$
-A ' ^ {k} _ \theta  (\theta , \varphi) = 0 \\
-A ' ^ {k} _ \varphi (\theta , \varphi) = k (\cos \theta +1)
+A ^ {\prime k} _ \theta  (\theta , \varphi) = 0 \\
+A ^ {\prime k} _ \varphi (\theta , \varphi) = k (\cos \theta +1)
 $$
 
 Thus, the difference of Mead-Berry connection one-form on two patches is
 
 $$
-A ' ^ {k} _ \varphi (\theta , \varphi) - A ^ {k} _ \varphi (\theta , \varphi) = 2 k
+A ^ {\prime k} _ \varphi (\theta , \varphi) - A ^ {k} _ \varphi (\theta , \varphi) = 2 k
 $$
 
 #### Mead-Berry curvature two-form
@@ -507,7 +508,7 @@ They yields the components of the Mead-Berry vector potential ($r=\text{const.}$
 $$
 \begin{align*}
 \op{\vec{A}} ^ k & = \op{A} ^ k _ r \vec{e} _ r + \op{A} ^ k _ \theta \vec{e} _ \theta + \op{A} ^ k _ \varphi \vec{e} _ \varphi = \frac{k ( \cos \theta  - 1 )}{r \sin \theta} \vec{e} _ \varphi \ ,\ \theta \ne \pi \\
-\op{\vec{A}}' ^ k & = \op{A} ' ^ k _ r \vec{e} _ r + \op{A} ' ^ k _ \theta \vec{e} _ \theta + \op{A} ' ^ k _ \varphi \vec{e} _ \varphi = \frac{k ( \cos \theta  + 1 )}{r \sin \theta} \vec{e} _ \varphi \ ,\ \theta \ne 0 
+\op{\vec{A}}' ^ k & = \op{A} ^ {\prime k} _ r \vec{e} _ r + \op{A} ^ {\prime k} _ \theta \vec{e} _ \theta + \op{A} ^ {\prime k} _ \varphi \vec{e} _ \varphi = \frac{k ( \cos \theta  + 1 )}{r \sin \theta} \vec{e} _ \varphi \ ,\ \theta \ne 0 
  \end{align*}
 $$
 
@@ -520,8 +521,8 @@ $$
 >& = \bra{k,\vec{e} _ 3} \vec{e} _ \varphi \frac{1}{r \sin \theta} \op{J} _ 3 ( \cos \theta  - 1 ) \ket{k,\vec{e} _ 3} \\
 >& = \bra{k,\vec{e} _ 3} \vec{e} _ \varphi \frac{1}{r \sin \theta} k ( \cos \theta  - 1 ) \ket{k,\vec{e} _ 3} \\
 >& = \frac{k ( \cos \theta  - 1 )}{r \sin \theta} \vec{e} _ \varphi \\
->\op{\vec{A}} ' ^ k & = \op{A} ' ^ k _ r \vec{e} _ r + \op{A} ' ^ k _ \theta \vec{e} _ \theta + \op{A} ' ^ k _ \varphi \vec{e} _ \varphi\\
->& = \ii \bra{k,r,\theta,\varphi} ' ( \vec{e} _ r \frac{\partial}{\partial r} + \vec{e} _ \theta  \frac{1}{r} \frac{\partial}{\partial \theta} +  \vec{e} _ \varphi \frac{1}{r \sin \theta} \frac{\partial}{\partial \varphi} )  \ket{k,r,\theta,\varphi} ' \\
+>\op{\vec{A}} ^ {\prime k} & = \op{A} ^ {\prime k} _ r \vec{e} _ r + \op{A} ^ {\prime k} _ \theta \vec{e} _ \theta + \op{A} ^ {\prime k} _ \varphi \vec{e} _ \varphi\\
+>& = \ii \bra{k,r,\theta,\varphi} ^ \prime ( \vec{e} _ r \frac{\partial}{\partial r} + \vec{e} _ \theta  \frac{1}{r} \frac{\partial}{\partial \theta} +  \vec{e} _ \varphi \frac{1}{r \sin \theta} \frac{\partial}{\partial \varphi} )  \ket{k,r,\theta,\varphi} ^ \prime \\
 >& = \ii \bra{k,\vec{e} _ 3} \e ^ {- \ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ( \vec{e} _ r \frac{\partial}{\partial r} + \vec{e} _ \theta  \frac{1}{r} \frac{\partial}{\partial \theta} +  \vec{e} _ \varphi \frac{1}{r \sin \theta} \frac{\partial}{\partial \varphi} ) \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \ket{k,\vec{e} _ 3} \\
 >& = \bra{k,\vec{e} _ 3} ( \vec{e} _ \theta  \frac{1}{r} ( \op{J} _ 2 \cos \varphi -\op{J} _ 1 \sin \varphi ) + \vec{e} _ \varphi \frac{1}{r \sin \theta} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 ) + 2 k ) ) \ket{k,\vec{e} _ 3} \\
 >& = \bra{k,\vec{e} _ 3} \vec{e} _ \varphi \frac{1}{r \sin \theta} (\op{J} _ 3 ( \cos \theta  - 1 ) + 2 k ) \ket{k,\vec{e} _ 3} \\
@@ -534,7 +535,7 @@ $$
 They are related by the gauge transformation.
 
 $$
-\op{\vec{A}} ' ^ k - \op{\vec{A}} ^ k = \frac{2 k}{r \sin \theta} \vec{e} _ \varphi
+\op{\vec{A}} ^ {\prime k} - \op{\vec{A}} ^ k = \frac{2 k}{r \sin \theta} \vec{e} _ \varphi
 $$
 
 The corresponding curvature three-vector is
@@ -591,9 +592,9 @@ $$
 \label{adiabatic_psi}
 $$
 
-But the results of adiabatic approxmation aren't compatible with the Schrödinger equation.
+But the results of adiabatic approximation aren't compatible with the Schrödinger equation.
 
->We substitute (\ref{adiabatic_psi}) in Schrödinger equation,
+>We substitute ($\ref{adiabatic_psi}$) in Schrödinger equation,
 >
 >$$
 >\begin{align*}
@@ -618,10 +619,10 @@ $$
 > With the transformation, the Schrödinger equation becomes
 >
 > $$
-> \ii \frac{\partial}{\partial t} (\e ^ {- \ii \omega t \op{J} _ 3} \psi ' (t))  = h (t) \e ^ {- \ii \omega t \op{J} _ 3} \psi ' (t)\\
-> \omega \e ^ {- \ii \omega t \op{J} _ 3} \op{J} _ 3 \psi ' (t) + \ii \e ^ {- \ii \omega t \op{J} _ 3} \frac{\partial}{\partial t} \psi ' (t) = h (t) \e ^ {- \ii \omega t \op{J} _ 3} \psi ' (t)\\
-> \omega \op{J} _ 3 \psi ' (t) + \ii \frac{\partial}{\partial t} \psi ' (t) = \e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} \psi ' (t)\\
-> \ii \frac{\partial}{\partial t} \psi ' (t) = (\e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} - \omega \op{J} _ 3) \psi ' (t)
+> \ii \frac{\partial}{\partial t} (\e ^ {- \ii \omega t \op{J} _ 3} \psi^ \prime(t))  = h (t) \e ^ {- \ii \omega t \op{J} _ 3} \psi ^ \prime (t)\\
+> \omega \e ^ {- \ii \omega t \op{J} _ 3} \op{J} _ 3 \psi ^ \prime (t) + \ii \e ^ {- \ii \omega t \op{J} _ 3} \frac{\partial}{\partial t} \psi ^ \prime (t) = h (t) \e ^ {- \ii \omega t \op{J} _ 3} \psi ^ \prime (t)\\
+> \omega \op{J} _ 3 \psi ^ \prime (t) + \ii \frac{\partial}{\partial t} \psi ^ \prime (t) = \e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} \psi ^ \prime (t)\\
+> \ii \frac{\partial}{\partial t} \psi ^ \prime (t) = (\e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} - \omega \op{J} _ 3) \psi ^ \prime (t)
 > $$
 >
 
