@@ -46,6 +46,7 @@ $$
 \newcommand{\op}{\hat}
 \newcommand{\uvec}{\hat}
 \newcommand{\defas}{: =}
+\newcommand{\isdefas}{= :}
 \newcommand{\Eqn}[1]{\text{(Eqn. }\ref{#1}\text{)}}
 \newcommand{\dual}{\tilde}
 \newcommand{\vard}{\mathfrak{d}}
@@ -722,7 +723,7 @@ $$
 >$$
 >\begin{align*}
 >& \because \Omega \vec{R}  (\tilde{\theta} , 0) = b \vec{R} (\theta , 0)\\
->& \therefore \psi (t) = \e ^ {- \ii t b \vec{R} (\theta , 0) \cdot \op{\vec{J}}}
+>& \therefore \psi (t) = \e ^ {- \ii t b \vec{R} (\theta , 0) \cdot \op{\vec{J}}} \psi (0)
 >\end{align*}
 >$$
 >
@@ -760,7 +761,87 @@ $$
 \end{align*}
 $$
 
+>When $\tau = \frac{2 \pi}{\omega}$, the commutator equals zero.
+>
+>$$
+>\begin{align*}
+>[ \e ^ {-\ii \frac{2 \pi}{\omega} \omega \op{J} _ 3} , \e ^ {-\ii \frac{2 \pi}{\omega} \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} ] \ket{\psi (0)} & = 0 \\
+>\e ^ {-\ii 2 \pi \omega \op{J} _ 3} \e ^ {-\ii \frac{2 \pi}{\omega} \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} \ket{\psi (0)} & = \e ^ {-\ii \frac{2 \pi}{\omega} \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} \e ^ {-\ii 2 \pi \omega \op{J} _ 3} \ket{\psi (0)} \\
+>\e ^ {-\ii 2 \pi \omega \op{J} _ 3} \e ^ {-\ii \frac{2 \pi}{\omega} b \left( \left( \cos \theta - \frac{\omega}{b} \right) \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \ket{\psi (0)} & = \e ^ {-\ii \frac{2 \pi}{\omega} b \left( \left( \cos \theta - \frac{\omega}{b} \right) \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \e ^ {-\ii 2 \pi \omega \op{J} _ 3} \ket{\psi (0)} \\
+>\e ^ {-\ii \frac{2 \pi}{\omega} b \left( \cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \ket{\psi (0)} & = \e ^ {-\ii \frac{2 \pi}{\omega} b \left( \cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \ket{\psi (0)} 
+>\end{align*}
+>$$
+>
 
+#### Class A
+
+---
+
+The class A cyclic solutions are obtained by finding the simultaneous eigenvectors of the operators $\e ^ {- \ii 2 \pi \op{J} _ 3}$ $\e ^ {- \ii T \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}}$.  They are also the eigenvectors of $h (\tilde{\theta} , 0) \defas b \vec{R} (\tilde{\theta} , 0) \cdot \op{\vec{J}}$.
+
+$$
+\begin{align*}
+h (\tilde{\theta} , 0) \ket {\phi _ k} & = b k \ket {\phi _ k} \\
+\vec{e} \cdot \op{\vec{J}} \ket {\phi _ k} & = k \ket {\phi _ k}
+\end{align*}
+$$
+
+where the eigenvector can be given as
+
+$$
+\ket{\phi _ k} = \ket{k , \tilde{\theta} , 0} = U (\tilde{\theta} , 0) \ket{k , \vec{e} _ 3} = \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \ket{k , \vec{e} _ 3}
+$$
+
+They are the eigenvector of $\e ^ {- \ii 2 \pi \op{J} _ 3}$ as follows.
+
+$$
+\begin{align*}
+& \quad \ \e ^ {- \ii 2 \pi \op{J} _ 3} \ket{\phi _ k} \\
+& = \e ^ {- \ii 2 \pi \op{J} _ 3} \ket{k , \tilde{\theta} , 0} \\
+& = \e ^ {- \ii 2 \pi \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \ket{k , 0 , 0}  \\
+& = \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \e ^ {- \ii 2 \pi \op{J} _ 3} \ket{k , 0 , 0}  \\
+& = \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \e ^ {- \ii 2 \pi k} \ket{k , 0 , 0}  \\
+& = \e ^ {- \ii 2 \pi k} \ket{k , \tilde{\theta} , 0} \\
+& = \e ^ {- \ii 2 \pi k} \ket{\phi _ k}
+\end{align*}
+$$
+
+>The commutator $[\e ^ {- \ii \tilde{\theta} \op{J} _ 2} , \e ^ {- \ii 2 \pi \op{J} _ 3} ]$ equals $0$.
+>
+>$$
+>\e ^ {- \ii \theta \op{J} _ 3} \op{J} _ 2 \e ^ {\ii \theta \op{J} _ 3} = \op{J} _ 2 \cos \theta - \op{J} _ 1 \sin \theta\\
+>\e ^ {- \ii 2 \pi \op{J} _ 3} \op{J} _ 2 \e ^ {\ii 2 \pi \op{J} _ 3} = \op{J} _ 2 \cos 2 \pi - \op{J} _ 1 \sin 2 \pi\\
+>\e ^ {- \ii 2 \pi \op{J} _ 3} \op{J} _ 2 \e ^ {\ii 2 \pi \op{J} _ 3} = \op{J} _ 2 \\
+>\e ^ {- \ii 2 \pi \op{J} _ 3} \op{J} _ 2 = \op{J} _ 2 \e ^ {- \ii 2 \pi \op{J} _ 3} \\
+>\e ^ {- \ii 2 \pi \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2} = \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \e ^ {- \ii 2 \pi \op{J} _ 3}
+>$$
+>
+
+The total phase of these cyclic evolutions is $\e ^ {- \ii \alpha _ k}$, labeled by $k$.
+
+$$
+\psi (T) = U ^ \dagger (T) \psi (0) = \e ^ {- \ii \alpha _ k} \psi (0) = \e ^ {- \ii 2 \pi k} \e ^ {- \ii 2 \pi \frac{\omega}{\Omega} k} \psi (0)
+$$
+
+The choice for $\phi _ k (t)$ is
+
+$$
+\phi _ k (t) \defas U (\tilde {\theta} , \omega t) \ket{k , \vec{e} _ 3} = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \e ^ {\ii \omega t k} \ket{k , \vec{e} _ 3} \isdefas \ket{k , \tilde{\theta} , \omega t}
+$$
+
+The cyclic solution is 
+
+$$
+\psi (t) = \e ^ {- \ii \omega t k} \e ^ {- \ii \Omega t k} \ket{k , \tilde{\theta} , \omega t}
+$$
+
+
+|                   |                          Adiabatic                           |                        Non-adiabatic                         |
+| :---------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|   Initial state   |                    $\ket{k , \theta , 0}$                    |                $\ket{k , \tilde{\theta} , 0}$                |
+|     Operator      |          $\vec{R} (\theta , 0) \cdot \op{\vec{J}}$           |      $\vec{R} (\tilde{\theta} , 0) \cdot \op{\vec{J}}$       |
+|    Total Phase    | $\e ^ {- \ii  2 \pi k \frac{b}{\omega}} \e ^ {\ii \gamma _ k (\mathbf{C} _ 1) }$ | $\e ^ {- \ii 2 \pi k} \e ^ {- \ii 2 \pi \frac{\omega}{\Omega} k}$ |
+| Evolutional state | $\ket{k , \theta, \omega t} = \e ^ {-\ii \omega t \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \omega t k} \ket{k , \vec{e} _ 3}$ | $\ket{k , \tilde{\theta} , \omega t} = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \e ^ {- \ii \omega t k} \ket{k , \vec{e} _ 3}$ |
 
 
 
