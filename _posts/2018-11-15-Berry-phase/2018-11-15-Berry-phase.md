@@ -670,7 +670,7 @@ $$
 | ---------------- | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | State vector     |                          $\psi (t)$                          | $\psi ^ \prime (t) = \e ^ {\ii \omega t \op{J} _ 3} \psi (t)$ |
 | Hamiltonian      | $h (t) = \e ^ {- \ii \omega t \op{J} _ 3} h _ 0 \e ^ {\ii \omega t \op{J} _ 3}$ | $h ^ \prime (t) = \e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} - \omega \op{J} _ 3$ |
-| Observable       | $\bra{\psi (t)} h (t) \ket{\psi (t)} \\ = \bra{\psi (t)} \e ^ {- \ii \omega t \op{J} _ 3} h _ 0 \e ^ {\ii \omega t \op{J} _ 3} \ket{\psi (t)}$ | $\bra{\psi ^ \prime (t)} h _ 0 \ket{\psi ^ \prime (t)} \\ = \bra{\e ^ {\ii \omega t \op{J} _ 3} \psi (t)} h _ 0 \ket{\e ^ {\ii \omega t \op{J} _ 3} \psi (t)}$ |
+| Observable       | $\bra{\psi (t)} h (t) \ket{\psi (t)}  = \bra{\psi (t)} \e ^ {- \ii \omega t \op{J} _ 3} h _ 0 \e ^ {\ii \omega t \op{J} _ 3} \ket{\psi (t)}$ | $\bra{\psi ^ \prime (t)} h _ 0 \ket{\psi ^ \prime (t)}  = \bra{\e ^ {\ii \omega t \op{J} _ 3} \psi (t)} h _ 0 \ket{\e ^ {\ii \omega t \op{J} _ 3} \psi (t)}$ |
 | Schrödinger eqn. | $\ii \frac{\partial}{\partial t} \psi (t) = h (t) \psi (t)$  | $\ii \frac{\partial}{\partial t} \psi ^ \prime (t) = h ^ \prime (t) \psi ^ \prime (t)$ |
 
 #### General Solution
