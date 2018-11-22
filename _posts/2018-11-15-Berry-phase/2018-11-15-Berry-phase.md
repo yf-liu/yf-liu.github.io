@@ -676,6 +676,7 @@ $$
 #### General Solution
 
 The new Schrödinger equation can be integrated immediately.
+
 $$
 \begin{align*}
 \psi ^ \prime (t) & = \e ^ {- \ii H t} \psi ^ \prime (0)\\
