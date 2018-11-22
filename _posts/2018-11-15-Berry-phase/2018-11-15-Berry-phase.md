@@ -294,8 +294,8 @@ $$
 On the patch $O _ 1$ ($\theta \ne \pi$), we have
 
 $$
-A ^ {k'k} _ \theta = \ii \bra{k',\theta,\varphi} \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi}\\
-A ^ {k'k} _ \varphi = \ii \bra{k',\theta,\varphi} \frac{\partial}{\partial \varphi} \ket{k,\theta,\varphi}
+A ^ {k ^ \prime k} _ \theta = \ii \bra{k ^ \prime ,\theta,\varphi} \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi}\\
+A ^ {k ^ \prime k} _ \varphi = \ii \bra{k ^ \prime ,\theta,\varphi} \frac{\partial}{\partial \varphi} \ket{k,\theta,\varphi}
 $$
 
 >$$
@@ -334,14 +334,14 @@ $$
 
 >$$
 >\begin{align*}
->A' ^ {k'k} _ \theta & = \ii \bra{k',\theta,\varphi}' \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi}' \\
->& = \bra{k',\vec{e} _ 3} \ii U ^ \dagger ( \theta , \varphi) \e ^ { \ii 2 k \varphi} \frac{\partial}{\partial \theta} \e ^ {- \ii 2 k \varphi} U ( \theta , \varphi) \ket{k,\vec{e} _ 3} \\
->& = \bra{k',\vec{e} _ 3} \ii \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \e ^ { \ii 2 k \varphi} \frac{\partial}{\partial \theta} (\e ^ {- \ii 2 k \varphi} \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ) \ket{k,\vec{e} _ 3} \\
->& = \bra{k',\vec{e} _ 3} ( \op{J} _ 2 \cos \varphi -\op{J} _ 1 \sin \varphi ) \ket{k,\vec{e} _ 3} \\
->A' ^ {k'k} _ \varphi & = \ii \bra{k',\theta,\varphi}' \frac{\partial}{\partial \varphi} \ket{k,\theta,\varphi}' \\
->& = \bra{k',\vec{e} _ 3} \ii U ^ \dagger ( \theta , \varphi) \e ^ { \ii 2 k \varphi} \frac{\partial}{\partial \varphi} \e ^ {- \ii 2 k \varphi} U ( \theta , \varphi) \ket{k,\vec{e} _ 3} \\
->& = \bra{k',\vec{e} _ 3} \ii \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \e ^ {- \ii 2 k \varphi} \frac{\partial}{\partial \varphi} (\e ^ {- \ii 2 k \varphi} \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ) \ket{k,\vec{e} _ 3} \\
->& = \bra{k',\vec{e} _ 3} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 ) + 2 k)\ket{k,\vec{e} _ 3}  
+>A ^ {\prime k ^ \prime k} _ \theta & = \ii \bra{k ^ \prime ,\theta,\varphi} ^ \prime  \frac{\partial}{\partial \theta} \ket{k,\theta,\varphi} ^ \prime  \\
+>& = \bra{k ^ \prime ,\vec{e} _ 3} \ii U ^ \dagger ( \theta , \varphi) \e ^ { \ii 2 k \varphi} \frac{\partial}{\partial \theta} \e ^ {- \ii 2 k \varphi} U ( \theta , \varphi) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k ^ \prime ,\vec{e} _ 3} \ii \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \e ^ { \ii 2 k \varphi} \frac{\partial}{\partial \theta} (\e ^ {- \ii 2 k \varphi} \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k ^ \prime ,\vec{e} _ 3} ( \op{J} _ 2 \cos \varphi -\op{J} _ 1 \sin \varphi ) \ket{k,\vec{e} _ 3} \\
+>A ^ {\prime k ^ \prime k} _ \varphi & = \ii \bra{k ^ \prime , \theta , \varphi} ^ \prime \frac{\partial}{\partial \varphi} \ket{k , \theta , \varphi} ^ \prime \\
+>& = \bra{k ^ \prime,\vec{e} _ 3} \ii U ^ \dagger ( \theta , \varphi) \e ^ { \ii 2 k \varphi} \frac{\partial}{\partial \varphi} \e ^ {- \ii 2 k \varphi} U ( \theta , \varphi) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k ^ \prime,\vec{e} _ 3} \ii \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \e ^ {- \ii 2 k \varphi} \frac{\partial}{\partial \varphi} (\e ^ {- \ii 2 k \varphi} \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ) \ket{k,\vec{e} _ 3} \\
+>& = \bra{k ^ \prime,\vec{e} _ 3} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 ) + 2 k)\ket{k,\vec{e} _ 3}  
 >\end {align*}
 >$$
 >
@@ -402,12 +402,12 @@ $$
 >
 >where $\otimes$ is tensor product.
 
-The curvature two-form $F^k$ is independent of the choice of local coordinates. Using $A'^k$ in $O _ 2$, the curvature is
+The curvature two-form $F^k$ is independent of the choice of local coordinates. Using $A ^{\prime k}$ in $O _ 2$, the curvature is
 
 $$
 \begin{align*}
-F ^ k & = \dd A' ^ k \\
-& = \frac{\partial A' ^ k _ \theta}{\partial \varphi} \dd \varphi \wedge \dd \theta +  \frac{\partial A' ^ k _ \varphi}{\partial \theta} \dd \theta \wedge \dd \varphi\\
+F ^ k & = \dd A ^{\prime k} \\
+& = \frac{\partial A ^{\prime k} _ \theta}{\partial \varphi} \dd \varphi \wedge \dd \theta +  \frac{\partial A ^{\prime k} _ \varphi}{\partial \theta} \dd \theta \wedge \dd \varphi\\
 & = - k \sin \theta \dd \theta \wedge \dd \varphi
 \end{align*}
 $$
@@ -429,12 +429,12 @@ $$
 >$$
 >
 
-Using $S'$, Berry phase is
+Using $S ^ \prime$, Berry phase is
 
 $$
 \begin{align*}
-\gamma _ k (\mathbf{C}) & = \int _ {S'} F ^ k \\
-& = - k \int _ {S'} \sin \theta \dd \theta \wedge \dd \varphi \\
+\gamma _ k (\mathbf{C}) & = \int _ {S ^ \prime} F ^ k \\
+& = - k \int _ {S ^ \prime} \sin \theta \dd \theta \wedge \dd \varphi \\
 & = k \int _ {S^2 \backslash S} \sin \theta \dd \theta \wedge \dd \varphi \\
 & = k \int _ {S^2} \sin \theta \dd \theta \wedge \dd \varphi - k \int _ {S} \sin \theta \dd \theta \wedge \dd \varphi \\
 & = k (4 \pi - \Omega (\mathbf{C})) \quad \mod 2\pi\\
@@ -444,7 +444,7 @@ $$
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/normal_sphere.png" width="50%">
 
-where $S^2 \backslash S$ denotes the surface with the same area as $S'$ but whose normal points out of the sphere $S^2$. The Berry phase of a loop is unique even using the different coordinates. 
+where $S^2 \backslash S$ denotes the surface with the same area as $S ^ \prime$ but whose normal points out of the sphere $S^2$. The Berry phase of a loop is unique even using the different coordinates. 
 
 $$
 (4 \pi k - k \Omega (\mathbf{C}) ) \mod 2\pi = (- k \Omega (\mathbf{C}) ) \mod 2\pi \\
@@ -508,7 +508,7 @@ They yields the components of the Mead-Berry vector potential ($r=\text{const.}$
 $$
 \begin{align*}
 \op{\vec{A}} ^ k & = \op{A} ^ k _ r \vec{e} _ r + \op{A} ^ k _ \theta \vec{e} _ \theta + \op{A} ^ k _ \varphi \vec{e} _ \varphi = \frac{k ( \cos \theta  - 1 )}{r \sin \theta} \vec{e} _ \varphi \ ,\ \theta \ne \pi \\
-\op{\vec{A}}' ^ k & = \op{A} ^ {\prime k} _ r \vec{e} _ r + \op{A} ^ {\prime k} _ \theta \vec{e} _ \theta + \op{A} ^ {\prime k} _ \varphi \vec{e} _ \varphi = \frac{k ( \cos \theta  + 1 )}{r \sin \theta} \vec{e} _ \varphi \ ,\ \theta \ne 0 
+\op{\vec{A}} ^ {\prime k} & = \op{A} ^ {\prime k} _ r \vec{e} _ r + \op{A} ^ {\prime k} _ \theta \vec{e} _ \theta + \op{A} ^ {\prime k} _ \varphi \vec{e} _ \varphi = \frac{k ( \cos \theta  + 1 )}{r \sin \theta} \vec{e} _ \varphi \ ,\ \theta \ne 0 
  \end{align*}
 $$
 
@@ -580,7 +580,7 @@ $$
 \begin{align*}
 & \because h (\vec{R}) \ket{k,R} = b \vec{R} \cdot \op{\vec{J}} \ket{k,R} = b k \ket{k,R},\
 \gamma _ k (\mathbf{C} _ 1) = - 2 \pi k (1 - \cos \theta)\\
-& \therefore \psi (t) \myeq \e ^ {- \ii \int ^ t _ 0 E _ n (t') \dd t'} \e ^ {\ii \gamma _ k (t)} \ket{k , R (t)}
+& \therefore \psi (t) \myeq \e ^ {- \ii \int ^ t _ 0 E _ n (t ^ \prime) \dd t ^ \prime} \e ^ {\ii \gamma _ k (t)} \ket{k , R (t)}
 = \e ^ {- \ii  b k t } \e ^ {\ii \gamma _ k (t)} \ket{k , \theta , \omega t},\ \text{where } \gamma _ k (t) = \frac{t}{T} \gamma _ k (\mathbf{C} _ 1) 
 \end{align*}
 $$
@@ -676,7 +676,6 @@ $$
 #### General Solution
 
 The new Schrödinger equation can be integrated immediately.
-
 $$
 \begin{align*}
 \psi ^ \prime (t) & = \e ^ {- \ii H t} \psi ^ \prime (0)\\
