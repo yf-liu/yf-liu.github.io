@@ -649,7 +649,7 @@ $$
 >\end {align*}
 >$$
 >
-><img src = "assets/tilde_theta.png" width="25%">
+><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/tilde_theta.png" width="25%">
 >
 >Imbedded into the $\realset ^ 3$, the transformation of $\theta$ to $\tilde{\theta}$ is easier to understand.
 >
@@ -662,7 +662,7 @@ $$
 >
 >where $\nu=\frac{\omega}{b}$ is a constant.
 >
-><img src = "assets/transformation_theta.png" width="90%">
+><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/transformation_theta.png" width="90%">
 
 
 |                      |                           Old way                            |                           New way                            |
@@ -701,7 +701,7 @@ which represents a 'rotation' of the state vector $\psi ' _ 0$ by an angle $\Ome
 >\end{align*}
 >$$
 >
-><img src = "assets/momentum_rotation.png" width="30%">
+><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/momentum_rotation.png" width="30%">
 
 Then transform back to the laboratory frame.
 
@@ -724,7 +724,7 @@ $$
 >h = b \vec{R} (\theta , 0) \cdot \op{\vec{J}}
 >$$
 >
-><img src = "assets/adiabatic_approxmation.png" width="40%">
+><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/adiabatic_approxmation.png" width="40%">
 
 #### Cyclic solution
 
