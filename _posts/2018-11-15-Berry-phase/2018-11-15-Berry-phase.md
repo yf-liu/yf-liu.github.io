@@ -574,6 +574,8 @@ $$
 
 #### Adiabatic approximation has a problem
 
+---
+
 We shall first consider the case where the adiabatic approximation is valid.
 
 $$
@@ -607,6 +609,8 @@ But the results of adiabatic approximation aren't compatible with the Schröding
 >The equation has an extra $\frac{\partial \gamma _ k (t)}{\partial t}$, which is omitted in the adiabatic approximation.
 
 #### Transformation of coordinate
+
+---
 
 The unitary transformation of the state vector $\psi (t)$ is
 
@@ -675,6 +679,8 @@ $$
 
 #### General Solution
 
+---
+
 The new Schrödinger equation can be integrated immediately.
 
 $$
@@ -729,6 +735,8 @@ $$
 ><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/adiabatic_approxmation.png" width="40%">
 
 #### Cyclic solution
+
+---
 
 By definition the cyclic solutions with period $\tau$ are obtained by choosing the initial state vector $\psi (0)$ to be an non-stationary eigenvector of the evolution operator 
 
