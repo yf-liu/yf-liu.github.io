@@ -111,7 +111,7 @@ with the initial Hamiltonian $h _ 0 = b \sin \theta \op{J} _ 1 + b \cos \theta \
 >& \therefore \e ^{-\ii \omega t \op{J} _ 3} \op{J} _ 1 \e ^{\ii \omega t \op{J} _ 3} \\
 >& = \op{J} _ 1 + \omega t \op{J} _ 2 - \frac{1}{2!} (\omega t)^2 \op{J} _ 1  + \frac{1}{3!}  (\omega t)^3 \op{J} _ 2 + \cdots \\ 
 >& = \op{J} _ 1 (1 - \frac{1}{2!} (\omega t)^2 + \cdots) + \op{J} _ 2 (\omega t  + \frac{1}{3!}  (\omega t)^3 + \cdots) \\ 
->& = \op{J} _ 1 \cos \omega t + \op{J} _ 2 \sin \omega t \\
+>& = \op{J} _ 1 \cos \omega t + \op{J} _ 2 \sin \omega t 
 >\end{align*}
 >$$
 >
@@ -204,7 +204,7 @@ $$
 \begin{align*}
 U _ 3 (\varphi) & = \e ^ {-\ii \varphi \op{J} _ 3} \defas \id + \frac{\varphi}{ \ii} \op{J} _ 3 + \frac{1}{2!} \left( \frac{\varphi}{ \ii} \op{J} _ 3 \right)^2 + \cdots \\
 U _ 2 (\theta) & = \e ^ {-\ii \theta \op{J} _ 2} \defas \id + \frac{\theta}{\ii} \op{J} _ 2 + \frac{1}{2!} \left( \frac{\theta}{\ii} \op{J} _ 2 \right)^2 + \cdots\\
-U ( \theta , \varphi) & = U _ 3 (\varphi) U _ 2 (\theta) U _ 3 (-\varphi)= \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3}\\
+U ( \theta , \varphi) & = U _ 3 (\varphi) U _ 2 (\theta) U _ 3 (-\varphi)= \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3}
 \end{align*}
 $$
 
@@ -236,7 +236,7 @@ For south pole $-\vec{e} _ 3$, the eigenvector $\ket{k,\pi, \varphi } = \e ^{-\i
 >\e ^{-\ii \pi \op{J} _ 2} \op{J} _ 3 \e ^{\ii \pi \op{J} _ 2} & =  \op{J} _ 3 \cos \pi + \op{J} _ 1 \sin \pi = - \op{J} _ 3\\
 >\e ^{-\ii \pi \op{J} _ 2} \e ^{- \ii \varphi \op{J} _ 3} \e ^{\ii \pi \op{J} _ 2} & = \e ^{\ii \varphi \op{J} _ 3} \\
 >\e ^{-\ii \pi \op{J} _ 2} \e ^{- \ii \varphi \op{J} _ 3}  & = \e ^{\ii \varphi \op{J} _ 3} \e ^{-\ii \pi \op{J} _ 2}\\
->\e ^{-\ii \pi \op{J} _ 2} & = \e ^{\ii \varphi \op{J} _ 3} \e ^{-\ii \pi \op{J} _ 2} \e ^{ \ii \varphi \op{J} _ 3}  \\
+>\e ^{-\ii \pi \op{J} _ 2} & = \e ^{\ii \varphi \op{J} _ 3} \e ^{-\ii \pi \op{J} _ 2} \e ^{ \ii \varphi \op{J} _ 3}  
 >\end{align*}
 >$$
 >
@@ -248,7 +248,7 @@ For south pole $-\vec{e} _ 3$, the eigenvector $\ket{k,\pi, \varphi } = \e ^{-\i
 >& = \e ^ {-\ii \varphi \op{J} _ 3} \e ^ {-\ii \pi \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \ket{k,\vec{e} _ 3}\\
 >& = \e ^ {-\ii \varphi \op{J} _ 3} \e ^{ \ii \varphi  \op{J}  _ 3} \e ^{-\ii \pi  \op{J}  _ 2} \e ^{\ii \varphi  \op{J}  _ 3} \e ^ {\ii \varphi \op{J} _ 3} \ket{k,\vec{e} _ 3}\\
 >& =\e ^{-\ii \pi  \op{J}  _ 2} \e ^ {2 \ii \varphi \op{J} _ 3}  \ket{k,\vec{e} _ 3}\\
->& =\e ^{-\ii \pi  \op{J}  _ 2} \e ^ {2 \ii \varphi k}  \ket{k,\vec{e} _ 3}\\
+>& =\e ^{-\ii \pi  \op{J}  _ 2} \e ^ {2 \ii \varphi k}  \ket{k,\vec{e} _ 3}
 >\end{align*}
 >$$
 >
@@ -281,13 +281,13 @@ $$
 Mead-Berry connection one-form $A^k$ for the adiabatic evolution of the Hamiltonian ($\ref{Hamiltonian_of_system}$) is
 
 $$
-A ^ k (R) = A _ i ^ k \dd R ^ i = \ii \bra{k,R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i\\
+A ^ k (R) = A _ i ^ k \dd R ^ i = \ii \bra{k,R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i
 $$
 
 where $R^i$ corresponding to $\theta$ and $\varphi$. The matrix of one-forms is
 
 $$
-A ^ {k ' k} (R ^ i) = A ^ {k ' k} _ i d R ^ i = \ii \bra{k ',R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i\\
+A ^ {k ' k} (R ^ i) = A ^ {k ' k} _ i d R ^ i = \ii \bra{k ',R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i
 $$
 
 On the patch $O _ 1$ ($\theta \ne \pi$), we have
@@ -312,7 +312,7 @@ $$
 >& = \bra{k',\vec{e} _ 3} ( \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \op{J} _ 3 \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} - \op{J} _ 3 ) \ket{k,\vec{e} _ 3}  \\
 >& = \bra{k',\vec{e} _ 3} ( \e ^ {-\ii \varphi \op{J} _ 3}  (\op{J} _ 3\cos \theta - \op{J} _ 1 \sin \theta) \e ^ {\ii \varphi \op{J} _ 3} - \op{J} _ 3 ) \ket{k,\vec{e} _ 3}  \\
 >& = \bra{k',\vec{e} _ 3} (\op{J} _ 3 \cos \theta -  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta  - \op{J} _ 3 ) \ket{k,\vec{e} _ 3}  \\
->& = \bra{k',\vec{e} _ 3} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 )) \ket{k,\vec{e} _ 3}  \\
+>& = \bra{k',\vec{e} _ 3} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 )) \ket{k,\vec{e} _ 3}  
 >\end {align*}
 >$$
 >
@@ -340,7 +340,7 @@ $$
 >A' ^ {k'k} _ \varphi & = \ii \bra{k',\theta,\varphi}' \frac{\partial}{\partial \varphi} \ket{k,\theta,\varphi}' \\
 >& = \bra{k',\vec{e} _ 3} \ii U ^ \dagger ( \theta , \varphi) \e ^ { \ii 2 k \varphi} \frac{\partial}{\partial \varphi} \e ^ {- \ii 2 k \varphi} U ( \theta , \varphi) \ket{k,\vec{e} _ 3} \\
 >& = \bra{k',\vec{e} _ 3} \ii \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \e ^ {- \ii 2 k \varphi} \frac{\partial}{\partial \varphi} (\e ^ {- \ii 2 k \varphi} \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ) \ket{k,\vec{e} _ 3} \\
->& = \bra{k',\vec{e} _ 3} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 ) + 2 k)\ket{k,\vec{e} _ 3}  \\
+>& = \bra{k',\vec{e} _ 3} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 ) + 2 k)\ket{k,\vec{e} _ 3}  
 >\end {align*}
 >$$
 >
@@ -437,7 +437,7 @@ $$
 & = k \int _ {S^2 \backslash S} \sin \theta \dd \theta \wedge \dd \varphi \\
 & = k \int _ {S^2} \sin \theta \dd \theta \wedge \dd \varphi - k \int _ {S} \sin \theta \dd \theta \wedge \dd \varphi \\
 & = k (4 \pi - \Omega (\mathbf{C})) \quad \mod 2\pi\\
-& = 4 \pi k - k \Omega (\mathbf{C}) \quad \mod 2\pi\\
+& = 4 \pi k - k \Omega (\mathbf{C}) \quad \mod 2\pi
 \end{align*}
 $$
 
@@ -482,7 +482,7 @@ $$
 >
 >$$
 >\frac{\partial \vec{r}}{\partial \theta} = \vec{e} _ \theta r \\
->\frac{\partial \vec{r}}{\partial \varphi} = \vec{e} _ \varphi r \sin \theta\\
+>\frac{\partial \vec{r}}{\partial \varphi} = \vec{e} _ \varphi r \sin \theta
 >$$
 >
 >The gradient is
@@ -497,7 +497,7 @@ $$
 >\begin{align*}
 >\nabla \times \vec{A} & = \frac{1}{r \sin \theta} \left( \frac{\partial}{\partial \theta} ( A _ \varphi \sin \theta ) - \frac{\partial A _ \theta}{\partial \varphi}  \right) \vec{e} _ r\\
 >& \quad + \frac{1}{r} \left( \frac{1}{\sin \theta} \frac{\partial A _ r}{\partial \varphi} - \frac{\partial}{\partial r} (r A _ \varphi) \right) \vec{e} _ \theta\\
->& \quad + \frac{1}{r} \left( \frac{\partial}{\partial r} (r A _ \theta) - \frac{\partial A _ r}{\partial \theta} \right) \vec{e} _ \varphi\\
+>& \quad + \frac{1}{r} \left( \frac{\partial}{\partial r} (r A _ \theta) - \frac{\partial A _ r}{\partial \theta} \right) \vec{e} _ \varphi
 >\end{align*}
 >$$
 >
@@ -507,7 +507,7 @@ They yields the components of the Mead-Berry vector potential ($r=\text{const.}$
 $$
 \begin{align*}
 \op{\vec{A}} ^ k & = \op{A} ^ k _ r \vec{e} _ r + \op{A} ^ k _ \theta \vec{e} _ \theta + \op{A} ^ k _ \varphi \vec{e} _ \varphi = \frac{k ( \cos \theta  - 1 )}{r \sin \theta} \vec{e} _ \varphi \ ,\ \theta \ne \pi \\
-\op{\vec{A}}' ^ k & = \op{A} ' ^ k _ r \vec{e} _ r + \op{A} ' ^ k _ \theta \vec{e} _ \theta + \op{A} ' ^ k _ \varphi \vec{e} _ \varphi = \frac{k ( \cos \theta  + 1 )}{r \sin \theta} \vec{e} _ \varphi \ ,\ \theta \ne 0 \\
+\op{\vec{A}}' ^ k & = \op{A} ' ^ k _ r \vec{e} _ r + \op{A} ' ^ k _ \theta \vec{e} _ \theta + \op{A} ' ^ k _ \varphi \vec{e} _ \varphi = \frac{k ( \cos \theta  + 1 )}{r \sin \theta} \vec{e} _ \varphi \ ,\ \theta \ne 0 
  \end{align*}
 $$
 
@@ -526,7 +526,7 @@ $$
 >& = \bra{k,\vec{e} _ 3} ( \vec{e} _ \theta  \frac{1}{r} ( \op{J} _ 2 \cos \varphi -\op{J} _ 1 \sin \varphi ) + \vec{e} _ \varphi \frac{1}{r \sin \theta} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 ) + 2 k ) ) \ket{k,\vec{e} _ 3} \\
 >& = \bra{k,\vec{e} _ 3} \vec{e} _ \varphi \frac{1}{r \sin \theta} (\op{J} _ 3 ( \cos \theta  - 1 ) + 2 k ) \ket{k,\vec{e} _ 3} \\
 >& = \bra{k,\vec{e} _ 3} \vec{e} _ \varphi \frac{1}{r \sin \theta} k ( \cos \theta  + 1 ) \ket{k,\vec{e} _ 3} \\
->& = \frac{k ( \cos \theta + 1 )}{r \sin \theta} \vec{e} _ \varphi \\
+>& = \frac{k ( \cos \theta + 1 )}{r \sin \theta} \vec{e} _ \varphi 
 > \end{align*}
 >$$
 >
@@ -599,7 +599,7 @@ But the results of adiabatic approxmation aren't compatible with the Schrödinge
 >\begin{align*}
 >\ii \frac{\partial}{\partial t} \psi (t) & = b \vec{R} (\theta , \omega t) \cdot \vec{J} \psi (t) \\
 >\ii \frac{\partial}{\partial t} \e ^ {- \ii  b k t } \e ^ {\ii \gamma _ k (t)} \ket{k , \theta , \omega t} & = b \e ^ {- \ii  b k t } \e ^ {\ii \gamma _ k (t)} \vec{R} (\theta , \omega t) \cdot \vec{J} \ket{k , \theta , \omega t} \\
->(bk - \frac{\partial \gamma _ k (t)}{\partial t}) \e ^ {- \ii  b k t } \e ^ {\ii \gamma _ k (t)} \ket{k , \theta , \omega t} & = b k \e ^ {- \ii  b k t } \e ^ {\ii \gamma _ k (t)}  \ket{k , \theta , \omega t} \\
+>(bk - \frac{\partial \gamma _ k (t)}{\partial t}) \e ^ {- \ii  b k t } \e ^ {\ii \gamma _ k (t)} \ket{k , \theta , \omega t} & = b k \e ^ {- \ii  b k t } \e ^ {\ii \gamma _ k (t)}  \ket{k , \theta , \omega t} 
 >\end{align*}
 >$$
 >
@@ -621,7 +621,7 @@ $$
 > \ii \frac{\partial}{\partial t} (\e ^ {- \ii \omega t \op{J} _ 3} \psi ' (t))  = h (t) \e ^ {- \ii \omega t \op{J} _ 3} \psi ' (t)\\
 > \omega \e ^ {- \ii \omega t \op{J} _ 3} \op{J} _ 3 \psi ' (t) + \ii \e ^ {- \ii \omega t \op{J} _ 3} \frac{\partial}{\partial t} \psi ' (t) = h (t) \e ^ {- \ii \omega t \op{J} _ 3} \psi ' (t)\\
 > \omega \op{J} _ 3 \psi ' (t) + \ii \frac{\partial}{\partial t} \psi ' (t) = \e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} \psi ' (t)\\
-> \ii \frac{\partial}{\partial t} \psi ' (t) = (\e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} - \omega \op{J} _ 3) \psi ' (t)\\
+> \ii \frac{\partial}{\partial t} \psi ' (t) = (\e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} - \omega \op{J} _ 3) \psi ' (t)
 > $$
 >
 
@@ -678,7 +678,7 @@ The new Schrödinger equation can be integrated immediately.
 $$
 \begin{align*}
 \psi ' (t) & = \e ^ {- \ii H t} \psi ' (0)\\
-& = \e ^ {- \ii \Omega \vec{e} \cdot \vec{J} t} \psi ' (0)\\
+& = \e ^ {- \ii \Omega \vec{e} \cdot \vec{J} t} \psi ' (0)
 \end{align*}
 $$
 
@@ -687,7 +687,7 @@ which represents a 'rotation' of the state vector $\psi ' _ 0$ by an angle $\Ome
 >When $\vec{e} = \vec{e} _ 3$, assume that the magnetic field is kept constant $\omega = 0$ and $\psi (t)$ represents a pure state and $\psi (0) =\ket{k , \frac{\pi}{2} , 0}$, where all the the magnetic moments aligned along the $\vec{e} _ 1$. 
 >
 >$$
->P ^ {\vec{e} _ 1} _ k (t = 0) = \abs{\braket {\psi(0)}{k , \frac{\pi}{2} , 0}} ^2 = 1\\
+>P ^ {\vec{e} _ 1} _ k (t = 0) = \abs{\braket {\psi(0)}{k , \frac{\pi}{2} , 0}} ^2 = 1
 >$$
 >
 >At time $t$, the probability of $\psi (t)$ aligning on $\vec{R} (\frac{\pi}{2} , b t)$ is
@@ -697,7 +697,7 @@ which represents a 'rotation' of the state vector $\psi ' _ 0$ by an angle $\Ome
 >P ^ {\vec{R} (\frac{\pi}{2} , b t)} _ k (t) & = \abs{\braket {\psi(t)}{k , \frac{\pi}{2} , b t}} ^2 \\
 >& = \abs{\bra {\psi(0)} \e ^ {\ii t b \op{J} _ 3} \e ^ {- \ii t b \op{J} _ 3} \ket{k , \frac{\pi}{2} , 0}} ^ 2 \\
 >& = \abs{\braket {\psi(0)}{k , \frac{\pi}{2} , 0}} ^ 2 \\
->& = 1 \\
+>& = 1
 >\end{align*}
 >$$
 >
