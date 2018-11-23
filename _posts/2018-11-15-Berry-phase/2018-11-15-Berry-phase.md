@@ -157,6 +157,7 @@ $$
 >& \ne 0
 >\end{align*}
 >$$
+>
 
 
 - $H^{total} = \op{\vec{X}} \cdot \op{\vec{J}}+h(t)$, where $\op{\vec{X}} \cdot \op{\vec{J}}$ describes the slowly changing quantum environment for the electron, and $\op{\vec{X}}$ is the position operator of the internuclear axis of the molecule,  rotating in space.
@@ -186,6 +187,7 @@ $$
 >& \ne 0
 >\end{align*}
 >$$
+>
 
 ### Rotation operator
 
@@ -248,6 +250,7 @@ For south pole $-\vec{e} _ 3$, the eigenvector $\ket{k,\pi, \varphi } = \e ^{-\i
 >& =\e ^{-\ii \pi  \op{J}  _ 2} \e ^ {2 \ii \varphi k}  \ket{k,\vec{e} _ 3}
 >\end{align*}
 >$$
+>
 
 Using a gauge transformation, the smooth single-valued vector function also can defined on $S^2$ except at the north pole. The gauge transformation is
 
@@ -312,6 +315,7 @@ $$
 >& = \bra{k ^ \prime ,\vec{e} _ 3} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 )) \ket{k,\vec{e} _ 3}  
 >\end {align*}
 >$$
+>
 
 For diagonal matrix elements, we have
 
@@ -339,6 +343,7 @@ $$
 >& = \bra{k ^ \prime,\vec{e} _ 3} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 ) + 2 k)\ket{k,\vec{e} _ 3}  
 >\end {align*}
 >$$
+>
 
 For diagonal matrix elements, we have
 
@@ -421,6 +426,7 @@ $$
 >$$
 >\Omega(\mathbf{C}) \defas \int _ S \sin \theta \dd \theta \wedge \dd \varphi
 >$$
+>
 
 Using $S ^ \prime$, Berry phase is
 
@@ -494,6 +500,7 @@ $$
 >& \quad + \frac{1}{r} \left( \frac{\partial}{\partial r} (r A _ \theta) - \frac{\partial A _ r}{\partial \theta} \right) \vec{e} _ \varphi
 >\end{align*}
 >$$
+>
 
 They yields the components of the Mead-Berry vector potential ($r=\text{const.}$) in the spherical coordinates,
 
@@ -522,6 +529,7 @@ $$
 >& = \frac{k ( \cos \theta + 1 )}{r \sin \theta} \vec{e} _ \varphi 
 > \end{align*}
 >$$
+>
 
 They are related by the gauge transformation.
 
@@ -611,7 +619,7 @@ $$
 \psi (t) = \tilde{U} ^ \dagger (t) \psi ^ \prime (t) = \e ^ {- \ii \omega t \op{J} _ 3} \psi ^ \prime (t) \end{cases}
 $$
 
-<img src = "assets/coordinate_transformation.png" width="90%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/coordinate_transformation.png" width="90%">
 
 > With the transformation, the Schrödinger equation becomes
 >
@@ -624,6 +632,7 @@ $$
 > \ii \frac{\partial}{\partial t} \psi ^ \prime (t) = (h _ 0 - \omega \op{J} _ 3) \psi ^ \prime (t)\\
 > \ii \frac{\partial}{\partial t} \psi ^ \prime (t) = (b \sin \theta \op{J} _ 1 + b \cos \theta \op{J} _ 3 - \omega \op{J} _ 3) \psi ^ \prime (t)\\
 > $$
+>
 
 The Hamiltonian doesn't change with time, and can be related to the angular momentum. 
 
@@ -644,10 +653,11 @@ where $\Omega =  b \sqrt{1 + \frac{\omega}{b} (-2 \cos \theta + \frac{\omega}{b}
 >& = b \left( \left( \cos \theta - \frac{\omega}{b} \right) \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)
 >\end {align*}
 >$$
+>
 
 The evolution of $\vec{e}$ is along a larger circle on the unit sphere than $\vec{R}$.
 
-<img src = "assets/e_evolution.png" width="90%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/e_evolution.png" width="90%">
 
 >It means the rotating axis has a slight offset. The offset can be calculated as follows.
 >
@@ -720,9 +730,9 @@ $$
 ><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/adiabatic_approxmation.png" width="40%">
 
 
->When $\omega \gg 0(\nu \gg 0)$, the motion of the magnetic momentum is nutation.
+>When $\omega \gg 0(\nu \gg 0)​$, the motion of the magnetic momentum is nutation.
 >
-><img src = "assets/quantum_trajectory_parameter.png" width="40%">
+><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/quantum_trajectory_parameter.png" width="40%">
 >$$
 >\begin{align*}
 >& \omega = 1 \\
@@ -750,7 +760,7 @@ $$
 >\end{align*}
 >$$
 >
-><img src = "assets/quantum_trajectory.png" width="100%">
+><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/quantum_trajectory.png" width="100%">
 >
 >With classic limit, we can solve the average motion of magnetic momentum.
 >
@@ -766,7 +776,7 @@ $$
 >\end{align*}
 >$$
 >
-><img src = "assets/classical_trajectory.png" width="100%">
+><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/classical_trajectory.png" width="100%">
 >
 >Both of them are nutation, but there is a offset of the rotating axis.
 
@@ -806,6 +816,7 @@ $$
 >\e ^ {-\ii \frac{2 \pi}{\omega} b \left( \cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \ket{\psi (0)} & = \e ^ {-\ii \frac{2 \pi}{\omega} b \left( \cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \ket{\psi (0)} 
 >\end{align*}
 >$$
+>
 
 ### Class A
 
@@ -849,6 +860,7 @@ $$
 >\e ^ {- \ii 2 \pi \op{J} _ 3} \op{J} _ 2 = \op{J} _ 2 \e ^ {- \ii 2 \pi \op{J} _ 3} \\
 >\e ^ {- \ii 2 \pi \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2} = \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \e ^ {- \ii 2 \pi \op{J} _ 3}
 >$$
+>
 
 The total phase of these cyclic evolutions is $\e ^ {- \ii \alpha _ k}$, labeled by $k$.
 
