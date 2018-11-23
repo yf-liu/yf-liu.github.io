@@ -1,5 +1,5 @@
 ---
-title: Berry phase
+title: Exact solution of Spinning quantum system in an external magnetic field
 category: Physics
 tags:
   - Topology
@@ -8,13 +8,11 @@ tags:
 
 
 
-## Spinning quantum system in an external magnetic field
-
 Key words: periodic rotation, exact solution, Aharonov-Anandan phase. 
 
-### The parameterization of the Basis Vector
+## The parameterization of the Basis Vector
 
-#### Hamiltonian and parameter space
+### Hamiltonian and parameter space
 
 ---
 
@@ -119,9 +117,8 @@ with the initial Hamiltonian $h _ 0 = b \sin \theta \op{J} _ 1 + b \cos \theta \
 >
 >- $ \e ^{-\ii \omega t  \op{J}  _ 3}  \op{J} _ 3 \e ^{\ii \omega t  \op{J}  _ 3} =  \op{J}  _ 3$ ;
 >- Generally, $\e ^{-\ii a  \op{J} _ i}  \op{J}  _ j \e ^{\ii a  \op{J}  _ i} =   \op{J}  _ j (\delta _ {ij} + (1-\delta _ {ij}) \cos a) +  \op{J}  _ k \varepsilon _ {ijk} \sin a$.
->
 
-#### Eigenvectors and eigenvalues
+### Eigenvectors and eigenvalues
 
 ---
 
@@ -160,7 +157,6 @@ $$
 >& \ne 0
 >\end{align*}
 >$$
->
 
 
 - $H^{total} = \op{\vec{X}} \cdot \op{\vec{J}}+h(t)$, where $\op{\vec{X}} \cdot \op{\vec{J}}$ describes the slowly changing quantum environment for the electron, and $\op{\vec{X}}$ is the position operator of the internuclear axis of the molecule,  rotating in space.
@@ -190,9 +186,8 @@ $$
 >& \ne 0
 >\end{align*}
 >$$
->
 
-#### Rotation operator
+### Rotation operator
 
 ---
 
@@ -217,7 +212,7 @@ $$
 \end{align*}
 $$
 
-#### Different parameterizations
+### Different parameterizations
 
 ---
 
@@ -253,7 +248,6 @@ For south pole $-\vec{e} _ 3$, the eigenvector $\ket{k,\pi, \varphi } = \e ^{-\i
 >& =\e ^{-\ii \pi  \op{J}  _ 2} \e ^ {2 \ii \varphi k}  \ket{k,\vec{e} _ 3}
 >\end{align*}
 >$$
->
 
 Using a gauge transformation, the smooth single-valued vector function also can defined on $S^2$ except at the north pole. The gauge transformation is
 
@@ -273,11 +267,11 @@ $$
 $$
 
 
-### Mead-Berry connection and Berry phase for adiabatic evolutions - magnetic monopole potentials
+## Mead-Berry connection and Berry phase for adiabatic evolutions - magnetic monopole potentials
 
 
 
-#### Mead-Berry connection one-form
+### Mead-Berry connection one-form
 
 ---
 
@@ -318,7 +312,6 @@ $$
 >& = \bra{k ^ \prime ,\vec{e} _ 3} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 )) \ket{k,\vec{e} _ 3}  
 >\end {align*}
 >$$
->
 
 For diagonal matrix elements, we have
 
@@ -346,7 +339,6 @@ $$
 >& = \bra{k ^ \prime,\vec{e} _ 3} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 ) + 2 k)\ket{k,\vec{e} _ 3}  
 >\end {align*}
 >$$
->
 
 For diagonal matrix elements, we have
 
@@ -361,7 +353,7 @@ $$
 A ^ {\prime k} _ \varphi (\theta , \varphi) - A ^ {k} _ \varphi (\theta , \varphi) = 2 k
 $$
 
-#### Mead-Berry curvature two-form
+### Mead-Berry curvature two-form
 
 ---
 
@@ -414,7 +406,7 @@ F ^ k & = \dd A ^{\prime k} \\
 \end{align*}
 $$
 
-#### Berry phase
+### Berry phase
 
 ---
 
@@ -429,7 +421,6 @@ $$
 >$$
 >\Omega(\mathbf{C}) \defas \int _ S \sin \theta \dd \theta \wedge \dd \varphi
 >$$
->
 
 Using $S ^ \prime$, Berry phase is
 
@@ -456,7 +447,7 @@ $$
 
 If the state vectors $\ket{k,R}$ are the eigenvectors of $\op{\vec{J}}^2$, then the possible values of $k$ are from $\ref{value_of_k}$. But if not, then is a new result. (See Chapter 6)
 
-#### Mead-Berry (three-)vector potential and curvature three-vector
+### Mead-Berry (three-)vector potential and curvature three-vector
 
 ---
 
@@ -503,7 +494,6 @@ $$
 >& \quad + \frac{1}{r} \left( \frac{\partial}{\partial r} (r A _ \theta) - \frac{\partial A _ r}{\partial \theta} \right) \vec{e} _ \varphi
 >\end{align*}
 >$$
->
 
 They yields the components of the Mead-Berry vector potential ($r=\text{const.}$) in the spherical coordinates,
 
@@ -532,7 +522,6 @@ $$
 >& = \frac{k ( \cos \theta + 1 )}{r \sin \theta} \vec{e} _ \varphi 
 > \end{align*}
 >$$
->
 
 They are related by the gauge transformation.
 
@@ -560,7 +549,7 @@ $$
 >|             $-\frac{k }{r^2} \vec{e} _ r \quad$              |       curvature three-vector $\vec{F} ^ k$        |  magnetic field $\vec{B}$   |
 >|                           integer                            |                       $2 k$                       |     $\frac{e g}{2 \pi}$     |
 
-### The exact solution of the Schrödinger equation
+## The exact solution of the Schrödinger equation
 
 Schrödinger equation:
 
@@ -574,7 +563,7 @@ $$
 \ket{\psi (\tau)} \bra{\psi (\tau)} = \ket{\psi (0)} \bra{\psi (0)}
 $$
 
-#### Adiabatic approximation has a problem
+### Adiabatic approximation has a problem
 
 ---
 
@@ -610,7 +599,7 @@ But the results of adiabatic approximation aren't compatible with the Schröding
 >
 >The equation has an extra $\frac{\partial \gamma _ k (t)}{\partial t}$, which is omitted in the adiabatic approximation.
 
-#### Transformation of coordinate
+### Transformation of coordinate
 
 ---
 
@@ -635,7 +624,6 @@ $$
 > \ii \frac{\partial}{\partial t} \psi ^ \prime (t) = (h _ 0 - \omega \op{J} _ 3) \psi ^ \prime (t)\\
 > \ii \frac{\partial}{\partial t} \psi ^ \prime (t) = (b \sin \theta \op{J} _ 1 + b \cos \theta \op{J} _ 3 - \omega \op{J} _ 3) \psi ^ \prime (t)\\
 > $$
->
 
 The Hamiltonian doesn't change with time, and can be related to the angular momentum. 
 
@@ -656,7 +644,6 @@ where $\Omega =  b \sqrt{1 + \frac{\omega}{b} (-2 \cos \theta + \frac{\omega}{b}
 >& = b \left( \left( \cos \theta - \frac{\omega}{b} \right) \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)
 >\end {align*}
 >$$
->
 
 The evolution of $\vec{e}$ is along a larger circle on the unit sphere than $\vec{R}$.
 
@@ -695,7 +682,7 @@ The evolution of $\vec{e}$ is along a larger circle on the unit sphere than $\ve
 | Observable       | $\bra{\psi (t)} h (t) \ket{\psi (t)}  = \bra{\psi (t)} \e ^ {- \ii \omega t \op{J} _ 3} h _ 0 \e ^ {\ii \omega t \op{J} _ 3} \ket{\psi (t)}$ | $\bra{\psi ^ \prime (t)} h _ 0 \ket{\psi ^ \prime (t)}  = \bra{\e ^ {\ii \omega t \op{J} _ 3} \psi (t)} h _ 0 \ket{\e ^ {\ii \omega t \op{J} _ 3} \psi (t)}$ |
 | Schrödinger eqn. | $\ii \frac{\partial}{\partial t} \psi (t) = h (t) \psi (t)$  | $\ii \frac{\partial}{\partial t} \psi ^ \prime (t) = h ^ \prime (t) \psi ^ \prime (t)$ |
 
-#### General Solution
+### General Solution
 
 ---
 
@@ -735,6 +722,7 @@ $$
 
 >When $\omega \gg 0(\nu \gg 0)$, the motion of the magnetic momentum is nutation.
 >
+><img src = "assets/quantum_trajectory_parameter.png" width="40%">
 >$$
 >\begin{align*}
 >& \omega = 1 \\
@@ -742,7 +730,7 @@ $$
 >& \theta = \pi/6 \\
 >& \theta _ \mu = \pi/2 \\
 >& \Omega =  b \sqrt{1 + \frac{\omega}{b} (-2 \cos \theta + \frac{\omega}{b})} \\
->& \vec{\mu} = (\mu _ 1 , \mu _ 2 , \mu _ 3) , \begin{cases} 
+>& \vec{\mu} (0) = (\mu _ 1 , \mu _ 2 , \mu _ 3) , \begin{cases} 
 >\mu _ 1 = \sin \theta _ \mu \\
 >\mu _ 2 = 0 \\ 
 >\mu _ 3 = \cos \theta _ \mu \end{cases} \\
@@ -759,11 +747,10 @@ $$
 >\sin \omega t & \cos \omega t & 0\\
 >0 & 0 & 0\\
 >\end{pmatrix} \vec{x} ^ \prime\\ 
->& \psi (t) = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega t \vec{R}  (\tilde{\theta} , 0) \cdot \op{\vec{J}}} \psi (0)\\
 >\end{align*}
 >$$
 >
-><img src = "assets/classical_trajectory.png" width="100%">
+><img src = "assets/quantum_trajectory.png" width="100%">
 >
 >With classic limit, we can solve the average motion of magnetic momentum.
 >
@@ -779,9 +766,11 @@ $$
 >\end{align*}
 >$$
 >
-><img src = "assets/quantum_trajectory.png" width="100%">
+><img src = "assets/classical_trajectory.png" width="100%">
+>
+>Both of them are nutation, but there is a offset of the rotating axis.
 
-#### Cyclic solution
+### Cyclic solution
 
 ---
 
@@ -817,9 +806,8 @@ $$
 >\e ^ {-\ii \frac{2 \pi}{\omega} b \left( \cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \ket{\psi (0)} & = \e ^ {-\ii \frac{2 \pi}{\omega} b \left( \cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \ket{\psi (0)} 
 >\end{align*}
 >$$
->
 
-#### Class A
+### Class A
 
 ---
 
@@ -861,7 +849,6 @@ $$
 >\e ^ {- \ii 2 \pi \op{J} _ 3} \op{J} _ 2 = \op{J} _ 2 \e ^ {- \ii 2 \pi \op{J} _ 3} \\
 >\e ^ {- \ii 2 \pi \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2} = \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \e ^ {- \ii 2 \pi \op{J} _ 3}
 >$$
->
 
 The total phase of these cyclic evolutions is $\e ^ {- \ii \alpha _ k}$, labeled by $k$.
 
