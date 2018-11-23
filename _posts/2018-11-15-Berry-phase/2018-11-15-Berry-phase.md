@@ -730,9 +730,10 @@ $$
 ><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/adiabatic_approxmation.png" width="40%">
 
 
->When $\omega \gg 0(\nu \gg 0)​$, the motion of the magnetic momentum is nutation.
+>When $\omega \gg 0(\nu \gg 0)$, the motion of the magnetic momentum is nutation.
 >
 ><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/quantum_trajectory_parameter.png" width="40%">
+>
 >$$
 >\begin{align*}
 >& \omega = 1 \\
