@@ -59,6 +59,7 @@ $$
 \newcommand{\set}[1]{\left\lbrace{#1}\right\rbrace}
 \newcommand{\sgn}{\operatorname{sgn}}
 \newcommand\myeq{\stackrel{\mbox{adiabatic}}{=}}
+\newcommand{\avg}[1]{\left\langle {#1} \right\rangle}
 
 h(\vec{R} (t)) = - \frac{B g e}{2 m c} \vec{R} (t) \cdot \op{\vec{J}} = b \vec{R} (t) \cdot \op{\vec{J}}
 \label{Hamiltonian_of_system}
@@ -93,7 +94,7 @@ $$
 \begin{align*}
 h(t) & = b \vec{R} (t) \cdot \op{\vec{J}} \\
 & = b ( \sin \theta \vec{e} _ {12} (t) + \cos \theta \vec{e} _ {3}) \cdot \op{\vec{J}}\\
-& = b \sin \theta (J _ 1 \cos 2 \omega t + \op{J} _ 2 \sin 2 \omega t ) + b \cos \theta \op{J} _ 3\\
+& = b \sin \theta (\op{J} _ 1 \cos 2 \omega t + \op{J} _ 2 \sin 2 \omega t ) + b \cos \theta \op{J} _ 3\\
 & = b \sin \theta \e ^{- \ii \omega t \op{J} _ 3 } \op{J} _ 1 \e ^{\ii \omega t \op{J} _ 3 } + b \cos \theta \op{J} _ 3 \\
 & = \e ^{- \ii \omega t \op{J} _ 3 } (b \sin \theta \op{J} _ 1 + b \cos \theta \op{J} _ 3) \e ^{\ii \omega t \op{J} _ 3 }\\
 & = \e ^{- \ii \omega t \op{J} _ 3 } h _ 0 \e ^{\ii \omega t \op{J} _ 3 }
@@ -621,22 +622,33 @@ $$
 \psi (t) = \tilde{U} ^ \dagger (t) \psi ^ \prime (t) = \e ^ {- \ii \omega t \op{J} _ 3} \psi ^ \prime (t) \end{cases}
 $$
 
+<img src = "assets/coordinate_transformation.png" width="90%">
+
 > With the transformation, the Schrödinger equation becomes
 >
 > $$
 > \ii \frac{\partial}{\partial t} (\e ^ {- \ii \omega t \op{J} _ 3} \psi^ \prime(t))  = h (t) \e ^ {- \ii \omega t \op{J} _ 3} \psi ^ \prime (t)\\
 > \omega \e ^ {- \ii \omega t \op{J} _ 3} \op{J} _ 3 \psi ^ \prime (t) + \ii \e ^ {- \ii \omega t \op{J} _ 3} \frac{\partial}{\partial t} \psi ^ \prime (t) = h (t) \e ^ {- \ii \omega t \op{J} _ 3} \psi ^ \prime (t)\\
 > \omega \op{J} _ 3 \psi ^ \prime (t) + \ii \frac{\partial}{\partial t} \psi ^ \prime (t) = \e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} \psi ^ \prime (t)\\
-> \ii \frac{\partial}{\partial t} \psi ^ \prime (t) = (\e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} - \omega \op{J} _ 3) \psi ^ \prime (t)
+> \ii \frac{\partial}{\partial t} \psi ^ \prime (t) = (\e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} - \omega \op{J} _ 3) \psi ^ \prime (t)\\
+> \ii \frac{\partial}{\partial t} \psi ^ \prime (t) = (\e ^ { \ii \omega t \op{J} _ 3}  \e ^{- \ii \omega t \op{J} _ 3 } h _ 0 \e ^{\ii \omega t \op{J} _ 3 } \e ^ {- \ii \omega t \op{J} _ 3} - \omega \op{J} _ 3) \psi ^ \prime (t)\\
+> \ii \frac{\partial}{\partial t} \psi ^ \prime (t) = (h _ 0 - \omega \op{J} _ 3) \psi ^ \prime (t)\\
+> \ii \frac{\partial}{\partial t} \psi ^ \prime (t) = (b \sin \theta \op{J} _ 1 + b \cos \theta \op{J} _ 3 - \omega \op{J} _ 3) \psi ^ \prime (t)\\
 > $$
 >
 
-The Hamiltonian doesn't change with time, and can also be related to the angular momentum. 
+The Hamiltonian doesn't change with time, and can be related to the angular momentum. 
 
 $$
-h ^ \prime (t) = \e ^ { \ii \omega t \op{J} _ 3} h (t) \e ^ {- \ii \omega t \op{J} _ 3} - \omega \op{J} _ 3 = b (\cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 - \frac{\omega}{b} \op{J} _ 3) \defas H
+\begin{align*}
+h ^ \prime (t) & =  b (\cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 - \frac{\omega}{b} \op{J} _ 3) \defas H = \Omega \vec{e} \cdot \vec{J}
+\end{align*}
 $$
 
+where $\Omega =  b \sqrt{1 + \frac{\omega}{b} (-2 \cos \theta + \frac{\omega}{b})}$ can be treated as new angular frequency of magnetic momentum like $b$, and $\vec{e} = \frac{b}{\Omega}  \left( \left( \cos \theta - \frac{\omega}{b} \right) \vec {e} _ 3 + \sin \theta \vec{e} _ 1 \right)$ can be treated as new rotating axis like $\vec{R}$. 
+
+>The equation above can be easily proved.
+>
 >$$
 >\begin {align*}
 >H & = \Omega \vec{e} \cdot \vec{J}\\
@@ -645,7 +657,12 @@ $$
 >\end {align*}
 >$$
 >
->where $\Omega =  b \sqrt{1 + \frac{\omega}{b} (-2 \cos \theta + \frac{\omega}{b})}, \ \vec{e} = \frac{b}{\Omega}  \left( \left( \cos \theta - \frac{\omega}{b} \right) \vec {e} _ 3 + \sin \theta \vec{e} _ 1 \right)$. 
+
+The evolution of $\vec{e}$ is along a larger circle on the unit sphere than $\vec{R}$.
+
+<img src = "assets/e_evolution.png" width="90%">
+
+>It means the rotating axis has a slight offset. The offset can be calculated as follows.
 >
 >$$
 >\begin {align*}
@@ -687,32 +704,12 @@ The new Schrödinger equation can be integrated immediately.
 $$
 \begin{align*}
 \psi ^ \prime (t) & = \e ^ {- \ii H t} \psi ^ \prime (0)\\
-& = \e ^ {- \ii \Omega \vec{e} \cdot \vec{J} t} \psi ^ \prime (0)
+& = \e ^ {- \ii \Omega \vec{e} \cdot \vec{J} t} \psi ^ \prime (0)\\
+& = \e ^ {- \ii \Omega t \vec{R}  (\tilde{\theta} , 0) \cdot \op{\vec{J}}} \psi ^ \prime (0)
 \end{align*}
 $$
 
-which represents a 'rotation' of the state vector $\psi ^ \prime _ 0$ by an angle $\Omega t$ about the $\vec{e}$-axis. 
-
->When $\vec{e} = \vec{e} _ 3$, assume that the magnetic field is kept constant $\omega = 0$ and $\psi (t)$ represents a pure state and $\psi (0) =\ket{k , \frac{\pi}{2} , 0}$, where all the the magnetic moments aligned along the $\vec{e} _ 1$. 
->
->$$
->P ^ {\vec{e} _ 1} _ k (t = 0) = \abs{\braket {\psi(0)}{k , \frac{\pi}{2} , 0}} ^2 = 1
->$$
->
->At time $t$, the probability of $\psi (t)$ aligning on $\vec{R} (\frac{\pi}{2} , b t)$ is
->
->$$
->\begin{align*}
->P ^ {\vec{R} (\frac{\pi}{2} , b t)} _ k (t) & = \abs{\braket {\psi(t)}{k , \frac{\pi}{2} , b t}} ^2 \\
->& = \abs{\bra {\psi(0)} \e ^ {\ii t b \op{J} _ 3} \e ^ {- \ii t b \op{J} _ 3} \ket{k , \frac{\pi}{2} , 0}} ^ 2 \\
->& = \abs{\braket {\psi(0)}{k , \frac{\pi}{2} , 0}} ^ 2 \\
->& = 1
->\end{align*}
->$$
->
-><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/momentum_rotation.png" width="30%">
-
-Then transform back to the laboratory frame.
+which represents a 'rotation' of the state vector $\psi ^ \prime _ 0$ by an angular momentum $\Omega$ about the $\vec{e}$-axis. Then transform back to the laboratory frame.
 
 $$
 \psi (t) = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega \vec{e} \cdot \op{\vec{J}} t} \psi (0) = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega t \vec{R}  (\tilde{\theta} , 0) \cdot \op{\vec{J}}} \psi (0)
@@ -734,6 +731,55 @@ $$
 >$$
 >
 ><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/adiabatic_approxmation.png" width="40%">
+
+
+>When $\omega \gg 0(\nu \gg 0)$, the motion of the magnetic momentum is nutation.
+>
+>$$
+>\begin{align*}
+>& \omega = 1 \\
+>& b = 1 \\
+>& \theta = \pi/6 \\
+>& \theta _ \mu = \pi/2 \\
+>& \Omega =  b \sqrt{1 + \frac{\omega}{b} (-2 \cos \theta + \frac{\omega}{b})} \\
+>& \vec{\mu} = (\mu _ 1 , \mu _ 2 , \mu _ 3) , \begin{cases} 
+>\mu _ 1 = \sin \theta _ \mu \\
+>\mu _ 2 = 0 \\ 
+>\mu _ 3 = \cos \theta _ \mu \end{cases} \\
+>& \vec{e} = \frac{(e _ 1 , e _ 2 , e _ 3)}{\sqrt{e ^ 2 _ 1 + e ^ 2 _ 2 + e ^ 2 _ 3}} , \begin{cases} 
+>e _ 1 = \sin \theta  \\
+>e _ 2 = 0  \\ 
+>e _ 3 = \cos \theta - \frac{\omega}{b} \end{cases} \\
+>& \vec{b} = \vec{e} \times \vec{\mu} \\
+>& \vec{a} = \vec{b} \times \vec{e} \\
+>& \vec{c} = \vec{\mu} - \vec{a} \\
+>& \vec{x} ^ \prime = \vec{c} + \vec{a} \cos \Omega t + \vec{b} \sin \Omega t \\ 
+>& \vec{x} = \begin{pmatrix}
+>\cos \omega t & - \sin \omega t & 0\\
+>\sin \omega t & \cos \omega t & 0\\
+>0 & 0 & 0\\
+>\end{pmatrix} \vec{x} ^ \prime\\ 
+>& \psi (t) = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega t \vec{R}  (\tilde{\theta} , 0) \cdot \op{\vec{J}}} \psi (0)\\
+>\end{align*}
+>$$
+>
+><img src = "assets/classical_trajectory.png" width="100%">
+>
+>With classic limit, we can solve the average motion of magnetic momentum.
+>
+>$$
+>\begin{align*}
+>& h(t) = b \vec{R} (\theta , \omega t) \cdot \op{\vec{J}}\\
+>& \vec{R} =(R _ 1 , R _ 2 , R _ 3),\begin{cases}
+>R _ 1 = \sin \theta \cos \omega t \\
+>R _ 2 = \sin \theta \sin \omega t \\
+>R _ 3 = \cos \theta 
+>\end{cases}\\
+>& \dot{\avg{\op{\vec{J}}}} = \frac{\avg{[\op{\vec{J}} , h]}}{\ii \hbar} = \frac{\avg{[\op{\vec{J}} , b \vec{R} \cdot \op{\vec{J}}]}}{\ii \hbar} = b \vec{R} \times \op{\vec{J}} 
+>\end{align*}
+>$$
+>
+><img src = "assets/quantum_trajectory.png" width="100%">
 
 #### Cyclic solution
 
@@ -841,14 +887,13 @@ $$
 |   Initial state   |                    $\ket{k , \theta , 0}$                    |                $\ket{k , \tilde{\theta} , 0}$                |
 |     Operator      |          $\vec{R} (\theta , 0) \cdot \op{\vec{J}}$           |      $\vec{R} (\tilde{\theta} , 0) \cdot \op{\vec{J}}$       |
 |    Total Phase    | $\e ^ {- \ii  2 \pi k \frac{b}{\omega}} \e ^ {\ii \gamma _ k (\mathbf{C} _ 1) }$ | $\e ^ {- \ii 2 \pi k} \e ^ {- \ii 2 \pi \frac{\omega}{\Omega} k}$ |
-| Evolutional state | $\ket{k , \theta, \omega t} = \e ^ {-\ii \omega t \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \omega t k} \ket{k , \vec{e} _ 3}$ | $\ket{k , \tilde{\theta} , \omega t} = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \e ^ {- \ii \omega t k} \ket{k , \vec{e} _ 3}$ |
-
+| Evolutional state | $\ket{k , \theta, \omega t} = \e ^ {-\ii \omega t \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \omega t k} \ket{k , \vec{e} _ 3}$ | $\ket{k , \tilde{\theta} , \omega t} = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \e ^ {\ii \omega t k} \ket{k , \vec{e} _ 3}$ |
 
 
 to-do list:
 
 - [ ] prove $\vec{R} ( \theta , \varphi )\cdot \op{\vec{J}} \ket{k,\theta, \varphi } = k \ket{k,\theta, \varphi }$
-- [ ] plot $\psi (t) = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega \vec{e} \cdot \op{\vec{J}} t} \psi (0) = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega t \vec{R}  (\tilde{\theta} , 0) \cdot \op{\vec{J}}} \psi (0)$
+- [x] plot $\psi (t) = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega \vec{e} \cdot \op{\vec{J}} t} \psi (0) = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega t \vec{R}  (\tilde{\theta} , 0) \cdot \op{\vec{J}}} \psi (0)$
 
 References
 
