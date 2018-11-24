@@ -222,7 +222,7 @@ So we can use Ehrenfest's theorem to calculate the trajectory of magnetic moment
 
 to-do list:
 
-- [ ] Is Spin angular momentum a quadratic term?
+- [ ] Is Spin angular momentum a quadratic term? If so what does position and moment operator in Spin mean?
 
 References
 
