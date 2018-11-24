@@ -79,7 +79,7 @@ $$
 H = \frac{P ^ 2}{2 m} + V (X)
 $$
 
-Consider $\Omega = X$.
+Consider $\Omega = X​$.
 
 $$
 \begin{align*}

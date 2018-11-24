@@ -795,6 +795,7 @@ The corresponding eigenvalue $\e ^ {- \ii \alpha _ \psi}$ is the total phase fac
 
 $$
 \psi (\tau) = U ^ \dagger (\tau) \psi (0) = \e ^ {- \ii \alpha _ \psi} \psi (0)
+\label{evolution}
 $$
 
 This is quite easy if $\tau$ is chosen in a way that the initial state is eigenstate of both of the operators appearing in the evolution operator.
@@ -803,7 +804,7 @@ $$
 \begin{align*}
 & [ \e ^ {-\ii \tau \omega \op{J} _ 3} , \e ^ {-\ii \tau \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} ] \ket{\psi (0)} = 0 \\
 & \begin{cases}\text{CLASS A: } \tau = \frac{2\pi}{\omega} = T\\
-\text{CLASS B: } \tau = \frac{2\pi}{\omega}  \end{cases}
+\text{CLASS B: } \tau = \frac{2\pi}{\Omega}  \end{cases}
 \end{align*}
 $$
 
@@ -811,10 +812,23 @@ $$
 >
 >$$
 >\begin{align*}
->[ \e ^ {-\ii \frac{2 \pi}{\omega} \omega \op{J} _ 3} , \e ^ {-\ii \frac{2 \pi}{\omega} \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} ] \ket{\psi (0)} & = 0 \\
->\e ^ {-\ii 2 \pi \omega \op{J} _ 3} \e ^ {-\ii \frac{2 \pi}{\omega} \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} \ket{\psi (0)} & = \e ^ {-\ii \frac{2 \pi}{\omega} \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} \e ^ {-\ii 2 \pi \omega \op{J} _ 3} \ket{\psi (0)} \\
->\e ^ {-\ii 2 \pi \omega \op{J} _ 3} \e ^ {-\ii \frac{2 \pi}{\omega} b \left( \left( \cos \theta - \frac{\omega}{b} \right) \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \ket{\psi (0)} & = \e ^ {-\ii \frac{2 \pi}{\omega} b \left( \left( \cos \theta - \frac{\omega}{b} \right) \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \e ^ {-\ii 2 \pi \omega \op{J} _ 3} \ket{\psi (0)} \\
->\e ^ {-\ii \frac{2 \pi}{\omega} b \left( \cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \ket{\psi (0)} & = \e ^ {-\ii \frac{2 \pi}{\omega} b \left( \cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \ket{\psi (0)} 
+>& \quad [ \e ^ {-\ii \frac{2 \pi}{\omega} \omega \op{J} _ 3} , \e ^ {-\ii \frac{2 \pi}{\omega} \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} ] \ket{\psi (0)} \\
+>& = \e ^ {-\ii 2 \pi \omega \op{J} _ 3} \e ^ {-\ii \frac{2 \pi}{\omega} \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} \ket{\psi (0)} - \e ^ {-\ii \frac{2 \pi}{\omega} \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} \e ^ {-\ii 2 \pi \omega \op{J} _ 3} \ket{\psi (0)} \\
+>& = \e ^ {-\ii 2 \pi \omega \op{J} _ 3} \e ^ {-\ii \frac{2 \pi}{\omega} b \left( \left( \cos \theta - \frac{\omega}{b} \right) \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \ket{\psi (0)} - \e ^ {-\ii \frac{2 \pi}{\omega} b \left( \left( \cos \theta - \frac{\omega}{b} \right) \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \e ^ {-\ii 2 \pi \omega \op{J} _ 3} \ket{\psi (0)} \\
+>& = \e ^ {-\ii \frac{2 \pi}{\omega} b \left( \cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \ket{\psi (0)} - \e ^ {-\ii \frac{2 \pi}{\omega} b \left( \cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \ket{\psi (0)} \\
+>& = 0
+>\end{align*}
+>$$
+>
+>When $\tau = \frac{2 \pi}{\Omega}$, the commutator equals zero.
+>
+>$$
+>\begin{align*}
+>& \quad [ \e ^ {-\ii \frac{2 \pi}{\Omega} \omega \op{J} _ 3} , \e ^ {-\ii \frac{2 \pi}{\Omega} \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} ] \ket{\psi (0)} \\
+>& = \e ^ {-\ii \frac{2 \pi}{\Omega} \omega \op{J} _ 3} \e ^ {-\ii 2 \pi \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} \ket{\psi (0)} - \e ^ {-\ii 2 \pi \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} \e ^ {-\ii \frac{2 \pi}{\Omega} \omega \op{J} _ 3} \ket{\psi (0)} \\
+>& = \e ^ {-\ii \frac{2 \pi}{\Omega} \omega \op{J} _ 3} \e ^ {-\ii 2 \pi \frac{b}{\Omega} \left( \left( \cos \theta - \frac{\omega}{b} \right) \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \ket{\psi (0)} - \e ^ {-\ii 2 \pi \frac{b}{\Omega} \left( \left( \cos \theta - \frac{\omega}{b} \right) \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \e ^ {-\ii \frac{2 \pi}{\Omega} \omega \op{J} _ 3} \ket{\psi (0)} \\
+>& = \e ^ {-\ii \frac{2 \pi}{\Omega} b \left( \cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \ket{\psi (0)} - \e ^ {-\ii \frac{2 \pi}{\Omega} b \left( \cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 \right)} \ket{\psi (0)} \\
+>& = 0
 >\end{align*}
 >$$
 >
@@ -823,32 +837,22 @@ $$
 
 ---
 
-The class A cyclic solutions are obtained by finding the simultaneous eigenvectors of the operators $\e ^ {- \ii 2 \pi \op{J} _ 3}$ $\e ^ {- \ii T \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}}$.  They are also the eigenvectors of $h (\tilde{\theta} , 0) \defas b \vec{R} (\tilde{\theta} , 0) \cdot \op{\vec{J}}$.
+The class A cyclic solutions are obtained by finding the simultaneous eigenvectors of the operators $\e ^ {- \ii 2 \pi \op{J} _ 3}$ $\e ^ {- \ii \frac{2 \pi}{\omega} \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}}$. The initial eigenvector can be given as
 
 $$
-\begin{align*}
-h (\tilde{\theta} , 0) \ket {\phi _ k} & = b k \ket {\phi _ k} \\
-\vec{e} \cdot \op{\vec{J}} \ket {\phi _ k} & = k \ket {\phi _ k}
-\end{align*}
-$$
-
-where the eigenvector can be given as
-
-$$
-\ket{\phi _ k} = \ket{k , \tilde{\theta} , 0} = U (\tilde{\theta} , 0) \ket{k , \vec{e} _ 3} = \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \ket{k , \vec{e} _ 3}
+\ket{k , \tilde{\theta} , 0} = U (\tilde{\theta} , 0) \ket{k , \vec{e} _ 3} = \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \ket{k , \vec{e} _ 3}
+\label{initial_state}
 $$
 
 They are the eigenvector of $\e ^ {- \ii 2 \pi \op{J} _ 3}$ as follows.
 
 $$
 \begin{align*}
-& \quad \ \e ^ {- \ii 2 \pi \op{J} _ 3} \ket{\phi _ k} \\
-& = \e ^ {- \ii 2 \pi \op{J} _ 3} \ket{k , \tilde{\theta} , 0} \\
+& \quad \ \e ^ {- \ii 2 \pi \op{J} _ 3} \ket{k , \tilde{\theta} , 0} \\
 & = \e ^ {- \ii 2 \pi \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \ket{k , 0 , 0}  \\
 & = \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \e ^ {- \ii 2 \pi \op{J} _ 3} \ket{k , 0 , 0}  \\
 & = \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \e ^ {- \ii 2 \pi k} \ket{k , 0 , 0}  \\
 & = \e ^ {- \ii 2 \pi k} \ket{k , \tilde{\theta} , 0} \\
-& = \e ^ {- \ii 2 \pi k} \ket{\phi _ k}
 \end{align*}
 $$
 
@@ -863,22 +867,45 @@ $$
 >$$
 >
 
-The total phase of these cyclic evolutions is $\e ^ {- \ii \alpha _ k}$, labeled by $k$.
+They are the eigenvector of $\e ^ {- \ii \frac{2 \pi}{\omega} \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}}$ as follows.
+$$
+\begin{align*}
+& \quad \ \e ^ {- \ii \frac{2 \pi}{\omega} \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} \ket{k , \tilde{\theta} , 0} \\
+& = \e ^ {- \ii \frac{2 \pi}{\omega} \Omega k} \ket{k , \tilde{\theta} , 0} \\
+\end{align*}
+$$
+Thus, the total phase of a period is $\alpha _ k = 2 \pi k (1 + \frac{\Omega}{\omega})$ as follows. 
+$$
+\begin{align*}
+& \quad U ^ \dagger (T) \ket{k , \tilde{\theta} , 0} \\
+& = \e ^ {-\ii 2 \pi \op{J} _ 3} \e ^ {-\ii \frac{2 \pi}{\omega} \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} \ket{k , \tilde{\theta} , 0} \\
+& = \e ^ {-\ii 2 \pi k} \e ^ {-\ii \frac{2 \pi}{\omega} \Omega k} \ket{k , \tilde{\theta} , 0} \\
+\end{align*}
+$$
+
+
+Namely, if the magnetic momentum is along the direction of magnetic field at first, it will follow magnetic field all the time.
+
+<img src = "assets/cyclic_trajectory.png" width="100%">
+
+The choice for evolutional state is
 
 $$
-\psi (T) = U ^ \dagger (T) \psi (0) = \e ^ {- \ii \alpha _ k} \psi (0) = \e ^ {- \ii 2 \pi k} \e ^ {- \ii 2 \pi \frac{\omega}{\Omega} k} \psi (0)
+U (\tilde {\theta} , \omega t) \ket{k , \vec{e} _ 3} = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \e ^ {\ii \omega t k} \ket{k , \vec{e} _ 3} \isdefas \ket{k , \tilde{\theta} , \omega t}
 $$
 
-The choice for $\phi _ k (t)$ is
+With Eqn. ($\ref{evolution}$) and ($\ref{initial_state}$), the cyclic solution is 
 
 $$
-\phi _ k (t) \defas U (\tilde {\theta} , \omega t) \ket{k , \vec{e} _ 3} = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \e ^ {\ii \omega t k} \ket{k , \vec{e} _ 3} \isdefas \ket{k , \tilde{\theta} , \omega t}
-$$
-
-The cyclic solution is 
-
-$$
-\psi (t) = \e ^ {- \ii \omega t k} \e ^ {- \ii \Omega t k} \ket{k , \tilde{\theta} , \omega t}
+\begin{align*}
+\psi (t) & = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega t \vec{R}  (\tilde{\theta} , 0) \cdot \op{\vec{J}}} \ket{k , \tilde{\theta} , 0}\\
+& = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega t \vec{R}  (\tilde{\theta} , 0) \cdot \op{\vec{J}}} \ket{k , \tilde{\theta} , \omega t}\\
+& = \e ^ {- \ii \Omega t k} \e ^ {- \ii \omega t \op{J} _ 3} \ket{k , \tilde{\theta} , 0} \\
+& = \e ^ {- \ii \Omega t k} \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \ket{k , 0 , 0}\\
+& = \e ^ {- \ii \omega t k} \e ^ {- \ii \Omega t k} \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2}  \e ^ {\ii \omega t k} \ket{k , 0 , 0}\\
+& = \e ^ {- \ii \omega t k} \e ^ {- \ii \Omega t k} \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2}  \e ^ {\ii \omega t \op{J} _ 3} \ket{k , 0 , 0}\\
+& = \e ^ {- \ii \omega t k} \e ^ {- \ii \Omega t k} \ket{k , \tilde{\theta} , \omega t}\\
+\end{align*}
 $$
 
 
