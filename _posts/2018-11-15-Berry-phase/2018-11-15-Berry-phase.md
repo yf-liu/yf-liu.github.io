@@ -1,5 +1,5 @@
 ---
-title: Exact solution of Spinning quantum system in an external magnetic field
+title: Berry phase of Spinning quantum system in an external magnetic field
 category: Physics
 tags:
   - Topology
