@@ -868,13 +868,16 @@ $$
 >
 
 They are the eigenvector of $\e ^ {- \ii \frac{2 \pi}{\omega} \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}}$ as follows.
+
 $$
 \begin{align*}
 & \quad \ \e ^ {- \ii \frac{2 \pi}{\omega} \Omega \vec{R} (\tilde{\theta},0) \cdot \op{\vec{J}}} \ket{k , \tilde{\theta} , 0} \\
 & = \e ^ {- \ii \frac{2 \pi}{\omega} \Omega k} \ket{k , \tilde{\theta} , 0} \\
 \end{align*}
 $$
+
 Thus, the total phase of a period is $\alpha _ k = 2 \pi k (1 + \frac{\Omega}{\omega})$ as follows. 
+
 $$
 \begin{align*}
 & \quad U ^ \dagger (T) \ket{k , \tilde{\theta} , 0} \\
@@ -886,7 +889,7 @@ $$
 
 Namely, if the magnetic momentum is along the direction of magnetic field at first, it will follow magnetic field all the time.
 
-<img src = "assets/cyclic_trajectory.png" width="100%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-15-Berry-phase/assets/cyclic_trajectory.png" width="100%">
 
 The choice for evolutional state is
 
