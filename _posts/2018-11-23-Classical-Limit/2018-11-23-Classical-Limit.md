@@ -118,18 +118,20 @@ $$
 >& [P , V (X)] = - \ii \hbar \frac{\dd V}{\dd X} 
 >\end{align*}
 >$$
+>
 
 ## How quantum equation reduce to Hamiltonian equation
 
 Consider a initial state that resembles the states of classical mechanics, i.e., states with well-defined position and momentum, denoted as $\ket{x _ 0 p_ 0 \Delta}$, where $\avg{X} = x _ 0$ and $\avg{P} = p _ 0$, with uncertainties $\Delta X =\Delta$ and $\Delta P \approx \hbar / \Delta$.
 
-$$
-\ket{x _ 0 p_ 0 \Delta} = \left(\frac{1}{\pi \Delta ^ 2}\right) ^ \frac{1}{4} \e ^ {\ii p _ 0 x / h} \e ^ {- (x - x _ 0) ^ 2 / 2 \Delta ^ 2}\\
-\Delta X = \Delta \approx 10 ^ {-13} \text{cm, which is the size of a proton.} \\
-\Delta P \approx \frac{\hbar}{\Delta} \approx \frac{6.62 \times 10^{-34} \text{m}^2 \text{kg / s}}{ 10 ^ {-13} \text{cm}} = 6.62 \times 10 ^ {-14} \text{cm g / s} \\
-m = 1 \text{ g, which is the mass of a particle.}\\ 
-\Delta V1 \approx \frac{\Delta P}{m} = \frac{10 ^ {-14} \text{cm g / s}}{1 \text{g}} = 10 ^ {-14} \text{cm/s} \text{ , an uncertainty far below the experimentally detectable range.}
-$$
+>$$
+>\ket{x _ 0 p_ 0 \Delta} = \left(\frac{1}{\pi \Delta ^ 2}\right) ^ \frac{1}{4} \e ^ {\ii p _ 0 x / h} \e ^ {- (x - x _ 0) ^ 2 / 2 \Delta ^ 2}\\
+>\Delta X = \Delta \approx 10 ^ {-13} \text{cm, which is the size of a proton.} \\
+>\Delta P \approx \frac{\hbar}{\Delta} \approx \frac{6.62 \times 10^{-34} \text{m}^2 \text{kg / s}}{ 10 ^ {-13} \text{cm}} = 6.62 \times 10 ^ {-14} \text{cm g / s} \\
+>m = 1 \text{ g, which is the mass of a particle.}\\ 
+>\Delta V \approx \frac{\Delta P}{m} = \frac{10 ^ {-14} \text{cm g / s}}{1 \text{g}} = 10 ^ {-14} \text{cm/s} \text{ , an uncertainty far below the experimentally detectable range.}
+>$$
+>
 
 In the classical scale, such a state can be said to have well-defined values for $X$ and $P$, namely $x _ 0$ and $p _ 0$.
 
@@ -139,7 +141,7 @@ $$
 \label{classical_approxmation}
 $$
 
-If we consider some function of $X$ and $P$, we will find in the same approxmation.
+If we consider some function of $X$ and $P$, we will find in the same approximation.
 
 $$
 \omega (x _ 0 , p _ 0) \approx \avg{\Omega (X , P)}
@@ -212,6 +214,7 @@ where $h (\vec{x} _ 0)$ is a $3 \times 3$ matrix whose components are second ord
 >\vec{u} (\vec{x}) =\sum _ {k = 0} ^ n \frac{\vec{J} _ \vec{u} ^ k (\vec{x} _ 0)}{k !} \myodot{k} (\vec{x} - \vec{x} _ 0) ^ {k ^ \otimes} 
 >\end{align*}
 >$$
+>
 
 So we can use Ehrenfest's theorem to calculate the trajectory of magnetic momentum.
 
