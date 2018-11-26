@@ -228,7 +228,7 @@ $$
 For south pole $-\vec{e} _ 3$, the eigenvector $\ket{k,\pi, \varphi } = \e ^{-\ii \pi  \op{J}  _ 2} \e ^ {2 \ii \varphi k}  \ket{k,\vec{e} _ 3}$ has more than one normalized state vectors, obtained with varying $\varphi$. So there is a smooth single-valued vector function everywhere on $S^2$ except at the south pole.
 
 >
->- When $i=2, j=3$ and $a = \pi$, the equation $\e ^{-\ii a J _ i} \op{J} _  j \e ^{\ii a \op{J} _ i} =  \op{J} _ j (\delta _ {ij} + (1-\delta _ {ij}) \cos 2 a) + \op{J} _ k \varepsilon _ {ijk} \sin 2 a$ becomes
+>- When $i=2, j=3$ and $a = \pi$, the equation $\e ^{-\ii a J _ i} \op{J} _  j \e ^{\ii a \op{J} _ i} =  \op{J} _ j (\delta _ {ij} + (1-\delta _ {ij}) \cos a) + \op{J} _ k \varepsilon _ {ijk} \sin a​$ becomes
 >
 >$$
 >\begin{align*}
@@ -453,7 +453,7 @@ $$
 
 If the state vectors $\ket{k,R}$ are the eigenvectors of $\op{\vec{J}}^2$, then the possible values of $k$ are from $\ref{value_of_k}$. But if not, then is a new result. (See Chapter 6)
 
-### Mead-Berry (three-)vector potential and curvature three-vector
+### Mead-Berry (three-)vector` potential and curvature three-vector
 
 ---
 
