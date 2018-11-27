@@ -287,7 +287,10 @@ $$
 where $R^i$ corresponding to $\theta$ and $\varphi$. The matrix of one-forms is
 
 $$
-A ^ {k ^ \prime k} (R ^ i) = A ^ {k ^ \prime k} _ i d R ^ i = \ii \bra{k ^ \prime,R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i
+\begin{align*}
+A ^ {k ^ \prime k} (R) & = A ^ {k ^ \prime k} _ i d R ^ i = \ii \bra{k ^ \prime,R} \frac{\partial}{\partial R^i} \ket{k,R} \dd R ^ i \\
+& = A ^ {k ^ \prime k} _ \theta d \theta + A ^ {k ^ \prime k} _ \varphi d \varphi = \ii \bra{k ^ \prime,R} \frac{\partial}{\partial \theta} \ket{k,R} \dd \theta + \ii \bra{k ^ \prime,R} \frac{\partial}{\partial \varphi} \ket{k,R} \dd \varphi 
+\end{align*}
 $$
 
 On the patch $O _ 1$ ($\theta \ne \pi$), we have
@@ -322,6 +325,7 @@ For diagonal matrix elements, we have
 $$
 A _ \theta ^ k (\theta , \varphi) = 0 \\
 A _ \varphi ^ k (\theta , \varphi) = k (\cos \theta -1)
+\label{connection}
 $$
 
 On the patch $O _ 2(\theta \ne 0)$, we repeat the calculation
@@ -367,9 +371,9 @@ The Mead-Berry curvature two-form is defined as
 $$
 \begin{align*}
 F ^ k & = \dd A ^ k \\
-& = \frac{\partial A ^ k _ \theta}{\partial \varphi} \dd \varphi \wedge \dd \theta +  \frac{\partial A ^ k _ \varphi}{\partial \theta} \dd \theta \wedge \dd \varphi\\
-& = F ^ k _ {\theta \varphi} \dd \theta \wedge \dd \varphi \\
-& = - k \sin \theta \dd \theta \wedge \dd \varphi
+& = \frac{\partial A ^ k _ \theta}{\partial \varphi} \dd \varphi \wedge \dd \theta +  \frac{\partial A ^ k _ \varphi}{\partial \theta} \dd \theta \wedge \dd \varphi \\
+& = - k \sin \theta \dd \theta \wedge \dd \varphi \\
+& = F ^ k _ {\theta \varphi} \dd \theta \wedge \dd \varphi 
 \end{align*}
 $$
 
@@ -453,7 +457,7 @@ $$
 
 If the state vectors $\ket{k,R}$ are the eigenvectors of $\op{\vec{J}}^2$, then the possible values of $k$ are from $\ref{value_of_k}$. But if not, then is a new result. (See Chapter 6)
 
-### Mead-Berry (three-)vector` potential and curvature three-vector
+### Mead-Berry (three-)vector potential and curvature three-vector
 
 ---
 
@@ -513,14 +517,14 @@ $$
 
 >$$
 >\begin{align*}
->\op{\vec{A}} ^ k & = \op{A} ^ k _ r \vec{e} _ r + \op{A} ^ k _ \theta \vec{e} _ \theta + \op{A} ^ k _ \varphi \vec{e} _ \varphi\\
+>\op{\vec{A}} ^ k & = \ii \bra{k,r,\theta,\varphi} \nabla \ket{k,r,\theta,\varphi} \\
 >& = \ii \bra{k,r,\theta,\varphi} ( \vec{e} _ r \frac{\partial}{\partial r} + \vec{e} _ \theta  \frac{1}{r} \frac{\partial}{\partial \theta} +  \vec{e} _ \varphi \frac{1}{r \sin \theta} \frac{\partial}{\partial \varphi} )  \ket{k,r,\theta,\varphi} \\
 >& = \ii \bra{k,\vec{e} _ 3} \e ^ {- \ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ( \vec{e} _ r \frac{\partial}{\partial r} + \vec{e} _ \theta  \frac{1}{r} \frac{\partial}{\partial \theta} +  \vec{e} _ \varphi \frac{1}{r \sin \theta} \frac{\partial}{\partial \varphi} ) \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \ket{k,\vec{e} _ 3} \\
 >& = \bra{k,\vec{e} _ 3} ( \vec{e} _ \theta  \frac{1}{r} ( \op{J} _ 2 \cos \varphi -\op{J} _ 1 \sin \varphi ) + \vec{e} _ \varphi \frac{1}{r \sin \theta} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 )) ) \ket{k,\vec{e} _ 3} \\
 >& = \bra{k,\vec{e} _ 3} \vec{e} _ \varphi \frac{1}{r \sin \theta} \op{J} _ 3 ( \cos \theta  - 1 ) \ket{k,\vec{e} _ 3} \\
 >& = \bra{k,\vec{e} _ 3} \vec{e} _ \varphi \frac{1}{r \sin \theta} k ( \cos \theta  - 1 ) \ket{k,\vec{e} _ 3} \\
 >& = \frac{k ( \cos \theta  - 1 )}{r \sin \theta} \vec{e} _ \varphi \\
->\op{\vec{A}} ^ {\prime k} & = \op{A} ^ {\prime k} _ r \vec{e} _ r + \op{A} ^ {\prime k} _ \theta \vec{e} _ \theta + \op{A} ^ {\prime k} _ \varphi \vec{e} _ \varphi\\
+>\op{\vec{A}} ^ {\prime k} & = \ii \bra{k,r,\theta,\varphi} ^ \prime \nabla \ket{k,r,\theta,\varphi} ^ \prime \\
 >& = \ii \bra{k,r,\theta,\varphi} ^ \prime ( \vec{e} _ r \frac{\partial}{\partial r} + \vec{e} _ \theta  \frac{1}{r} \frac{\partial}{\partial \theta} +  \vec{e} _ \varphi \frac{1}{r \sin \theta} \frac{\partial}{\partial \varphi} )  \ket{k,r,\theta,\varphi} ^ \prime \\
 >& = \ii \bra{k,\vec{e} _ 3} \e ^ {- \ii \varphi \op{J} _ 3}  \e ^ {\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} ( \vec{e} _ r \frac{\partial}{\partial r} + \vec{e} _ \theta  \frac{1}{r} \frac{\partial}{\partial \theta} +  \vec{e} _ \varphi \frac{1}{r \sin \theta} \frac{\partial}{\partial \varphi} ) \e ^ {-\ii \varphi \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \varphi \op{J} _ 3} \ket{k,\vec{e} _ 3} \\
 >& = \bra{k,\vec{e} _ 3} ( \vec{e} _ \theta  \frac{1}{r} ( \op{J} _ 2 \cos \varphi -\op{J} _ 1 \sin \varphi ) + \vec{e} _ \varphi \frac{1}{r \sin \theta} (-  ( \op{J} _ 1 \cos \varphi + \op{J} _ 2 \sin \varphi ) \sin \theta + \op{J} _ 3 ( \cos \theta  - 1 ) + 2 k ) ) \ket{k,\vec{e} _ 3} \\
@@ -638,7 +642,7 @@ The Hamiltonian doesn't change with time, and can be related to the angular mome
 
 $$
 \begin{align*}
-h ^ \prime (t) & =  b (\cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 - \frac{\omega}{b} \op{J} _ 3) \defas H = \Omega \vec{e} \cdot \vec{J}
+h ^ \prime (t) & = b (\cos \theta \op{J} _ 3 + \sin \theta \op{J} _ 1 - \frac{\omega}{b} \op{J} _ 3) \defas H = \Omega \vec{e} \cdot \vec{J}
 \end{align*}
 $$
 
@@ -919,11 +923,142 @@ $$
 |    Total Phase    | $\e ^ {- \ii  2 \pi k \frac{b}{\omega}} \e ^ {\ii \gamma _ k (\mathbf{C} _ 1) }$ | $\e ^ {- \ii 2 \pi k} \e ^ {- \ii 2 \pi \frac{\omega}{\Omega} k}$ |
 | Evolutional state | $\ket{k , \theta, \omega t} = \e ^ {-\ii \omega t \op{J} _ 3}  \e ^ {-\ii \theta \op{J} _ 2} \e ^ {\ii \omega t k} \ket{k , \vec{e} _ 3}$ | $\ket{k , \tilde{\theta} , \omega t} = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \e ^ {\ii \omega t k} \ket{k , \vec{e} _ 3}$ |
 
+## Dynamical and geometrical phase factors for non-adiabatic evolution
+
+### The connection one-form
+
+---
+
+$$
+\begin{align*}
+A ^ k & \defas \ii \bra{\psi _ k} \dd \ket{\psi _ k} \\
+& = \ii \bra{k , \tilde{\theta} , \omega t} \e ^ {\ii \Omega t k} \e ^ {\ii \omega t k} \dd \left(\e ^ {- \ii \omega t k} \e ^ {- \ii \Omega t k} \ket{k , \tilde{\theta} , \omega t}\right) \\ 
+& = \ii \bra{k , \tilde{\theta} , \omega t} \e ^ {\ii \Omega t k} \e ^ {\ii \omega t k} \e ^ {- \ii \omega t k} \e ^ {- \ii \Omega t k} \dd \ket{k , \tilde{\theta} , \omega t} \\ 
+& = \ii \bra{k , \tilde{\theta} , \omega t} \dd \ket{k , \tilde{\theta} , \omega t} \\
+& = \ii \bra{k , \tilde{\theta} , \omega t} \frac{\partial}{\partial \tilde{\theta}} \ket{k , \tilde{\theta} , \omega t} \dd \tilde{\theta} + \ii \bra{k , \tilde{\theta} , \omega t} \frac{\partial}{\partial \varphi} \ket{k , \tilde{\theta} , \omega t} \dd \varphi \\
+& = \ii \bra{k , \tilde{\theta} , \omega t} \frac{\partial}{\partial \tilde{\theta}} \ket{k , \tilde{\theta} , \omega t} \frac{\partial \tilde{\theta}}{\partial \theta} \dd \theta + \ii \bra{k , \tilde{\theta} , \omega t} \frac{\partial}{\partial \tilde{\varphi}} \ket{k , \tilde{\theta} , \omega t} \dd \varphi \\
+& = A ^ k _ \tilde{\theta} (\tilde{\theta} , \varphi) \frac{\partial \tilde{\theta}}{\partial \theta} \dd \theta + A ^ k _ \varphi (\tilde{\theta} , \varphi) \dd \varphi \\
+& = - k (1 - \cos \tilde{\theta}) \dd \varphi \\
+& = - k (1 - \frac{b}{\Omega} \cos \theta + \frac{\omega}{\Omega}) \dd \varphi
+\end{align*}
+$$
+
+where the components $A _ \tilde{\theta} ^ k (\tilde{\theta} , \varphi)$ and $A _ \varphi^ k (\tilde{\theta} , \varphi)$ are similar to the Eqn. ($\ref{connection}$).
+
+$$
+A _ \tilde{\theta} ^ k (\tilde{\theta} , \varphi) = 0 \\
+A _ \varphi ^ k (\tilde{\theta} , \varphi) = - k (1 - \frac{b}{\Omega} \cos \theta + \frac{\omega}{\Omega})
+$$
+
+### The curvature two-form
+
+---
+
+$$
+\begin{align*}
+F ^ k & = \dd A ^ k \\
+& = \frac{\partial A ^ k _ \theta}{\partial \varphi} \dd \varphi \wedge \dd \theta +  \frac{\partial A ^ k _ \varphi}{\partial \theta} \dd \theta \wedge \dd \varphi \\
+& = 0 - k \left(\frac{b}{\Omega} \sin \theta + \frac{b}{\Omega ^ 2} \frac{\partial \Omega}{\partial \theta} \cos \theta - \frac{\omega}{\Omega ^ 2} \frac{\partial \Omega}{\partial \theta}\right) \dd \theta \wedge \dd \varphi \\
+& = - k \left(\frac{b}{\Omega} \sin \theta + \frac{b}{\Omega ^ 2} \frac{\partial \Omega}{\partial \theta} \cos \theta - \frac{\omega}{\Omega ^ 2} \frac{\partial \Omega}{\partial \theta}\right) \dd \theta \wedge \dd \varphi \\
+& = - k \left(\frac{b}{\Omega} \sin \theta + \frac{b}{\Omega ^ 2} \frac{b \omega \sin \theta}{\Omega} \cos \theta - \frac{\omega}{\Omega ^ 2} \frac{b \omega \sin \theta}{\Omega}\right) \dd \theta \wedge \dd \varphi \\
+& = - k \sin \theta \frac{b ^ 2}{\Omega ^ 3}\left(b - \omega \cos \theta \right) \dd \theta \wedge \dd \varphi \\
+& = - k \sin \theta \frac{1 - \frac{\omega}{b} \cos \theta }{\left(\frac{\Omega}{b}\right) ^ 3} \dd \theta \wedge \dd \varphi \\
+& = - k \sin \theta \frac{1 - \frac{\omega}{b} \cos \theta }{\left(1 + \frac{\omega}{b} (-2 \cos \theta + \frac{\omega}{b})\right) ^ {\frac{3}{2}}} \dd \theta \wedge \dd \varphi \\
+\end{align*}
+$$
+
+>$$
+>\begin{align*}
+>\Omega & =  b \sqrt{1 + \frac{\omega}{b} (-2 \cos \theta + \frac{\omega}{b})} \\
+>\frac{\partial \Omega}{\partial \theta} & = \frac{\partial b \sqrt{1 + \frac{\omega}{b} (-2 \cos \theta + \frac{\omega}{b})}}{\partial \theta} \\
+>& = \frac{2 \frac{\omega}{b} b \sin \theta }{2 \sqrt{1 + \frac{\omega}{b} (-2 \cos \theta + \frac{\omega}{b})}} \\
+>& = \frac{\omega \sin \theta }{\sqrt{1 + \frac{\omega}{b} (-2 \cos \theta + \frac{\omega}{b})}} \\
+>& = \frac{b \omega \sin \theta}{\Omega}
+>\end{align*}
+>$$
+>
+
+### three-vector potential and curvature three-vector
+
+---
+
+$$
+\begin{align*}
+\op{\vec{A}} ^ k & = \op{A} ^ k _ r \vec{e} _ r + \op{A} ^ k _ \theta \vec{e} _ \theta + \op{A} ^ k _ \varphi \vec{e} _ \varphi = A ^ k _ r \vec{e} _ r + \frac{1}{r} A ^ k _ \theta \vec{e} _ \theta + \frac{1}{r \sin \theta} A ^ k _ \varphi \vec{e} _ \varphi = - \frac{k (1 - \frac{b}{\Omega} \cos \theta + \frac{\omega}{\Omega})}{r \sin \theta} \vec{e} _ \varphi \ ,\ \theta \ne \pi 
+ \end{align*}
+$$
+
+$$
+\begin{align*}
+\vec{F} ^ k & = \nabla \times \op{\vec{A}} ^ k \\
+& = \frac{1}{r \sin \theta} \left( \frac{\partial}{\partial \theta} ( \op{A} _ \varphi \sin \theta ) \right) \vec{e} _ r + \frac{1}{r} \left( - \frac{\partial}{\partial r} (r \op{A} _ \varphi) \right) \vec{e} _ \theta\\
+& = \frac{1}{r \sin \theta} \left( \frac{\partial}{\partial \theta} ( - \frac{k (1 - \frac{b}{\Omega} \cos \theta + \frac{\omega}{\Omega})}{r \sin \theta} \sin \theta ) \right) \vec{e} _ r + \frac{1}{r} \left( - \frac{\partial}{\partial r} (- r \frac{k (1 - \frac{b}{\Omega} \cos \theta + \frac{\omega}{\Omega})}{r \sin \theta}) \right) \vec{e} _ \theta\\
+& = \frac{1}{r \sin \theta} \left( \frac{\partial}{\partial \theta} ( - \frac{k (1 - \frac{b}{\Omega} \cos \theta + \frac{\omega}{\Omega})}{r}) \right) \vec{e} _ r + \frac{1}{r} \left(\frac{\partial}{\partial r} (\frac{k (1 - \frac{b}{\Omega} \cos \theta + \frac{\omega}{\Omega})}{\sin \theta}) \right) \vec{e} _ \theta\\
+& = \frac{1}{r \sin \theta} \left( \frac{\partial}{\partial \theta} ( - \frac{k (1 - \frac{b}{\Omega} \cos \theta + \frac{\omega}{\Omega})}{r}) \right) \vec{e} _ r \\
+& = -\frac{1}{r ^ 2 \sin \theta} k \sin \theta \frac{1 - \frac{\omega}{b} \cos \theta }{\left(1 + \frac{\omega}{b} (-2 \cos \theta + \frac{\omega}{b})\right) ^ {\frac{3}{2}}} \vec{e} _ r \\
+& = -\frac{k}{r ^ 2} \frac{1 - \frac{\omega}{b} \cos \theta }{\left(1 + \frac{\omega}{b} (-2 \cos \theta + \frac{\omega}{b})\right) ^ {\frac{3}{2}}} \vec{e} _ r \\
+& = -\frac{k}{r ^ 2} \frac{1 - \frac{\omega}{b} \cos \theta }{\left(\frac{\Omega}{b} \right) ^ {\frac{3}{2}}} \vec{e} _ r \\
+\end{align*}
+$$
+
+### Berry phase
+
+---
+
+$$
+\begin{align*}
+\gamma _ k (\mathbf{C}) & \defas \int _ \mathbf{C} A ^ k \\
+& = \int _ \mathbf{C} - k (1 - \cos \tilde{\theta}) \dd \varphi \\
+& = \int _ \mathbf{C} - k (1 - \cos \tilde{\theta}) \omega \dd t \\
+\end{align*}
+$$
+
+$$
+\begin{align*}
+\gamma _ k (T) & = \int ^ T _ 0 - k (1 - \cos \tilde{\theta}) \omega \dd t \\
+& = - 2 \pi k (1 - \cos \tilde{\theta})\\
+& = - 2 \pi k (1 - \cos \tilde{\theta})\\
+& = - 2 \pi k (1 - \frac{b}{\Omega} \cos \theta + \frac{\omega}{\Omega})
+\end{align*}
+$$
+
+### Dynamical phase
+
+---
+
+The dynamic phase for general cyclic evolution is
+
+$$
+\begin{align*}
+h (\vec{R} (\theta , \omega t)) & = b \vec{R} (\theta , \omega t) \cdot \op{\vec{J}} \\
+\ket {\psi (t)} & = \e ^ {- \ii \omega t k} \e ^ {- \ii \Omega t k} \ket{k , \tilde{\theta} , \omega t} = \e ^ {- \ii \Omega t k} \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \ket{k , \vec{e} _ 3} \\
+\alpha ^ \text{dyn} _ k & = \int ^ T _ 0 \bra{\psi (t)} h (t) \ket{\psi (t)} \dd t \\
+& = \int ^ T _ 0 \bra{k , \tilde{\theta} , \omega t} \e ^ {\ii \Omega t k} \e ^ {\ii \omega t k} b (\vec{R} (\theta , \omega t) \cdot \op{\vec{J}}) \e ^ {- \ii \omega t k} \e ^ {- \ii \Omega t k} \ket{k , \tilde{\theta} , \omega t} \dd t \\ 
+& = \int ^ T _ 0 \bra{k , \tilde{\theta} , \omega t} b (\vec{R} (\theta , \omega t) \cdot \op{\vec{J}}) \ket{k , \tilde{\theta} , \omega t} \dd t \\
+& = \int ^ T _ 0 \bra{k , \tilde{\theta} , \omega t} b \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \theta \op{J} _ 2} \e ^ {\ii \tilde{\theta} \op{J} _ 2} \e ^ {\ii \omega t \op{J} _ 3} \vec{R} (\tilde{\theta} , \omega t) \cdot \op{\vec{J}} \ket{k , \tilde{\theta} , \omega t} \dd t \\
+& = \int ^ T _ 0 \bra{k , \tilde{\theta} , \omega t} b \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \theta \op{J} _ 2} \e ^ {\ii \tilde{\theta} \op{J} _ 2} \e ^ {\ii \omega t \op{J} _ 3} k \ket{k , \tilde{\theta} , \omega t} \dd t \\
+& = \int ^ T _ 0 \bra{k , \vec{e} _ 3} b k \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {\ii \tilde{\theta} \op{J} _ 2} \e ^ {\ii \omega t \op{J} _ 3}\e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \theta \op{J} _ 2} \e ^ {\ii \tilde{\theta} \op{J} _ 2} \e ^ {\ii \omega t \op{J} _ 3} k \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \e ^ {\ii \omega t \op{J} _ 3} \ket{k , \vec{e} _ 3} \dd t \\
+& = \int ^ T _ 0 \bra{k , \vec{e} _ 3} b k \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {\ii \tilde{\theta} \op{J} _ 2}  \e ^ {- \ii \theta \op{J} _ 2} \e ^ {\ii \omega t \op{J} _ 3} \ket{k , \vec{e} _ 3} \dd t \\
+& = \int ^ T _ 0 \bra{k , \vec{e} _ 3} b k \e ^ {- \ii \omega t k} \e ^ {\ii \tilde{\theta} \op{J} _ 2}  \e ^ {- \ii \theta \op{J} _ 2} \e ^ {\ii \omega t k} \ket{k , \vec{e} _ 3} \dd t \\
+& = \int ^ T _ 0 \bra{k , \vec{e} _ 3} b k \e ^ {\ii \tilde{\theta} \op{J} _ 2}  \e ^ {- \ii \theta \op{J} _ 2} \ket{k , \vec{e} _ 3} \dd t \\
+& = \bra{k , \vec{e} _ 3} b k \e ^ {\ii \tilde{\theta} \op{J} _ 2}  \e ^ {- \ii \theta \op{J} _ 2} \ket{k , \vec{e} _ 3}
+\end{align*}
+$$
+
+$$
+\begin{align*}
+\vec{R} (\theta , \omega t) & = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \theta \op{J} _ 2} \e ^ {\ii \omega t \op{J} _ 3} \vec{e} _ 3\\
+\vec{R} (\tilde{\theta} , \omega t) & = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \tilde{\theta} \op{J} _ 2} \e ^ {\ii \omega t \op{J} _ 3} \vec{e} _ 3\\
+\vec{R} (\theta , \omega t) & = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \theta \op{J} _ 2} \e ^ {\ii \omega t \op{J} _ 3} \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {\ii \tilde{\theta} \op{J} _ 2} \e ^ {\ii \omega t \op{J} _ 3} \vec{R} (\tilde{\theta} , \omega t) \\
+& = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \theta \op{J} _ 2} \e ^ {\ii \tilde{\theta} \op{J} _ 2} \e ^ {\ii \omega t \op{J} _ 3} \vec{R} (\tilde{\theta} , \omega t) \\
+\end{align*}
+$$
 
 to-do list:
 
-- [ ] prove $\vec{R} ( \theta , \varphi )\cdot \op{\vec{J}} \ket{k,\theta, \varphi } = k \ket{k,\theta, \varphi }$
+- [x] $\vec{R} ( \theta , \varphi )\cdot \op{\vec{J}} \ket{k,\theta, \varphi } = k \ket{k,\theta, \varphi }$: the direction of magnetic field is always the direction of measurement. The value of measurement is always be integer or half-integer.
 - [x] plot $\psi (t) = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega \vec{e} \cdot \op{\vec{J}} t} \psi (0) = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega t \vec{R}  (\tilde{\theta} , 0) \cdot \op{\vec{J}}} \psi (0)$
+- [ ] calculate $\alpha ^ \text{dyn} _ k$
 
 References
 
