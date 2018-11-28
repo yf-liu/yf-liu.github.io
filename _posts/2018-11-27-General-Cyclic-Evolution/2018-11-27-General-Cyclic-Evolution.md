@@ -68,7 +68,7 @@ $$
 $$
 
 
-<img src = "assets/manifold.png" width="100%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-27-General-Cyclic-Evolution/assets/manifold.png" width="100%">
 
 The general relation between the solution of the Schrodinger equation $\ket{\psi (t)}$, the closed lift $\ket{\phi (t)}$ and the A-A lift $\ket{\tilde{\psi} (t)}$.
 
