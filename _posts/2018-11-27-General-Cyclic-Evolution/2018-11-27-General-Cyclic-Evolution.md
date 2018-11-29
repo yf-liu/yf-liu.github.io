@@ -90,6 +90,7 @@ $$
 >\ket{\phi (t)} \bra{\phi (t)} & = \e ^ {- \ii \gamma} \ket{\tilde{\psi} (t)} \bra{\tilde{\psi} (t)} \e ^ {\ii \gamma} = \ket{\tilde{\psi} (t)} \bra{\tilde{\psi} (t)} \\
 >\end{align*}
 >$$
+>
 
 The phase angle $\gamma (\tau)$ is independent of the choice of the time parameterization of $\phi (t)$ and the Hamiltonian as long as these Hamiltonian describe the same closed path $\mathcal{C}$ in $P(\mathcal{H})$. It is considered as a geometric property of $\mathcal{C}$.
 
@@ -135,6 +136,7 @@ $$
 > \ii \frac{\dd}{\dd t} \ket{\tilde{\psi} (t)} &  = [h (t) - \bra{\psi (t)} h (t) \ket{\psi (t)} \id] \ket{\tilde{\psi} (t)}
 >\end{align*}
 >$$
+>
 
 The tangent vector $\frac{\dd \ket{\tilde{\psi} (t)}}{\dd t}$ of $\ket{\tilde{\psi} (t)}$ is orthogonal to both $\ket{\psi (t)}$ and $\ket{\tilde{\psi} (t)}$ in the Hilbert space.
 
@@ -157,6 +159,7 @@ $$
 >& = 0
 >\end{align*}
 >$$
+>
 
 Although the dynamical lift $C$ is uniquely determined by the Hamiltonian $h (t)$, it is not uniquely determined by the physical problem. 
 
@@ -198,6 +201,7 @@ $$
 >\ket{\psi ^ \prime (t)} & = \e ^ {\ii \kappa t} \ket{\psi (t)}
 >\end{align*}
 >$$
+>
 
 Thus the dynamical lift does not uniquely correspond to the physical problem. A lift that is uniquely associated with the closed curve $\mathcal{C}$ in $P(\mathcal{H})$, and therefore reflects the physical effects is A-A lift $\tilde{C}$.
 
@@ -293,6 +297,7 @@ $$
 >\frac{\dd}{\dd t} U ^ \dagger (t) V _ 0 & = - \ii h (t) U ^ \dagger (t) V _ 0 \\
 >\end{align*}
 >$$
+>
 
 Therefore we have $V (t) = V ^ \prime (t)$.
 
@@ -334,6 +339,7 @@ where $\tilde{h}$ is a time-independent Hermitian operator and $Z (t)$ is a T-pe
 >$$
 >Z (0) = U ^ \dagger (0) = \id
 >$$
+>
 
 ### Geometrical phase
 
@@ -368,6 +374,7 @@ $$
 >
 
 Now compute the dynamical phase angle.
+
 $$
 \alpha ^ \text{dyn} (\tau) \defas \int ^ \tau _ 0 \bra{\psi (t ^ \prime)} h (t ^ \prime) \ket{\psi (t ^ \prime)} \dd t ^ \prime \mod{2 \pi}
 $$
@@ -383,17 +390,22 @@ $$
 >
 
 For a cyclic state with the same period as the Hamiltonian ($\tau = T$), the cyclic state vector $\ket{\psi(0)}$ is an eigenvector of the operator $\tilde{h}$. Hence the second term is precisely the total phase angle.
+
 $$
 \tau \bra{\psi (0)} \tilde{h}  \ket{\psi(0)} = \alpha (T)
 $$
+
 In view of this equation we can directly express the geometric phase in term of the operator $Z(t)$ and its time derivative:
+
 $$
 \begin{align*}
 \gamma (T) & = \gamma (\mathcal{C}) \defas \alpha ^ \text{dyn} (T) - \alpha (T) \mod{2 \pi} \\
 & = \int ^ T _ 0 \ii \bra{\psi (0)} Z ^ \dagger (t ^ \prime) \dot{Z} (t ^ \prime) \ket{\psi (0)} \dd t ^ \prime \mod{2 \pi}
 \end{align*}
 $$
+
 The operator $Z(t)$ can be used to yield the single-valued vectors $\ket{\phi(t)}$.
+
 $$
 \ket{\phi(t)} = Z (t) \ket{\phi(0)}
 $$
