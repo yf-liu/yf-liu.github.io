@@ -9,7 +9,7 @@ tags:
 
 ## Aharonov-Aanandan phase
 
-### General geometric phase
+### State space and projection space
 
 ---
 
@@ -67,15 +67,13 @@ $$
 \mathcal{C}: W (0) \rightarrow W (t) = \ket{\psi (t)} \bra{\psi (t)} \rightarrow W (\tau) = W (0)
 $$
 
-
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-27-General-Cyclic-Evolution/assets/manifold.png" width="100%">
 
 The general relation between the solution of the Schrodinger equation $\ket{\psi (t)}$, the closed lift $\ket{\phi (t)}$ and the A-A lift $\ket{\tilde{\psi} (t)}$.
-
 $$
 \begin{align*}
 \ket{\psi (t)} = \e ^ {- \ii \alpha} \ket{\tilde{\psi} (t)} = \e ^ {- \ii \int _ 0 ^ t \bra{\psi (t ^ \prime)} h (t ^ \prime) \ket{\psi (t ^ \prime)} \dd t ^ \prime} \ket{\tilde{\psi} (t)} \\
-\ket{\phi (t)} = \e ^ {- \ii \gamma} \ket{\tilde{\psi} (t)} = \e ^ {- \ii \int _ 0 ^ t \bra{\psi (t ^ \prime)} \frac{\dd}{\dd t ^ \prime} \ket{\psi (t ^ \prime)} \dd t ^ \prime} \ket{\tilde{\psi} (t)} \\
+\ket{\phi (t)} = \e ^ {- \ii \gamma} \ket{\tilde{\psi} (t)} = \e ^ {- \ii \int _ 0 ^ t \bra{\phi (t ^ \prime)} \frac{\dd}{\dd t ^ \prime} \ket{\phi (t ^ \prime)} \dd t ^ \prime} \ket{\tilde{\psi} (t)} \\
 \end{align*}
 $$
 
@@ -92,6 +90,20 @@ $$
 >\end{align*}
 >$$
 >
+
+The phase angle $\gamma (\tau)$ is independent of the choice of the time parameterization of $\phi (t)$ and the Hamiltonian as long as these Hamiltonian describe the same closed path $\mathcal{C}$ in $P(\mathcal{H})$. It is considered as a geometric property of $\mathcal{C}$.
+
+The one-form appearing in the integrand of $\gamma (\tau)$, namely
+$$
+\mathcal{A} \defas \ii \bra{\phi} \dd \ket{\phi}
+$$
+is called the A-A connection one-form. It is invariant under the transformation $\phi(t) \rightarrow \phi ^ \prime (t) = \e ^ {\ii \zeta (t)} \phi (t)$.
+$$
+\begin{align*}
+\mathcal{A} = \ii \bra{\phi} \dd \ket{\phi} \rightarrow \mathcal{A} ^ \prime = \ii \bra{\phi ^ \prime} \dd \ket{\phi ^ \prime} \\
+\end{align*}
+$$
+
 
 ### The uniqueness of A-A lift
 
@@ -207,6 +219,10 @@ $$
 >
 >They satisfies the same equation which can be uniquely solved.
 
+### A-A connection one-form
+
+---
+
 ### Special case for the spinning quantum system
 
 ---
@@ -231,6 +247,157 @@ $$
 & \ket{\phi (k)} = \ket{k , \theta , \omega t}
 \end{align*}
 $$
+
+## Exact cyclic evolution for periodic Hamiltonian
+
+### Construct the evolution operator
+
+---
+
+The periodic Hamiltonian is
+$$
+h (t + T) = h (t)
+$$
+We can use the results of Floquet theory in mathematics. Consider the unitary operator $V (t) \defas U ^ \dagger (t + T)$. It is not difficult to check that $V$ satisfies the following Schrodinger equation:
+$$
+\frac{\dd}{\dd t} V (t) = - \ii h (t) V (t) \\
+V (0) = U ^ \dagger (T) \isdefas V _ 0
+\label{unitary_Schrodinger}
+$$
+
+>$$
+>\begin{align*}
+>\frac{\dd}{\dd t} U ^ \dagger (t + a) & = - \ii h (t) U ^ \dagger (t + a) \\
+>\frac{\dd}{\dd t} U (t + a) & = \ii U (t + a) h ^ \dagger (t) \\
+>\frac{\dd}{\dd t} \left(U ^ \dagger (t + a) U (t + a)\right) & = \frac{\dd}{\dd t} U ^ \dagger (t + a) U (t + a) + U ^ \dagger (t + a) \frac{\dd}{\dd t} U (t + a) \\
+>& = - \ii h (t) U ^ \dagger (t + a) U (t + a) + U ^ \dagger (t + a) \ii U  (t + a) h ^ \dagger (t) \\
+>& = - \ii h (t) + \ii h (t) \\
+>& = 0
+>\end{align*}
+>$$
+>
+>The unitary $V (t) \defas U ^ \dagger (t + T)$ satisfies the equation.
+
+The operator $V ^ \prime (t) \defas U ^ \dagger (t) V _ 0$ also satisfies Eqn. ($\ref{unitary_Schrodinger}$). However we know from the uniqueness theorem for initial value linear differential equation that the solution is uniqueness.
+$$
+\frac{\dd}{\dd t} V ^ \prime (t) = - \ii h (t) V ^ \prime (t) \\
+V ^ \prime (0) = U ^ \dagger (0) V _ 0
+$$
+
+>$$
+>\begin{align*}
+>\frac{\dd}{\dd t} U ^ \dagger (t) & = - \ii h (t) U ^ \dagger (t) \\
+>\frac{\dd}{\dd t} U ^ \dagger (t) V _ 0 & = - \ii h (t) U ^ \dagger (t) V _ 0 \\
+>\end{align*}
+>$$
+>
+
+Therefore we have $V (t) = V ^ \prime (t)$.
+$$
+U ^ \dagger (t + T) = U ^ \dagger (t) V _ 0 = U ^ \dagger (t) U ^ \dagger (T)
+$$
+This implies that the unitary operator can be noted as 
+$$
+U ^ \dagger (t) = Z (t) \e ^ {- \ii t \tilde{h}} \\
+U ^ \dagger (T) = \e ^ {- \ii T \tilde{h}}
+$$
+where $\tilde{h}$ is a time-independent Hermitian operator and $Z (t)$ is a T-periodic unitary operator with $Z(0) = 1$.
+
+>Unitarity of $U(t)$:
+>
+>$$
+>\begin{align*}
+>U ^ \dagger (t) & = Z (t) \e ^ {- \ii t \tilde{h}} \\
+>U (t) & = \e ^ {\ii t \tilde{h}} Z ^ \dagger (t) \\
+>U ^ \dagger (t) U (t) & = Z (t) \e ^ {- \ii t \tilde{h}} \e ^ {\ii t \tilde{h}} Z ^ \dagger (t) = \id
+>\end{align*}
+>$$
+>
+>Periodicity of $Z(t)$:
+>
+>$$
+>\begin{align*}
+>U ^ \dagger (t + T) & = U ^ \dagger (t) \\
+>Z (t + T) \e ^ {- \ii t \tilde{h}} & = Z (t) \e ^ {- \ii t \tilde{h}} \\
+>Z (t + T) & = Z (t) \\
+>\end{align*}
+>$$
+>
+>$U ^ \dagger (0)$ and $Z (0)$:
+>$$
+>Z (0) = U ^ \dagger (0) = \id
+>$$
+>
+
+### Geometrical phase
+
+---
+
+Consider the evolution of a cyclic state vector $\ket{\psi(0)}$. By definition $\ket{\psi(0)}$ is an eigenvector of the evolution operator:
+$$
+U ^ \dagger (\tau) \ket{\psi(0)} = Z (\tau) \e ^ {- \ii t \tilde{h}} \ket{\psi(0)} = \e ^ {- \ii \alpha (t)} \ket{\psi(0)}
+$$
+On the other hand the evolution of $\ket{\psi(0)}$is governed by the Schrodinger equation $\ii \frac{\dd}{\dd t} \ket{\psi (t)} = h (t) \ket{\psi (t)}$. In terms of the operators $Z(t)$ and $\tilde{h}$, these equations take the form
+$$
+\begin{align*}
+\ket{\psi(t)} & = Z (t) \e ^ {- \ii t \tilde{h}} \ket{\psi(0)} \\
+h (t) & = \ii \dot{Z} (t) Z ^ \dagger (t) + Z (t) \tilde{h} Z ^ \dagger (t) \\
+\end{align*}
+$$
+
+>$$
+>\begin{align*}
+>\ii \frac{\dd}{\dd t} \ket{\psi (t)} & = h (t) \ket{\psi (t)} \\
+>\text{LHS: } & \quad \ii \frac{\dd}{\dd t} \ket{\psi (t)} \\
+>& = \ii \frac{\dd}{\dd t} \left( Z (t) \e ^ {- \ii t \tilde{h}} \ket{\psi(0)} \right) \\
+>& = \ii \dot{Z} (t) \e ^ {- \ii t \tilde{h}} \ket{\psi(0)} + Z (t) \e ^ {- \ii t \tilde{h}} \tilde{h} \ket{\psi(0)} \\
+>\text{RHS: } & \quad h (t) \ket{\psi (t)} \\
+>& = \left(\ii \dot{Z} (t) Z ^ \dagger (t) + Z (t) \tilde{h} Z ^ \dagger (t)\right) \left( Z (t) \e ^ {- \ii t \tilde{h}} \ket{\psi(0)} \right) \\
+>& = \ii \dot{Z} (t) \e ^ {- \ii t \tilde{h}} \ket{\psi(0)} + Z (t) \tilde{h} \e ^ {- \ii t \tilde{h}} \ket{\psi(0)} \\
+>\end{align*}
+>$$
+>
+
+Now compute the dynamical phase angle.
+$$
+\alpha ^ \text{dyn} (\tau) \defas \int ^ \tau _ 0 \bra{\psi (t ^ \prime)} h (t ^ \prime) \ket{\psi (t ^ \prime)} \dd t ^ \prime \mod{2 \pi}
+$$
+
+>$$
+>\begin{align*}
+>\alpha (\tau) & \defas \int ^ \tau _ 0 \bra{\psi (0)} \e ^ {\ii t ^ \prime \tilde{h}} Z ^ \dagger (t ^ \prime) \left(\ii \dot{Z} (t ^ \prime) Z ^ \dagger (t ^ \prime) + Z (t ^ \prime) \tilde{h} Z ^ \dagger (t ^ \prime)\right) Z (t ^ \prime) \e ^ {- \ii t ^ \prime \tilde{h}} \ket{\psi(0)} \dd t ^ \prime \mod{2 \pi} \\
+>& = \int ^ \tau _ 0 \bra{\psi (0)} \e ^ {\ii t ^ \prime \tilde{h}} Z ^ \dagger (t ^ \prime) \ii \dot{Z} (t ^ \prime)  \e ^ {- \ii t ^ \prime \tilde{h}} + \e ^ {\ii t ^ \prime \tilde{h}} \tilde{h} \e ^ {- \ii t ^ \prime \tilde{h}}  \ket{\psi(0)} \dd t ^ \prime \mod{2 \pi} \\
+>& = \ii \int ^ \tau _ 0 \bra{\psi (0)} \e ^ {\ii t ^ \prime \tilde{h}} Z ^ \dagger (t ^ \prime) \dot{Z} (t ^ \prime)  \e ^ {- \ii t ^ \prime \tilde{h}} \ket{\psi(0)} \dd t ^ \prime + \int ^ \tau _ 0 \bra{\psi (0)} \e ^ {\ii t ^ \prime \tilde{h}} \tilde{h} \e ^ {- \ii t ^ \prime \tilde{h}}  \ket{\psi(0)} \dd t ^ \prime \mod{2 \pi} \\
+>& = \ii \int ^ \tau _ 0 \bra{\psi (0)} \e ^ {\ii t ^ \prime \tilde{h}} Z ^ \dagger (t ^ \prime) \dot{Z} (t ^ \prime)  \e ^ {- \ii t ^ \prime \tilde{h}} \ket{\psi(0)} \dd t ^ \prime + \tau \bra{\psi (0)} \tilde{h}  \ket{\psi(0)} \mod{2 \pi} \\
+>\end{align*}
+>$$
+>
+
+For a cyclic state with the same period as the Hamiltonian ($\tau = T$), the cyclic state vector $\ket{\psi(0)}$ is an eigenvector of the operator $\tilde{h}$. Hence the second term is precisely the total phase angle.
+$$
+\tau \bra{\psi (0)} \tilde{h}  \ket{\psi(0)} = \alpha (T)
+$$
+In view of this equation we can directly express the geometric phase in term of the operator $Z(t)$ and its time derivative:
+$$
+\begin{align*}
+\gamma (T) & = \gamma (\mathcal{C}) \defas \alpha ^ \text{dyn} (T) - \alpha (T) \mod{2 \pi} \\
+& = \int ^ T _ 0 \ii \bra{\psi (0)} Z ^ \dagger (t ^ \prime) \dot{Z} (t ^ \prime) \ket{\psi (0)} \dd t ^ \prime \mod{2 \pi}
+\end{align*}
+$$
+The operator $Z(t)$ can be used to yield the single-valued vectors $\ket{\phi(t)}$.
+$$
+\ket{\phi(t)} = Z (t) \ket{\phi(0)}
+$$
+
+>$$
+>\begin{align*}
+>\gamma (T) & = \gamma (\mathcal{C}) \defas \alpha ^ \text{dyn} (T) - \alpha (T) \mod{2 \pi} \\
+>& = \int ^ T _ 0 \ii \bra{\psi (0)} Z ^ \dagger (t ^ \prime) \dot{Z} (t ^ \prime) \ket{\psi (0)} \dd t ^ \prime \mod{2 \pi} \\
+>& = \int ^ T _ 0 \ii \bra{\psi (0)} Z ^ \dagger (t ^ \prime) \frac{\dd}{\dd t ^ \prime} \left[Z (t ^ \prime) \ket{\psi (0)}\right] \dd t ^ \prime \mod{2 \pi} \\
+>& = \int ^ T _ 0 \ii \bra{\phi (t ^ \prime)} \frac{\dd}{\dd t ^ \prime} \ket{\phi (t ^ \prime)} \dd t ^ \prime \mod{2 \pi} \\
+>\end{align*}
+>$$
+>
 
 
 
