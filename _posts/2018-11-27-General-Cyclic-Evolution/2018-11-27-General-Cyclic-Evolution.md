@@ -70,6 +70,7 @@ $$
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-27-General-Cyclic-Evolution/assets/manifold.png" width="100%">
 
 The general relation between the solution of the Schrodinger equation $\ket{\psi (t)}$, the closed lift $\ket{\phi (t)}$ and the A-A lift $\ket{\tilde{\psi} (t)}$.
+
 $$
 \begin{align*}
 \ket{\psi (t)} = \e ^ {- \ii \alpha} \ket{\tilde{\psi} (t)} = \e ^ {- \ii \int _ 0 ^ t \bra{\psi (t ^ \prime)} h (t ^ \prime) \ket{\psi (t ^ \prime)} \dd t ^ \prime} \ket{\tilde{\psi} (t)} \\
@@ -89,21 +90,22 @@ $$
 >\ket{\phi (t)} \bra{\phi (t)} & = \e ^ {- \ii \gamma} \ket{\tilde{\psi} (t)} \bra{\tilde{\psi} (t)} \e ^ {\ii \gamma} = \ket{\tilde{\psi} (t)} \bra{\tilde{\psi} (t)} \\
 >\end{align*}
 >$$
->
 
 The phase angle $\gamma (\tau)$ is independent of the choice of the time parameterization of $\phi (t)$ and the Hamiltonian as long as these Hamiltonian describe the same closed path $\mathcal{C}$ in $P(\mathcal{H})$. It is considered as a geometric property of $\mathcal{C}$.
 
 The one-form appearing in the integrand of $\gamma (\tau)$, namely
+
 $$
 \mathcal{A} \defas \ii \bra{\phi} \dd \ket{\phi}
 $$
+
 is called the A-A connection one-form. It is invariant under the transformation $\phi(t) \rightarrow \phi ^ \prime (t) = \e ^ {\ii \zeta (t)} \phi (t)$.
+
 $$
 \begin{align*}
 \mathcal{A} = \ii \bra{\phi} \dd \ket{\phi} \rightarrow \mathcal{A} ^ \prime = \ii \bra{\phi ^ \prime} \dd \ket{\phi ^ \prime} \\
 \end{align*}
 $$
-
 
 ### The uniqueness of A-A lift
 
@@ -133,7 +135,6 @@ $$
 > \ii \frac{\dd}{\dd t} \ket{\tilde{\psi} (t)} &  = [h (t) - \bra{\psi (t)} h (t) \ket{\psi (t)} \id] \ket{\tilde{\psi} (t)}
 >\end{align*}
 >$$
->
 
 The tangent vector $\frac{\dd \ket{\tilde{\psi} (t)}}{\dd t}$ of $\ket{\tilde{\psi} (t)}$ is orthogonal to both $\ket{\psi (t)}$ and $\ket{\tilde{\psi} (t)}$ in the Hilbert space.
 
@@ -156,7 +157,6 @@ $$
 >& = 0
 >\end{align*}
 >$$
->
 
 Although the dynamical lift $C$ is uniquely determined by the Hamiltonian $h (t)$, it is not uniquely determined by the physical problem. 
 
@@ -198,7 +198,6 @@ $$
 >\ket{\psi ^ \prime (t)} & = \e ^ {\ii \kappa t} \ket{\psi (t)}
 >\end{align*}
 >$$
->
 
 Thus the dynamical lift does not uniquely correspond to the physical problem. A lift that is uniquely associated with the closed curve $\mathcal{C}$ in $P(\mathcal{H})$, and therefore reflects the physical effects is A-A lift $\tilde{C}$.
 
@@ -255,10 +254,13 @@ $$
 ---
 
 The periodic Hamiltonian is
+
 $$
 h (t + T) = h (t)
 $$
+
 We can use the results of Floquet theory in mathematics. Consider the unitary operator $V (t) \defas U ^ \dagger (t + T)$. It is not difficult to check that $V$ satisfies the following Schrodinger equation:
+
 $$
 \frac{\dd}{\dd t} V (t) = - \ii h (t) V (t) \\
 V (0) = U ^ \dagger (T) \isdefas V _ 0
@@ -279,6 +281,7 @@ $$
 >The unitary $V (t) \defas U ^ \dagger (t + T)$ satisfies the equation.
 
 The operator $V ^ \prime (t) \defas U ^ \dagger (t) V _ 0$ also satisfies Eqn. ($\ref{unitary_Schrodinger}$). However we know from the uniqueness theorem for initial value linear differential equation that the solution is uniqueness.
+
 $$
 \frac{\dd}{\dd t} V ^ \prime (t) = - \ii h (t) V ^ \prime (t) \\
 V ^ \prime (0) = U ^ \dagger (0) V _ 0
@@ -290,17 +293,20 @@ $$
 >\frac{\dd}{\dd t} U ^ \dagger (t) V _ 0 & = - \ii h (t) U ^ \dagger (t) V _ 0 \\
 >\end{align*}
 >$$
->
 
 Therefore we have $V (t) = V ^ \prime (t)$.
+
 $$
 U ^ \dagger (t + T) = U ^ \dagger (t) V _ 0 = U ^ \dagger (t) U ^ \dagger (T)
 $$
+
 This implies that the unitary operator can be noted as 
+
 $$
 U ^ \dagger (t) = Z (t) \e ^ {- \ii t \tilde{h}} \\
 U ^ \dagger (T) = \e ^ {- \ii T \tilde{h}}
 $$
+
 where $\tilde{h}$ is a time-independent Hermitian operator and $Z (t)$ is a T-periodic unitary operator with $Z(0) = 1$.
 
 >Unitarity of $U(t)$:
@@ -324,20 +330,23 @@ where $\tilde{h}$ is a time-independent Hermitian operator and $Z (t)$ is a T-pe
 >$$
 >
 >$U ^ \dagger (0)$ and $Z (0)$:
+>
 >$$
 >Z (0) = U ^ \dagger (0) = \id
 >$$
->
 
 ### Geometrical phase
 
 ---
 
 Consider the evolution of a cyclic state vector $\ket{\psi(0)}$. By definition $\ket{\psi(0)}$ is an eigenvector of the evolution operator:
+
 $$
 U ^ \dagger (\tau) \ket{\psi(0)} = Z (\tau) \e ^ {- \ii t \tilde{h}} \ket{\psi(0)} = \e ^ {- \ii \alpha (t)} \ket{\psi(0)}
 $$
+
 On the other hand the evolution of $\ket{\psi(0)}$is governed by the Schrodinger equation $\ii \frac{\dd}{\dd t} \ket{\psi (t)} = h (t) \ket{\psi (t)}$. In terms of the operators $Z(t)$ and $\tilde{h}$, these equations take the form
+
 $$
 \begin{align*}
 \ket{\psi(t)} & = Z (t) \e ^ {- \ii t \tilde{h}} \ket{\psi(0)} \\
