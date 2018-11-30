@@ -10,6 +10,8 @@ tags:
 
 Key words: periodic rotation, exact solution, Aharonov-Anandan phase. 
 
+This note is following [1](Bohm, Arno, et al. *The Geometric Phase in Quantum Systems: Foundations, Mathematical Concepts, and Applications in Molecular and Condensed Matter Physics*. Springer Science & Business Media, 2013.).
+
 ## The parameterization of the Basis Vector
 
 ### Hamiltonian and parameter space
@@ -1062,4 +1064,4 @@ to-do list:
 
 References
 
-[1] Pascazio, S. "The geometric phase in quantum systems." (2003): 12345.
+[1] Bohm, Arno, et al. *The Geometric Phase in Quantum Systems: Foundations, Mathematical Concepts, and Applications in Molecular and Condensed Matter Physics*. Springer Science & Business Media, 2013.
