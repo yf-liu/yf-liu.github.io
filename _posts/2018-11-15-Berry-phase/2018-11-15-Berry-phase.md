@@ -1,5 +1,5 @@
 ---
-title: Berry phase of Spinning quantum system in an external magnetic field
+title: Geometric phase of a magnetic dipole in a processing magnetic field
 category: Physics
 tags:
   - Topology
