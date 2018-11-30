@@ -7,6 +7,8 @@ tags:
   - Cyclic evolution
 ---
 
+This note is following [The Geometric Phase in Quantum Systems: Foundations, Mathematical Concepts, and Applications in Molecular and Condensed Matter Physics](https://cds.cern.ch/record/737299/files/3540000313_TOC.pdf).
+
 ## Aharonov-Aanandan phase
 
 ### State space and projection space
@@ -422,6 +424,6 @@ to-do list:
 
 References
 
-[1] Pascazio, S. "The geometric phase in quantum systems." (2003): 12345.
+[1] Bohm, Arno, et al. *The Geometric Phase in Quantum Systems: Foundations, Mathematical Concepts, and Applications in Molecular and Condensed Matter Physics*. Springer Science & Business Media, 2013.
 
 [2] Moore, D. J. "The calculation of nonadiabatic Berry phases." *Physics Reports* 210.1 (1991): 1-43.
