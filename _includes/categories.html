@@ -2,7 +2,6 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6">
-
         <div class="page-header" id="categories">
           <h3>Categories </h3>
         </div>
@@ -11,13 +10,13 @@
           <div class="card">
             <div class="card-header border-0" role="tab" id="{{cat[0]}}header">
               <h5 class="mb-0">
-                <a name="c_{{cat[0]}}" class="collapsed text-white" data-toggle="collapse" data-parent="#categories" href="#c_{{cat[0]}}" aria-expanded="false" aria-controls="c_{{cat[0]}}">{{ cat[0] }}
+                <a name="c_{{cat[0]}}" class="text-white" data-toggle="collapse" data-parent="#categories" href="#c_{{cat[0]}}" aria-expanded="true" aria-controls="c_{{cat[0]}}">{{ cat[0] }}
                   <span class="badge ml-2 text-white">{{ cat[1].size }}</span>
                 </a>
               </h5>
             </div>
 
-            <div id="c_{{cat[0]}}" class="collapse" role="tabpanel" aria-labelledby="{{cat[0]}}header">
+            <div id="c_{{cat[0]}}" class="collapse show" role="tabpanel" aria-labelledby="{{cat[0]}}header">
               <div class="card-block">
                 {% for post in cat[1] %}
                 <div class="text-white"> {{ post.date | date: "%Y-%m-%d" }} 
@@ -29,8 +28,6 @@
           </div>
           {% endfor %}
         </div>
-
-
       </div>
       <div class="col-md-6">
         <div class="page-header" id="tags">
@@ -41,13 +38,13 @@
           <div class="card">
             <div class="card-header border-0" role="tab" id="{{tag[0]}}header">
               <h5 class="mb-0">
-                <a name="t_{{tag[0]}}" class="collapsed text-white" data-toggle="collapse" data-parent="#tags" href="#t_{{tag[0]}}" aria-expanded="false" aria-controls="t_{{tag[0]}}">{{ tag[0] }}
+                <a name="t_{{tag[0]}}" class="text-white" data-toggle="collapse" data-parent="#tags" href="#t_{{tag[0]}}" aria-expanded="true" aria-controls="t_{{tag[0]}}">{{ tag[0] }}
                   <span class="badge ml-2 text-white">{{ tag[1].size }}</span>
                 </a>
               </h5>
             </div>
 
-            <div id="t_{{tag[0]}}" class="collapse" role="tabpanel" aria-labelledby="{{tag[0]}}header">
+            <div id="t_{{tag[0]}}" class="collapse show" role="tabpanel" aria-labelledby="{{tag[0]}}header">
               <div class="card-block">
                 {% for post in tag[1] %}
                 <div class="text-white"> {{ post.date | date: "%Y-%m-%d" }} 
