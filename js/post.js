@@ -1,7 +1,7 @@
 (function () {
 
   var config = {
-    headerCollapsibleActive: true,
+    headerCollapsibleActive: false,
     syntaxHighlighter: true,
     toc: true,
     headerNumber: true,
