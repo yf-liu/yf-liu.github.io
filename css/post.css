@@ -12,10 +12,19 @@ div#reading-progress {
     margin-right: auto;
 }
 
-
+div#post-content{
+        width: 90vw;
+        text-align: justify;
+    }
+div#comment-content{
+        width: 90vw;
+        text-align: justify;
+    }
+    
+    
 @media(min-width:1024px) {
     div#post-content{
-        width: 70vw
+        width: 90vw
     }
 }
 
