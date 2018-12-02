@@ -94,10 +94,6 @@ All the manifolds of the same finite dimension are locally identical, while the 
 
 
 
-to-do list:
-
-- [ ] 
-
-References
+## References
 
 [1] Bohm, Arno, et al. *The Geometric Phase in Quantum Systems: Foundations, Mathematical Concepts, and Applications in Molecular and Condensed Matter Physics*. Springer Science & Business Media, 2013.

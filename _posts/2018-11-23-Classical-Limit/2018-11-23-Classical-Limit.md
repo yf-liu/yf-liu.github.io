@@ -224,7 +224,7 @@ to-do list:
 
 - [ ] Is Spin angular momentum a quadratic term? If so what does position and moment operator in Spin mean?
 
-References
+## References
 
 [1] Shankar, Ramamurti. *Principles of quantum mechanics*. Springer Science & Business Media, 2012.
 

@@ -1060,6 +1060,6 @@ to-do list:
 - [x] plot $\psi (t) = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega \vec{e} \cdot \op{\vec{J}} t} \psi (0) = \e ^ {- \ii \omega t \op{J} _ 3} \e ^ {- \ii \Omega t \vec{R}  (\tilde{\theta} , 0) \cdot \op{\vec{J}}} \psi (0)$
 - [ ] calculate $\alpha ^ \text{dyn} _ k$
 
-References
+## References
 
 [1] Bohm, Arno, et al. *The Geometric Phase in Quantum Systems: Foundations, Mathematical Concepts, and Applications in Molecular and Condensed Matter Physics*. Springer Science & Business Media, 2013.
