@@ -6,17 +6,17 @@ tags:
   - Majorana
 ---
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-12-02-Majorana-excitation/assets/1.png" width="80%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-12-02-Majorana-excitation/assets/1.png" width="100%">
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-12-02-Majorana-excitation/assets/2.png" width="80%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-12-02-Majorana-excitation/assets/2.png" width="100%">
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-12-02-Majorana-excitation/assets/3.png" width="80%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-12-02-Majorana-excitation/assets/3.png" width="100%">
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-12-02-Majorana-excitation/assets/4.png" width="80%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-12-02-Majorana-excitation/assets/4.png" width="100%">
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-12-02-Majorana-excitation/assets/5.png" width="80%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-12-02-Majorana-excitation/assets/5.png" width="100%">
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-12-02-Majorana-excitation/assets/6.png" width="80%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-12-02-Majorana-excitation/assets/6.png" width="100%">
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-12-02-Majorana-excitation/assets/7.png" width="80%">
 
