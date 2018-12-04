@@ -65,29 +65,12 @@ $$
 \end{align*}
 $$
 
->Given two manifolds $M$ and $N$, a differentiable map $f : M → N$ is called a **diffeomorphism** if it is a bijection and its inverse $f ^ {−1} : N → M$ is differentiable as well. If these functions are $r$ times continuously differentiable, $f$ is called a $C _ r$-diffeomorphism.
->
-><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/diffeomorphism.png" width="30%">
->
->The fiber $F _ x$ over $x$ as the inverse image of $x$ under $\pi$, $F _ x = \pi ^ {-1} (x)$. 
->
-><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/inverse_image.png" width="30%">
->
->The projection map is an onto function, so that there are fibers over all the points of $X$.
->
->The projection map is a smooth (continuous) function. A smooth curve in $E$ projects to smooth curve in $X$.
->
-><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/smooth.png" width="30%">
->
-
-
-
-The fiber bundle is locally the Cartesian product of an open subset of the base manifold $X$ and the typical fiber $F$. For any point $x \in X$, there is an open neighborhood $U _ x$ of $x$, such that
-$$
-\pi ^ {-1} (U _ x) \simeq U _ x \times F
-$$
-
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/local.png" width="30%">
+| Given two manifolds $M$ and $N$, a differentiable map $f : M → N$ is called a **diffeomorphism** if it is a bijection and its inverse $f ^ {−1} : N → M$ is differentiable as well. If these functions are $r$ times continuously differentiable, $f$ is called a $C _ r$-diffeomorphism. | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/diffeomorphism.png" width="100%"> |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| The fiber $F _ x$ over $x$ as the inverse image of $x$ under $\pi$, $F _ x = \pi ^ {-1} (x)$. | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/inverse_image.png" width="100%"> |
+| The projection map is an onto function, so that there are fibers over all the points of $X$. |                                                              |
+| The projection map is a smooth (continuous) function. A smooth curve in $E$ projects to smooth curve in $X$. | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/smooth.png" width="100%"> |
+| The fiber bundle is locally the Cartesian product of an open subset of the base manifold $X$ and the typical fiber $F$. For any point $x \in X$, there is an open neighborhood $U _ x$ of $x$, such that $\pi ^ {-1} (U _ x) \simeq U _ x \times F$. | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/local.png" width="100%"> |
 
 All the manifolds of the same finite dimension are locally identical, while the global structure distinguishes it from others of the same dimension. It depends on how to glue the open neighborhood to construct the manifold, which stored in transition or overlap functions. To see this, let us cover the manifold $X$ with a set of open patches. These are subsets $O _ \alpha$ of $X=\cup _ \alpha O _ \alpha$ each of which is diffeomorphic to $\realset ^ m$. Thus for each $O _ \alpha$, there is a diffeomorphism $\varphi _ \alpha : O _ \alpha \rightarrow \realset ^ m$ which identifies $O _ \alpha$ with its image $\varphi _ \alpha (O _ \alpha)$ in $\realset ^ m$:
 
@@ -115,7 +98,7 @@ $$
 
 >In the previous sphere, the transition function is
 >
-> $$
+>$$
 > g _ {SN} = \varphi _ S \circ \varphi _ N ^ {-1} = \begin{pmatrix}
 > \frac{1 + z}{1 - z} & 0 \\
 > 0 & \frac{1 + z}{1 - z} \\
@@ -131,11 +114,25 @@ $$
 > \frac{x}{1 + z} \\
 > \frac{y}{1 + z} \\
 > \end{pmatrix}
-> $$
+>$$
 >
 > <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/transformation_function.png" width="80%">
 
- 
+Since we divide the base manifold $X$ into a collection $\set{U _ \alpha}$ of its open subsets, there exist diffeomorphisms
+$$
+\Phi _ \alpha : \pi ^ {-1} (U _ \alpha) \rightarrow U _ \alpha \times F
+$$
+The pair $(U _ \alpha , \Phi _ \alpha)$ is called a chart or a local trivialization of the bundle $E$. If we restrict $\Phi _ \alpha$ to a point $x \in U _ \alpha$, we will obtain a diffeomorphism from the fiber $F _ x$ onto the typical fiber.
+$$
+\Phi _ \alpha (x) \defas \Phi _ \alpha \vert _ \set{x} : F _ x \rightarrow \set{x} \times F \equiv F 
+$$
+
+The transition functions for the fiber bundle $E$ is
+$$
+G _ {\alpha \beta} (x) \defas \Phi _ \alpha (x) \circ \Phi _ \beta ^ {-1} (x) : F \rightarrow F
+$$
+These determine the 
+
 
 ## References
 
