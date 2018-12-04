@@ -107,9 +107,35 @@ $$
 >
 ><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/Stereographic.png" width="80%">
 
+On the overlap $O _ \alpha \cap O _ \beta$ of two patches, the image $\varphi _ \alpha (O _ \alpha \cap O _ \beta)$ and $\varphi _ \beta(O _ \alpha \cap O _ \beta)$ are related by overlap function. 
 
+$$
+g _ {\alpha \beta} \defas \varphi _ \alpha \circ \varphi _ \beta ^ {-1}
+$$
 
+>In the previous sphere, the transition function is
+>
+> $$
+> g _ {SN} = \varphi _ S \circ \varphi _ N ^ {-1} = \begin{pmatrix}
+> \frac{1 + z}{1 - z} & 0 \\
+> 0 & \frac{1 + z}{1 - z} \\
+> \end{pmatrix}\\
+> \varphi _ S = g _ {SN} \varphi _ N \\
+>  \begin{pmatrix}
+> \frac{x}{1 - z} \\
+> \frac{y}{1 - z} \\
+> \end{pmatrix} = \begin{pmatrix}
+> \frac{1 + z}{1 - z} & 0 \\
+> 0 & \frac{1 + z}{1 - z} \\
+> \end{pmatrix} \begin{pmatrix}
+> \frac{x}{1 + z} \\
+> \frac{y}{1 + z} \\
+> \end{pmatrix}
+> $$
+>
+> <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/transformation_function.png" width="80%">
 
+ 
 
 ## References
 
