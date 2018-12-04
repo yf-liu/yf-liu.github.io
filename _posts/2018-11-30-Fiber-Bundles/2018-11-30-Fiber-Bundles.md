@@ -7,7 +7,7 @@ tags:
   - Cyclic evolution
 ---
 
-This note is following [The Geometric Phase in Quantum Systems: Foundations, Mathematical Concepts, and Applications in Molecular and Condensed Matter Physics](https://cds.cern.ch/record/737299/files/3540000313_TOC.pdf).
+This note follows [The Geometric Phase in Quantum Systems: Foundations, Mathematical Concepts, and Applications in Molecular and Condensed Matter Physics](https://cds.cern.ch/record/737299/files/3540000313_TOC.pdf).
 
 ## From quantal phases to fiber bundles
 
@@ -80,17 +80,31 @@ $$
 ><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/smooth.png" width="30%">
 >
 
-The fiber bundle is locally the Cartesian product of an open subset of the base manifold $X$ and the typical fiber $F$. For any point $x \in X$, there is an open neighborhood $U _ x$ of $x$, such that
 
+
+The fiber bundle is locally the Cartesian product of an open subset of the base manifold $X$ and the typical fiber $F$. For any point $x \in X$, there is an open neighborhood $U _ x$ of $x$, such that
 $$
 \pi ^ {-1} (U _ x) \simeq U _ x \times F
 $$
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/local.png" width="30%">
 
-All the manifolds of the same finite dimension are locally identical, while the global structure distinguishes it from others of the same dimension. It depends on how to glue the open neighborhood to construct the manifold, which stored in transition or overlap functions. 
+All the manifolds of the same finite dimension are locally identical, while the global structure distinguishes it from others of the same dimension. It depends on how to glue the open neighborhood to construct the manifold, which stored in transition or overlap functions. To see this, let us cover the manifold $X$ with a set of open patches. These are subsets $O _ \alpha$ of $X=\cup _ \alpha O _ \alpha$ each of which is diffeomorphic to $\realset ^ m$. Thus for each $O _ \alpha$, there is a diffeomorphism $\varphi _ \alpha : O _ \alpha \rightarrow \realset ^ m$ which identifies $O _ \alpha$ with its image $\varphi _ \alpha (O _ \alpha)$ in $\realset ^ m$:
+$$
+O _ \alpha \simeq \varphi _ \alpha (O _ \alpha) \subseteq \realset ^ m
+$$
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/manifold.png" width="100%">
+>Consider the sphere of unit radius in $\realset ^ 3$. We parametrize the surface of $S ^ 2$ by stereographic coordinates. Stereographic coordinates can be defined by the projection from the North or South Pole onto the equatorial plane.
+>$$
+>\begin{align*}
+>& \varphi _ \alpha : O _ \alpha \rightarrow \realset ^ 2, \alpha = N , S\\
+>& O _ S (P \ne N):  X _ S = \frac{x}{1 - z}, Y _ S =\frac{y}{1 - z} \\
+>& O _ N (P \ne N):  X _ N = \frac{x}{1 + z}, Y _ N =\frac{y}{1 + z} \\
+>\end{align*}
+>$$
+><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/Stereographic.png" width="100%">
+
+
 
 
 
