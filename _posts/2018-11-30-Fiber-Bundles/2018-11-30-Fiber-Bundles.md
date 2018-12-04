@@ -90,11 +90,13 @@ $$
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/local.png" width="30%">
 
 All the manifolds of the same finite dimension are locally identical, while the global structure distinguishes it from others of the same dimension. It depends on how to glue the open neighborhood to construct the manifold, which stored in transition or overlap functions. To see this, let us cover the manifold $X$ with a set of open patches. These are subsets $O _ \alpha$ of $X=\cup _ \alpha O _ \alpha$ each of which is diffeomorphic to $\realset ^ m$. Thus for each $O _ \alpha$, there is a diffeomorphism $\varphi _ \alpha : O _ \alpha \rightarrow \realset ^ m$ which identifies $O _ \alpha$ with its image $\varphi _ \alpha (O _ \alpha)$ in $\realset ^ m$:
+
 $$
 O _ \alpha \simeq \varphi _ \alpha (O _ \alpha) \subseteq \realset ^ m
 $$
 
 >Consider the sphere of unit radius in $\realset ^ 3$. We parametrize the surface of $S ^ 2$ by stereographic coordinates. Stereographic coordinates can be defined by the projection from the North or South Pole onto the equatorial plane.
+>
 >$$
 >\begin{align*}
 >& \varphi _ \alpha : O _ \alpha \rightarrow \realset ^ 2, \alpha = N , S\\
@@ -102,6 +104,7 @@ $$
 >& O _ N (P \ne N):  X _ N = \frac{x}{1 + z}, Y _ N =\frac{y}{1 + z} \\
 >\end{align*}
 >$$
+>
 ><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/Stereographic.png" width="100%">
 
 
