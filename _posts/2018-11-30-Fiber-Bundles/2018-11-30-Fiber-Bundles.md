@@ -125,7 +125,7 @@ $$
 \Phi _ \alpha : \pi ^ {-1} (U _ \alpha) \rightarrow U _ \alpha \times F
 $$
 
-The pair $(U _ \alpha , \Phi _ \alpha)$ is called a chart or a local trivialization of the bundle $E$. If we restrict $\Phi _ \alpha$ to a point $x \in U _ \alpha$, we will obtain a diffeomorphism from the fiber $F _ x$ onto the typical fiber.
+The pair $(U _ \alpha , \Phi _ \alpha)$ is called a chart or a local trivialization of the bundle $E$. If we restrict $\Phi _ \alpha$ to a point $x \in U _ \alpha$, we will obtain a diffeomorphism from the fiber $F _ x$ onto the typical fiber $F$.
 
 $$
 \Phi _ \alpha (x) \defas \Phi _ \alpha \vert _ \set{x} : F _ x \rightarrow \set{x} \times F \equiv F 
@@ -136,14 +136,18 @@ The transition functions for the fiber bundle $E$ is
 $$
 G _ {\alpha \beta} (x) \defas \Phi _ \alpha (x) \circ \Phi _ \beta ^ {-1} (x) : F \rightarrow F
 $$
+
 The transition functions for the fiber bundle has two properties.
+
 $$
 G _ {\alpha \beta} (x) = G ^ {-1} _ {\beta \alpha} (x) \quad \forall x \in U _ \alpha \cap U _ \beta \\ 
 G _ {\alpha \beta} (x) \circ G _ {\beta \gamma} (x) \circ G _ {\gamma \alpha} (x) = 1 \quad \forall x \in U _ \alpha \cap U _ \beta \cap U _ \gamma \\ 
 $$
+
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/transformation_function_fiber.png" width="90%">
 
 The diffeomorphism preserving the bundle structure is a bundle map or a bundle morphism $\mathcal{F} : E _ 1 \rightarrow E _ 2$, which maps the fibers of $E _ 1$ into the fibers of $E _ 2$. Induce a smooth function $f : X _ 1 \rightarrow X _ 2$, there exists
+
 $$
 \begin{matrix}
 E _ 1 & \stackrel{\mathcal{F}}{\rightarrow} & E _ 2\\
@@ -151,7 +155,28 @@ E _ 1 & \stackrel{\mathcal{F}}{\rightarrow} & E _ 2\\
 X _ 1 & \stackrel{f}{\rightarrow} & X _ 2\\
 \end{matrix}
 $$
+
+If a bundle morphism is also a diffeomorphism, then it is called a bundle isomorphism. The isomorphic bundles are then viewed as equivalent bundles.
+
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/commutative_diagram.png" width="50%">
+
+A trivial bundle is basically the product manifold of two smooth manifolds.
+
+$$
+E \simeq X \times F
+$$
+
+The sections of the fiber bundles are $s (x)$.
+
+$$
+\pi (s (x)) = x , \forall x \in U \subseteq X
+$$
+
+If the domain $U$ of such a function is not the entire base manifold, the section is local section, otherwise it is global section.
+
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/section.png" width="50%">
+
+
 
 
 
