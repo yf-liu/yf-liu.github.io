@@ -65,8 +65,9 @@ $$
 \end{align*}
 $$
 
-| Given two manifolds $M$ and $N$, a differentiable map $f : M → N$ is called a **diffeomorphism** if it is a bijection and its inverse $f ^ {−1} : N → M$ is differentiable as well. If these functions are $r$ times continuously differentiable, $f$ is called a $C _ r$-diffeomorphism. | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/diffeomorphism.png" width="100%"> |
+| Property                                                     | Diagram                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Given two manifolds $M$ and $N$, a differentiable map $f : M → N$ is called a **diffeomorphism** if it is a bijection and its inverse $f ^ {−1} : N → M$ is differentiable as well. If these functions are $r$ times continuously differentiable, $f$ is called a $C _ r$-diffeomorphism. | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/diffeomorphism.png" width="100%"> |
 | The fiber $F _ x$ over $x$ as the inverse image of $x$ under $\pi$, $F _ x = \pi ^ {-1} (x)$. | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/inverse_image.png" width="100%"> |
 | The projection map is an onto function, so that there are fibers over all the points of $X$. |                                                              |
 | The projection map is a smooth (continuous) function. A smooth curve in $E$ projects to smooth curve in $X$. | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/smooth.png" width="100%"> |
@@ -135,9 +136,14 @@ The transition functions for the fiber bundle $E$ is
 $$
 G _ {\alpha \beta} (x) \defas \Phi _ \alpha (x) \circ \Phi _ \beta ^ {-1} (x) : F \rightarrow F
 $$
+The transition functions for the fiber bundle has two properties.
+$$
+G _ {\alpha \beta} (x) = G ^ {-1} _ {\beta \alpha} (x) \quad \forall x \in U _ \alpha \cap U _ \beta \\ 
+G _ {\alpha \beta} (x) \circ G _ {\beta \gamma} (x) \circ G _ {\gamma \alpha} (x) = 1 \quad \forall x \in U _ \alpha \cap U _ \beta \cap U _ \gamma \\ 
+$$
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/transformation_function_fiber.png" width="100%">
 
-These determine the 
+q
 
 
 ## References
