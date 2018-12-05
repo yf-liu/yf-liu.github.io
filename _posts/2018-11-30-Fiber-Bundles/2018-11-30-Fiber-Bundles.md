@@ -151,7 +151,8 @@ E _ 1 & \stackrel{\mathcal{F}}{\rightarrow} & E _ 2\\
 X _ 1 & \stackrel{f}{\rightarrow} & X _ 2\\
 \end{matrix}
 $$
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/commutative_diagram.png" width="90%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/commutative_diagram.png" width="50%">
+
 
 
 ## References
