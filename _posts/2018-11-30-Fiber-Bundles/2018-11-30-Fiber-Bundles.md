@@ -141,9 +141,17 @@ $$
 G _ {\alpha \beta} (x) = G ^ {-1} _ {\beta \alpha} (x) \quad \forall x \in U _ \alpha \cap U _ \beta \\ 
 G _ {\alpha \beta} (x) \circ G _ {\beta \gamma} (x) \circ G _ {\gamma \alpha} (x) = 1 \quad \forall x \in U _ \alpha \cap U _ \beta \cap U _ \gamma \\ 
 $$
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/transformation_function_fiber.png" width="100%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/transformation_function_fiber.png" width="90%">
 
-q
+The diffeomorphism preserving the bundle structure is a bundle map or a bundle morphism $\mathcal{F} : E _ 1 \rightarrow E _ 2$, which maps the fibers of $E _ 1$ into the fibers of $E _ 2$. Induce a smooth function $f : X _ 1 \rightarrow X _ 2$, there exists
+$$
+\begin{matrix}
+E _ 1 & \stackrel{\mathcal{F}}{\rightarrow} & E _ 2\\
+\left . \pi _ 1 \right \downarrow & \bigcirc & \left \downarrow \pi _ 2 \right . \\
+X _ 1 & \stackrel{f}{\rightarrow} & X _ 2\\
+\end{matrix}
+$$
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/commutative_diagram.png" width="90%">
 
 
 ## References
