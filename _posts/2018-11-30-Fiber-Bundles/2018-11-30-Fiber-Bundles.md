@@ -11,7 +11,7 @@ This note follows [The Geometric Phase in Quantum Systems: Foundations, Mathemat
 
 ## From quantal phases to fiber bundles
 
-### An elementary introduction to fiber bundles
+### Fiber bundles
 
 ---
 
@@ -158,7 +158,7 @@ $$
 
 If a bundle morphism is also a diffeomorphism, then it is called a bundle isomorphism. The isomorphic bundles are then viewed as equivalent bundles.
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/commutative_diagram.png" width="50%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/commutative_diagram.png" width="40%">
 
 A trivial bundle is basically the product manifold of two smooth manifolds.
 
@@ -176,7 +176,27 @@ If the domain $U$ of such a function is not the entire base manifold, the sectio
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/section.png" width="50%">
 
+### Vector bundles
 
+A vector bundle $(E , X , \pi , G)$ is a fiber bundle whose fibers $V _ x$ and typical fiber $V= \comset ^ \mathcal{N} $(respectively $V= \realset ^ \mathcal{N} $) are complex(real) vector spaces and whose structure group $G$ is the general linear group $GL (\mathcal{N}, \comset)$(respectively $GL (\mathcal{N}, \realset)$).
+
+Mobius strip is a nontrivial fiber bundle. We cover $S _ 1$ by two coordinate patches:
+$$
+U _ + \defas \set{\theta | - \epsilon < \theta < \pi + \epsilon} , U _ - \defas \set{\theta | \pi - \epsilon < \theta < \epsilon}
+$$
+Let the typical fiber be an interval of the real line $F \defas [- 1 , 1] \subset \realset$, parameterized by $t \in [- 1 , 1]$. We have to glue together two pieces, 
+$$
+U _ + \times F \text{, parametrized by } (\theta , t _ +) \\
+U _ - \times F \text{, parametrized by } (\theta , t _ -)
+$$
+Take the two element group $\set{e , - e}$ as a structure group $G = \intset _ 2$.
+$$
+G _ {+ -} (x) \defas \begin{cases}
+e , x \in A \\
+- e , x \in B
+\end{cases}
+$$
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/mobius.png" width="50%">
 
 
 
