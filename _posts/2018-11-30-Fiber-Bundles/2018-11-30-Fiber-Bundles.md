@@ -181,22 +181,43 @@ If the domain $U$ of such a function is not the entire base manifold, the sectio
 A vector bundle $(E , X , \pi , G)$ is a fiber bundle whose fibers $V _ x$ and typical fiber $V= \comset ^ \mathcal{N} $(respectively $V= \realset ^ \mathcal{N} $) are complex(real) vector spaces and whose structure group $G$ is the general linear group $GL (\mathcal{N}, \comset)$(respectively $GL (\mathcal{N}, \realset)$).
 
 Mobius strip is a nontrivial fiber bundle. We cover $S _ 1$ by two coordinate patches:
+
 $$
 U _ + \defas \set{\theta | - \epsilon < \theta < \pi + \epsilon} , U _ - \defas \set{\theta | \pi - \epsilon < \theta < \epsilon}
 $$
+
 Let the typical fiber be an interval of the real line $F \defas [- 1 , 1] \subset \realset$, parameterized by $t \in [- 1 , 1]$. We have to glue together two pieces, 
+
 $$
 U _ + \times F \text{, parametrized by } (\theta , t _ +) \\
 U _ - \times F \text{, parametrized by } (\theta , t _ -)
 $$
+
 Take the two element group $\set{e , - e}$ as a structure group $G = \intset _ 2$.
+
 $$
 G _ {+ -} (x) \defas \begin{cases}
 e , x \in A \\
 - e , x \in B
 \end{cases}
 $$
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/mobius.png" width="50%">
+
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/mobius.png" width="90%">
+
+### Principle fiber bundle
+
+A principle fiber bundle is a fiber bundle whose typical fiber and the structure group are identical, i.e., they are diffeomorphic as smooth manifolds. Consider a PFB $(P , X , \pi , G)$, with $\pi  ^ {-1} (x) = F _ x \simeq G, \forall x \in X$, and a complete set of local trivializations $\set{(U _ \alpha , \Phi _ \alpha)}$. The transition functions $G _ {\alpha \beta} (x) \in G$, act on the typical fiber $F = G$  by group multiplication from the left.
+
+$$
+g _ 1 \stackrel{G _ {\alpha \beta}}{\rightarrow} g _ 2 \defas G _ {\alpha \beta} (x) \bullet g _ 1 , \quad g _ 1 , g _ 2 \in F = G
+$$
+
+$G$ has a right action $R : G \times P \rightarrow P$,
+
+$$
+R (g , p _ 1) 
+$$
+
 
 
 
