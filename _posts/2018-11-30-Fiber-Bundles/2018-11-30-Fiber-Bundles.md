@@ -224,8 +224,7 @@ $$
 p _ 1 \stackrel{G _ {\alpha \beta}}{\rightarrow} p _ 2 = R _ g (p _ 1) \defas \Phi _ \alpha ^ {-1} (x) [\Phi _ \alpha (x)[p _ 1] \bullet g]
 $$
 
-where $x \defas \pi (p _ 1)$ and $\bullet$ denotes the group multiplication in $G$. In this way the right action of $G$ moves the points of $P$ within individual fibers. The definition is independent of the choice of the local chart. There is a rather confusing but widely used notation:
-
+where $x \defas \pi (p _ 1)$ and $\bullet$ denotes the group multiplication in $G$. In this way the right action of $G$ moves the points of $P$ within individual fibers. The definition is independent of the choice of the local chart. We can think of the group $G$ as being an action which pushes points in the bundle around the bundle along the fibers. There is a rather confusing but widely used notation:
 $$
 p _ 2 \defas R _ g (p _ 1) = p _ 1 \cdot g
 $$
@@ -317,7 +316,7 @@ The way to determine uniquely the parallel vector $v _ 1$ at the point of $x _ 1
 - A point $x$ which is nearby $x _ 2$: $x \defas C _ X (t = T - \dd t)$.
 - Imagine the manifold $TM$ is imbedded in a Euclidean space $\realset ^ d (T \realset ^ d = \realset ^ d)$ and view $C _ X$ as sitting inside $\realset ^ d$.
 - Treat the vector $v _ 2$ as an element of $\realset ^d$ and find the parallel vector to $v _ 2$ at the point of $x$.
-- Choose the component of it which is tangent to $X$ and discard the normal component.
+- Choose the component of it which is tangent to $T _ p M$ and discard the normal component.
 - Repeat the process till the point $x _1$.
 
 The above procedure ensures that:
@@ -328,7 +327,16 @@ The above procedure ensures that:
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/parallelism.png" width="30%">
 
-、
+### Parallelism and principle fiber bundle
+
+Consider a PFB $P: (P , X , \pi , G)$ and a smooth curve $C _ X$ in $X$ with parameter $t \in [0 , T]$. We will view the concept of parallel transportation on $P$ as a means to find a curve $C _ P$ in the total space $P$ that follows the curve $C_ X$, such that
+
+- $C _ P$ projects onto $C _ X$ under the projection $\pi : P \rightarrow X$.
+- The tangent vectors $\omega _ t \in T P$ to $C _ P$ project onto the tangent vectors $v _ t \in T X$ to $C _ X$ under the push-forward(differential) map $\pi _ * : T P \rightarrow T X$.
+
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/Cp.png" width="30%">
+
+The structure that enables one to determine the curve $C _ P : t \longrightarrow p(t) \in P$ uniquely for a given curve $C _ X : t \longrightarrow x(t) \in P$ and a initial condition $p (0) \in F _ {x(0)}$, is a geometry or a connection on the PFB $P$. The curve $C _ P$ os the horizon lift of $C _ X$ associated with this connection. The tangent vectors $\omega _ t$ to $C _ P$ are the horizontal vectors. 
 
 
 
