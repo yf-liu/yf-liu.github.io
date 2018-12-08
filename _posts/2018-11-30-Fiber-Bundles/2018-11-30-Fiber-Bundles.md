@@ -117,7 +117,7 @@ $$
 > \end{pmatrix}
 >$$
 >
-><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/transformation_function.png" width="40%"> 
+><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/transformation_function.png" width="40%">
 
 Since we divide the base manifold $X$ into a collection $\set{U _ \alpha}$ of its open subsets, there exist diffeomorphisms
 
@@ -174,7 +174,7 @@ $$
 
 If the domain $U$ of such a function is not the entire base manifold, the section is local section, otherwise it is global section.
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/section.png" width="50%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/section.png" width="30%">
 
 ### Vector bundles
 
@@ -215,8 +215,22 @@ $$
 $G$ has a right action $R : G \times P \rightarrow P$,
 
 $$
-R (g , p _ 1) 
+R (g , p _ 1) \isdefas R _ g (p _ 1), \quad \forall g \in G , \forall p _ 1 \in P
 $$
+
+on the total space $P$ that is defined by
+
+$$
+p _ 1 \stackrel{G _ {\alpha \beta}}{\rightarrow} p _ 2 = R _ g (p _ 1) \defas \Phi _ \alpha ^ {-1} (x) [\Phi _ \alpha (x)[p _ 1] \bullet g]
+$$
+
+where $x \defas \pi (p _ 1)$ and $\bullet$ denotes the group multiplication in $G$. In this way the right action of $G$ moves the points of $P$ within individual fibers. The definition is independent of the choice of the local chart. There is a rather confusing but widely used notation:
+
+$$
+p _ 2 \defas R _ g (p _ 1) = p _ 1 \cdot g
+$$
+
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/right_action.png" width="90%">
 
 
 
