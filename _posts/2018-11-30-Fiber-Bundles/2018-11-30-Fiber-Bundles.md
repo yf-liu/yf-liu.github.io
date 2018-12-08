@@ -309,7 +309,24 @@ where $G ^ \nu _ \mu \equiv \frac{\partial y ^ \nu}{\partial x ^ \mu} \in G$ is 
 >
 ><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/tangent_bundle.png" width="80%">
 
+### Parallelism
 
+The way to determine uniquely the parallel vector $v _ 1$ at the point of $x _ 1$ to $v _ 2$ at the point of $x _ 2$ :
+
+- A path $C _ X$ connecting these two points, where $x _ 1 = C _ X (t = 0) , x _ 2 = C _ X (t = T)$.
+- A point $x$ which is nearby $x _ 2$: $x \defas C _ X (t = T - \dd t)$.
+- Imagine the manifold $TM$ is imbedded in a Euclidean space $\realset ^ d (T \realset ^ d = \realset ^ d)$ and view $C _ X$ as sitting inside $\realset ^ d$.
+- Treat the vector $v _ 2$ as an element of $\realset ^d$ and find the parallel vector to $v _ 2$ at the point of $x$.
+- Choose the component of it which is tangent to $X$ and discard the normal component.
+- Repeat the process till the point $x _1$.
+
+The above procedure ensures that:
+
+- Reflexivity: Every vector is parallel to itself.
+- Symmetry: If $v _ 1$ is parallel to $v _ 2$, $v _ 2$ is parallel to $v _ 1$.(same path)
+- Transitivity: If $v _ 1$ is parallel to $v _ 2$ and $v _ 2$ is parallel to $v _ 3$, it results in that $v _ 1$ is parallel to $v _ 3$.
+
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/parallelism.png" width="80%">
 
 ## References
 
