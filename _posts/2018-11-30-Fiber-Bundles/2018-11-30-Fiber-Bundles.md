@@ -326,7 +326,11 @@ The above procedure ensures that:
 - Symmetry: If $v _ 1$ is parallel to $v _ 2$, $v _ 2$ is parallel to $v _ 1$.(same path)
 - Transitivity: If $v _ 1$ is parallel to $v _ 2$ and $v _ 2$ is parallel to $v _ 3$, it results in that $v _ 1$ is parallel to $v _ 3$.
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/parallelism.png" width="80%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/parallelism.png" width="30%">
+
+、
+
+
 
 ## References
 
