@@ -230,8 +230,84 @@ $$
 p _ 2 \defas R _ g (p _ 1) = p _ 1 \cdot g
 $$
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/right_action.png" width="90%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/right_action.png" width="80%">
 
+>The definition of right action is independent of the choice of the local chart.
+>
+>$$
+>\begin{align*}
+>[p _ 1] \bullet g & = \Phi ^ {-1} _ \alpha (x) \Phi _ \alpha (x) \Phi _ \beta ^ {-1} (x) [\Phi _ \beta (x)[p _ 1] \bullet g] \\
+>\Phi _ \alpha (x)[p _ 1] \bullet g & = \Phi _ \alpha (x) \Phi _ \beta ^ {-1} (x) [\Phi _ \beta (x)[p _ 1] \bullet g] \\
+>\Phi _ \alpha ^ {-1} (x) [\Phi _ \alpha (x)[p _ 1] \bullet g] & =\Phi _ \beta ^ {-1} (x) [\Phi _ \beta (x)[p _ 1] \bullet g] \\
+>\end{align*}
+>$$
+>
+
+The action is both transitive and free.
+
+- Transitivity: Every pair of points $p _ 1$ and $p _ 2$ of a fiber $F _ x$ can be connected via a group element $g$, there is some $g \in G$ such that $p _ 2 = p _ 1 \cdot g$.
+- Freedom: There is no group element besides the identity element that leaves all the points of a fiber unchanged.
+
+The simplest type of PFBs are the trivial principle fiber bundles. A typical example is the two-dimension torus $T ^ 2 = S ^ 1 \times S ^ 1$.
+
+## Geometry of principal bundles and the concept of holonomy
+
+### Tangent bundles
+
+Aa tangent bundle $TM$ over an $m$-dimensional manifold $M$ is a collection of all the tangent spaces of $M$:
+
+$$
+TM \equiv \bigcup _ {p \in M} T _ p M
+$$
+
+The manifold $M$ is base space. If $x ^ \mu = \varphi _ i (p)$ is the coordinate on $U _ i$, an element of $T U _ i \equiv \bigcup _ {p \in U _ i} T _ p U _ i$ is specified by a point $p \in M$ and a vector $V = V ^ \mu _ p \left.\left( \frac{\partial}{\partial x ^ \mu} \right) \right\vert _ p \in T _ p M$. 
+
+| Manifold  | Dimension | Coordinate            |
+| --------- | --------- | --------------------- |
+| $M$       | $m$       | $x ^ \mu$             |
+| $T _ p M$ | $m$       | $V^ \mu$              |
+| $T M$     | $2m$      | $(x ^ \mu , V ^ \mu)$ |
+
+However, the tangent bundle itself is not always expressed as direct product $\realset ^ m \times \realset ^ m$ and the non-trivial structure of the tangent bundle measures the topological nontriviality of $M$. To see this, we have to look not only at a single chart $U _ i$ but also at another one. Take a vector $V \in T _ p M$ where $p \in U _ i \cap U _ j$. $V$ has two coordinate presentations,
+
+$$
+\begin{align*}
+V ^ \mu \left. \frac{\partial}{\partial x ^ \mu} \right\vert _ p & = \tilde{V} ^ \nu \left. \frac{\partial}{\partial y ^ \nu} \right\vert _ p \\
+\tilde{V} ^ \nu & = \left. \frac{\partial y ^ \nu}{\partial x ^ \mu} \right\vert _ p V ^ \mu \\
+\tilde{V} ^ \nu & = G ^ \nu _ \mu V ^ \mu \\
+\end{align*}
+$$
+
+where $G ^ \nu _ \mu \equiv \frac{\partial y ^ \nu}{\partial x ^ \mu} \in G$ is the element of structure group of $TM$.
+
+> Let us work out $TS ^ 2$. Let the pair $O _ N \equiv S ^ 2 - \set{S}$ and $O _ S \equiv S ^ 2 - \set{N}$ be an open covering of $S ^ 2$. 
+>
+> $$
+> \begin{align*}
+> & O _ S (P \ne N):  X _ S = \frac{x}{1 - z}, Y _ S =\frac{y}{1 - z} \\
+> & O _ N (P \ne N):  X _ N = \frac{x}{1 + z}, Y _ N =\frac{y}{1 + z} \\
+> & X _ N = \frac{X _ S}{X ^ 2 _ S + Y ^ 2 _ S} , Y _ N = - \frac{Y _ S}{X ^ 2 _ S + Y ^ 2 _ S} \\
+> & G ^ S _ N \equiv \frac{\partial (X _ N , Y _ N)}{\partial (X _ S , Y _ S)} = \begin{pmatrix}
+> \frac{\partial X _ N}{\partial X _ S} & \frac{\partial X _ N}{\partial Y _ S} \\
+> \frac{\partial Y _ N}{\partial X _ S} & \frac{\partial Y _ N}{\partial Y _ S} \\
+> \end{pmatrix} \\
+> & \quad = \begin{pmatrix}
+> - \frac{X ^ 2 _ N - Y ^ 2 _ N}{(X ^ 2 _ N + Y ^ 2 _ N) ^ 2} & - \frac{2 X _ N Y _ N}{(X ^ 2 _ N + Y ^ 2 _ N) ^ 2} \\
+> \frac{2 X _ N Y _ N}{(X ^ 2 _ N + Y ^ 2 _ N) ^ 2} & - \frac{X ^ 2 _ N - Y ^ 2 _ N}{(X ^ 2 _ N + Y ^ 2 _ N) ^ 2} \\
+> \end{pmatrix} \\
+> & \quad =
+> \frac{1}{r ^ 2} \begin{pmatrix}
+> - \cos 2 \varphi & - \sin 2 \varphi \\
+> \sin 2 \varphi & - \cos 2 \varphi \\
+> \end{pmatrix} \\
+> \tilde{V} ^ S & = G ^ S _ N V ^ N =  \frac{1}{r ^ 2} \begin{pmatrix}
+> - \cos 2 \varphi & - \sin 2 \varphi \\
+> \sin 2 \varphi & - \cos 2 \varphi \\
+> \end{pmatrix} V ^ N\\
+> \end{align*}
+> $$
+>
+><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/tangent_bundle.png" width="80%">
 
 
 
