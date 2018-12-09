@@ -350,7 +350,7 @@ $$
 V _ p P = \ker (\pi _ *)
 $$
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/vertical_space.png" width="80%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/vertical_subspace.png" width="80%">
 
 The horizontal subspaces are only determined if the bundle $P$ is endowed with a connection. Three equivalent definitions of connection on a PFB: on a PFB $(P , X , \pi , G)$ is a collection of vector subspaces $H _ p P \subset T _ p P$, such that for all $p \in P$,
 
