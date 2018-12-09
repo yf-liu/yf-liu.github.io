@@ -327,7 +327,7 @@ The above procedure ensures that:
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/parallelism.png" width="30%">
 
-### Parallelism and principle fiber bundle
+### Vertical subspace and tangent subspace in principle fiber bundle
 
 Consider a PFB $P: (P , X , \pi , G)$ and a smooth curve $C _ X$ in $X$ with parameter $t \in [0 , T]$. We will view the concept of parallel transportation on $P$ as a means to find a curve $C _ P$ in the total space $P$ that follows the curve $C_ X$, such that
 
@@ -364,6 +364,29 @@ The horizontal subspaces are only determined if the bundle $P$ is endowed with a
 where $R _{g ^ *} : T _ p P \rightarrow T _ {p \cdot g} P$ is the push-forward map associated with $R _ g : P \rightarrow P$.
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/third_definition.png" width="80%">
+
+The relation between the vertical subspaces and the structure Lie algebra can be easily understood by considering a typical curve $\Gamma$ in the fiber $F _ x$ and trying to find the corresponding curve in $G$. Let us choose an arbitrary vertical vector $v _ p$ at $p$. Then, there is a smooth curve $\Gamma : [0 , T] \rightarrow F _ x$ which starts off at $p$, and is tangent to $v _ p$ at $p$,
+$$
+p = \Gamma (0) , v _ p = \left. \frac{\dd \Gamma (t)}{\dd t} \right\vert _ {t = 0}
+$$
+The transitivity of the right action of $G$ on $F _ x$ implies the existence of $g (t) \in G$, such that
+$$
+\Gamma(t) = p \cdot g (t) , \forall t \in [0 , T]
+$$
+The group element $g (t)$ trace a smooth curve $\tilde{\Gamma} : [0 , T] \rightarrow G$ in $G$, with $\tilde{\Gamma} (0) = e$. We can immediately associate to the vertical vector $v _ p$ the element $\Chi \defas \left.\frac{\dd g (t)}{\dd t} \right\vert _ {t = 0}$ of the Lie algebra $T _ e G =\mathcal{G}$.
+$$
+\begin{align*}
+v _ p & = \left. \frac{\dd (p \cdot g (t))}{\dd t} \right\vert _ {t = 0} \\
+& = p \cdot \left. \frac{\dd g (t)}{\dd t} \right\vert _ {t = 0} \\
+\end{align*}
+$$
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/vertical_structure.png" width="30%">
+
+A connection on a principal fiber bundle $(P , X , \pi , G)$ is a one-form $\omega$ on $P$ with values in the Lie algebra $\mathcal{G}$ of $G$, such that for all $p \in P$
+
+- The vertical vectors $v _ p \in V _ p P$ satisfy the equation $\omega _ p (v _ p) =\Chi$
+
+ 
 
 
 
