@@ -352,10 +352,17 @@ $$
 The horizontal subspaces are only determined if the bundle $P$ is endowed with a connection. Three equivalent definitions of connection on a PFB: on a PFB $(P , X , \pi , G)$ is a collection of vector subspaces $H _ p P \subset T _ p P$, such that for all $p \in P$,
 
 - The linear map $\pi _ * \vert _ {H _ p P} : H _ p P \rightarrow T _ x X$, with $x \defas \pi (p)$ is an isomorphism of vector spaces.
+
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/horizontal_subspace.png" width="80%">
+
 - The subspaces $H _ p P$ depend smoothly on $p$.
 - The right action of $G$ on $P$ transforms the horizontal subspaces according to $H _ {p \cdot g} P = R _ {g ^ *} (H _ p P)$.
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/horizontal_subspace.png" width="80%">
+where $R _{g ^ *} : T _ p P \rightarrow T _ {p \cdot g} P$ is the push-forward map associated with $R _ g : P \rightarrow P$.
+
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/third_definition.png" width="80%">
+
+
 
 
 
