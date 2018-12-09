@@ -334,9 +334,18 @@ Consider a PFB $P: (P , X , \pi , G)$ and a smooth curve $C _ X$ in $X$ with par
 - $C _ P$ projects onto $C _ X$ under the projection $\pi : P \rightarrow X$.
 - The tangent vectors $\omega _ t \in T P$ to $C _ P$ project onto the tangent vectors $v _ t \in T X$ to $C _ X$ under the push-forward(differential) map $\pi _ * : T P \rightarrow T X$.
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/Cp.png" width="30%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/Cp.png" width="80%">
 
-The structure that enables one to determine the curve $C _ P : t \longrightarrow p(t) \in P$ uniquely for a given curve $C _ X : t \longrightarrow x(t) \in P$ and a initial condition $p (0) \in F _ {x(0)}$, is a geometry or a connection on the PFB $P$. The curve $C _ P$ os the horizon lift of $C _ X$ associated with this connection. The tangent vectors $\omega _ t$ to $C _ P$ are the horizontal vectors. 
+The structure that enables one to determine the curve $C _ P : t \longrightarrow p(t) \in P$ uniquely for a given curve $C _ X : t \longrightarrow x(t) \in P$ and a initial condition $p (0) \in F _ {x(0)}$, is a geometry or a connection on the PFB $P$. The curve $C _ P$ is the horizon lift of $C _ X$ associated with this connection. The tangent vectors $\omega _ t$ to $C _ P$ are the horizontal vectors. 
+
+At any point $q$, the tangent space $T _ p P$ to the bundle can be decomposed into two spaces, one parallel to the fiber, called the vertical subspace $V _ p P$, and one transverse to the fiber, called the horizontal space $H _ p P$.
+$$
+T _ p P = V _ p P \oplus H _ p P
+$$
+The vertical space is defined uniquely by 
+$$
+V _ p P = \ker (\pi _ *)
+$$
 
 
 
