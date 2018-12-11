@@ -371,7 +371,103 @@ $$
 $$
 That is, the tangent vectors $w _ p \in T _ p P$ that satisfy the equation are defined to be the horizontal vectors. Thus given such a one-form we ought to be able to obtain the horizontal vectors and hence the horizontal subspaces. The values of $\omega$ is on the vertical vectors. A vertical subspace $V _ p P$ is the tangent space to the fiber $F _ x$ at $p \in F _ x$. On the other hand, the fiber $F _ x$ are copies of the structure group $G$. Consequently, there is a correspondence between $V _ p P$ and the tangent spaces $T _ g G$ of $G$. For every $g \in G$, $T _ g G$ is (canonically) isomorphic to the tangent space to $G$ at the identity element $e \in G$, but this space is easily identified with the Lie algebra of $G$.
 
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/VP_TG.png" width="40%">
 
+>#### Lie algebra:
+>
+>##### Group
+>
+>Let $G$ be a set of points, and 
+>
+>$$
+>\bullet : G \times G \rightarrow G
+>$$
+>
+>be a binary operation. Then the pair $(G , \bullet)$ is said to be a group if the following conditions are fulfilled.
+>
+>* The operator $\bullet$ is associative: 
+>
+>$$
+>(g _ 1 \bullet g _ 2) \bullet g _ 3 = g _ 1 \bullet (g _ 2 \bullet g _ 3)
+>$$
+>
+>* There is an identity element $e \in G$ such that
+>
+>$$
+>e \bullet g = g \bullet e =g
+>$$
+>
+>* Every element $g \in G$ has an inverse, $g ^ {-1}$ such that
+>
+>$$
+>g \bullet g ^ {-1} =g ^{-1} \bullet g = e
+>$$
+>
+>##### Lie group
+>
+>Let $(G,\bullet)$ be a group that has, in addition, the structure of a smooth manifold. Then, $G$ is said to be a Lie group if the functions defined by the group multiplication, $\bullet : G \times G \rightarrow G​$,
+>$$
+>\bullet (g _ 1 , g _ 2) \defas g _ 1 \bullet g _ 2
+>$$
+>and inversion, $i : G \rightarrow G$
+>$$
+>i (g) \defas g ^ {-1}
+>$$
+>are smooth functions.
+>
+>##### Left(right) action
+>
+>Let $(G,\bullet)$ and $M$ be a Lie group and a smooth manifold, respectively. A smooth function $f: G \times M \rightarrow M$ is said to be a left(right) action of $G$ on $M$, if
+>
+>- for all $p \in M$, $f (e,p) = p$, where $e$ is the identity element of $G$;
+>- for all $g _ 1, g _ 2 \in G$ and $p \in M$,
+>
+>$$
+>f (g _ 1 , f (g _ 2 , p)) =f (g _ 1 \bullet g _ 2 , p) \\
+>(f (g _ 1 , f (g _ 2 , p)) =f (g _ 2 \bullet g _ 1 , p))
+>$$
+>
+>##### Transitivity and freedom
+>
+>An action $f$ is called transitive if for every two points $p _ 1$ and $p _ 2$ of $M$, there is some $g \in G$ such that $p _ 2 = f (g, p _ 1)$.  $f$ is called a free action, if for every $p \in M$ and $g \in G - \set {e}$, $f(g,p) \ne p$.
+>
+>##### Lie bracket
+>
+>Let us choose two vector fields $V = V ^ i (x) \frac{\partial}{\partial x ^ i}$ and $W = W ^ j (x) \frac{\partial}{\partial x ^ j}$ and consider their commutator:
+>$$
+>\begin{align*}
+>[V,W] & \defas V \circ W - W \circ V \\
+>& = V ^ i (x) \frac{\partial}{\partial x ^ i} \left( W ^ j (x) \frac{\partial}{\partial x ^ j} \right) - W ^ j (x) \frac{\partial}{\partial x ^ j} \left( V ^ i (x) \frac{\partial}{\partial x ^ i} \right) \\
+>& = V ^ i (x) \frac{\partial W ^ j (x) }{\partial x ^ i} \frac{\partial}{\partial x ^ j} + V ^ i (x)  W ^ j (x)  \frac{\partial ^ 2}{\partial x ^ i \partial x ^ j} - W ^ j (x) \frac{\partial V ^ i (x)}{\partial x ^ j} \frac{\partial}{\partial x ^ i} - W ^ j (x) V ^ i (x) \frac{\partial ^ 2}{\partial x ^ j \partial x ^ i} \\ 
+>& = V ^ i (x) \frac{\partial W ^ j (x) }{\partial x ^ i} \frac{\partial}{\partial x ^ j} - W ^ j (x) \frac{\partial V ^ i (x)}{\partial x ^ j} \frac{\partial}{\partial x ^ i} \\
+>& = V ^ i (x) \frac{\partial W ^ k (x) }{\partial x ^ i} \frac{\partial}{\partial x ^ k} - W ^ j (x) \frac{\partial V ^ k (x)}{\partial x ^ j} \frac{\partial}{\partial x ^ k} \\
+>& = \left(V ^ i (x) \frac{\partial W ^ k (x) }{\partial x ^ i} - W ^ j (x) \frac{\partial V ^ k (x)}{\partial x ^ j} \right) \frac{\partial}{\partial x ^ k} \\
+>& = U _ k \frac{\partial}{\partial x ^ k} \\
+>\end{align*}
+>$$
+>We can easily check that the components $U _ k = V ^ i (x) \frac{\partial W ^ k (x) }{\partial x ^ i} - W ^ j (x) \frac{\partial V ^ k (x)}{\partial x ^ j}$ of $[V,W]$ transform like the components of a contravariant vector field, which satisfy the coordinate transformation rule given by $v ^ {\prime i} _ p = \frac{\partial x ^ {\prime i}}{\partial x ^ j} v ^ j _ p$. Let us denote the set of all vector field of a smooth manifold $M$ by $\chi(M)$. The operator of commutator is a binary operation called Lie bracket of two vector fields.
+>$$
+>[\cdot , \cdot] : \chi (M) \times \chi (M) \rightarrow \chi (M)
+>$$
+>
+>##### Left-invariant vector field 
+>
+>Let $G$ be a Lie group and $\chi (G)$ be the algebra of vector fields on $G$. A vector field $X \in \chi (G)$ is said to be a left-invariant vector field, if for every $g , h \in G$, it satisfies
+>$$
+>L _ {g ^ *} (X (h)) = X (g \bullet h)
+>$$
+>
+>##### Lie group
+>
+>It can shown that the Lie bracket of two left-invariant vector fields is also left-invariant. Thus, the set of all Left-invariant vector field forms a subalgebra of $\chi(G)$. The algebra operation is obviously the Lie bracket. This algebra is called the Lie algebra of $G$. It is denoted by $\mathcal{G}$ or $LG$. The geometrical interpretation of the Lie algebra is that the vector spaces $\mathcal{G}$ and $T _ e G$ are isomorphic. For any $g \in G$,
+>$$
+>X (g) = L _ {g ^ *} (X (e))
+>$$
+>
+>
+>
+>
+>
 
 The relation between the vertical subspaces and the structure Lie algebra can be easily understood by considering a typical curve $\Gamma$ in the fiber $F _ x$ and trying to find the corresponding curve in $G$. Let us choose an arbitrary vertical vector $v _ p$ at $p$. Then, there is a smooth curve $\Gamma : [0 , T] \rightarrow F _ x$ which starts off at $p$, and is tangent to $v _ p$ at $p$,
 $$
