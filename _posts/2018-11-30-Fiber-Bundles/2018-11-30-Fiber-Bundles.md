@@ -366,9 +366,11 @@ where $R _{g ^ *} : T _ p P \rightarrow T _ {p \cdot g} P$ is the push-forward m
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/third_definition.png" width="80%">
 
 A more practical approach would be to find a mathematical object that yields these horizontal subspaces algebraically. This is done by a differential one-form $\omega$ on $P$ with values in the Lie algebra $\mathcal{G}$ of the structure group $G$. This means that if we evaluate $\omega$ on a point $p \in P$, the result, $\omega _ p$, is a covariant vector whose components belong to the Lie algebra $\mathcal{G}$ of $G$. This idea is to obtain the horizontal subspaces $H _ p P$ as the space of the solutions of the equation
+
 $$
 \omega _ p (w _ p) = 0
 $$
+
 That is, the tangent vectors $w _ p \in T _ p P$ that satisfy the equation are defined to be the horizontal vectors. Thus given such a one-form we ought to be able to obtain the horizontal vectors and hence the horizontal subspaces. The values of $\omega$ is on the vertical vectors. A vertical subspace $V _ p P$ is the tangent space to the fiber $F _ x$ at $p \in F _ x$. On the other hand, the fiber $F _ x$ are copies of the structure group $G$. Consequently, there is a correspondence between $V _ p P$ and the tangent spaces $T _ g G$ of $G$. For every $g \in G$, $T _ g G$ is (canonically) isomorphic to the tangent space to $G$ at the identity element $e \in G$, but this space is easily identified with the Lie algebra of $G$.
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/VP_TG.png" width="40%">
@@ -465,20 +467,36 @@ That is, the tangent vectors $w _ p \in T _ p P$ that satisfy the equation are d
 >L _ {g ^ *} (X (h)) = X (g \bullet h)
 >$$
 >
->##### Lie group
+>where $X(h)$ and $X(g \cdot h)$ are the values of the vector field at the argument points and $L _ {g ^ *}$ is the push-forward map induced by the left action of $G$ on itself. 
 >
->It can shown that the Lie bracket of two left-invariant vector fields is also left-invariant. Thus, the set of all Left-invariant vector field forms a subalgebra of $\chi(G)$. The algebra operation is obviously the Lie bracket. This algebra is called the Lie algebra of $G$. It is denoted by $\mathcal{G}$ or $LG$. The geometrical interpretation of the Lie algebra is that the vector spaces $\mathcal{G}$ and $T _ e G$ are isomorphic. For any $g \in G$,
+>$$
+>\begin{align*}
+>L _ {g ^ *} (X(h)) & = X(g \bullet h) \\ 
+>L _ {g ^ *} (Y(h)) & = Y(g \bullet h) \\ 
+>L _ {g ^ *} ([X(h),Y(h)]) & = [X(g \bullet h),Y(g \bullet h)] 
+>\end{align*}
+>$$
+>
+>##### Lie algebra
+>
+>It can shown that the Lie bracket of two left-invariant vector fields is also left-invariant. Thus, the set of all Left-invariant vector field forms a subalgebra of $\chi(G)$. The algebra operation is obviously the Lie bracket. This algebra is called the Lie algebra of $G$. It is denoted by $\mathcal{G}$ or $LG$. The geometrical interpretation of the Lie algebra is that the vector spaces $\mathcal{G}$ and $T _ e G$ are isomorphic. Every left-invariant vector field $X$ can be constructed from its value at the identity. For every $g \in G$,
 >
 >$$
 >X (g) = L _ {g ^ *} (X (e))
 >$$
 >
+>The tangent bundle of every Lie group is a trivial bundle. It is a product manifold,
 >
+>$$
+>TG = G \times \realset ^ m
+>$$
 >
+>where $m = \dim (G)$.
 >
->
+><img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/lie_algebra.png" width="80%">
 
 The relation between the vertical subspaces and the structure Lie algebra can be easily understood by considering a typical curve $\Gamma$ in the fiber $F _ x$ and trying to find the corresponding curve in $G$. Let us choose an arbitrary vertical vector $v _ p$ at $p$. Then, there is a smooth curve $\Gamma : [0 , T] \rightarrow F _ x$ which starts off at $p$, and is tangent to $v _ p$ at $p$,
+
 $$
 p = \Gamma (0) , v _ p = \left. \frac{\dd \Gamma (t)}{\dd t} \right\vert _ {t = 0}
 $$
