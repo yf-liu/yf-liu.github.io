@@ -405,14 +405,18 @@ That is, the tangent vectors $w _ p \in T _ p P$ that satisfy the equation are d
 >
 >##### Lie group
 >
->Let $(G,\bullet)$ be a group that has, in addition, the structure of a smooth manifold. Then, $G$ is said to be a Lie group if the functions defined by the group multiplication, $\bullet : G \times G \rightarrow G​$,
+>Let $(G,\bullet)$ be a group that has, in addition, the structure of a smooth manifold. Then, $G$ is said to be a Lie group if the functions defined by the group multiplication, $\bullet : G \times G \rightarrow G$,
+>
 >$$
 >\bullet (g _ 1 , g _ 2) \defas g _ 1 \bullet g _ 2
 >$$
+>
 >and inversion, $i : G \rightarrow G$
+>
 >$$
 >i (g) \defas g ^ {-1}
 >$$
+>
 >are smooth functions.
 >
 >##### Left(right) action
@@ -434,6 +438,7 @@ That is, the tangent vectors $w _ p \in T _ p P$ that satisfy the equation are d
 >##### Lie bracket
 >
 >Let us choose two vector fields $V = V ^ i (x) \frac{\partial}{\partial x ^ i}$ and $W = W ^ j (x) \frac{\partial}{\partial x ^ j}$ and consider their commutator:
+>
 >$$
 >\begin{align*}
 >[V,W] & \defas V \circ W - W \circ V \\
@@ -445,7 +450,9 @@ That is, the tangent vectors $w _ p \in T _ p P$ that satisfy the equation are d
 >& = U _ k \frac{\partial}{\partial x ^ k} \\
 >\end{align*}
 >$$
+>
 >We can easily check that the components $U _ k = V ^ i (x) \frac{\partial W ^ k (x) }{\partial x ^ i} - W ^ j (x) \frac{\partial V ^ k (x)}{\partial x ^ j}$ of $[V,W]$ transform like the components of a contravariant vector field, which satisfy the coordinate transformation rule given by $v ^ {\prime i} _ p = \frac{\partial x ^ {\prime i}}{\partial x ^ j} v ^ j _ p$. Let us denote the set of all vector field of a smooth manifold $M$ by $\chi(M)$. The operator of commutator is a binary operation called Lie bracket of two vector fields.
+>
 >$$
 >[\cdot , \cdot] : \chi (M) \times \chi (M) \rightarrow \chi (M)
 >$$
@@ -453,6 +460,7 @@ That is, the tangent vectors $w _ p \in T _ p P$ that satisfy the equation are d
 >##### Left-invariant vector field 
 >
 >Let $G$ be a Lie group and $\chi (G)$ be the algebra of vector fields on $G$. A vector field $X \in \chi (G)$ is said to be a left-invariant vector field, if for every $g , h \in G$, it satisfies
+>
 >$$
 >L _ {g ^ *} (X (h)) = X (g \bullet h)
 >$$
@@ -460,6 +468,7 @@ That is, the tangent vectors $w _ p \in T _ p P$ that satisfy the equation are d
 >##### Lie group
 >
 >It can shown that the Lie bracket of two left-invariant vector fields is also left-invariant. Thus, the set of all Left-invariant vector field forms a subalgebra of $\chi(G)$. The algebra operation is obviously the Lie bracket. This algebra is called the Lie algebra of $G$. It is denoted by $\mathcal{G}$ or $LG$. The geometrical interpretation of the Lie algebra is that the vector spaces $\mathcal{G}$ and $T _ e G$ are isomorphic. For any $g \in G$,
+>
 >$$
 >X (g) = L _ {g ^ *} (X (e))
 >$$
