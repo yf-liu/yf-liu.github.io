@@ -352,7 +352,7 @@ $$
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/vertical_subspace.png" width="80%">
 
-The horizontal subspaces are only determined if the bundle $P$ is endowed with a connection. Three equivalent definitions of connection on a PFB: on a PFB $(P , X , \pi , G)$ is a collection of vector subspaces $H _ p P \subset T _ p P$, such that for all $p \in P$,
+For principal bundles, in addition to being smoothly-varying, we require that $H _ p P$ is invariant under the group action. The assignment of such horizontal spaces is called a connection in a bundle. Three equivalent definitions of connection on a PFB: on a PFB $(P , X , \pi , G)$ is a collection of vector subspaces $H _ p P \subset T _ p P$, such that for all $p \in P$,
 
 - The linear map $\pi _ * \vert _ {H _ p P} : H _ p P \rightarrow T _ x X$, with $x \defas \pi (p)$ is an isomorphism of vector spaces.
 
@@ -365,29 +365,41 @@ where $R _{g ^ *} : T _ p P \rightarrow T _ {p \cdot g} P$ is the push-forward m
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/third_definition.png" width="80%">
 
+A more practical approach would be to find a mathematical object that yields these horizontal subspaces algebraically. This is done by a differential one-form $\omega$ on $P$ with values in the Lie algebra $\mathcal{G}$ of the structure group $G$. This means that if we evaluate $\omega$ on a point $p \in P$, the result, $\omega _ p$, is a covariant vector whose components belong to the Lie algebra $\mathcal{G}$ of $G$. This idea is to obtain the horizontal subspaces $H _ p P$ as the space of the solutions of the equation
+$$
+\omega _ p (w _ p) = 0
+$$
+That is, the tangent vectors $w _ p \in T _ p P$ that satisfy the equation are defined to be the horizontal vectors. Thus given such a one-form we ought to be able to obtain the horizontal vectors and hence the horizontal subspaces. The values of $\omega$ is on the vertical vectors. A vertical subspace $V _ p P$ is the tangent space to the fiber $F _ x$ at $p \in F _ x$. On the other hand, the fiber $F _ x$ are copies of the structure group $G$. Consequently, there is a correspondence between $V _ p P$ and the tangent spaces $T _ g G$ of $G$. For every $g \in G$, $T _ g G$ is (canonically) isomorphic to the tangent space to $G$ at the identity element $e \in G$, but this space is easily identified with the Lie algebra of $G$.
+
+
+
 The relation between the vertical subspaces and the structure Lie algebra can be easily understood by considering a typical curve $\Gamma$ in the fiber $F _ x$ and trying to find the corresponding curve in $G$. Let us choose an arbitrary vertical vector $v _ p$ at $p$. Then, there is a smooth curve $\Gamma : [0 , T] \rightarrow F _ x$ which starts off at $p$, and is tangent to $v _ p$ at $p$,
 $$
 p = \Gamma (0) , v _ p = \left. \frac{\dd \Gamma (t)}{\dd t} \right\vert _ {t = 0}
 $$
+
 The transitivity of the right action of $G$ on $F _ x$ implies the existence of $g (t) \in G$, such that
+
 $$
 \Gamma(t) = p \cdot g (t) , \forall t \in [0 , T]
 $$
-The group element $g (t)$ trace a smooth curve $\tilde{\Gamma} : [0 , T] \rightarrow G$ in $G$, with $\tilde{\Gamma} (0) = e$. We can immediately associate to the vertical vector $v _ p$ the element $\Chi \defas \left.\frac{\dd g (t)}{\dd t} \right\vert _ {t = 0}$ of the Lie algebra $T _ e G =\mathcal{G}$.
+
+The group element $g (t)$ trace a smooth curve $\tilde{\Gamma} : [0 , T] \rightarrow G$ in $G$, with $\tilde{\Gamma} (0) = e$. We can immediately associate to the vertical vector $v _ p$ the element $\chi \defas \left.\frac{\dd g (t)}{\dd t} \right\vert _ {t = 0}$ of the Lie algebra $T _ e G =\mathcal{G}$.
+
 $$
 \begin{align*}
 v _ p & = \left. \frac{\dd (p \cdot g (t))}{\dd t} \right\vert _ {t = 0} \\
 & = p \cdot \left. \frac{\dd g (t)}{\dd t} \right\vert _ {t = 0} \\
 \end{align*}
 $$
+
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/vertical_structure.png" width="30%">
 
 A connection on a principal fiber bundle $(P , X , \pi , G)$ is a one-form $\omega$ on $P$ with values in the Lie algebra $\mathcal{G}$ of $G$, such that for all $p \in P$
 
-- The vertical vectors $v _ p \in V _ p P$ satisfy the equation $\omega _ p (v _ p) =\Chi$
-
- 
-
+- The vertical vectors $v _ p \in V _ p P$ satisfy the equation $\omega _ p (v _ p) =\chi$, where $\chi \defas \left.\frac{\dd g (t)}{\dd t} \right\vert _ {t = 0} \in \mathcal{G}$ is the element of $\mathcal{G}$.
+- $\omega _ p$ depends smoothly on $p$.
+- Under the right action of $G$ on $P$, $\omega$ transforms according to $\omega _ {p\cdot g}(R _ {g ^ *}(v _ p)) = g \cdot (\omega _ p (v _ p))\cdot g ^{-1} = g \cdot \chi g ^ {-1}$, where $v _ p \in V _ p P$ and $g \in G$ are arbitrary elements.
 
 
 
