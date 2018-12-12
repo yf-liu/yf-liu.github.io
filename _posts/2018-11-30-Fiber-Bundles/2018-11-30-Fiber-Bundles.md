@@ -327,16 +327,16 @@ The above procedure ensures that:
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/parallelism.png" width="30%">
 
-### Vertical subspace and tangent subspace in principle fiber bundle
+### Vertical subspace and horizontal subspace in principle fiber bundle
 
 Consider a PFB $P: (P , X , \pi , G)$ and a smooth curve $C _ X$ in $X$ with parameter $t \in [0 , T]$. We will view the concept of parallel transportation on $P$ as a means to find a curve $C _ P$ in the total space $P$ that follows the curve $C_ X$, such that
 
 - $C _ P$ projects onto $C _ X$ under the projection $\pi : P \rightarrow X$.
-- The tangent vectors $\omega _ t \in T P$ to $C _ P$ project onto the tangent vectors $v _ t \in T X$ to $C _ X$ under the push-forward(differential) map $\pi _ * : T P \rightarrow T X$.
+- The tangent vectors $w _ t \in T P$ to $C _ P$ project onto the tangent vectors $v _ t \in T X$ to $C _ X$ under the push-forward(differential) map $\pi _ * : T P \rightarrow T X$.
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/Cp.png" width="80%">
 
-The structure that enables one to determine the curve $C _ P : t \longrightarrow p(t) \in P$ uniquely for a given curve $C _ X : t \longrightarrow x(t) \in P$ and a initial condition $p (0) \in F _ {x(0)}$, is a geometry or a connection on the PFB $P$. The curve $C _ P$ is the horizon lift of $C _ X$ associated with this connection. The tangent vectors $\omega _ t$ to $C _ P$ are the horizontal vectors. 
+The structure that enables one to determine the curve $C _ P : t \longrightarrow p(t) \in P$ uniquely for a given curve $C _ X : t \longrightarrow x(t) \in P$ and a initial condition $p (0) \in F _ {x(0)}$, is a geometry or a connection on the PFB $P$. The curve $C _ P$ is the horizon lift of $C _ X$ associated with this connection. The tangent vectors $w _ t$ to $C _ P$ are the horizontal vectors. 
 
 At any point $q$, the tangent space $T _ p P$ to the bundle can be decomposed into two spaces, one parallel to the fiber, called the vertical subspace $V _ p P$, and one transverse to the fiber, called the horizontal space $H _ p P$.
 
@@ -521,8 +521,27 @@ $$
 A connection on a principal fiber bundle $(P , X , \pi , G)$ is a one-form $\omega$ on $P$ with values in the Lie algebra $\mathcal{G}$ of $G$, such that for all $p \in P$
 
 - The vertical vectors $v _ p \in V _ p P$ satisfy the equation $\omega _ p (v _ p) =\chi$, where $\chi \defas \left.\frac{\dd g (t)}{\dd t} \right\vert _ {t = 0} \in \mathcal{G}$ is the element of $\mathcal{G}$.
+
 - $\omega _ p$ depends smoothly on $p$.
-- Under the right action of $G$ on $P$, $\omega$ transforms according to $\omega _ {p\cdot g}(R _ {g ^ *}(v _ p)) = g \cdot (\omega _ p (v _ p))\cdot g ^{-1} = g \cdot \chi g ^ {-1}$, where $v _ p \in V _ p P$ and $g \in G$ are arbitrary elements.
+
+- Under the right action of $G$ on $P$, $\omega$ transforms according to 
+  $$
+  \omega _ {p\cdot g}(R _ {g ^ *}(v _ p)) = g \cdot (\omega _ p (v _ p))\cdot g ^{-1} = g \cdot \chi \cdot g ^ {-1}
+  $$
+  where $v _ p \in V _ p P$ and $g \in G$ are arbitrary elements.
+
+The horizontal subspace is defined as
+$$
+H _ p P \defas \set {w _ p \in T _ p P : \omega _ p ( w _ p ) = 0 } 
+$$
+
+## Connection one-form
+
+The $\mathcal{G}$-valued one-form $\omega$ can be locally determined by a $\mathcal{G}$-valued one-form on $X$. The local connection one-form $A ^ s _ \alpha$ on an open chart $(U _ \alpha , \Phi _ \alpha)$ including $x _ 0$, a local section $s : U _ \alpha \rightarrow P$ is
+$$
+s ^ * (\omega) = A ^ s _ \alpha
+$$
+where the superscript $*$ denotes the pullback operation for the differential forms. It 
 
 
 
