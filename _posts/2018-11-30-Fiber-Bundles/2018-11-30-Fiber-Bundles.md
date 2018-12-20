@@ -525,23 +525,215 @@ A connection on a principal fiber bundle $(P , X , \pi , G)$ is a one-form $\ome
 - $\omega _ p$ depends smoothly on $p$.
 
 - Under the right action of $G$ on $P$, $\omega$ transforms according to 
+  
   $$
   \omega _ {p\cdot g}(R _ {g ^ *}(v _ p)) = g \cdot (\omega _ p (v _ p))\cdot g ^{-1} = g \cdot \chi \cdot g ^ {-1}
   $$
+  
   where $v _ p \in V _ p P$ and $g \in G$ are arbitrary elements.
 
 The horizontal subspace is defined as
+
 $$
 H _ p P \defas \set {w _ p \in T _ p P : \omega _ p ( w _ p ) = 0 } 
 $$
 
-## Connection one-form
+### Connection one-form
 
 The $\mathcal{G}$-valued one-form $\omega$ can be locally determined by a $\mathcal{G}$-valued one-form on $X$. The local connection one-form $A ^ s _ \alpha$ on an open chart $(U _ \alpha , \Phi _ \alpha)$ including $x _ 0$, a local section $s : U _ \alpha \rightarrow P$ is
+
 $$
 s ^ * (\omega) = A ^ s _ \alpha
 $$
-where the superscript $*$ denotes the pullback operation for the differential forms. It 
+
+where the superscript $*$ denotes the pullback operation for the differential forms. It associates with the canonical local section depends only on the chart. The canonical local section is defined by
+
+$$
+\Phi _ \alpha (s _ \alpha (x)) \defas e \in G , \quad \forall x \in U _ \alpha
+$$
+
+Any local section $s : U _ \alpha \rightarrow P$ can be obtained from the canonical one by an appropriate right action of $G$ on $P$; that is for any $x \in U _ \alpha$, there is $g (x) \in G$ such that
+
+$$
+s (x) = s _ \alpha (x) \cdot g (x)
+$$
+
+Hence, if we know the transformation properties of $A ^ s _ \alpha$ under the right action of $g(x)\in G$ on the fibers $F _ x$, we can express $A ^ s _ \alpha$ in terms of $A _ \alpha$. In general, if two local sections $s _ 1$ and $s _ 2$ are related by 
+
+$$
+s _ 1 (x) \rightarrow s _ 2 (x) = s _ 1 (x)\cdot g(x), \quad \forall x \in U _ \alpha, g(x) \in G
+$$
+
+then the corresponding local connection one-forms satisfy
+
+$$
+A ^ {s _ 2} _ \alpha (x) = g ^ {-1} (x)\cdot A ^ {s _ 1} _ \alpha \cdot g (x) + g ^ {-1} (x) \cdot \dd g(x)
+$$
+
+Let us choose two intersecting charts $(U _ \alpha,\Phi _ \alpha)$ and $(U _ \beta,\Phi _ \beta)$. Then for all $x\in U _ \alpha \cap U _ \beta$ we have
+
+$$
+A ^ s _ \beta (x) = G ^ {-1} _ {\alpha\beta} \cdot A ^ s _ \alpha (x)\cdot G _ {\alpha\beta} (x) + G ^ {-1} _ {\alpha\beta}(x) \cdot \dd G _ {\alpha\beta} (x)
+$$
+
+### The practical definition of horizontal space
+
+Next we would like to demonstrate the utility of the local connection one-forms in defining the horizontal lifts in practice. Let $C _ X : [0,T]\rightarrow P$ of $C _ X$ with $C _ P (0)=p _ 0$, we proceed as follows:
+
+- Choose a complete set of local trivializations $\set{(U _ \alpha, \Phi _ \alpha)}$.
+
+- Divide $C _ X$ into its segments $C ^ \alpha _ X$ which belong to the $U _ \alpha$'s.
+
+- For each $U _ \alpha$, which includes a segment of $C _ X$, choose a local section $s:U _ \alpha \rightarrow P$. Then the horizontal lift of $C _ X$ is the horizontal lifts of its segments. This reduces the problem to the case where $C _ X$ lies in a single chart $U _ \alpha$.
+
+- Define the horizontal lift of $C _ X \subset U _ \alpha$ by
+  
+  $$
+  C _ P (t) \defas s (C _ X(t))\cdot g _ s (t)
+  $$
+  
+  where $g _ s (t) \in G$ is the solution of 
+  
+  $$
+  \frac{\dd g _ s (t)}{\dd t} = - A ^ s _ \alpha (v _ t) \cdot g _ s (t) \\
+  g _ s(0) =e \text{,   with   } v _ t \defas \frac{\dd C _ X (t)}{\dd t}
+  $$
+
+
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/practical_definition.png" width="30%">
+
+>The equation can be expressed in a more compact form:
+>
+>$$
+>\frac{\mathcal{D}}{\mathcal{D}t} g _ s (t) = 0
+>$$
+>
+>where
+>
+>$$
+>\frac{\mathcal{D}}{\mathcal{D}t} \defas \frac{\dd x ^ i (t)}{\dd t}\mathcal{D} _ i \defas \frac{\dd x ^ i (t)}{\dd t}(\partial _ i - \ii A _ i)
+>$$
+
+The solution is 
+
+$$
+g _ s (t) = \mathcal{P} \e ^ {-\int ^ {C _ X (t)} _ {C _ X (0)} A ^ s _ \alpha (v _ t)}
+$$
+
+where the symbol $\mathcal{P}$ means that the quantity on the right-hand side is path-ordered. Physicists' definition of a connection, also called a gauge potential, corresponds to Lie algebra-valued one-form
+
+$$
+A \defas A _ i (x) \dd x ^ i = \ii A ^ s _ \alpha
+$$
+
+Under the right action of the group element $g(x)\in G$, $A$ transforms according to
+
+$$
+A(x){\stackrel{g}{\rightarrow}}A ^ \prime (x)=g ^ {-1}(x)\cdot A (x)\cdot g (x)+\ii g ^ {-1}\cdot \dd g(x)
+$$
+
+>$$
+>\begin{align*}
+>A (x) & \defas A _ i (x) \dd x ^ i = \ii A ^ s _ \alpha (x) \\
+>A ^ {s _ 1} _ \alpha (x) & \rightarrow A ^ {s _ 2} _ \alpha (x) = g ^ {-1} (x)\cdot A ^ {s _ 1} _ \alpha (x) \cdot g (x) + g ^ {-1} (x) \cdot \dd g(x) \\
+>-\ii A (x) & \rightarrow -\ii A ^ \prime (x) = g ^ {-1} (x)\cdot (-\ii) A (x) \cdot g (x) + g ^ {-1} (x) \cdot \dd g(x) \\
+>A (x) & \rightarrow -\ii A ^ \prime (x) = g ^ {-1} (x)\cdot A (x) \cdot g (x) + \ii g ^ {-1} (x) \cdot \dd g(x) \\
+>\end{align*}
+>$$
+
+If $G$ is an Abelian group, then transformation reduces to
+
+$$
+A(x){\stackrel{g}{\rightarrow}}A ^ \prime (x)=A(x) + \dd (\ii \ln g(x))
+$$
+
+>$$
+>\begin{align*}
+>g (x) & \cdot A (x) = A (x) \cdot g (x) \\
+>A (x) \rightarrow -\ii A ^ \prime (x) & = g ^ {-1} (x)\cdot A (x) \cdot g (x) + \ii g ^ {-1} (x) \cdot \dd g(x) \\
+>& = g ^ {-1} (x)\cdot g (x) \cdot A (x) + \ii g ^ {-1} (x) \cdot \dd g(x) \\
+>& = A (x) + \ii \dd(\ii \ln g (x)) \\
+>\end{align*}
+>$$
+
+In view of the definition of the tangent vector $v _ t$, namely
+
+$$
+v _ t \defas \frac{\dd C _ X (t)}{\dd t} =\frac{\dd x ^ i (t)}{\dd t} \frac{\partial}{\partial x ^ i}, \quad C _ X(t) \defas (x ^ i (t))
+$$
+
+Equation of $g _ s (t)$ can be written in the form
+
+$$
+\begin{align*}
+g _ s (t) & = \mathcal{T} \e ^ {\ii \int ^ t _ 0 A _ j (C _ X (t ^ \prime))\frac{\dd x ^ i (t ^ \prime)}{\dd t ^ \prime}\dd t ^ \prime} \\
+& = \mathcal{P} \e ^ {\ii \int ^ {C _ X(t)} _ {C _ X (0)}A _ i (x) \dd x ^ i} , \quad x \in C _ X\\
+& = \mathcal{P} \e ^ {\ii \int ^ {C _ X(t)} _ {C _ X (0)}A(x)}
+\end{align*}
+$$
+
+where $\mathcal{T}$ denotes the time-ordering operator that we described. Note that the exponents belong to the Lie algebra $\mathcal{G}$ and "$\exp$" denoted the exponential map which maps the algebra elements to the group elements.
+
+Next we repeat the same construction using two different local sections $s _ 1: U _ \alpha \rightarrow P$ and $s _ 2: U _ \beta \rightarrow P$ with $C _ X \subset U _ \alpha \cap U _ \beta$.
+
+$$
+s _ \alpha (C _ X (t)) \cdot g _ \alpha (t) = s _ \beta (C _ X (t)) \cdot g _ \beta (t) = s _ \alpha (C _ X (t))\cdot g (C _ X (t)) \cdot g _ \beta (t) \\
+g _ \alpha (t) = g (C _ X (t)) \cdot g _ \beta (t)
+$$
+
+where $g _ \alpha$ and $g _ \beta$ are defined as the solutions of $\frac{\dd g _ {\alpha(\beta)} (t)}{\dd t} = - A _ {\alpha(\beta)} (v _ t) \cdot g_ {\alpha(\beta)} (t)$ corresponding to the local connection one-forms $A \defas \ii s _ \alpha ^ * (\omega)$ and $A ^ \prime \defas \ii s _ \beta ^ * (\omega)$, namely
+
+$$
+\frac{\dd g _ \alpha (t)}{\dd t} = \ii A (v _ t) \cdot g _ \alpha (t), \text{ with  } g _ \alpha (0) = e \\
+\frac{\dd g _ \beta (t)}{\dd t} = \ii A^ \prime (v _ t) \cdot g _ \beta (t), \text{ with  } g _ \beta (0) = e
+$$
+
+We have
+
+$$
+A ^ \prime (v _ t) = \ii g ^ {-1} (C _ X(t))\cdot \frac{\dd g (C _ X(t))}{\dd t} + g ^ {-1} (C _ X(t)) \cdot A (v _ t) \cdot g (C _ X(t))
+$$
+
+>$$
+>\begin{align*}
+>\frac{\dd g _ \beta (t)}{\dd t} & = \ii A ^ \prime (v _ t) \cdot g _ \beta (t) \\
+>\frac{\dd \left(g ^ {-1} (C _ X(t)) \cdot g _ \alpha (t)\right)}{\dd t} & = \ii A ^ \prime (v _ t) \cdot \left(g ^ {-1} (C _ X(t)) \cdot g _ \alpha (t)\right) \\
+>\frac{\dd g ^ {-1} (C _ X(t))}{\dd t} \cdot g _ \alpha (t) + g ^ {-1} (C _ X(t)) \cdot \frac{\dd g _ \alpha (t)}{\dd t} & = \ii A ^ \prime (v _ t) \cdot g ^ {-1} (C _ X(t)) \cdot g _ \alpha (t) \\
+>- g ^ {-2} (C _ X(t))\cdot \frac{\dd g (C _ X(t))}{\dd t} \cdot g _ \alpha (t) + g ^ {-1} (C _ X(t)) \cdot \ii A (v _ t) \cdot g _ \alpha (t) & = \ii A ^ \prime (v _ t) \cdot g ^ {-1} (C _ X(t)) \cdot g _ \alpha (t) \\
+>- g ^ {-2} (C _ X(t))\cdot \frac{\dd g (C _ X(t))}{\dd t} + g ^ {-1} (C _ X(t)) \cdot \ii A (v _ t) & = \ii A ^ \prime (v _ t) \cdot g ^ {-1} (C _ X(t)) \\
+>- g ^ {-1} (C _ X(t))\cdot \frac{\dd g (C _ X(t))}{\dd t} + g ^ {-1} (C _ X(t)) \cdot \ii A (v _ t) \cdot g (C _ X(t)) & = \ii A ^ \prime (v _ t) \\
+>\ii g ^ {-1} (C _ X(t))\cdot \frac{\dd g (C _ X(t))}{\dd t} + g ^ {-1} (C _ X(t)) \cdot A (v _ t) \cdot g (C _ X(t)) & = A ^ \prime (v _ t) \\
+>\end{align*}
+>$$
+
+This equation can be simplified to
+
+$$
+A ^ \prime _ i = g ^ {-1} \cdot A _ i \cdot g + \ii g ^ {-1} \cdot \partial _ i g
+$$
+
+>$$
+>A (x) \defas A _ i (x) \dd x ^ i \\
+>A (v) \defas A _ i (v) \frac{\dd x ^ i(t)}{\dd t} \\
+>A ^ \prime (v _ t) = \ii g ^ {-1} (C _ X(t))\cdot \frac{\dd g (C _ X(t))}{\dd t} + g ^ {-1} (C _ X(t)) \cdot A (v _ t) \cdot g (C _ X(t)) \\
+>A ^ \prime _ i (v _ t) \frac{\dd x ^ i(t)}{\dd t} = \frac{\dd x ^ i(t)}{\dd t} \ii g ^ {-1} (C _ X(t))\cdot \frac{\dd g (C _ X(t))}{\dd x^ i (t)} + g ^ {-1} (C _ X(t)) \cdot A _ i (v _ t) \frac{\dd x ^ i(t)}{\dd t} \cdot g (C _ X(t)) \\
+>A ^ \prime _ i \frac{\dd x ^ i (t)}{\dd t} = \left( g ^ {-1} \cdot A _ i \cdot g + \ii g ^ {-1} \cdot \frac{\partial g}{\partial x ^ i} \right)\frac{\dd x ^ i (t)}{\dd t} \\
+>A ^ \prime _ i = g ^ {-1} \cdot A _ i \cdot g + \ii g ^ {-1} \cdot \partial _ i g 
+>$$
+
+Another simplification can be made if the basic curve $C _ X$ is a closed curve, $C _ X (T) = C _ X (0) \defas x _ 0$. In this case, the end point $C _ E (T)$ also belongs to the fiber $F _ {x _ 0}$, we have
+
+$$
+C _ P (T) = C _ P (0) \cdot g _ s (T)
+$$
+
+where we have used the single-valuedness of the local section $s$, namely $s(C _ X(T))=s(C _ X(0))\defas C _ P(0)$. The group element $g _ s (T)$ is given by
+
+$$
+g _ s (T) = \mathcal{P} \e ^ {\ii \oint _ {C _ X}A}
+$$
+
+
 
 
 
