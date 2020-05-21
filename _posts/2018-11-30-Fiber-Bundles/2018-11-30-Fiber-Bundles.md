@@ -100,7 +100,7 @@ $$
 >In the previous sphere, the transition function is
 >
 >$$
-> g _ {SN} = \varphi _ S \circ \varphi _ N ^ {-1} = \begin{pmatrix}
+>g _ {SN} = \varphi _ S \circ \varphi _ N ^ {-1} = \begin{pmatrix}
 > \frac{1 + z}{1 - z} & 0 \\
 > 0 & \frac{1 + z}{1 - z} \\
 > \end{pmatrix}\\
@@ -587,17 +587,19 @@ Next we would like to demonstrate the utility of the local connection one-forms 
 - For each $U _ \alpha$, which includes a segment of $C _ X$, choose a local section $s:U _ \alpha \rightarrow P$. Then the horizontal lift of $C _ X$ is the horizontal lifts of its segments. This reduces the problem to the case where $C _ X$ lies in a single chart $U _ \alpha$.
 
 - Define the horizontal lift of $C _ X \subset U _ \alpha$ by
-  
+
   $$
   C _ P (t) \defas s (C _ X(t))\cdot g _ s (t)
   $$
-  
+
   where $g _ s (t) \in G$ is the solution of 
-  
+
   $$
   \frac{\dd g _ s (t)}{\dd t} = - A ^ s _ \alpha (v _ t) \cdot g _ s (t) \\
   g _ s(0) =e \text{,   with   } v _ t \defas \frac{\dd C _ X (t)}{\dd t}
   $$
+
+
 
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-11-30-Fiber-Bundles/assets/practical_definition.png" width="30%">
@@ -613,6 +615,7 @@ Next we would like to demonstrate the utility of the local connection one-forms 
 >$$
 >\frac{\mathcal{D}}{\mathcal{D}t} \defas \frac{\dd x ^ i (t)}{\dd t}\mathcal{D} _ i \defas \frac{\dd x ^ i (t)}{\dd t}(\partial _ i - \ii A _ i)
 >$$
+>
 
 The solution is 
 
@@ -640,6 +643,7 @@ $$
 >A (x) & \rightarrow -\ii A ^ \prime (x) = g ^ {-1} (x)\cdot A (x) \cdot g (x) + \ii g ^ {-1} (x) \cdot \dd g(x) \\
 >\end{align*}
 >$$
+>
 
 If $G$ is an Abelian group, then transformation reduces to
 
@@ -655,6 +659,7 @@ $$
 >& = A (x) + \ii \dd(\ii \ln g (x)) \\
 >\end{align*}
 >$$
+>
 
 In view of the definition of the tangent vector $v _ t$, namely
 
@@ -705,6 +710,7 @@ $$
 >\ii g ^ {-1} (C _ X(t))\cdot \frac{\dd g (C _ X(t))}{\dd t} + g ^ {-1} (C _ X(t)) \cdot A (v _ t) \cdot g (C _ X(t)) & = A ^ \prime (v _ t) \\
 >\end{align*}
 >$$
+>
 
 This equation can be simplified to
 
@@ -720,6 +726,7 @@ $$
 >A ^ \prime _ i \frac{\dd x ^ i (t)}{\dd t} = \left( g ^ {-1} \cdot A _ i \cdot g + \ii g ^ {-1} \cdot \frac{\partial g}{\partial x ^ i} \right)\frac{\dd x ^ i (t)}{\dd t} \\
 >A ^ \prime _ i = g ^ {-1} \cdot A _ i \cdot g + \ii g ^ {-1} \cdot \partial _ i g 
 >$$
+>
 
 Another simplification can be made if the basic curve $C _ X$ is a closed curve, $C _ X (T) = C _ X (0) \defas x _ 0$. In this case, the end point $C _ E (T)$ also belongs to the fiber $F _ {x _ 0}$, we have
 
