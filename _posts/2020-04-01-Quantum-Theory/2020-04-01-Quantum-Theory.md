@@ -1,8 +1,8 @@
 ---
-title: C* algebra
+title: Quantum Theory
 category: Physics
 tags:
-  - C* algebra
+  - Quantum Theory
 ---
 
 $$
@@ -49,7 +49,20 @@ $$
 \end{align*}
 $$
 
-## Space
+## Quantum Mechanics in Mathematical language
+
+| Quantum mechanics                                            | mathematical language                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Hilbert space $\mathcal{H}$                                  | Hilbert space $(\mathcal{H},+,\cdot,\braket{\cdot}{\cdot})$  |
+| states of a system (density matrix $\rho$)                   | positive trace-class linear map $\rho:\mathcal{H}\rightarrow \mathcal{H}$ |
+| observable $A$ of a system                                   | self-adjoint linear map $A:\mathcal{D}_A\rightarrow \mathcal{H}$ |
+| The expectation value of the measurement a measurement of an observable $A$ on a system that is in the state of $\rho$ is $\operatorname{Tr}(\rho A)$ | the probability $\mu_\rho^A(E)$ of a measurement of an observable $A$ on a system that is in the state of $\rho$ yields a result in the Borel set $E\subseteq \reals$ is $\operatorname{Tr}(P_A(E)\circ \rho)$, where $P_A: \text{Borel}(\reals)\rightarrow \mathcal{L}(\mathcal{H})$ is the unique projection valued measure associated with a self-adjoint map $A$ according to the spectral theory. |
+| unitary dynamics: $\rho(t_2)=U(t_2-t_1)\rho(t_1)U^{-1}(t_2-t_1)$, where unitary operator $U(t):=\exp(-\frac{\imath}{\hbar}Ht)$. | where $f:\reals\rightarrow\mathbb{C}$ and $f(A):=\int f(\lambda)\dd P_A(\lambda)$ according to the spectral theory. |
+| projective dynamics: $\rho_\text{after}=\frac{P_A(E)\rho_\text{before}P_A(E)}{\text{Tr(numerator)}}$ | where $P_A: \text{Borel}(\reals)\rightarrow \mathcal{L}(\mathcal{H})$ is the unique projection valued measure associated with a self-adjoint map $A$ according to the spectral theory. |
+
+
+
+## Banach space and Hilbert space
 
 | normed space | Banach space | inner product space | Hilbert  space |
 | ------------ | ------------ | ------------------- | -------------- |
@@ -58,15 +71,16 @@ $$
 |              |              | (2)                 | (2)            |
 
 $$
-||f||\ge0\\
-||\lambda f||=|\lambda|\cdot ||f||\\
-||f+g||\le||f||+||g||
+\|f\|\ge0\\
+\|\lambda f\|=|\lambda|\cdot \|f\|\\
+\|f+g\|\le\|f\|+\|g\|
 $$
 
 $$
 \left<f,g\right>=\overline{\left<g,f\right>}\\
 \left<af_1+bf_2,g\right>=a\left<f_1,g\right>+b\left<f_2,g\right>\\
-\left<f,f\right>\ge0
+\left<f,f\right>\ge0\\
+(|f,g|\le\|f\|\ \|g\|)
 $$
 
 <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-03-20-C-algebra/assets/Completeness_in_Hilbert_space.png" width="40%">
@@ -75,44 +89,39 @@ $$
 >
 >Example: The set $\mathcal{L}(V,W):=\{A:V\rightarrow W|A\text{ is linear and bounded operator}\}$ is a Banach space if equipped with the operator norm $||\cdot||_{\mathcal{L}(V,W)}$, where $V$ is a normed space and $W$ is a Banach space.
 
+## Separable Hilbert space
+
+Definition: A Hilbert space is separable if it has a Schauder basis $S$ which is (a) countable, (b) orthogonal.
+
+Any $\infty$-dim complex separable Hilbert space ($\mathcal{H},+,\cdot,\left<\cdot,\cdot\right>$) is unitarily isomorphic to the separable Hilbert space $\ell^2(\mathbb{N})$ of all square-summable sequence in $\mathbb{C}$.
+
+>Schauder basis
+>
+>
+
+## Measure theory
 
 
 
-## Algebra
-
-| Banach algebra | Banach* algebra | C* algebra |
-| -------------- | --------------- | ---------- |
-| (3)            | (3)             | (3)        |
-| complete       | complete        | complete   |
-|                | (4)             | (4)        |
-|                |                 | (5)        |
-|                |                 |            |
 
 
-$$
-||AB||\le||A||\cdot||B||
-$$
-
-
-$$
-(A+B)^*=A^*+B^*\\
-(\lambda A)^*=\bar{\lambda}A^*\\
-(A)^{**}=A\\
-(AB)^*=B^*A^*
-$$
+## Self-adjoint operators
 
 
 
-$$
-||A^*A||=||A||^2
-$$
+## Resolvent map and Spectrum
 
-The algebra of all bounded operator $\mathcal{B}(\mathcal{H})$ on a Hilbert space $\mathcal{H}$ is a $C^*$ algebra.
 
->Operator $A: V\rightarrow W$ is called bounded if
->$$
->\sup_{f\in V}\frac{||Af||_W}{||f||_V}=\sup_{||f||_ V=1}||Af||_W<\infty
->$$
+
+
+
+ ## Spectral theory
+
+
+
+
+
+
 
 ## References
 
