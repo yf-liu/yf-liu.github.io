@@ -56,19 +56,19 @@ $$
 | Hilbert space $\mathcal{H}$                                  | Hilbert space $(\mathcal{H},+,\cdot,\braket{\cdot}{\cdot})$  |
 | states of a system (density matrix $\rho$)                   | positive trace-class linear map $\rho:\mathcal{H}\rightarrow \mathcal{H}$ |
 | observable $A$ of a system                                   | self-adjoint linear map $A:\mathcal{D}_A\rightarrow \mathcal{H}$ |
-| The expectation value of the measurement a measurement of an observable $A$ on a system that is in the state of $\rho$ is $\operatorname{Tr}(\rho A)$ | the probability $\mu_\rho^A(E)$ of a measurement of an observable $A$ on a system that is in the state of $\rho$ yields a result in the Borel set $E\subseteq \reals$ is $\operatorname{Tr}(P_A(E)\circ \rho)$, where $P_A: \text{Borel}(\reals)\rightarrow \mathcal{L}(\mathcal{H})$ is the unique projection valued measure associated with a self-adjoint map $A$ according to the spectral theory. |
+| The expectation value of the measurement a measurement of an observable $A$ on a system that is in the state of $\rho$ is $\operatorname{Tr}(\rho A)$ | the probability $\mu_\rho^A(E)$ of a measurement of an observable $A$ on a system that is in the state of $\rho$ yields a result in the Borel set $E\subseteq \reals$ is $\operatorname{Tr}(P_A(E)\circ \rho)$, where $P_A: B(\reals)\rightarrow \mathcal{L}(\mathcal{H})$ is the unique projection valued measure associated with a self-adjoint map $A$ according to the spectral theory. |
 | unitary dynamics: $\rho(t_2)=U(t_2-t_1)\rho(t_1)U^{-1}(t_2-t_1)$, where unitary operator $U(t):=\exp(-\frac{\imath}{\hbar}Ht)$. | where $f:\reals\rightarrow\mathbb{C}$ and $f(A):=\int f(\lambda)\dd P_A(\lambda)$ according to the spectral theory. |
-| projective dynamics: $\rho_\text{after}=\frac{P_A(E)\rho_\text{before}P_A(E)}{\text{Tr(numerator)}}$ | where $P_A: \text{Borel}(\reals)\rightarrow \mathcal{L}(\mathcal{H})$ is the unique projection valued measure associated with a self-adjoint map $A$ according to the spectral theory. |
+| projective dynamics: $\rho_\text{after}=\frac{P_A(E)\rho_\text{before}P_A(E)}{\text{Tr(numerator)}}$ | where $P_A: B(\reals)\rightarrow \mathcal{L}(\mathcal{H})$ is the unique projection valued measure associated with a self-adjoint map $A$ according to the spectral theory. |
 
 
 
 ## Banach space and Hilbert space
 
-| normed space | Banach space | inner product space | Hilbert  space |
-| ------------ | ------------ | ------------------- | -------------- |
-| (1)          | (1)          | (1)                 | (1)            |
-|              | complete     |                     | complete       |
-|              |              | (2)                 | (2)            |
+| normed space | Banach space                                                 | inner product space | Hilbert  space |
+| ------------ | ------------------------------------------------------------ | ------------------- | -------------- |
+| (1)          | (1)                                                          | (1)                 | (1)            |
+|              | complete<img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-03-20-C-algebra/assets/Completeness_in_Hilbert_space.png" width="40%"> |                     | complete       |
+|              |                                                              | (2)                 | (2)            |
 
 $$
 \|f\|\ge0\\
@@ -83,7 +83,7 @@ $$
 (|f,g|\le\|f\|\ \|g\|)
 $$
 
-<img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-03-20-C-algebra/assets/Completeness_in_Hilbert_space.png" width="40%">
+
 
 >$f$ could be an operator and $||f||$ is operator norm.
 >
@@ -93,32 +93,105 @@ $$
 
 Definition: A Hilbert space is separable if it has a Schauder basis $S$ which is (a) countable, (b) orthogonal.
 
-Any $\infty$-dim complex separable Hilbert space ($\mathcal{H},+,\cdot,\left<\cdot,\cdot\right>$) is unitarily isomorphic to the separable Hilbert space $\ell^2(\mathbb{N})$ of all square-summable sequence in $\mathbb{C}$.
-
->Schauder basis
+>Schauder basis is a set $S\subseteq\mathcal{H}$ which is
 >
+>(i) linearly independent,
 >
+>(ii) For any $\psi\in \mathcal{H}$, there exists countable subset $\{e_1,e_2,\cdots\}\subseteq S$ and a sequence $\{\psi^i\}_{i\in \mathbb{N}}\subseteq \mathbb{C}$ such that 
+>$$
+>\psi=\begin{cases}
+>\sum_i^d\psi^ie_i, & \text{if }|S|<\infty \\
+>\lim_{d\rightarrow \infty}\sum_i^d\psi^ie_i, & \mbox{else}
+>\end{cases}
+>$$
+>Since Hilbert space is complete, $\lim_{d\rightarrow \infty}\sum_i^d\psi^ie_i$ must belong to Hilbert space. Note that $A(\lim_{d\rightarrow \infty}\sum_i^d\psi^ie_i)=\lim_{d\rightarrow \infty}\sum_i^dA\psi^ie_i$ only holds if it converges. $A$ should be a bounded linear operator.
+>
+>Since using the notion of Shauder basis, one has a more powerful means of generating a vector in a Hilbert space, approaching it by a sequence of $\{\psi^i\}_{i\in \mathbb{N}}$. One needs less resources, so it makes basis smaller. Hilbert space $\mathcal{H}$ is the topological closure of $\text{Span}(S)$, namely, $\overline{\text{Span}(S)}=\mathcal{H}$.
 
-## Measure theory
-
-
-
-
-
-## Self-adjoint operators
-
-
+Any $\infty$-dim complex separable Hilbert space ($\mathcal{H},+,\cdot,\left<\cdot,\cdot\right>$) is unitarily isomorphic to the separable Hilbert space $(\ell^2(\mathbb{N}),+,\cdot,\braket{\cdot}{\cdot})$ of all square-summable sequence in $\mathbb{C}$.
 
 ## Resolvent map and Spectrum
 
+Definition: Let $A$ be a closed operator. The resolvent map of $A$ is 
+$$
+\begin{align*}
+R_A:\rho(A)&\rightarrow \mathcal{L}(\mathcal{H},\mathcal{H})\\
+z&\mapsto (A-z \text{ id}_{\mathcal{D}_A})^{-1}
+\end{align*}
+$$
+where resolvent set $\rho(A):=\{z\in \mathbb{C}|(A-z)^{-1}\in\mathcal{L}(\mathcal{H})\}$.
 
+Definition: The spectrum $\sigma(A):=\mathbb{C}\backslash \rho(A)=\{\lambda\in \mathbb{C}|\exist\psi\in\mathcal{D}_A\backslash\{0\}: A\psi=\lambda\psi\}$.
 
 
 
  ## Spectral theory
 
+For every self-adjoint operator $A:\mathcal{D}_A\rightarrow\mathcal{H}$, there is a projection-valued measure
+$$
+P_A:\sigma(\mathcal{O}_\mathbb{R})\rightarrow\mathcal{L}(\mathcal{H})
+$$
+such that $A=\int\text{id}_\mathbb{R}\dd P_A\equiv \int\lambda P_A(\dd\lambda)$.
 
+### Construct projection-valued measure $P_A$
 
+We could construct $P_A$ through the following steps.
+
+Step 1: construct a real-valued Borel measure $\mu_\psi^A$ for each $\psi\in\mathcal{H}$ that
+$$
+\begin{align*}
+\mu_\psi^A:\sigma(\mathcal{O}_\mathbb{R})&\rightarrow\mathbb{R}\\
+\left( -\infty,\lambda\right] &\mapsto \lim_{\delta\rightarrow0}\lim_{\epsilon\rightarrow 0^+}\text{Im}\left<\psi,R_A(t+\imath\epsilon)\psi\right>
+\end{align*}
+$$
+where $R_A$ is the resolvent map of $A$.
+
+Step 2: construct a complex-valued Borel measure $\mu_{\psi,\varphi}^A$ from $\mu_\psi^A$ for all $\psi,\varphi\in\mathcal{H}$ that
+$$
+\begin{align*}
+\mu_{\psi,\varphi}^A:\sigma(\mathcal{O}_\mathbb{R})&\rightarrow\mathbb{C}\\
+\Omega &\mapsto \frac{1}{4} (\mu_{\psi+\varphi}^A(\Omega)-\mu_{\psi-\varphi}^A(\Omega)+\imath\mu_{\psi-\imath\varphi}^A(\Omega)-\imath\mu_{\psi+\imath\varphi}^A(\Omega))
+\end{align*}
+$$
+Step 3: Define the projection-valued measure
+$$
+\begin{align*}
+P_A:\sigma(\mathcal{O}_\mathbb{R})&\rightarrow\mathcal{L}(\mathcal{H})\\
+\Omega &\mapsto P_A(\Omega) \text{ with }\left<\psi,P_A(\Omega)\varphi\right>:=\int\chi(\Omega)\dd \mu_{\psi,\varphi}^A
+\end{align*}
+$$
+
+### Integration w.r.t a projection-valued measure $P_A$.
+
+Then we consider the integration $\int f\dd P_A$ w.r.t a projection-valued measure. The whole integration could is an operator.
+$$
+\begin{align*}
+\int f\dd P_A:\begin{cases}
+\mathcal{H}\rightarrow\mathcal{H}, & \text{when } f \text{ is simple or bounded}\\
+\mathcal{D}_{\int f\dd P_A}\rightarrow\mathcal{H}, & \text{when } f \text{ is unbounded}\\
+\end{cases}
+\end{align*}
+$$
+where $\mathcal{D}_{\int f\dd P_A}$ is a dense subset of $\mathcal{H}$. It's much complicated when $f$ is unbounded because the linearity, $\int (f+g)\dd P_A=\int f\dd P_A+\int g\dd P_A$ , does not necessarily hold.
+
+| $f:\reals\rightarrow\mathbb{C}$ | $\int f\dd P$                                                | sketch                                                       | $\int \dd P: \{f\}\rightarrow\mathcal{L}(\mathcal{H})$       |
+| ------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| simple                          | $\int f\dd P=\sum_{n=1}^N f_n P(\text{preim}_f(\{f_n\}))$    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-03-20-C-algebra/assets/integration1.png" width="40%"> | linear map $\int \dd P:S(\mathbb{R})(\text{norm space})\rightarrow \mathcal{L}(\mathcal{H})(\text{Banach space})$ |
+| bounded                         | $\int f\dd P=\lim_{N\rightarrow \infty}\sum_{n=1}^N f_n P(\text{preim}_f(\{f_n\}))$ |                                                              | $C^*$ algebra homomorphism $\int \dd P:B(\mathbb{R})(C^* \text{algebra})\rightarrow \mathcal{L}(\mathcal{H})(C^* \text{algebra})$ |
+| unbounded                       | $(\int f\dd P)\psi:=\lim_{n\rightarrow\infty}[(\int f_n\dd P)\psi]$ | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-03-20-C-algebra/assets/integration2.png" width="40%"> |                                                              |
+
+Properties
+
+- $(\int f\dd P)^*=\int \bar{f}\dd P$
+- $\int(\alpha f+g)\dd P\supseteq\alpha\int f\dd P+\int g\dd P$
+- $\int (f\cdot g)\dd P\supseteq (\int f\dd P)\circ(\int g\dd P)$
+
+## Application
+
+We could use spectral theory to calculate functions of unbounded operator. For example, we are familiar with $\exp(A)=\sum_n\frac{A^n}{n!}$, but that only holds when $A$ is bounded. When $A$ is unbounded, we could define
+$$
+\exp(A):=\int\exp\cdot\dd P_A
+$$
 
 
 
