@@ -79,7 +79,7 @@ $$
 H = \frac{P ^ 2}{2 m} + V (X)
 $$
 
-Consider $\Omega = X​$.
+Consider $\Omega = X$.
 
 $$
 \begin{align*}
@@ -219,10 +219,6 @@ where $h (\vec{x} _ 0)$ is a $3 \times 3$ matrix whose components are second ord
 So we can use Ehrenfest's theorem to calculate the trajectory of magnetic momentum.
 
 
-
-to-do list:
-
-- [ ] Is Spin angular momentum a quadratic term? If so what does position and moment operator in Spin mean?
 
 ## References
 
