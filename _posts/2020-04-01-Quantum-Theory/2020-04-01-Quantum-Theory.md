@@ -87,7 +87,7 @@ $$
 
 >$f$ could be an operator and $\|f\|$ is operator norm.
 >
->Example: The set $\mathcal{L}(V,W):=\{A:V\rightarrow W|A\text{ is linear and bounded operator}\}$ is a Banach space if equipped with the operator norm $\|\cdot\|_{\mathcal{L}(V,W)}$, where $V$ is a normed space and $W$ is a Banach space.
+>Example: The set $\mathcal{L}(V,W):=\{A:V\rightarrow W,A\text{ is linear and bounded operator}\}$ is a Banach space if equipped with the operator norm $\|\cdot\|_{\mathcal{L}(V,W)}$, where $V$ is a normed space and $W$ is a Banach space.
 
 ## Separable Hilbert space
 
@@ -190,8 +190,8 @@ where $\mathcal{D}_{\int f\dd P_A}$ is a dense subset of $\mathcal{H}$. It's muc
 | $f:\mathbb{R}\rightarrow\mathbb{C}$ | $\int f\dd P$                                                | sketch                                                       | $\int \dd P: \{f\}\rightarrow\mathcal{L}(\mathcal{H})$       |
 | ------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | simple                          | $\int f\dd P=\sum_{n=1}^N f_n P(\text{preim}_f(\{f_n\}))$    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-03-20-C-algebra/assets/integration1.png" width="40%"> | linear map $\int \dd P:S(\mathbb{R})(\text{norm space})\rightarrow \mathcal{L}(\mathcal{H})(\text{Banach space})$ |
-| bounded                         | $\int f\dd P=\lim_{N\rightarrow \infty}\sum_{n=1}^N f_n P(\text{preim}_f(\{f_n\}))$ |                                                              | $C^*$ algebra homomorphism $\int \dd P:B(\mathbb{R})(C^* \text{algebra})\rightarrow \mathcal{L}(\mathcal{H})(C^* \text{algebra})$ |
-| unbounded                       | $(\int f\dd P)\psi:=\lim_{n\rightarrow\infty}[(\int f_n\dd P)\psi]$ | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-03-20-C-algebra/assets/integration2.png" width="40%"> |                                                              |
+| bounded                         | $\int f\dd P=\lim_{N\rightarrow \infty} \sum_{n=1}^N f_n P(\text{preim}_f(\{f_n\}))$ |                                                              | $C^\star$ algebra homomorphism $\int \dd P:B(\mathbb{R})(C^\star \text{algebra})\rightarrow \mathcal{L}(\mathcal{H})(C^\star \text{algebra})$ |
+| unbounded                       | $(\int f\dd P)\psi:= \lim_{n\rightarrow\infty}[(\int f_n\dd P)\psi]$ | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-03-20-C-algebra/assets/integration2.png" width="40%"> |                                                              |
 
 Properties
 
