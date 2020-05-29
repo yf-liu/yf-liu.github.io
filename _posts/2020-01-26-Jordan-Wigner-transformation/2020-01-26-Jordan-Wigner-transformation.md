@@ -56,14 +56,14 @@ $$
 | Spin                                                         | Fermion                           |                                                              |
 | ------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ |
 | $\ket{\uparrow}$                                             | $\ket{1}$                         | $\begin{bmatrix} 1\newline 0\end{bmatrix}$                   |
-| $\ket{\downarrow}$                                           | $\ket{0}$                         | $\begin{bmatrix}0\\1\end{bmatrix}$                           |
-| $S^+$                                                        | $f^\dagger$                       | $\begin{bmatrix} 0& 1\\ 0&0\end{bmatrix}$                    |
-| $S^-$                                                        | $f$                               | $\begin{bmatrix} 0&0\\1&0\\\end{bmatrix}$                    |
-| $S_z=\frac{1}{2}(\ket{\uparrow}\bra{\uparrow}-\ket{\downarrow}\bra{\downarrow})$ | $f^\dagger f-\frac{1}{2}$         | $\frac{1}{2}\begin{bmatrix} 1&0\\0&-1\end{bmatrix}$          |
-| $S_x=\frac{1}{2}(S^++S^-)$                                   | $\frac{1}{2}(f^\dagger +f)$       | $\frac{1}{2}\begin{bmatrix} 0&1\\1&0\end{bmatrix}$           |
-| $S_y=\frac{1}{2\imath}(S^+-S^-)$                             | $\frac{1}{2\imath}(f^\dagger -f)$ | $\frac{1}{2}\begin{bmatrix} 0&-\imath\\\imath&0\end{bmatrix}$ |
-| $\{S^+,S^-\}=1$                                              | $\{f^\dagger,f\}=1$               | $\begin{bmatrix} 1& 0\\ 0&1\end{bmatrix}$                    |
-| $\left[S^+,S^-\right]=2S_z$                                  | $\left[f^\dagger,f\right]$        | $\begin{bmatrix} 1& 0\\ 0&-1\end{bmatrix}$                   |
+| $\ket{\downarrow}$                                           | $\ket{0}$                         | $\begin{bmatrix}0\newline 1\end{bmatrix}$                    |
+| $S^+$                                                        | $f^\dagger$                       | $\begin{bmatrix} 0& 1\newline  0&0\end{bmatrix}$             |
+| $S^-$                                                        | $f$                               | $\begin{bmatrix} 0&0\newline 1&0\end{bmatrix}$               |
+| $S_z=\frac{1}{2}(\ket{\uparrow}\bra{\uparrow}-\ket{\downarrow}\bra{\downarrow})$ | $f^\dagger f-\frac{1}{2}$         | $\frac{1}{2}\begin{bmatrix} 1&0\newline 0&-1\end{bmatrix}$   |
+| $S_x=\frac{1}{2}(S^++S^-)$                                   | $\frac{1}{2}(f^\dagger +f)$       | $\frac{1}{2}\begin{bmatrix} 0&1\newline 1&0\end{bmatrix}$    |
+| $S_y=\frac{1}{2\imath}(S^+-S^-)$                             | $\frac{1}{2\imath}(f^\dagger -f)$ | $\frac{1}{2}\begin{bmatrix} 0&-\imath\newline \imath&0\end{bmatrix}$ |
+| $\{S^+,S^-\}=1$                                              | $\{f^\dagger,f\}=1$               | $\begin{bmatrix} 1& 0\newline  0&1\end{bmatrix}$             |
+| $\left[S^+,S^-\right]=2S_z$                                  | $\left[f^\dagger,f\right]$        | $\begin{bmatrix} 1& 0\newline  0&-1\end{bmatrix}$            |
 | $S_z+\frac{1}{2}$                                            | $f^\dagger f$                     |                                                              |
 
 >$$
