@@ -7,6 +7,7 @@ tags:
 
 
 $$
+\begin{align*}
 \newcommand{\red}[1]{{\color{red}{#1}}}
 \newcommand{\blue}[1]{{\color{blue}{#1}}}
 \newcommand{\span}[1]{\mathrm{span}\left\lbrace{#1}\right\rbrace}
@@ -14,6 +15,7 @@ $$
 \newcommand{\cspan}[1]{\mathbb C \!-\! \span{#1}}
 \newcommand{\sgn}{\mathrm{sgn}}
 \newcommand{\Id}{\text{Id}}
+\end{align*}
 $$
 
 
@@ -26,7 +28,9 @@ $$
 a_i^*a_i &=\sum_{n=0}^{2^L-1} E_{n,n} \delta_{\mathfrak b_{n}(i),1} 
 \end{align}
 $$
-where $E_{n,n}$ is the $2^L\times2^L$ matrix with entry 1 at position $(n,n)$ and 0 in rest and $\mathfrak b_{n}(i)$ is the $i$-th digit of binary form of the number $n$. The above equation basically says that the $a_i^*a_i$ is represented by a selected set of matrices. For $M$-particle sector, we have:
+
+where $E _ {n,n} $ is the $2^L\times2^L$ matrix with entry 1 at position $(n,n)$ and 0 in rest and $\mathfrak b _ {n}(i)$ is the $i$-th digit of binary form of the number $n$. The above equation basically says that the $a_i^\star a_i$ is represented by a selected set of matrices. For $M$-particle sector, we have:
+
 $$
 \begin{align}
 (a_i^*a_i)_M
@@ -51,6 +55,7 @@ The eigenvectors for M=1 could be indexed as follows.
 | $(1,0,...,0,0,0)$ | $2^{L-1}$    |
 
 The Hamiltonian of interaction is 
+
 $$
 \begin{align*}
 H_I&=J_z\sum_{i=0}^{L-1}\left(a_i^*a_i-\frac{1}{2}\right)\left(a_{i+1}^*a_{i+1}-\frac{1}{2}\right)\\
@@ -61,7 +66,8 @@ H_I&=J_z\sum_{i=0}^{L-1}\left(a_i^*a_i-\frac{1}{2}\right)\left(a_{i+1}^*a_{i+1}-
 $$
 where $L$ is the length of the 1-D chain.
 
-Then we could generate the Hamiltonian $H^{(M=1)}_I$ for one particle sector. Only one digit in the binary form of every index $n$ is $1$. 
+Then we could generate the Hamiltonian $H^{(M=1)} _ I$ for one particle sector. Only one digit in the binary form of every index $n$ is $1$. 
+
 $$
 \begin{align*}
 H^{(M=1)}_I&=J_z\sum_{k=0}^{L-1} E_{2^k,2^k} \sum_{i=0}^{L-1}\left(\delta_{\mathfrak b_{2^k}(i),1} -\frac{1}{2}\right) \left(\delta_{\mathfrak b_{2^k}(i+1),1} -\frac{1}{2}\right)\\
@@ -72,6 +78,7 @@ H^{(M=1)}_I&=J_z\sum_{k=0}^{L-1} E_{2^k,2^k} \sum_{i=0}^{L-1}\left(\delta_{\math
 &=J_z\frac{L-4}{4}\sum_{k=0}^{L-1} E_{2^k,2^k}
 \end{align*}
 $$
+
 We could shrink it into an equivalent $L\times L$ matrix. So the whole eigensystem is,
 
 | Eigenvectors      | Eigenvalues        | Degeneracies | Sketch                                                       |
@@ -103,6 +110,7 @@ The eigenvectors for M=2 could be indexed as follows.
 
 
 The Hamiltonian is
+
 $$
 \begin{align*}
 H_I&=J_z\sum_{i=0}^{L-1}\left(a_i^*a_i-\frac{1}{2}\right)\left(a_{i+1}^*a_{i+1}-\frac{1}{2}\right)\\
@@ -113,7 +121,9 @@ H_I&=J_z\sum_{i=0}^{L-1}\left(a_i^*a_i-\frac{1}{2}\right)\left(a_{i+1}^*a_{i+1}-
 -\frac{1}{2}\delta_{\mathfrak b_{n}(i+1),1}\right)+\frac{L}{4}\right)\\
 \end{align*}
 $$
+
 Consider $M=2$,
+
 $$
 \begin{align*}
 & \ H_I^{(M=2)}\\&=J_z \sum_{n=0}^{2^L-1}E_{n,n}\left(\sum_{i=0}^{L-1}\delta_{\mathcal{N}(n),2}\left(\delta_{\mathfrak b_{n}(i),1}\delta_{\mathfrak b_{n}(i+1),1}-\frac{1}{2}\delta_{\mathfrak b_{n}(i),1}
@@ -129,6 +139,7 @@ $$
 $$
 
 where
+
 $$
 \begin{align*}
 &\text{case1:}\ k+1=l \text{ or } k=0,l=L-1\\
@@ -169,6 +180,7 @@ The eigenvectors for M=3 could be indexed as follows.
 | $(1,1,1,...,0,0,0,0)$ | $2^{L-3}+2^{L-2}+2^{L-1}$ |
 
 The Hamiltonian for M=3 is,
+
 $$
 \begin{align*}
 & \ H_I^{(M=3)}\\
@@ -185,6 +197,7 @@ $$
 $$
 
 where "case#" means 
+
 $$
 \begin{align*}
 &\text{case1:}\ k+2=l+1=m\\
@@ -199,6 +212,7 @@ $$
 &\sum_{i=0}^{L-1}\left(\delta_{k,i}\delta_{l,i+1}+\delta_{m,i}\delta_{k,i+1}+\delta_{l,i}\delta_{m,i+1}-\frac{1}{2}\delta_{k,i}-\frac{1}{2}\delta_{l,i}-\frac{1}{2}\delta_{m,i}-\frac{1}{2}\delta_{k,i+1}-\frac{1}{2}\delta_{l,i+1}-\frac{1}{2}\delta_{m,i+1}\right)=-3\\
 \end{align*}
 $$
+
 We could shrink it into an equivalent $\left(\begin{matrix}L\\3\end{matrix}\right)\times \left(\begin{matrix}L\\3\end{matrix}\right)$ matrix. So the whole eigensystem is,
 
 | Eigenvectors        | Eigenvalues         | Degeneracies                                         | Sketch                                                       |
@@ -298,18 +312,19 @@ $$
 
 \end{align*}
 $$
+
 The possible values for $k,l,i$ are slightly different, as shown below pictorially.
 
 <img src="kli.png" style="zoom:40%;" />
 
 Also, different cases could be shown as follows pictorially.
 
-| case | sketch                                      | red                                                          | green                                                        | E                   | degeneracies                                         |
-| ---- | ------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------- | ---------------------------------------------------- |
-| 1    | <img src="M2case1.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i+1}=1\end{matrix}$ | $\frac{L-3}{4} J_z$ | $2$                                                  |
-| 2    | <img src="M2case2.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{k,i}=1\\\delta_{l,i+1}=1\end{matrix}$ | $\frac{L-5}{4}J_z$  | $L-2$                                                |
-| 3    | <img src="M2case3.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\end{matrix}$ | $\frac{L-7}{4}J_z$  | $2(L-3)$                                             |
-| 4    | others                                      |                                                              |                                                              | $\frac{L-9}{4}J_z$  | $\left(\begin{matrix}L\\2\end{matrix}\right)-3(L-2)$ |
+| case | sketch                                                       | red                                                          | green                                                        | E                   | degeneracies                                         |
+| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------- | ---------------------------------------------------- |
+| 1    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-04-15-CAR-algebra/assets/M2case1.png" style="zoom:40%;" /> | $\begin{matrix}\delta _ {k,i}\delta _ {l,i+1}=1\\\delta _ {k,i}=1\\\delta_ {l,i}=1\\\delta_ {l,i+1}=1\end{matrix}$ | $\begin{matrix}\delta _ {k,i}\delta _ {l,i+1}=1\\\delta_ {k,i}=1\\ \delta_ {k,i+1}=1\\\delta_ {l,i+1}=1\end{matrix}$ | $\frac{L-3}{4} J _ z$ | $2$                                                  |
+| 2    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-04-15-CAR-algebra/assets/M2case2.png" style="zoom:40%;" /> | $\begin{matrix}\delta _ {k,i}\delta _ {l,i+1}=1\\ \delta _ {k,i}=1\\ \delta _ {l,i}=1\\ \delta _ {k,i+1}=1\\ \delta_ {l,i+1} =1 \end{matrix}$ | $\begin{matrix}\delta _ {k,i}=1\\ \delta_ {l,i+1} =1 \end{matrix}$ | $\frac{L-5}{4}J _ z$  | $L-2$                                                |
+| 3    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-04-15-CAR-algebra/assets/M2case3.png" style="zoom:40%;" /> | $\begin{matrix}\delta _ {k,i}=1\\\delta _ {k,i+1}=1\\\delta _ {l,i+1}=1\end{matrix}$ | $\begin{matrix}\delta _ {k,i}=1\\\delta _ {l,i}=1\\\delta _ {l,i+1}=1\end{matrix}$ | $\frac{L-7}{4}J _ z$  | $2(L-3)$                                             |
+| 4    | others                                                       |                                                              |                                                              | $\frac{L-9}{4}J_z$  | $\left(\begin{matrix}L\\2\end{matrix}\right)-3(L-2)$ |
 
 
 
@@ -364,14 +379,14 @@ The possible values for $k,l,m,i$ are slightly different, as shown below pictori
 
 Also, different cases could be shown as follows pictorially.
 
-| case | sketch                                                  | red                                                          | green                                                        | E                   | degeneracies                                    |
-| ---- | ------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------- | ----------------------------------------------- |
-| 1    | <img src="M3case1.png" style="zoom:40%;" />             | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{l,i}\delta_{m,i+1}=1\\\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{l,i}\delta_{m,i+1}=1\\\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\frac{L-3}{4} J_z$ | $2$                                             |
-| 2    | <img src="M3case2.png" style="zoom:40%;" />             | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{l,i}\delta_{m,i+1}=1\\\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\frac{L-5}{4}J_z$  | $L-2$                                           |
-| 3    | <img src="M3case3.png" style="zoom:40%;" />             | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{l,i}\delta_{m,i+1}=1\\\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\frac{L-7}{4} J_z$ | $4(L-4)$                                        |
-| 4    | <img src="M3case4.png" style="zoom:40%;" />             | $\begin{matrix}\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\frac{L-9}{4}J_z$  | $(L-4)\\+(L-4)(L-5)\\=(L-4)^2$                  |
-| 5    | <img src="M3case5.png" style="zoom:40%;" />             | $\begin{matrix}\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\frac{L-11}{4}J_z$ | $(L-4)(L-5)$                                    |
-| 6    | others like <img src="M3case6.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ |                                                              | $\frac{L-13}{4}J_z$ | $\left(\begin{matrix}L-4\\3\end{matrix}\right)$ |
+| case | sketch                                                       | red                                                          | green                                                        | E                   | degeneracies                                    |
+| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------- | ----------------------------------------------- |
+| 1    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-04-15-CAR-algebra/assets/M3case1.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{l,i}\delta_{m,i+1}=1\\\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{l,i}\delta_{m,i+1}=1\\\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\frac{L-3}{4} J_z$ | $2$                                             |
+| 2    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-04-15-CAR-algebra/assets/M3case2.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{l,i}\delta_{m,i+1}=1\\\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\frac{L-5}{4}J_z$  | $L-2$                                           |
+| 3    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-04-15-CAR-algebra/assets/M3case3.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{l,i}\delta_{m,i+1}=1\\\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\frac{L-7}{4} J_z$ | $4(L-4)$                                        |
+| 4    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-04-15-CAR-algebra/assets/M3case4.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\frac{L-9}{4}J_z$  | $(L-4)\\+(L-4)(L-5)\\=(L-4)^2$                  |
+| 5    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-04-15-CAR-algebra/assets/M3case5.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\frac{L-11}{4}J_z$ | $(L-4)(L-5)$                                    |
+| 6    | others like <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-04-15-CAR-algebra/assets/M3case6.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ |                                                              | $\frac{L-13}{4}J_z$ | $\left(\begin{matrix}L-4\\3\end{matrix}\right)$ |
 
 The sum of degeneracies is $\left(\begin{matrix}L\\3\end{matrix}\right)$.
 
