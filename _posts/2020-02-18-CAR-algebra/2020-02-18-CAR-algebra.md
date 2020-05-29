@@ -143,12 +143,14 @@ $$
 
 We could shrink it into an equivalent $\left(\begin{matrix}L\newline 2\end{matrix}\right)\times\left(\begin{matrix}L\newline 2\end{matrix}\right)$ matrix. So the whole eigensystem is,
 
+
 | Eigenvectors        | Eigenvalues        | Degeneracies                                           | Sketch                                                       |
 | ------------------- | ------------------ | ------------------------------------------------------ | ------------------------------------------------------------ |
 | (0,0,0,...,0,0,1,1) | $\frac{L-4}{4}J_z$ | $L$                                                    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-02-18-CAR-algebra/assets/21.png" style="zoom:40%;" /> |
 | ...                 | ...                | ...                                                    | ...                                                          |
 | (0,0,0,...0,1,0,1)  | $\frac{L-8}{4}J_z$ | $\left(\begin{matrix}L\newline 2\end{matrix}\right)-L$ | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-02-18-CAR-algebra/assets/22.png" style="zoom:40%;" /> |
 | ...                 | ...                | ...                                                    | ...                                                          |
+
 ### Numerical calculation
 
 Here is the numerical calculation the spectrum of $H_I^{(M=2)}$ with length of chain $L=60$ and $J_z=100$. As expected, eigenvalues are $\frac{L-4}{4}J_z=1300$, and $\frac{L-8}{4}J_z=1400$ and corresponding degeneracies are $L=60$ and $\left(\begin{matrix}L\newline 2\end{matrix}\right)-L=1710$.
@@ -305,7 +307,7 @@ $$
 
 The possible values for $k,l,i$ are slightly different, as shown below pictorially.
 
-<img src="kli.png" style="zoom:40%;" />
+<img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-02-18-CAR-algebra/assets/kli.png" style="zoom:40%;" />
 
 Also, different cases could be shown as follows pictorially.
 
@@ -365,7 +367,7 @@ $$
 
 The possible values for $k,l,m,i$ are slightly different, as shown below pictorially.
 
-<img src="klmi.png" style="zoom:40%;" />
+<img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-02-18-CAR-algebra/assets/klmi.png" style="zoom:40%;" />
 
 Also, different cases could be shown as follows pictorially.
 
@@ -374,7 +376,7 @@ Also, different cases could be shown as follows pictorially.
 | 1    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-02-18-CAR-algebra/assets/M3case1.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{l,i}\delta_{m,i+1}=1\\\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{l,i}\delta_{m,i+1}=1\\\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\frac{L-3}{4} J_z$ | $2$                                                    |
 | 2    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-02-18-CAR-algebra/assets/M3case2.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{l,i}\delta_{m,i+1}=1\\\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\frac{L-5}{4}J_z$  | $L-2$                                                  |
 | 3    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-02-18-CAR-algebra/assets/M3case3.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{l,i}\delta_{m,i+1}=1\\\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\frac{L-7}{4} J_z$ | $4(L-4)$                                               |
-| 4    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-02-18-CAR-algebra/assets/M3case4.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\frac{L-9}{4}J_z$  | $(L-4)\newline  +(L-4)(L-5)\newline =(L-4)^2$          |
+| 4    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-02-18-CAR-algebra/assets/M3case4.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{k,i}\delta_{l,i+1}=1\\\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\frac{L-9}{4}J_z$  | $(L-4)^2$                                              |
 | 5    | <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-02-18-CAR-algebra/assets/M3case5.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\begin{matrix}\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i+1}=1\end{matrix}$ | $\frac{L-11}{4}J_z$ | $(L-4)(L-5)$                                           |
 | 6    | others like <img src="https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-02-18-CAR-algebra/assets/M3case6.png" style="zoom:40%;" /> | $\begin{matrix}\delta_{k,i}=1\\\delta_{k,i+1}=1\\\delta_{l,i}=1\\\delta_{l,i+1}=1\\\delta_{m,i}=1\\\delta_{m,i+1}=1\end{matrix}$ |                                                              | $\frac{L-13}{4}J_z$ | $\left(\begin{matrix}L-4\newline 3\end{matrix}\right)$ |
 
