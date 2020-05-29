@@ -55,7 +55,7 @@ $$
 
 | Spin                                                         | Fermion                           |                                                              |
 | ------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ |
-| $\ket{\uparrow}$                                             | $\ket{1}$                         | $\begin{bmatrix} 1\\0\end{bmatrix}$                          |
+| $\ket{\uparrow}$                                             | $\ket{1}$                         | $\begin{bmatrix} 1\newline 0\end{bmatrix}$                   |
 | $\ket{\downarrow}$                                           | $\ket{0}$                         | $\begin{bmatrix}0\\1\end{bmatrix}$                           |
 | $S^+$                                                        | $f^\dagger$                       | $\begin{bmatrix} 0& 1\\ 0&0\end{bmatrix}$                    |
 | $S^-$                                                        | $f$                               | $\begin{bmatrix} 0&0\\1&0\\\end{bmatrix}$                    |
