@@ -6,18 +6,6 @@ tags:
 ---
 
 
-$$
-\begin{align*}
-\newcommand{\red}[1]{{\color{red}{#1}}}
-\newcommand{\blue}[1]{{\color{blue}{#1}}}
-\newcommand{\span}[1]{\mathrm{span}\left\lbrace{#1}\right\rbrace}
-\newcommand{\set}[1]{\left\lbrace{#1}\right\rbrace}
-\newcommand{\cspan}[1]{\mathbb C \!-\! \span{#1}}
-\newcommand{\sgn}{\mathrm{sgn}}
-\newcommand{\Id}{\text{Id}}
-\end{align*}
-$$
-
 
 ## Preparation
 
