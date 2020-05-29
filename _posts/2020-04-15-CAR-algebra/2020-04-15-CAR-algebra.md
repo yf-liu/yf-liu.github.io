@@ -1,3 +1,11 @@
+---
+title: An application of CAR algebra
+category: Physics
+tags:
+  - Quantum Theory
+---
+
+
 $$
 \newcommand{\red}[1]{{\color{red}{#1}}}
 \newcommand{\blue}[1]{{\color{blue}{#1}}}
@@ -8,7 +16,6 @@ $$
 \newcommand{\Id}{\text{Id}}
 $$
 
-[TOC]
 
 ## Preparation
 
