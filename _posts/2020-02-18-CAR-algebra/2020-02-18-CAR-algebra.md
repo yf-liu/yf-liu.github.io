@@ -9,7 +9,7 @@ tags:
 
 ## Preparation
 
-From https://arxiv.org/pdf/1906.07309.pdf, in terms of the standard generators of $M_{2^L}$, we have
+From https://arxiv.org/pdf/1906.07309.pdf, in terms of the standard generators of $M _ {2^L}$, we have
 
 $$
 \begin{align}
@@ -52,6 +52,7 @@ H_I&=J_z\sum_{i=0}^{L-1}\left(a_i^*a_i-\frac{1}{2}\right)\left(a_{i+1}^*a_{i+1}-
 &=J_z\sum_{n=0}^{2^L-1} E_{n,n} \sum_{i=0}^{L-1}\left(\delta_{\mathfrak b_{n}(i),1} -\frac{1}{2}\right) \left(\delta_{\mathfrak b_{n}(i+1),1} -\frac{1}{2}\right)\\
 \end{align*}
 $$
+
 where $L$ is the length of the 1-D chain.
 
 Then we could generate the Hamiltonian $H^{(M=1)} _ I$ for one particle sector. Only one digit in the binary form of every index $n$ is $1$. 
@@ -140,7 +141,7 @@ $$
 $$
 
 
-We could shrink it into an equivalent $\left(\begin{matrix}L\\2\end{matrix}\right)\times\left(\begin{matrix}L\\2\end{matrix}\right)$ matrix. So the whole eigensystem is,
+We could shrink it into an equivalent $\left(\begin{matrix}L\newline 2\end{matrix}\right)\times\left(\begin{matrix}L\newline 2\end{matrix}\right)$ matrix. So the whole eigensystem is,
 
 | Eigenvectors        | Eigenvalues        | Degeneracies                                           | Sketch                                                       |
 | ------------------- | ------------------ | ------------------------------------------------------ | ------------------------------------------------------------ |
