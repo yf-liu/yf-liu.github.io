@@ -284,6 +284,7 @@ H_I
 $$
 
 where
+
 $$
 \begin{align*}
 &\text{case1:}\ (k=0,l=1) \ or \ (k=L-2,l=L-1) \\
