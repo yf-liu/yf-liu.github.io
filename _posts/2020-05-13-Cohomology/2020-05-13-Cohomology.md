@@ -1,5 +1,5 @@
 ---
-title: Classification Table and K theory
+title: Cohomology
 category: Physics
 tags:
   - C* algebra
@@ -49,36 +49,73 @@ $$
 \end{align*}
 $$
 
-## Preparation
+## Homology
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-06-10-Classification-table/assets/notes1.png" width="100%">
+The homology groups, refinements of the Euler characteristic, could classify the space. Our guiding principle is to find a region without boundaries, which is not itself a boundary of some region.
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-06-10-Classification-table/assets/notes2.png" width="100%">
+### simplexes and simplicial complexes
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-06-10-Classification-table/assets/notes3.png" width="100%">
+`Def`: r-simplex $\sigma^r$ is an r-dim object containing $r+1$ points $p_i$. It is expressed as 
+$$
+\sigma^r=\{x\in \mathbb{R}^m| x=\sum_{i=0}^r c_i p_i, c_i\ge 0, \sum_{i=0}^r c_i=1\}
+$$
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-06-10-Classification-table/assets/notes4.png" width="100%">
-
-
-
-## Classification table
-
-| TRS  | PHS  | CHS  | CAZ  | $d=0,8$      | $d=1$        | $d=2$        | $d=3$        | $d=4$        | $d=5$        | $d=6$        | $d=7$        |
-| ---- | ---- | ---- | ---- | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
-| 0    | 0    | 0    | A    | $\mathbb{Z}$ |              | $\mathbb{Z}$ |              | $\mathbb{Z}$ |              | $\mathbb{Z}$ |              |
-| 0    | 0    | 1    | AIII |              | $\mathbb{Z}$ |              | $\mathbb{Z}$ |              | $\mathbb{Z}$ |              | $\mathbb{Z}$ |
-
+| r    | r-simplex                                                    | 0-face                                                       | 1-face                                                       | 2-face                                                       |      |
+| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
+| 0    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="30%"> | 1*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="30%"> |                                                              |                                                              |      |
+| 1    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex1.png" width="30%"> | 2*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="30%"> | 1*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex1.png" width="30%"> |                                                              |      |
+| 2    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex2.png" width="30%"> | 3*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="30%"> | 3*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex1.png" width="30%"> | 1*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex2.png" width="100%"> |      |
+| 3    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex3.png" width="30%"> | 4*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="30%"> | 6*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex1.png" width="30%"> | 4*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex2.png" width="100%"> |      |
 
 
 
-
-In the complex case, there are only two available K-groups, the K0 and K1 groups, and they classify the two complex classes A and AIII, respectively.  
-
+### chain group, cycle group and boundary group
 
 
 
+### homology group
 
 
+
+`Example`
+
+
+
+
+
+## Cohomology
+
+youtube
+
+
+
+### homology VS cohomology
+
+
+
+
+
+## de Rham cohomology
+
+youtube lecture
+
+
+
+### property (nakahara)
+
+
+
+### Application in physics
+
+ 
+
+
+
+## Cyclic cohomology
+
+​                
+
+### pairing cyclic cohomology with K theory
 
 
 
@@ -87,3 +124,5 @@ In the complex case, there are only two available K-groups, the K0 and K1 groups
 ## References
 
 [1] Prodan, Emil, and Hermann Schulz-Baldes. "Bulk and boundary invariants for complex topological insulators." *K* (2016).
+
+[2] Nakahara, Mikio. *Geometry, topology and physics*. CRC Press, 2003.
