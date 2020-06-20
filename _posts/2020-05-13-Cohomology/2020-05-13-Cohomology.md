@@ -57,15 +57,15 @@ The homology groups, refinements of the Euler characteristic, could classify the
 
 `Def`: r-simplex $\sigma$ is an r-dim object containing $r+1$ points $p_i$. It is expressed as 
 $$
-\sigma^r=\{x\in \mathbb{R}^m| x=\sum_{i=0}^r c_i p_i, c_i\ge 0, \sum_{i=0}^r c_i=1\}
+\sigma^r=\langle p_0p_1\cdots p_r\rangle=\{x\in \mathbb{R}^m| x=\sum_{i=0}^r c_i p_i, c_i\ge 0, \sum_{i=0}^r c_i=1\}
 $$
 
 | r    | r-simplex                                                    | 0-face                                                       | 1-face                                                       | 2-face                                                       |      |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
-| 0    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="30%"> | 1*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="30%"> |                                                              |                                                              |      |
-| 1    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex1.png" width="30%"> | 2*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="30%"> | 1*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex1.png" width="30%"> |                                                              |      |
-| 2    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex2.png" width="30%"> | 3*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="30%"> | 3*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex1.png" width="30%"> | 1*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex2.png" width="100%"> |      |
-| 3    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex3.png" width="30%"> | 4*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="30%"> | 6*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex1.png" width="30%"> | 4*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex2.png" width="100%"> |      |
+| 0    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="100%"> | 1*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="100%"> |                                                              |                                                              |      |
+| 1    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex1.png" width="100%"> | 2*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="100%"> | 1*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex1.png" width="100%"> |                                                              |      |
+| 2    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex2.png" width="100%"> | 3*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="100%"> | 3*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex1.png" width="100%"> | 1*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex2.png" width="100%"> |      |
+| 3    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex3.png" width="100%"> | 4*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="100%"> | 6*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex1.png" width="100%"> | 4*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex2.png" width="100%"> |      |
 
 `Def`: A set of finite number of simplexes in $\mathbb{R}^m$ is called a simplicial complex $K$ if 
 
@@ -73,11 +73,23 @@ $$
 
 (ii) $\sigma,\sigma^\prime\in K\Rightarrow \sigma\cap\sigma^\prime\le \sigma(^\prime) \text{ or } \sigma\cap\sigma^\prime=\empty$.
 
-`Example`: $K=\{\sigma|\sigma\le\sigma^2=\langle p_0 p_1 p_2\rangle\}=\{p_0,p_1,p_2,\langle p_0 p_1\rangle,\langle p_1 p_2\rangle,\langle p_2 p_0\rangle,\langle p_0 p_1 p_2\rangle\}$.
+`Example`: $K=\{\sigma|\sigma\le\sigma^2=\langle p_0 p_1 p_2\rangle\}=\{p_0,p_1,p_2,\langle p_0 p_1\rangle,\langle p_1 p_2\rangle,\langle p_2 p_0\rangle,\langle p_0 p_1 p_2\rangle\}$. 
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/complex.png" width="30%">
 
+`Def`: An oriented r-simplex $\sigma_r=(p_0p_1\cdots p_r)$ is a r-simple $\sigma^r=\langle p_0p_1\cdots p_r\rangle$ with a prescribed orientation.  We define $(p_{i_0}p_{i_1}\cdots p_{i_r})=\sgn(P)(p_0p_1\cdots p_r)$ with a permutation $P=\left(\begin{matrix}0&1&\cdots &r\newline i_0 & i_1 & \cdots& i_r\end{matrix}\right)$.
+
 ### chain group, cycle group and boundary group
+
+`Example`: $K=\{\sigma|\sigma\le\langle p_0 p_1 p_2 p_3\rangle\}$.
+
+| r    | r-chain group $C_r(K)$                                                         |                                                          |                                                          | r-cycle group $Z_r(K)=\ker\partial_r$ |        |        | r-boundary group $B_r(K)$       |        |        |
+| ---- | ------------------------------------------------------------ | ---------------- | ---------------------- | ---- | ---- | ---- | ---- | ---- | ---- |
+|      | generator                                          | element                          |                           | def | example |  | def | example |  |
+| 0 | 4*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="50%"> | $c_1p_0+c_2p_1+\cdots$ | $C_0(K)=\mathbb{Z}^4$ |  | $p_0$ | $Z_0(K)=\mathbb{Z}^4$ | $\exist d\in C_1(K), c=\partial_1 d$ | $p_0-p_1$ | $B_0(K)=\mathbb{Z}^4$ |
+| 1    | 6*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/oriented1.png" width="100%"> | $c_1 (p_0p_1)+c_2(p_1p_2)+\cdots$ | $C_1(K)=\mathbb{Z}^6$ | $\partial_1 c=0$ | $(p_0p_1)+(p_1p_2)+(p_2p_0)$ | $Z_1(K)=\mathbb{Z}^3$ | $\exist d\in C_2(K), c=\partial_2 d$ | $(p_0p_1)+(p_1p_2)+(p_2p_0)$ | $B_1(K)=\mathbb{Z}^3$ |
+| 2    | 4*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/oriented2.png" width="100%"> | $c_1 (p_0p_1p_2)+c_2(p_1p_2p_3)+\cdots$ | $C_2(K)=\mathbb{Z}^4$ | $\partial_2 c=0$ | $(p_0p_1p_2)-(p_1p_2p_3)+(p_2p_3p_0)-(p_3p_0p_1)$ | $Z_1(K)=\mathbb{Z}$ | $\exist d\in C_3(K), c=\partial_3 d$ | $-(p_0p_1p_2)+(p_1p_2p_3)-(p_2p_3p_0)+(p_3p_0p_1)$ | $B_2(K)=\mathbb{Z}$ |
+| 3    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/oriented3.png" width="100%"> | $c_1 (p_0p_1p_2p_3)$ | $C_3(K)=\mathbb{Z}$ | $\partial_3 c=0$ |                  | $Z_3(K)=0$ |  |                        | $B_3(K)=0$ |
 
 
 
