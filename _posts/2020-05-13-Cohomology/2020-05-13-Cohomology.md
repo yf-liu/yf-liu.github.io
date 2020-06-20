@@ -55,7 +55,7 @@ The homology groups, refinements of the Euler characteristic, could classify the
 
 ### simplexes and simplicial complexes
 
-`Def`: r-simplex $\sigma^r$ is an r-dim object containing $r+1$ points $p_i$. It is expressed as 
+`Def`: r-simplex $\sigma$ is an r-dim object containing $r+1$ points $p_i$. It is expressed as 
 $$
 \sigma^r=\{x\in \mathbb{R}^m| x=\sum_{i=0}^r c_i p_i, c_i\ge 0, \sum_{i=0}^r c_i=1\}
 $$
@@ -67,7 +67,15 @@ $$
 | 2    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex2.png" width="30%"> | 3*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="30%"> | 3*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex1.png" width="30%"> | 1*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex2.png" width="100%"> |      |
 | 3    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex3.png" width="30%"> | 4*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="30%"> | 6*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex1.png" width="30%"> | 4*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex2.png" width="100%"> |      |
 
+`Def`: A set of finite number of simplexes in $\mathbb{R}^m$ is called a simplicial complex $K$ if 
 
+(i) $\sigma\in K,\sigma^\prime\le\sigma\Rightarrow \sigma^\prime\in K$, and 
+
+(ii) $\sigma,\sigma^\prime\in K\Rightarrow \sigma\cap\sigma^\prime\le \sigma(^\prime) \text{ or } \sigma\cap\sigma^\prime=\empty$.
+
+`Example`: $K=\{\sigma|\sigma\le\sigma^2=\langle p_0 p_1 p_2\rangle\}=\{p_0,p_1,p_2,\langle p_0 p_1\rangle,\langle p_1 p_2\rangle,\langle p_2 p_0\rangle,\langle p_0 p_1 p_2\rangle\}$.
+
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/complex.png" width="30%">
 
 ### chain group, cycle group and boundary group
 
