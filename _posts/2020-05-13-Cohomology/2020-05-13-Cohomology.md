@@ -81,7 +81,7 @@ $$
 
 ### chain group, cycle group and boundary group
 
-`Example`: $K=\{\sigma, \sigma\le\langle p_0 p_1 p_2 p_3\rangle\}$.
+`Example`: $K=\left\{\sigma, \sigma\le\langle p_0 p_1 p_2 p_3\rangle\right\}$.
 
 | r    | r-chain group $C_r(K)$                                                         |                                                          |                                                          | r-cycle group $Z_r(K)=\ker\partial_r$ |        |        | r-boundary group $B_r(K)=\text{im} \partial_{r+1}$ |        |        |
 | ---- | ------------------------------------------------------------ | ---------------- | ---------------------- | ---- | ---- | ---- | ---- | ---- | ---- |
