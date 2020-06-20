@@ -56,6 +56,7 @@ The homology groups, refinements of the Euler characteristic, could classify the
 ### simplexes and simplicial complexes
 
 `Def`: r-simplex $\sigma$ is an r-dim object containing $r+1$ points $p_i$. It is expressed as 
+
 $$
 \sigma^r=\langle p_0p_1\cdots p_r\rangle=\{x\in \mathbb{R}^m| x=\sum_{i=0}^r c_i p_i, c_i\ge 0, \sum_{i=0}^r c_i=1\}
 $$
@@ -94,6 +95,7 @@ $$
 | 3    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/oriented3.png" width="100%"> | $c_1 (p_0p_1p_2p_3)$ | $C_3(K)=\mathbb{Z}$ | $\partial_3 c=0$ |                  | $Z_3(K)=0$ |  |                        | $B_3(K)=0$ |
 
 `Def`: chain complex $C(K)$ associated with $K$
+
 $$
 0\xrightarrow{i}C_n(K)\xrightarrow{\partial_n}C_{n-1}(K)\xrightarrow{\partial_{n-1}}\cdots\xrightarrow{\partial_2}C_1(K)\xrightarrow{\partial_1}C_0(K)\xrightarrow{\partial_0}0
 $$
