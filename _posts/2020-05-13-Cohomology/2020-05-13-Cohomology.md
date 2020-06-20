@@ -56,7 +56,6 @@ The homology groups, refinements of the Euler characteristic, could classify the
 ### simplexes and simplicial complexes
 
 `Def`: r-simplex $\sigma$ is an r-dim object containing $r+1$ points $p_i$. It is expressed as 
-
 $$
 \sigma^r=\langle p_0p_1\cdots p_r\rangle=\{x\in \mathbb{R}^m| x=\sum_{i=0}^r c_i p_i, c_i\ge 0, \sum_{i=0}^r c_i=1\}
 $$
@@ -77,8 +76,6 @@ $$
 
 
 `Example`: $K=\{\sigma,\sigma\le\sigma^2=\langle p_0 p_1 p_2\rangle\}=\{p_0,p_1,p_2,\langle p_0 p_1\rangle,\langle p_1 p_2\rangle,\langle p_2 p_0\rangle,\langle p_0 p_1 p_2\rangle\}$. 
-
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/complex.png" width="30%">
 
 `Def`: An oriented r-simplex $\sigma_r=(p_0p_1\cdots p_r)$ is a r-simple $\sigma^r=\langle p_0p_1\cdots p_r\rangle$ with a prescribed orientation.  We define $(p_{i_0}p_{i_1}\cdots p_{i_r})=\sgn(P)(p_0p_1\cdots p_r)$ with a permutation $P=\left(\begin{matrix}0&1&\cdots &r\newline i_0 & i_1 & \cdots& i_r\end{matrix}\right)$.
 
