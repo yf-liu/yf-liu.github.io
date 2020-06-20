@@ -76,13 +76,13 @@ $$
 
 
 
-`Example`: $K=\{\sigma,\sigma\le\sigma^2=\langle p_0 p_1 p_2\rangle\}=\{p_0,p_1,p_2,\langle p_0 p_1\rangle,\langle p_1 p_2\rangle,\langle p_2 p_0\rangle,\langle p_0 p_1 p_2\rangle\}$. 
+`Example`: $K=\set{\sigma,\sigma\le\sigma^2=\langle p_0 p_1 p_2\rangle}=\set{p_0,p_1,p_2,\langle p_0 p_1\rangle,\langle p_1 p_2\rangle,\langle p_2 p_0\rangle,\langle p_0 p_1 p_2\rangle}$. 
 
 `Def`: An oriented r-simplex $\sigma_r=(p_0p_1\cdots p_r)$ is a r-simple $\sigma^r=\langle p_0p_1\cdots p_r\rangle$ with a prescribed orientation.  We define $(p_{i_0}p_{i_1}\cdots p_{i_r})=\sgn(P)(p_0p_1\cdots p_r)$ with a permutation $P=\left(\begin{matrix}0&1&\cdots &r\newline i_0 & i_1 & \cdots& i_r\end{matrix}\right)$.
 
 ### chain group, cycle group and boundary group
 
-`Example`: $K=\set\{\sigma, \sigma\le\langle p_0 p_1 p_2 p_3\rangle\}$.
+`Example`: $K=\set{\sigma, \sigma\le\langle p_0 p_1 p_2 p_3\rangle}$.
 
 | r    | r-chain group $C_r(K)$                                                         |                                                          |                                                          | r-cycle group $Z_r(K)=\ker\partial_r$ |        |        | r-boundary group $B_r(K)=\text{im} \partial_{r+1}$ |        |        |
 | ---- | ------------------------------------------------------------ | ---------------- | ---------------------- | ---- | ---- | ---- | ---- | ---- | ---- |
