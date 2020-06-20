@@ -118,8 +118,8 @@ $$
 $$
 
 - $H_0(K)\cong\mathbb{Z}$ if $K$ is a connected simplicial complex.
-- the number of generators of $H_r(K)$ counts the number of $r+1$-dimensional holes in $|K|$.
-- the later $p$ factors detects the twisting in the polyhedron $|K|$.
+- the number of generators of $H_r(K)$ counts the number of $r+1$-dimensional holes in $K$.
+- the later $p$ factors detects the twisting in the polyhedron $K$.
 
 `Def`: the generalized Euler characteristic of a general polyhedron $\chi(K)\equiv\sum_{r=0}^n(-1)^rI_r$.
 
