@@ -71,9 +71,11 @@ $$
 
 (i) $\sigma\in K,\sigma^\prime\le\sigma\Rightarrow \sigma^\prime\in K$, and 
 
-(ii) $\sigma,\sigma^\prime\in K\Rightarrow \sigma\cap\sigma^\prime\le \sigma(^\prime) \text{ or } \sigma\cap\sigma^\prime=\empty$.
+(ii) $\sigma,\sigma^\prime\in K\Rightarrow \sigma\cap\sigma^\prime\le \sigma(^\prime) \text{ or } \sigma\cap\sigma^\prime=\emptyset$.
 
-`Example`: $K=\{\sigma|\sigma\le\sigma^2=\langle p_0 p_1 p_2\rangle\}=\{p_0,p_1,p_2,\langle p_0 p_1\rangle,\langle p_1 p_2\rangle,\langle p_2 p_0\rangle,\langle p_0 p_1 p_2\rangle\}$. 
+
+
+`Example`: $K=\{\sigma,\sigma\le\sigma^2=\langle p_0 p_1 p_2\rangle\}=\{p_0,p_1,p_2,\langle p_0 p_1\rangle,\langle p_1 p_2\rangle,\langle p_2 p_0\rangle,\langle p_0 p_1 p_2\rangle\}$. 
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/complex.png" width="30%">
 
@@ -81,14 +83,14 @@ $$
 
 ### chain group, cycle group and boundary group
 
-`Example`: $K=\{\sigma|\sigma\le\langle p_0 p_1 p_2 p_3\rangle\}$.
+`Example`: $K=\{\sigma, \sigma\le\langle p_0 p_1 p_2 p_3\rangle\}$.
 
 | r    | r-chain group $C_r(K)$                                                         |                                                          |                                                          | r-cycle group $Z_r(K)=\ker\partial_r$ |        |        | r-boundary group $B_r(K)=\text{im} \partial_{r+1}$ |        |        |
 | ---- | ------------------------------------------------------------ | ---------------- | ---------------------- | ---- | ---- | ---- | ---- | ---- | ---- |
 |      | generator                                          | element                          |                           | def | example |  | def | example |  |
-| 0 | 4*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="50%"> | $c_1p_0+c_2p_1+\cdots$ | $C_0(K)=\mathbb{Z}^4$ |  | $p_0$ | $Z_0(K)=\mathbb{Z}^4$ | $\exist d\in C_1(K), c=\partial_1 d$ | $p_0-p_1$ | $B_0(K)=\mathbb{Z}^3$ |
-| 1    | 6*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/oriented1.png" width="100%"> | $c_1 (p_0p_1)+c_2(p_1p_2)+\cdots$ | $C_1(K)=\mathbb{Z}^6$ | $\partial_1 c=0$ | $(p_0p_1)+(p_1p_2)+(p_2p_0)$ | $Z_1(K)=\mathbb{Z}^3$ | $\exist d\in C_2(K), c=\partial_2 d$ | $(p_0p_1)+(p_1p_2)+(p_2p_0)$ | $B_1(K)=\mathbb{Z}^3$ |
-| 2    | 4*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/oriented2.png" width="100%"> | $c_1 (p_0p_1p_2)+c_2(p_1p_2p_3)+\cdots$ | $C_2(K)=\mathbb{Z}^4$ | $\partial_2 c=0$ | $(p_0p_1p_2)-(p_1p_2p_3)+(p_2p_3p_0)-(p_3p_0p_1)$ | $Z_1(K)=\mathbb{Z}$ | $\exist d\in C_3(K), c=\partial_3 d$ | $-(p_0p_1p_2)+(p_1p_2p_3)-(p_2p_3p_0)+(p_3p_0p_1)$ | $B_2(K)=\mathbb{Z}$ |
+| 0 | 4*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/simplex0.png" width="50%"> | $c_1p_0+c_2p_1+\cdots$ | $C_0(K)=\mathbb{Z}^4$ |  | $p_0$ | $Z_0(K)=\mathbb{Z}^4$ | $\exists d\in C_1(K), c=\partial_1 d$ | $p_0-p_1$ | $B_0(K)=\mathbb{Z}^3$ |
+| 1    | 6*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/oriented1.png" width="100%"> | $c_1 (p_0p_1)+c_2(p_1p_2)+\cdots$ | $C_1(K)=\mathbb{Z}^6$ | $\partial_1 c=0$ | $(p_0p_1)+(p_1p_2)+(p_2p_0)$ | $Z_1(K)=\mathbb{Z}^3$ | $\exists d\in C_2(K), c=\partial_2 d$ | $(p_0p_1)+(p_1p_2)+(p_2p_0)$ | $B_1(K)=\mathbb{Z}^3$ |
+| 2    | 4*<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/oriented2.png" width="100%"> | $c_1 (p_0p_1p_2)+c_2(p_1p_2p_3)+\cdots$ | $C_2(K)=\mathbb{Z}^4$ | $\partial_2 c=0$ | $(p_0p_1p_2)-(p_1p_2p_3)+(p_2p_3p_0)-(p_3p_0p_1)$ | $Z_1(K)=\mathbb{Z}$ | $\exists d\in C_3(K), c=\partial_3 d$ | $-(p_0p_1p_2)+(p_1p_2p_3)-(p_2p_3p_0)+(p_3p_0p_1)$ | $B_2(K)=\mathbb{Z}$ |
 | 3    | <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/oriented3.png" width="100%"> | $c_1 (p_0p_1p_2p_3)$ | $C_3(K)=\mathbb{Z}$ | $\partial_3 c=0$ |                  | $Z_3(K)=0$ |  |                        | $B_3(K)=0$ |
 
 `Def`: chain complex $C(K)$ associated with $K$
@@ -109,6 +111,7 @@ $$
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/examplehomology.png" width="30%">
 
 homology groups are topological invariant. The most generaal form of $H_r(K)$ is
+
 $$
 \begin{matrix}H_r(K)\cong \underbrace{ \mathbb{Z}\oplus\cdots\oplus\mathbb{Z}}  \oplus\mathbb{Z}_{k_1}\oplus\cdots\oplus\mathbb{Z}_{k_p}\\f\quad\quad\quad\end{matrix}\\
 $$
