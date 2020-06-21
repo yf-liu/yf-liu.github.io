@@ -106,6 +106,8 @@ $$
 `Lemma`: The composite map $\partial_n\circ\partial_{n+1}:C_{n+1}(K)\rightarrow C_{n-1}(K)$ is a zero map; $B_n(K)\subset Z_r(K)$
 
 >a boundary has no boundary.
+>
+>With this lemma, the homology group could be well defined.
 
 ### homology group
 
@@ -129,19 +131,25 @@ $$
 
 ## Cohomology
 
-youtube
+We could derive cohomology group from homology group. With cohomology, we could glue functions using cup product, which doesn't exist in homology.
 
-
-
-### homology to cohomology
+### from homology to cohomology
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/cohomologygroup.png" width="40%">
 
-
+Note that, we have the composite map $\dd ^n\circ\dd^{n-1}$ as zero map in cochain complex, which is a direct result from $\partial_n\circ\partial_{n+1}=0$ in chain complex.
 
 ## de Rham cohomology
 
-youtube lecture
+### differential forms
+
+
+
+
+
+### Grassmann algebra
+
+
 
 
 
@@ -172,3 +180,5 @@ youtube lecture
 [2] Nakahara, Mikio. *Geometry, topology and physics*. CRC Press, 2003.
 
 [3] [Harpreet Bedi]. (2016, May 20). *Cohomology* [Video file]. Retrieved from https://www.youtube.com/playlist?list=PL01055907ED9ACA18
+
+[4] [Aditya Bhandari]. (2016, March 12). *Lectures on the Geometric Anatomy of Theoretical Physics* [Video file]. Retrieved from https://www.youtube.com/playlist?list=PLPH7f_7ZlzxTi6kS4vCmv4ZKm9u8g5yic
