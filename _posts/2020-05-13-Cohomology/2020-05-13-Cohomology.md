@@ -113,7 +113,7 @@ $$
 
 `Example`
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/examplehomology.png" width="80%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/examplehomology.png" width="90%">
 
 homology groups are topological invariant. The most generaal form of $H_r(K)$ is
 
@@ -133,9 +133,9 @@ youtube
 
 
 
-### homology VS cohomology
+### homology to cohomology
 
-
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/cohomologygroup.png" width="40%">
 
 
 
@@ -170,3 +170,5 @@ youtube lecture
 [1] Prodan, Emil, and Hermann Schulz-Baldes. "Bulk and boundary invariants for complex topological insulators." *K* (2016).
 
 [2] Nakahara, Mikio. *Geometry, topology and physics*. CRC Press, 2003.
+
+[3] [Harpreet Bedi]. (2016, May 20). *Cohomology* [Video file]. Retrieved from https://www.youtube.com/playlist?list=PL01055907ED9ACA18
