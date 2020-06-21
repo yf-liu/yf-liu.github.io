@@ -135,7 +135,7 @@ We could derive cohomology group from homology group. With cohomology, we could 
 
 ### from homology to cohomology
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/cohomologygroup.png" width="40%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/cohomologygroup.png" width="80%">
 
 Note that, we have the composite map $\dd ^n\circ\dd^{n-1}$ as zero map in cochain complex, which is a direct result from $\partial_n\circ\partial_{n+1}=0$ in chain complex.
 
