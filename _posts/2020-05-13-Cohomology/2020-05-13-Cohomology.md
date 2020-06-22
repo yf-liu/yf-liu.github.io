@@ -141,17 +141,62 @@ Note that, we have the composite map $\dd ^n\circ\dd^{n-1}$ as zero map in cocha
 
 ## de Rham cohomology
 
+Preparation
+
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/derivative.png" width="50%">
+
 ### differential forms
 
+`Def`: $M$ is a smooth manifold. A differential n-form is a $\left(\begin{matrix}0\newline n\end{matrix}\right)$-tensor field $\omega$ that is totally antisymmetric
+$$
+\omega (X_1,\cdots,X_n)=\sgn(\pi)\omega(X_{\pi_1},\cdots,X_{\pi_n})
+$$
+
+`Example`: electromagnetic field strength $F$ is a 2-form.
+
+`Notation`: set of all n-forms be denoted $\Omega^n(M)$ which naturally becomes a $C^\infty(M)$-module. 
+
+`Def`: The exterior derivative operator $\dd:\Omega^n(M)\rightarrow\Omega^{n+1}(M)$ is defined as
+$$
+(\dd\omega)(X_1,\cdots,X_{n+1})=\sum_{i=1}^{n+1}(-1)^{i+1}X_i(\omega(X_1,\cdots,\cancel{X_i},\cdots,X_{n+1}))+\sum_{i<j}(-1)^{i+j}X_i(\omega([X_i,X_j],X_1,\cdots,\cancel{X_i},\cdots,\cancel{X_j},\cdots,X_{n+1}))
+$$
+
+> Addition and $C^\infty(M)$-multiplication are closed in $\Omega^n(M)$. We could only get a form with wedge product of two forms because the antisymmetry should hold. The wedge product is just antisymmetrized tensor product defined as
+> $$
+> (\omega\wedge\sigma)(X_1,\cdots,X_{n+m}):=\frac{1}{n!}\frac{1}{m!}\sum\sgn(\pi) (\omega\otimes\sigma)(X_{\pi_1},\cdots,X_{\pi_{n+m}})
+> $$
+> `Example`: 
+> $$
+> \begin{align*}
+> \omega\wedge\sigma(X_1,X_2)&=\omega\otimes\sigma(X_1,X_2)-\omega\otimes\sigma(X_2,X_1)\\
+> &=\omega\otimes\sigma(X_1,X_2)-\sigma\otimes\omega(X_1,X_2)\\
+> &=(\omega\otimes\sigma-\sigma\otimes\omega)(X_1,X_2)\\
+> \end{align*}
+> $$
+> 
 
 
+### Grassmann algebra and de Rham cohomology
 
+`Def`: The $C^\infty(M)$-module $\Omega(M):=\Omega^0(M)\oplus \Omega^1(M)\oplus \cdots\oplus\Omega^{\dim M}(M)$ with wedge product $\wedge$ is the Grassmann algebra on $M$.
 
-### Grassmann algebra
+Exterior derivative $\dd$ extends by linear continuity to $\Omega(M)$.
 
+`Theorem`: $\dd^2=0$
 
+`Proof`
 
+This implies that we have a sequence of maps 
+$$
+0\xrightarrow{d}\Omega^0(M)\xrightarrow{d}\cdots\xrightarrow{d}\Omega^{n-1}(M)\xrightarrow{d}\Omega^n(M)\xrightarrow{d}\Omega^{n+1}(M)\xrightarrow{d}\cdots\xrightarrow{d}\Omega^{\dim M}(M)\xrightarrow{d}0
+$$
+`Def`: $\omega\in \Omega$ is called exact if $\omega\in\text{im}(d)$, closed if $\omega\in\text{ker}(d)$.
 
+`Example`: electromagnetic field strength $F$ is closed.
+
+`Def`: the n-th de Rham cohomology group $H^n(M)=Z^n(M)/B^n(M)$, where $B^n=\text{im}(d)\subseteq \Omega^n(M)$ and $Z^n=\text{ker}(d)\subseteq \Omega^n(M)$.
+
+>de Rham cohomology group only depends on global topology of $M$.
 
 ### property (nakahara)
 
