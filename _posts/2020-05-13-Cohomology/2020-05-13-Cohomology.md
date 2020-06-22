@@ -220,11 +220,44 @@ The cyclic (co)homology is a theory for both commutative and noncommutative C∗
 |                           | $\cdots\xrightarrow{d}\Omega^{n-1}(M)\xrightarrow{d}\Omega^n(M)\xrightarrow{d}\Omega^{n+1}(M)\xrightarrow{d}\cdots$ |                                                 | $\cdots\xrightarrow{b}\mathcal{C}^{n-1}(\mathcal{A})\xrightarrow{b}\mathcal{C}^n(\mathcal{A})\xrightarrow{b}\mathcal{C}^{n+1}(\mathcal{A})\xrightarrow{b}\cdots$ |
 | closed differential forms | $\omega\in\text{ker}(d)$                                     | cyclic cocycles                                 | $\varphi\in\text{ker}(b)$                                    |
 
+`Example`: standard cocycles for the unital case
 
+Let $\partial_1,\cdots,\partial_k$ be commuting derivations on a unital algebra $\mathcal{A}$ and let $\mathfrak{A}$ be the smooth sub-algebra. Assume the existence of a continuous trace such that $\mathcal{T}(\partial_j a)=0$ for all $a\in\mathfrak{A}$ and $j=1,\cdots,k$. Then 
+
+
+$$
+\varphi(a_0,a_1,\cdots,a_k)=\sum_{\rho}\sgn(\rho)\mathcal{T}(a_0\prod_{i=1}^k\partial_{\rho_i}a_i)
+$$
+
+
+satisfies $b\varphi=0$, hence it's a cyclic cocycle over $\mathcal{A}$ with domain $\mathfrak{A}$.
+
+>- check $\varphi(a_1,\cdots,a_n,a_0)=(-1)^n\varphi(a_0,a_1,\cdots,a_n)$
+>
+>$$
+>\begin{align*}
+>&\varphi(a_0,a_1,\cdots,a_n)=\sum_{\rho}\sgn(\rho)\mathcal{T}(a_0\partial_{\rho_1}a_1\partial_{\rho_2}a_2\partial_{\rho_3} a_3\cdots\partial_{\rho_n}a_n)\\
+>&\varphi(a_1,\cdots,a_n,a_0)=\sum_{\rho}\sgn(\rho)\mathcal{T}(a_1\partial_{\rho_2}a_2\partial_{\rho_3}a_3\cdots\partial_{\rho_n}a_n\partial_{\rho_0}a_0)\\
+>& =\sum_{\rho}\sgn(\rho)\mathcal{T}(\partial_{\rho_0}a_0a_1\partial_{\rho_2}a_2\partial_{\rho_3}a_3\cdots\partial_{\rho_n}a_n)\\
+>\end{align*}
+>$$
+>
+>- check $b\varphi=0$.
+>
+>$$
+>
+>$$
+>
+>
 
 ### pairing cyclic cohomology with K theory
 
 Of key importance for the invariants of solid state systems are the explicit pairing formulas between the cyclic cocycles and the elements of the K0 and K1-groups. As we shall see, the numerical topological invariants used in the classification of the unitary and chiral unitary classes of topological insulators can be obtained this way.
+
+| cyclic cohomology of $\mathcal{A}$ | pairing                                                      | K-theory $K_i(\mathcal{A})$          |
+| ---------------------------------- | ------------------------------------------------------------ | ------------------------------------ |
+| $\varphi\in$even cocycles          | $(\text{tr} \# \varphi)(e,\cdots,e)=\langle[\varphi],[e]_0-[s(e)]_0\rangle$ | $[e]_0-[s(e)]_0\in K_0(\mathcal{A})$ |
+| $\varphi\in$odd cocycles           | $(\text{tr} \# \varphi)(v^\star-1,v-1,\cdots,v^\star-1,v-1)=\langle[\varphi],[v]_1\rangle$ | $[v]_1\in K_1(\mathcal{A})$          |
 
 
 
