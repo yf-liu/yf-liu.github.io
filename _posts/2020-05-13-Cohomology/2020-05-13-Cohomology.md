@@ -133,7 +133,7 @@ $$
 
 ## Cohomology
 
-We could derive cohomology group from homology group. With cohomology, we could glue functions using cup product, which doesn't exist in homology.
+We could derive cohomology group from homology group. With cohomology, we could glue functions using cup product, which doesn't exist in homology. It will shows an interplay between topology and analysis.  
 
 ### from homology to cohomology
 
@@ -141,13 +141,11 @@ We could derive cohomology group from homology group. With cohomology, we could 
 
 Note that, we have the composite map $\dd ^n\circ\dd^{n-1}$ as zero map in cochain complex, which is a direct result from $\partial_n\circ\partial_{n+1}=0$ in chain complex.
 
-## de Rham cohomology
+### differential forms
 
 Preparation
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/derivative.png" width="50%">
-
-### differential forms
 
 `Def`: $M$ is a smooth manifold. A differential n-form is a $\left(\begin{matrix}0\newline n\end{matrix}\right)$-tensor field $\omega$ that is totally antisymmetric
 
@@ -202,32 +200,31 @@ $$
 0\xrightarrow{d}\Omega^0(M)\xrightarrow{d}\cdots\xrightarrow{d}\Omega^{n-1}(M)\xrightarrow{d}\Omega^n(M)\xrightarrow{d}\Omega^{n+1}(M)\xrightarrow{d}\cdots\xrightarrow{d}\Omega^{\dim M}(M)\xrightarrow{d}0
 $$
 
-
 `Def`: $\omega\in \Omega$ is called exact if $\omega\in\text{im}(d)$, closed if $\omega\in\text{ker}(d)$.
 
 `Example`: electromagnetic field strength $F$ is closed.
 
-`Def`: the n-th de Rham cohomology group $H^n(M)=Z^n(M)/B^n(M)$, where $B^n=\text{im}(d)\subseteq \Omega^n(M)$ and $Z^n=\text{ker}(d)\subseteq \Omega^n(M)$.
+`Def`: the n-th de Rham cohomology group $H^n(M)=Z^n(M)/B^n(M)$, where coboundary $B^n=\text{im}(d)\subseteq \Omega^n(M)$ and cocycle $Z^n=\text{ker}(d)\subseteq \Omega^n(M)$.
 
 >de Rham cohomology group only depends on global topology of $M$.
 
-### property (nakahara)
-
-
-
-### Application in physics
-
- 
-
-
-
 ## Cyclic cohomology
 
-​                
+The cyclic (co)homology is a theory for both commutative and noncommutative C∗-algebras, which can be regarded as a natural extension of the classical de Rham theory.
+
+| de Rham cohomology        |                                                              | Cyclic cohomology                               |                                                              |
+| ------------------------- | ------------------------------------------------------------ | ----------------------------------------------- | ------------------------------------------------------------ |
+| differential forms        | $\omega (X_1,\cdots,X_n)=\sgn(\pi)\omega(X_{\pi_1},\cdots,X_{\pi_n})$ | multilinear functionals with cyclicity relation | $\varphi(a_1,\cdots,a_n,a_0)=(-1)^n\varphi(a_0,a_1,\cdots,a_n)$ |
+| exterior derivative       | $\begin{matrix}(\dd\omega)(X_1,\cdots,X_{n+1})=\sum_{i=1}^{n+1}(-1)^{i+1}X_i(\omega(X_1,\cdots,\cancel{X_i},\cdots,X_{n+1}))\newline +\sum_{i<j}(-1)^{i+j}X_i(\omega([X_i,X_j],X_1,\cdots,\cancel{X_i},\cdots,\cancel{X_j},\cdots,X_{n+1}))\end{matrix}$ | Hochschild coboundary map                       | $\begin{matrix}(b\varphi)(a_0,a_1,\cdots,a_n)=\sum_{i=0}^{n}(-1)^{i}X_i(\varphi(a_0,\cdots,a_ia_{i+1},\cdots,a_{n+1}))\newline +(-1)^{n+1}\varphi(a_{n+1}a_0,a_1,\cdots,a_n)\end{matrix}$ |
+|                           | $\dd^2=0$                                                    |                                                 | $b^2=0$                                                      |
+|                           | $\cdots\xrightarrow{d}\Omega^{n-1}(M)\xrightarrow{d}\Omega^n(M)\xrightarrow{d}\Omega^{n+1}(M)\xrightarrow{d}\cdots$ |                                                 | $\cdots\xrightarrow{b}\mathcal{C}^{n-1}(\mathcal{A})\xrightarrow{b}\mathcal{C}^n(\mathcal{A})\xrightarrow{b}\mathcal{C}^{n+1}(\mathcal{A})\xrightarrow{b}\cdots$ |
+| closed differential forms | $\omega\in\text{ker}(d)$                                     | cyclic cocycles                                 | $\varphi\in\text{ker}(b)$                                    |
+
+
 
 ### pairing cyclic cohomology with K theory
 
-
+Of key importance for the invariants of solid state systems are the explicit pairing formulas between the cyclic cocycles and the elements of the K0 and K1-groups. As we shall see, the numerical topological invariants used in the classification of the unitary and chiral unitary classes of topological insulators can be obtained this way.
 
 
 
