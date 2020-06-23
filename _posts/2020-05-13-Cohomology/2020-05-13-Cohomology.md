@@ -264,7 +264,9 @@ Of key importance for the invariants of solid state systems are the explicit pai
 
 The direct results of the pairing is that we get some topological invariants for the solid state system.
 
-<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/invariant.png" width="50%">
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/invariants.png" width="50%">
+
+
 
 ## References
 
