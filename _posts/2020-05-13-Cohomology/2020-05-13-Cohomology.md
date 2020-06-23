@@ -212,13 +212,16 @@ $$
 
 The cyclic (co)homology is a theory for both commutative and noncommutative C∗-algebras, which can be regarded as a natural extension of the classical de Rham theory.
 
-| de Rham cohomology        |                                                              | Cyclic cohomology                               |                                                              |
-| ------------------------- | ------------------------------------------------------------ | ----------------------------------------------- | ------------------------------------------------------------ |
-| differential forms        | $\omega (X_1,\cdots,X_n)=\sgn(\pi)\omega(X_{\pi_1},\cdots,X_{\pi_n})$ | multilinear functionals with cyclicity relation | $\varphi(a_1,\cdots,a_n,a_0)=(-1)^n\varphi(a_0,a_1,\cdots,a_n)$ |
-| exterior derivative       | $\begin{matrix}(\dd\omega)(X_1,\cdots,X_{n+1})=\sum_{i=1}^{n+1}(-1)^{i+1}X_i(\omega(X_1,\cdots,\cancel{X_i},\cdots,X_{n+1}))\newline +\sum_{i<j}(-1)^{i+j}X_i(\omega([X_i,X_j],X_1,\cdots,\cancel{X_i},\cdots,\cancel{X_j},\cdots,X_{n+1}))\end{matrix}$ | Hochschild coboundary map                       | $\begin{matrix}(b\varphi)(a_0,a_1,\cdots,a_n)=\sum_{i=0}^{n}(-1)^{i}X_i(\varphi(a_0,\cdots,a_ia_{i+1},\cdots,a_{n+1}))\newline +(-1)^{n+1}\varphi(a_{n+1}a_0,a_1,\cdots,a_n)\end{matrix}$ |
-|                           | $\dd^2=0$                                                    |                                                 | $b^2=0$                                                      |
-|                           | $\cdots\xrightarrow{d}\Omega^{n-1}(M)\xrightarrow{d}\Omega^n(M)\xrightarrow{d}\Omega^{n+1}(M)\xrightarrow{d}\cdots$ |                                                 | $\cdots\xrightarrow{b}\mathcal{C}^{n-1}(\mathcal{A})\xrightarrow{b}\mathcal{C}^n(\mathcal{A})\xrightarrow{b}\mathcal{C}^{n+1}(\mathcal{A})\xrightarrow{b}\cdots$ |
-| closed differential forms | $\omega\in\text{ker}(d)$                                     | cyclic cocycles                                 | $\varphi\in\text{ker}(b)$                                    |
+| de Rham cohomology                                           | Cyclic cohomology                                            |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| differential forms                                           | multilinear functionals with cyclicity relation              |
+| $\omega (X_1,\cdots,X_n)=\sgn(\pi)\omega(X_{\pi_1},\cdots,X_{\pi_n})$ | $\varphi(a_1,\cdots,a_n,a_0)=(-1)^n\varphi(a_0,a_1,\cdots,a_n)$ |
+| exterior derivative                                          | Hochschild coboundary map                                    |
+| $\begin{matrix}(\dd\omega)(X_1,\cdots,X_{n+1})=\sum_{i=1}^{n+1}(-1)^{i+1}X_i(\omega(X_1,\cdots,\cancel{X_i},\cdots,X_{n+1}))\newline +\sum_{i<j}(-1)^{i+j}X_i(\omega([X_i,X_j],X_1,\cdots,\cancel{X_i},\cdots,\cancel{X_j},\cdots,X_{n+1}))\end{matrix}$ | $\begin{matrix}(b\varphi)(a_0,a_1,\cdots,a_n)=\sum_{i=0}^{n}(-1)^{i}X_i(\varphi(a_0,\cdots,a_ia_{i+1},\cdots,a_{n+1}))\newline +(-1)^{n+1}\varphi(a_{n+1}a_0,a_1,\cdots,a_n)\end{matrix}$ |
+| $\dd^2=0$                                                    | $b^2=0$                                                      |
+| $\cdots\xrightarrow{d}\Omega^{n-1}(M)\xrightarrow{d}\Omega^n(M)\xrightarrow{d}\Omega^{n+1}(M)\xrightarrow{d}\cdots$ | $\cdots\xrightarrow{b}\mathcal{C}^{n-1}(\mathcal{A})\xrightarrow{b}\mathcal{C}^n(\mathcal{A})\xrightarrow{b}\mathcal{C}^{n+1}(\mathcal{A})\xrightarrow{b}\cdots$ |
+| closed differential forms                                    | cyclic cocycles                                              |
+| $\omega\in\text{ker}(d)$                                     | $\varphi\in\text{ker}(b)$                                    |
 
 `Example`: standard cocycles for the unital case
 
@@ -256,10 +259,12 @@ Of key importance for the invariants of solid state systems are the explicit pai
 
 | cyclic cohomology of $\mathcal{A}$ | pairing                                                      | K-theory $K_i(\mathcal{A})$          |
 | ---------------------------------- | ------------------------------------------------------------ | ------------------------------------ |
-| $\varphi\in$even cocycles          | $(\text{tr} \# \varphi)(e,\cdots,e)=\langle[\varphi],[e]_0-[s(e)]_0\rangle$ | $[e]_0-[s(e)]_0\in K_0(\mathcal{A})$ |
-| $\varphi\in$odd cocycles           | $(\text{tr} \# \varphi)(v^\star-1,v-1,\cdots,v^\star-1,v-1)=\langle[\varphi],[v]_1\rangle$ | $[v]_1\in K_1(\mathcal{A})$          |
+| $\varphi\in$even cocycles          | $(\text{tr} \sharp \varphi)(e,\cdots,e)=\langle[\varphi],[e]_0-[s(e)]_0\rangle$ | $[e]_0-[s(e)]_0\in K_0(\mathcal{A})$ |
+| $\varphi\in$odd cocycles           | $(\text{tr} \sharp \varphi)(v^\star-1,v-1,\cdots,v^\star-1,v-1)=\langle[\varphi],[v]_1\rangle$ | $[v]_1\in K_1(\mathcal{A})$          |
 
+The direct results of the pairing is that we get some topological invariants for the solid state system.
 
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-05-13-Cohomology/assets/invariant.png" width="50%">
 
 ## References
 
