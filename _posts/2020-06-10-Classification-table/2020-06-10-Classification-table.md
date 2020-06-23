@@ -59,7 +59,7 @@ $$
 
 <img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-06-10-Classification-table/assets/notes4.png" width="100%">
 
-
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2020-06-10-Classification-table/assets/notes5.png" width="50%">
 
 ## Classification table
 
