@@ -20,7 +20,13 @@ tags:
 
 
 
+## Quantum hall effect
 
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-12-02-Topology-in-condensed-matter/assets/qhe1.png" width="50%">
+
+## Quantum spin hall effect
+
+<img src = "https://raw.githubusercontent.com/yf-liu/yf-liu.github.io/master/_posts/2018-12-02-Topology-in-condensed-matter/assets/qshe1.png" width="50%">
 
 
 
